@@ -351,7 +351,7 @@ class WeixinService extends RESTComponent
      * 回复关注的消息
      */
     public function getMsg(){
-        $msg = "欢迎关注信合宝官方服务号\r\n<a href='http://t.cn/EUCTDZh'>点我提现5000元额度</a>"."\r\n";
+        $msg = "欢迎关注淘钱币官方服务号\r\n<a href='http://t.cn/EUCTDZh'>点我提现5000元额度</a>"."\r\n";
         return $msg;
     }
 

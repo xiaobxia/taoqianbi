@@ -1,20 +1,20 @@
 <?php
-defined('APP_DOWNLOAD_URL') or define('APP_DOWNLOAD_URL','http://www.bubuyingf.com/xhb.apk');
+defined('APP_DOWNLOAD_URL') or define('APP_DOWNLOAD_URL','http://www.jisuhh.cn/xhb.apk');
 defined('APP_IOS_DOWNLOAD_URL') or define('APP_IOS_DOWNLOAD_URL','https://fir.im/zgyk');
 
 defined('SITE_TEL') or define('SITE_TEL', '400-8577900');
 
 //报警手机号
-defined('NOTICE_MOBILE') or define('NOTICE_MOBILE', '17682449388');//主要的
-defined('NOTICE_MOBILE2') or define('NOTICE_MOBILE2', '13456929093');//异常报警
-defined('NOTICE_MOBILE3') or define('NOTICE_MOBILE3', '13456929093');//异常报警
+defined('NOTICE_MOBILE') or define('NOTICE_MOBILE', '13285711611');//主要的
+defined('NOTICE_MOBILE2') or define('NOTICE_MOBILE2', '13285711611');//异常报警
+defined('NOTICE_MOBILE3') or define('NOTICE_MOBILE3', '13285711611');//异常报警
 
 //报警邮箱
 defined('NOTICE_MAIL') or define('NOTICE_MAIL', 'lige@sdpurse.com');
 defined('NOTICE_MAIL2') or define('NOTICE_MAIL2', 'lige@sdpurse.com');
 defined('NOTICE_MAIL3') or define('NOTICE_MAIL3', 'lige@sdpurse.com');
 
-defined('API_PAYURL') or define('API_PAYURL', '172.16.212.155:15422');//网关支付 端口 pay.bubuyingf.com:15422 47.110.250.145
+defined('API_PAYURL') or define('API_PAYURL', '10.0.30.120:15422');//网关支付 端口 pay.jisuhh.cn:15422 47.110.250.145
 defined('WEIXIN_APPID') or define('WEIXIN_APPID', 'wxaa39a234c94b36ff');//微信公众号id
 defined('WEIXIN_SECRET') or define('WEIXIN_SECRET', 'fd3a2e5aafbf3e55a0c8f3fe3c2485e7');//微信公众号key
 defined('WEIXIN_Token') or define('WEIXIN_Token', 'weixin_xhbgzh_online');//微信公众号token
@@ -22,9 +22,9 @@ defined('WEIXIN_Token') or define('WEIXIN_Token', 'weixin_xhbgzh_online');//微�
 defined('ALIPAY_ACCOUNT') or define('ALIPAY_ACCOUNT', '3527375680@qq.com');
 defined('ALIPAY_NAME') or define('ALIPAY_NAME', '杭州恿鑫电子商务有限公司');//浙江省杭州市西湖区文二西路669号407室（入驻创富港商务秘书托管013号）
 
-define('WEIXIN_GONGZHONGNHAO', '信合宝');
+define('WEIXIN_GONGZHONGNHAO', '淘钱币');
 define('WEIXIN_GONGZHONGNHAO_SHORENAME', 'XHBGZH');//微信公众号英文名称
-defined('APP_NAMES') or define('APP_NAMES', '信合宝');
+defined('APP_NAMES') or define('APP_NAMES', '淘钱币');
 
 defined('COMPANY_NAME') or define('COMPANY_NAME', '杭州恿鑫电子商务有限公司');
 defined('COMPANY_ADDRESS') or define('COMPANY_ADDRESS', '浙江省杭州市西湖区文二西路669号407室（入驻创富港商务秘书托管013号）');
@@ -35,7 +35,7 @@ defined('SITE_ICP') or define('SITE_ICP', '浙ICP备18026675号-1');
 defined('POLICE_ICP_CODE') or define('POLICE_ICP_CODE', '31011002000164');//公安机关备案号http://www.beian.gov.cn/ 申请
 defined('POLICE_ICP') or define('POLICE_ICP', '浙公网安备 31011002000164号');//公安机关备案号
 
-defined('SITE_DOMAIN') or define('SITE_DOMAIN', 'www.bubuyingf.com');//配置域名
+defined('SITE_DOMAIN') or define('SITE_DOMAIN', 'www.jisuhh.cn');//配置域名
 defined('SHORT_DOWNLOAD_URL') or define('SHORT_DOWNLOAD_URL','http://'.SITE_DOMAIN.'/newh5/web/page/sdhsreg');
 
 if(isset($_SERVER['HTTP_HOST'])){
@@ -43,7 +43,7 @@ if(isset($_SERVER['HTTP_HOST'])){
     unset($url[0]);
     defined('APP_DOMAIN') or define('APP_DOMAIN', '.' . implode('.', $url));
 }else{
-    defined('APP_DOMAIN') or define('APP_DOMAIN', '.bubuyingf.com');
+    defined('APP_DOMAIN') or define('APP_DOMAIN', '.jisuhh.cn');
 }
 
 defined('OSS_RES_DOMAIN') or define('OSS_RES_DOMAIN', 'sdhb-pros.oss-cn-hangzhou-internal.aliyuncs.com');

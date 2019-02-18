@@ -269,11 +269,11 @@ class MessageNoticeController extends BaseController {
                     }else if($type == 10) {
                         $send_message = "尊敬的".$name."，您的".$money."，元借款今日到期。平台已对接国家信用，逾期用户将被上传至信联。为了您的信用，请按时还款！退订T";   //ok 天畅 840040
                     }elseif($type == 11){
-                        $send_message = "尊敬的".$name."，您在".$source_name."的借款将于".date('m月d日', $item['plan_fee_time'])."到期。您可登录信合宝官方app提前完成还款！如需续贷或展期请按指示操作，如您己还款无需理会，谢谢！";
+                        $send_message = "尊敬的".$name."，您在".$source_name."的借款将于".date('m月d日', $item['plan_fee_time'])."到期。您可登录'.$source_name.'官方app提前完成还款！如需续贷或展期请按指示操作，如您己还款无需理会，谢谢！";
                     }elseif($type == 12){
-                        $send_message = "尊敬的".$name."，您在".$source_name."的借款将于".date('m月d日', $item['plan_fee_time'])."到期。您可登录信合宝官方app提前完成还款！如需续贷或展期请按指示操作，如您己还款无需理会，谢谢！";
+                        $send_message = "尊敬的".$name."，您在".$source_name."的借款将于".date('m月d日', $item['plan_fee_time'])."到期。您可登录'.$source_name.'官方app提前完成还款！如需续贷或展期请按指示操作，如您己还款无需理会，谢谢！";
                     }else{
-                        $send_message = "尊敬的".$name."您好！为了不打扰您过年，您的借款已到期！请前往信合宝App还款！感谢您的配合！祝您猪年大吉！";
+                        $send_message = "尊敬的".$name."您好！为了不打扰您过年，您的借款已到期！请前往'.$source_name.'App还款！感谢您的配合！祝您猪年大吉！";
                     }
                     try{
                         $order_id = $item['order_id'];

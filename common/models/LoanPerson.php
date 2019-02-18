@@ -281,7 +281,7 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
 //        self::PERSON_SOURCE_XH => '享花',
     ];
 
-    const USER_AGENT_XYBT = 'bby'; #极速荷包
+    const USER_AGENT_XYBT = 'tqb'; #极速荷包
     const USER_AGENT_XYQB = 'xyqb'; #信用钱包
     const USER_AGENT_HBQB = 'hbqb'; #汇邦钱包
 
@@ -295,8 +295,8 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
 
     const USER_AGENT_KXJIE = 'kxjie'; //开心借
     const USER_AGENT_XH = 'xh';
-    const USER_AGENT_JXHB = 'bby';
-    const USER_AGENT_SDHB = 'bby';
+    const USER_AGENT_JXHB = 'tqb';
+    const USER_AGENT_SDHB = 'tqb';
     const USER_AGENT_OTHER='jshb';//有些用户还在用该agent
 
 
@@ -316,7 +316,7 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
 
     //all appMarket
     const APPMARKET_DEFAULT = 0; #全部APP
-    const APPMARKET_XYBT = 'bby'; #极速荷包
+    const APPMARKET_XYBT = 'tqb'; #极速荷包
     const APPMARKET_XYBTFULI = 'xybt_fuli'; #极速荷包福利
     const APPMARKET_HBQB = 'hbqb'; #汇邦钱包
     const APPMARKET_WZD_LOAN = 'wzdai_loan'; #温州贷
@@ -329,7 +329,7 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
     const APPMARKET_XJBT_PRO = 'xybt_professional'; #极速荷包专业版
     const APPMARKET_KXJIE = 'kxjie'; //开心借
     const APPMARKET_XH = 'xh'; //享花
-    const APPMARKET_JSHB = 'bby'; //极速荷包
+    const APPMARKET_JSHB = 'tqb'; //极速荷包
 
     const APPMARKET_IOS_XYBT = 'AppStore'; #极速荷包
     const APPMARKET_IOS_XYBTFULI = 'AppStoreWelfare'; #极速荷包福利

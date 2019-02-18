@@ -37,7 +37,7 @@ use common\helpers\CommonHelper;
 
 class FinancialService extends Component
 {
-    const KD_PROJECT_NAME = 'bby'; #项目号
+    const KD_PROJECT_NAME = 'tqb'; #项目号
     const KD_PROJECT_PWD = 'test'; #项目密码
     const KD_MERCHANT_ID = 'test'; #商户号
     //速8项目号

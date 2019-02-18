@@ -407,7 +407,7 @@ var post_url = '$baseUrl';
     }
 
     /**
-     * 信合宝落地页（信合宝）
+     * 淘钱币落地页（淘钱币）
      * @return string
      */
     public function actionSdzreg() {

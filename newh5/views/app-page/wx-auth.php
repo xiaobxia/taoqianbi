@@ -123,7 +123,7 @@ use newh5\components\ApiUrl;
 				console.log(e);
 			}
             nativeMethod.returnNativeMethod('{"type":"14"}');
-            nativeMethod.copyTextMethod('{"text":"'+'<?php echo '信合宝';?>'+'","tip":"复制微信号成功!"}');
+            nativeMethod.copyTextMethod('{"text":"'+'<?php echo '淘钱币';?>'+'","tip":"复制微信号成功!"}');
         }
     </script>
 </body>
