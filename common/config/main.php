@@ -37,8 +37,8 @@ $config = [
                 'class' => 'Swift_SmtpTransport',
                 'host' => 'smtp.mxhichina.com',
                 'port' => '465',
-                'username' => 'dev@sdpurse.com',
-                'password' => 'sdhbdev2018!!',
+                'username' => 'dev@jisuhh.com',
+                'password' => 'jshhdev2018!!',
                 'encryption' => 'ssl',
             ],
             'viewPath' => Yii::getAlias('@common/mail'),
@@ -92,9 +92,9 @@ $config = [
 ];
 
 $db_1 = [
-    'host' => 'rm-bp10hl2ez6sqklpxa.mysql.rds.aliyuncs.com:3306',
-    'username' => 'bubuying',
-    'password' => 'Xiajian033022',
+    'host' => 'rm-uf63ql91fa3nsv77y.mysql.rds.aliyuncs.com:3306',
+    'username' => 'jisuhuahua',
+    'password' => 'SUPER!@#jisuhuahua',
 ];
 
 $dbConfig = [
@@ -184,8 +184,8 @@ foreach([
 ] as $name) {
     $config['components'][$name] = [
         'class' => 'yii\redis\Connection',
-        'hostname' => '172.16.212.153',
-        'password' => 'w8r#wR@ei3',
+        'hostname' => 'r-uf62d79d0ee114e4.redis.rds.aliyuncs.com',
+        'password' => 'lmjjay623ASDCVF',
         'connectionTimeout' => 5,
         'dataTimeout' => 5,
         'socketClientFlags' => STREAM_CLIENT_CONNECT | STREAM_CLIENT_PERSISTENT,
@@ -205,7 +205,7 @@ foreach([
 ] as $name) {
     $config['components'][$name] = [
         'class' => 'yii\mongodb\Connection',
-        'dsn' => 'mongodb://sdhb_user:r5mY&iU^38#I3t@172.16.212.153:27017/bby_log?authSource=admin',
+        'dsn' => 'mongodb://sdhb:sdhb0423@10.0.30.116:27017/tqb_log?authSource=admin',
         'options' => [
             'connectTimeoutMS' => 15000,
             'socketTimeoutMS' => 20000,

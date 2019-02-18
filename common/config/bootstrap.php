@@ -15,9 +15,9 @@ defined('NOTICE_MAIL2') or define('NOTICE_MAIL2', 'lige@sdpurse.com');
 defined('NOTICE_MAIL3') or define('NOTICE_MAIL3', 'lige@sdpurse.com');
 
 defined('API_PAYURL') or define('API_PAYURL', '10.0.30.120:15422');//网关支付 端口 pay.jisuhh.cn:15422 47.110.250.145
-defined('WEIXIN_APPID') or define('WEIXIN_APPID', 'wxaa39a234c94b36ff');//微信公众号id
-defined('WEIXIN_SECRET') or define('WEIXIN_SECRET', 'fd3a2e5aafbf3e55a0c8f3fe3c2485e7');//微信公众号key
-defined('WEIXIN_Token') or define('WEIXIN_Token', 'weixin_xhbgzh_online');//微信公众号token
+defined('WEIXIN_APPID') or define('WEIXIN_APPID', 'wx8407c2f12362fc2c');//微信公众号id
+defined('WEIXIN_SECRET') or define('WEIXIN_SECRET', '12070845213cff02fccd4f6617f1ab05');//微信公众号key
+defined('WEIXIN_Token') or define('WEIXIN_Token', 'weixin_jshh_online');//微信公众号token
 
 defined('ALIPAY_ACCOUNT') or define('ALIPAY_ACCOUNT', '3527375680@qq.com');
 defined('ALIPAY_NAME') or define('ALIPAY_NAME', '杭州恿鑫电子商务有限公司');//浙江省杭州市西湖区文二西路669号407室（入驻创富港商务秘书托管013号）
