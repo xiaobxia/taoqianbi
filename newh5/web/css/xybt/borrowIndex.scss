@@ -1,0 +1,431 @@
+body {margin:0; padding:0; font: "微软雅黑",\5FAE\8F6F\96C5\9ED1;}
+h3,h4,p{padding:0; margin:0;}
+img{vertical-align:top;border:0;}
+h3,h4{font-size:inherit; font-weight:normal;}
+a {
+    text-decoration: none;
+}
+/*公共类*/
+.pa {
+    position: absolute;
+    top: 390px;
+    left: 62px;
+}
+.br10 {
+    border-radius: 10px;
+}
+.br25 {
+    border-radius: 25px;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.fixed {
+    position: fixed;
+}
+.downbt {
+    display: block;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 162px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    text-indent: 34px;
+    cursor: pointer;
+}
+.downbt span {
+    position: absolute;
+    height: 24px;
+    width: 20px;
+    left: 34px;
+    top: 13px;
+}
+.downbt span.icon-w {
+    display: block;
+}
+.downbt span.icon-h {
+    display: none;
+}
+.downbt:hover {
+    border-color: #10b5c9;
+    background-color: #fff;
+    color: #10b5c9;
+}
+.downbt:hover span.icon-w {
+    display: none;
+}
+.downbt:hover span.icon-h {
+    display: block;
+}
+
+.title-dline {
+    font-size: 40px;
+    color: #333;
+}
+.title-dline::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 144px;
+    border-radius: 2px;
+}
+
+// container
+.container {
+    min-width: 1170px;
+}
+
+// serviceTel
+.serviceTel {
+    right: 0;
+    top: 300px;
+    z-index: 999;
+    .telIcon {
+        width: 52px;
+        height: 50px;
+        background-color: #43C2F9;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        background:#43C2F9 url('../../image/xybt/icon-tel.png') no-repeat 18px 13px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-size: 24px 24px;
+    }
+    .telHover {
+        border-top-left-radius: 9px;
+        border-bottom-left-radius: 9px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        position: relative;
+        top: 0;
+        padding: 10px 14px 10px 16px;
+        background: #fff url('../../image/xybt/icon-telx.png') no-repeat 10px 14px;
+        background-size: 22px 22px;
+        z-index: 2;
+        transform:translateX(0);
+        -ms-transform:translateX(0);	/* IE 9 */
+        -moz-transform:translateX(0);	/* Firefox */
+        -webkit-transform:translateX(0);/* Safari 和 Chrome */
+        -o-transform:translateX(0);
+        transition: 0.5s;
+        span {
+            &:nth-child(1) {
+                color: #333;
+                font-size: 24px;
+                padding-left: 30px;
+            }
+            &:nth-child(2) {
+                padding-top: 5px;
+                font-size: 20px;
+                color: #666;
+            }
+            &:nth-child(3) {
+                font-size: 20px;
+                color: #666;
+            }
+        }
+    }
+}
+
+// top
+.xybt-top {
+    height: 60px;
+    margin-top: 20px;
+    background-color: #fff;
+    .xybt-top-in {
+        width: 1042px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        h1 {
+            text-indent: -2000px;
+            a {
+                background: url('../../image/xybt/logo.png') no-repeat center;
+                display: block;
+                width: 172px;
+                height: 40px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        .xybt-top-right {
+            i {
+                font-style: normal;
+            }
+            .xybt-top-info {
+                font-size: 14px;
+                line-height: 20px;
+                color: #333;
+                background-position: left 3px;
+                background-repeat: no-repeat;
+                background-size: 14px 14px;
+                padding-left: 18px;
+                >div {
+                    span {
+                        display: inline-block;
+                        padding-right: 10px;
+                        position: relative;
+                        min-width: 60px;
+                        i {
+                            position: absolute;
+                            right: 0;
+
+                        }
+                    }
+                }
+            }
+            .top-tel {
+                background-image: url('../../image/xybt/icon-telx.png');
+                margin-right: 40px;
+            }
+            .top-service {
+                background-image: url('../../image/xybt/service-time.png');
+            }
+        }
+    }
+}
+
+// banner
+.banner {
+    background: url(../../image/xybt/banner.png) no-repeat top center;
+    width: 100%;
+    .banner-in {
+        width: 1170px;
+        height: 600px;
+        position: relative;
+        margin: 0 auto;
+        .android-down {
+            margin-top: 80px;
+            span.icon-w {
+                background: url(../../image/xybt/banner_icon_android.png) no-repeat center;
+            }
+            span.icon-h {
+                background: url(../../image/xybt/banner_icon_android_hover.png) no-repeat center;
+            }
+        }
+        .ios-down {
+            span.icon-w {
+                background: url(../../image/xybt/banner_icon_ios.png) no-repeat center;
+                background-size: 24px 24px;
+            }
+            span.icon-h {
+                background: url(../../image/xybt/banner_icon_ios_hover.png) no-repeat center;
+            }
+        }
+        .code {
+            margin-left: 280px;
+            margin-top: -40px;
+        }
+    }
+}
+
+// con1
+.con-title {
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    &:after {
+        content: "";
+        display: block;
+        height: 16px;
+        width: 234px;
+        background: url('../../image/xybt/zhixiangxin.png') no-repeat center;
+        margin: 0 auto;
+        margin-top: 12px;
+    }
+}
+span {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.con1 {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 0 40px;
+    .con1-text {
+        padding: 30px 30px 0;
+        width: 960px;
+        margin: 0 auto;
+        overflow: hidden;
+        .icon {
+            width: 120px;
+            span {
+                height: 120px;
+                width: 120px;
+            }
+            p {
+                font-size: 24px;
+                text-align: center;
+                padding-top: 42px;
+                color: #666;
+            }
+            &:nth-child(1){
+                span {
+                    background-image: url('../../image/xybt/icon-zhuce.png');
+                }
+            }
+            &:nth-child(3){
+                span {
+                    background-image: url('../../image/xybt/icon-wanshanziliao.png');
+                }
+            }
+            &:nth-child(5){
+                span {
+                    background-image: url('../../image/xybt/icon-wdurenz.png');
+                }
+            }
+            &:nth-child(7){
+                span {
+                    background-image: url('../../image/xybt/icon-jisurenzheng.png');
+                }
+            }
+        }
+        .arrow {
+            width: 160px;
+            span {
+                width: 64px;
+                height: 50px;
+                margin: 34px auto 0;
+                background-image: url('../../image/xybt/arrow.png');
+            }
+        }
+    }
+}
+.con2 {
+    background-color: #F1FAFF;
+    width: 100%;
+    padding: 30px 0 40px;
+    .con2-text {
+        padding: 30px 30px 0;
+        overflow: hidden;
+        width: 910px;
+        margin: 0 auto;
+        text-align: center;
+        .point {
+            width: 246px;
+            height: 292px;
+            background-color: #fff;
+            &:nth-child(1){
+                margin-right: 86px;
+                span {
+                    background-image: url('../../image/xybt/zhouqi.png');
+                }
+            }
+            &:nth-child(2){
+                margin-right: 86px;
+                span {
+                    background-image: url('../../image/xybt/linghuo.png');
+                }
+            }
+            &:nth-child(3){
+                span {
+                    background-image: url('../../image/xybt/fangkuankuai.png');
+                }
+            }
+            span {
+                width: 80px;
+                height: 86px;
+                margin: 34px auto 0;
+            }
+            h3 {
+                padding-top: 50px;
+                font-size: 30px;
+                color: #333;
+            }
+            p {
+                padding-top: 20px;
+                font-size: 18px;
+                color: #999;
+            }
+        }
+    }
+}
+
+.con3 {
+    padding-top: 30px;
+    width: 1036px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 56px;
+    .con3-in{
+        height: 388px;
+        .text {
+            height: 146px;
+            padding-top: 121px;
+            h3 {
+                font-size: 36px;
+                color: #333;
+            }
+            p {
+                &:nth-child(2) {
+                    font-size: 28px;
+                    color: #999;
+                }
+                &:last-child {
+                    font-size: 40px;
+                    color: #6a4dfc;
+                }
+            }
+        }
+        .img {
+            width: 435px;
+            height: 388px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        &:nth-child(1) {
+            padding-left: 24px;
+            .text {
+                width: 344px;
+                text-align: right;
+            }
+            .img {
+                margin-left: 227px;
+                background-image: url('../../image/xybt/pic-zhouqi.png');
+            }
+        }
+        &:nth-child(2) {
+            padding-left: 38px;
+            padding-top: 30px;
+            .img {
+                background-image: url('../../image/xybt/pic-linghuo.png');
+            }
+            .text {
+                margin-left: 220px;
+                width: 316px;
+            }
+        }
+        &:nth-child(3) {
+            padding-top: 30px;
+            .text {
+                text-align: right;
+                width: 372px;
+            }
+            .img {
+                margin-left: 228px;
+                background-image: url('../../image/xybt/pic-fangkuankuai.png');
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #454545;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}

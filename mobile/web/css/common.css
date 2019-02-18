@@ -1,0 +1,310 @@
+/* ----------General style start---------- */
+html, body, div, span, h1, h2, h3, p, em, img, dl, dt, dd, ol, ul, li, table, tr,th,td, form,input,select{
+    margin:0;
+    padding:0;
+}
+html,body {
+    font-family: microsoft Yahei;
+    min-width:320px;
+    max-width:480px;
+    min-height:100%;
+    margin:0 auto;
+}
+body{
+    /*去除微信游览器a标签元素点击的时候出现蓝色的边框*/
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    }
+body *{
+    max-width: 480px;
+}
+
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+::-webkit-scrollbar{
+  opacity: 0;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  height: 100%;
+  min-width: 320px;
+  max-width: 480px;
+  margin: 0 auto;
+  color: #000;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  z-index: 1;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.kdlc_mobile_wraper{
+    margin: 0 auto;
+    width:100%;
+    height: 100%;
+}
+.kdlc_mobile_wraper .content{
+    width: 100%;
+}
+.kdlc_mobile_wraper .padding{
+    padding: 0 6.25%;
+}
+.kdlc_mobile_wraper .bg_fff5d7{
+    background: #fff5d7;
+}
+.kdlc_mobile_wraper .bg_fd5353{
+    background: #fd5353;
+}
+.kdlc_mobile_wraper .bg_bababa{
+    background: #bababa;
+}
+.kdlc_mobile_wraper .bg_fff{
+    background: #fff;
+}
+.kdlc_mobile_wraper ._bdr_dadada{
+    border-bottom:1px solid #dadada;
+}
+.kdlc_mobile_wraper ._bdr_eeece6{
+    border-bottom:1px solid #eeece6;
+}
+.kdlc_mobile_wraper .fff{
+    color: #fff;
+}
+.kdlc_mobile_wraper ._323232{
+    color: #323232;
+}
+.kdlc_mobile_wraper ._3e1e1f{
+    color: #3e1e1f;
+}
+.kdlc_mobile_wraper ._8e8e8e{
+    color: #8e8e8e;
+}
+.kdlc_mobile_wraper .ff0003{
+    color: #ff0003;
+}
+.kdlc_mobile_wraper .ff534f{
+    color: #ff534f;
+}
+.kdlc_mobile_wraper ._000{
+    color: #000;
+}
+.kdlc_mobile_wraper ._333{
+    color: #333;
+}
+.kdlc_mobile_wraper ._666{
+    color: #666;
+}
+.kdlc_mobile_wraper ._777{
+    color: #777;
+}
+.kdlc_mobile_wraper ._888{
+    color: #888;
+}
+.kdlc_mobile_wraper ._999{
+    color: #999;
+}
+.kdlc_mobile_wraper ._969696{
+    color: #969696;
+}
+.kdlc_mobile_wraper .fd5353{
+    color: #fd5353;
+}
+.kdlc_mobile_wraper .ffd801{
+    color: #ffd801;
+}
+.kdlc_mobile_wraper .fc0d1b{
+    color: #fc0d1b;
+}
+.kdlc_mobile_wraper .fa5558{
+    color: #fa5558;
+}
+.kdlc_mobile_wraper .fd5457{
+    color: #fd5457;
+}
+.kdlc_mobile_wraper .fedcdc{
+    color: #fedcdc;
+}
+.kdlc_mobile_wraper .ffbd9d{
+    color: #ffbd9d;
+}
+.kdlc_mobile_wraper .fff3e3{
+    color: #fff3e3;
+}
+.kdlc_mobile_wraper .aaa{
+    color: #aaa;
+}
+.kdlc_mobile_wraper .a7a7a7{
+    color: #a7a7a7;
+}
+.kdlc_mobile_wraper ._5fa2e7{
+    color: #5fa2e7;
+}
+.kdlc_mobile_wraper ._505050{
+    color: #505050;
+}
+.kdlc_mobile_wraper ._4b4b4b{
+    color: #4b4b4b;
+}
+.kdlc_mobile_wraper .dbdbdb{
+    color: #dbdbdb;
+}
+.kdlc_mobile_wraper .em__6{
+    font-size: .6em;
+}
+.kdlc_mobile_wraper .em__8{
+    font-size: .8em;
+}
+.kdlc_mobile_wraper .em__9{
+    font-size: .9em;
+}
+.kdlc_mobile_wraper .em_1{
+    font-size: 1em;
+}
+.kdlc_mobile_wraper .em_1_2{
+    font-size: 1.2em;
+}
+.kdlc_mobile_wraper .em_1_5{
+    font-size: 1.5em;
+}
+.kdlc_mobile_wraper .em_2{
+    font-size: 2em;
+}
+.kdlc_mobile_wraper .em_3{
+    font-size: 3em;
+}
+.kdlc_mobile_wraper .lh_em_1_5{
+    line-height: 1.5em;
+}
+.kdlc_mobile_wraper .lh_em_2{
+    line-height: 2em;
+}
+.kdlc_mobile_wraper .lh_em_2_5{
+    line-height: 2.5em;
+}
+
+/*mask begin*/
+.kdlc_mobile_wraper #mask{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .45;
+    filter: alpha(opacity=45); /* IE6 */
+    -moz-opacity: .45; /* Mozilla */
+    -khtml-opacity: .45; /* Safari */
+}
+.kdlc_mobile_wraper #exception_dialog{
+    position: fixed;
+    top: 120px;
+    width: 80%;
+    max-width: 380px;
+    margin: 0 10%;
+    /*margin-left: 50px;*/
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px;
+}
+.kdlc_mobile_wraper .exception_dialog_btn{
+    width: 35%;
+    padding: 2.5% 0;
+    margin: auto 5% 4% 10%;
+    background-color: #fd5353;
+    /*background-color: #f2f2f2;*/
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px;
+}
+.kdlc_mobile_wraper .exception_dialog_btn + .exception_dialog_btn{
+    margin: auto 10% 4% 5%;
+    background-color: #CCCCCC;
+}
+.kdlc_mobile_wraper #exception_dialog_tips{
+    margin: 12% auto;
+    padding: 0 10%;
+    letter-spacing: 1px;
+}
+/* ----------General style end---------- */
+
+/*-------------------闪贷 start---------------------*/
+.shandai-container {
+    background: #f2f2f2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    font-size: 14px;
+}
+
+.sd-info {
+    background: #fff;
+    padding:20px 60px 20px 60px;
+    border-bottom: 1px solid #ececec;
+    position: relative;
+}
+
+.sd-info .title {
+    color:#444;
+    font-weight: 500;
+}
+
+.sd-info .require-mark {
+    color:#ec8518;
+}
+
+.sd-info .description {
+    margin-top:5px;
+    color:#adadad;
+    font-size: 14px;
+}
+
+.sd-info .right-arrow {
+    position: absolute;
+    right:10px;
+    top:26px;
+}
+
+.sd-info .icon {
+    position: absolute;
+    left:15px;
+    top:23px;
+}
+
+.sd-info .status {
+    position: absolute;
+    right:40px;
+    top:30px;
+    color:#444;
+}
+
+.sd-info .status-finish {
+    color:#61cae4;
+}
+
+.shandai-container .btn-submit {
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    background: #61cae4;
+    border-radius: 25px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+}
+
+.shandai-container .btn-submit-disable {
+    background: #ccc;
+}
+/*-------------------闪贷 end---------------------*/

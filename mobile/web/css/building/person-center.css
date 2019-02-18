@@ -1,0 +1,65 @@
+html,body{width: 100%;height: 100%;}
+
+img{
+    display: inline-block;
+    height: 0.53333rem;
+    margin: 0.4rem 0 0.4rem 0.32rem;
+}
+.wrapper label{
+    display: inline-block;
+    position: absolute;
+    left: 1.3rem;
+    margin-top: 0.43rem;
+    font-size: 0.4rem;
+}
+p{
+    border-bottom: 1px solid #d8d8d8;
+}
+#order {
+    display: inline-block;
+    position: relative;
+    width: 0.50667rem;
+    height: 0.50667rem;
+    text-align: right;
+    right:0.4rem;
+    top:0.4rem;
+    float: right;
+    background: url(../../image/building/arrow.png) no-repeat center center;
+}
+.content{
+    display: inline-block;
+    float: right;
+    position: relative;
+    width: 30% !important;
+    text-align: right;
+    right:0.4rem;
+    top:0.4rem;
+    font-size: 0.4rem;
+
+}
+
+.pop-box{position: fixed;top: 0px;left: 0px;width: 100%;height: 100%;z-index: 9999;display: -webkit-box;display: box;-webkit-box-orient: horizontal;-webkit-box-pack: center;-webkit-box-align: center;background: rgba(0, 0, 0, 0.4);}
+.pop-box .pop-con{box-sizing:border-box;position: relative;padding: 0.4rem;width: 84%;background-color: #fff;border-radius:0.2rem;text-align: center;}
+.pop-box .pop-con p{padding: 1rem 0;font-size: 14px;}
+.pop-box button{display: block;width: 100%;height: 1.04rem;background: #FD5353;color: #fff;border:none;border-radius:0.12rem;font-size: 14px;}
+
+#btn{
+    margin: 0.64rem 0 0.4rem;
+    display: block;
+    position: relative;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 1.053333rem;
+    border:none;
+    background-color: #fa5558;
+    border-radius: 0.106667rem;
+}
+.wrapper div:nth-child(2){
+    padding: 0 0.56rem;
+}
+#word{
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 0.453333rem;
+}

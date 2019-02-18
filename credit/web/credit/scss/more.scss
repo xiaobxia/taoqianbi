@@ -1,0 +1,54 @@
+@import "../scss/reset.scss";
+$browser-default-font-size: 75px !default;
+@function rem($px) {
+  @return $px / $browser-default-font-size * 1rem;
+}
+.more{
+  .head p {
+    padding-left: rem(30px);
+    font-size: rem(26px);
+    height: rem(60px);
+    color: #999;
+    line-height: rem(60px);
+  }
+  .head{
+    background-color:#f2f2f2 ;
+  }
+  ul{
+    border-top: 1px solid #e6e6e6;
+  }
+  li{
+    border-bottom: 1px solid #e6e6e6;
+    height: rem(110px);
+    line-height: rem(110px);
+  }
+  li label{
+    padding-left:rem(30px);
+    font-size: rem(32px);
+    color: #333333;
+    position: absolute;
+  }
+  li input{
+    margin-left: rem(185px);
+    height: rem(108px);
+    line-height: rem(108px);
+    font-size: rem(32px);
+    width: rem(460px);
+    border: none;
+    display: block;
+  }
+
+  .footer a{
+    display: block;
+    border:1px solid #61cae4;
+    border-radius: rem(50px);
+    background-color:#61cae4;
+    color: white;
+    height:rem(90px);
+    line-height: rem(90px);
+    text-align: center;
+    text-decoration: none;
+    font-size: rem(36px);
+    margin: rem(65px) rem(30px) 0;
+  }
+}

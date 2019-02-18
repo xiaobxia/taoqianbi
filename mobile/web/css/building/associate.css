@@ -1,0 +1,85 @@
+#header {
+    position: relative;
+    padding: 1.3333rem 0 0 0.4rem;
+}
+#cell_address{
+    height: 1.08rem;
+    position: relative;
+    width: 7.48rem;
+    font-size: 0.4rem;
+    padding-left: 1.2rem;
+    box-sizing: border-box;
+    border: 1px solid red;
+    border-radius: 0.2rem;
+    padding-right: 0.95rem;
+}
+#header button{
+    background-color: #fa5558;
+    font-size: 0.4rem;
+    color: #ffffff;
+    font-weight: bold;
+    height: 1.08rem;
+    width: 1.67rem;
+    border-radius: 0.2rem;
+}
+#img{
+    position: absolute;
+    width: 0.56rem;
+    height: 0.56rem;
+    margin-left: 0.64rem;
+    margin-top: -0.8rem;
+    background: url('../../image/building/mirror.jpg') no-repeat center;
+    background-size: 0.56rem;
+}
+#content{
+    margin-top: 1.26rem;
+    overflow:scroll;
+}
+#cell_associate li{
+    font-size: 0.4rem;
+    line-height: 1.32rem;
+    height: 1.32rem;
+    padding-left: 0.4rem;
+    border-top: 1px solid #bebebe;
+    overflow: hidden;
+}
+
+#cell_associate li.margin-b0{
+    border-bottom: 1px solid #bebebe;
+}
+#footer{
+    background: url('../../image/building/arrow.jpg') no-repeat center center;
+    position: relative;
+    height: 0.5rem;
+    background-size: 0.5rem;
+    display: none;
+    margin-top: 0.4rem;
+}
+#reword_back{
+    background: url('../../image/building/none.jpg') no-repeat center;
+    background-size: 3rem;
+    height: 3rem;
+}
+.reword{
+    color: #bebebe;
+    font-size: 0.4rem;
+    text-align: center;
+}
+#reword_head{
+    margin-top: 0.4rem;
+}
+#reword_down{
+    margin-bottom: 0.33rem;
+}
+#content button{
+    background-color: #fa5558;
+    font-size: 0.4rem;
+    color: #ffffff;
+    font-weight: bold;
+    height: 1.08rem;
+    width: 4.48rem;
+    border-radius: 0.2rem;
+}
+#content div{
+    text-align: center;
+}

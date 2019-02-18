@@ -1,0 +1,71 @@
+html,body{width: 100%;height: 100%;}
+.coin{
+    background:url('../../image/building/person_trial.jpg') no-repeat center;
+    background-size: 5rem;
+    width: 50%;
+    height: 30%;
+    margin: 0.5rem auto 0.3rem auto;
+}
+.coin-machine{
+    background: url('../../image/building/machine_trial.jpg') no-repeat top center;
+    background-size: 4.8rem;
+    width: 100%;
+    height: 4.8rem;
+    padding-top: 1.6rem;
+    margin-top: 0.6rem;
+}
+p:first-of-type{
+    color:#999999;
+    text-align: center;
+    font-size: 0.4rem;
+    margin-bottom: 1.55rem;
+    margin-top: 1.89rem;
+}
+p:nth-of-type(2){
+    color:#999999;
+    text-align: left;
+    font-size: 0.4rem;
+    padding: 0 0.6667rem;
+}
+span:first-of-type {
+    color:#fd5353;
+}
+#btn{
+    margin: 2rem 7% 0 7%;
+    display: block;
+    position: relative;
+    top:0;
+    right: 0;
+    width: 86%;
+    height: 1.053333rem;
+    border:none;
+    background-color: #fa5558;
+    border-radius: 0.106667rem;
+    font-size: 0.453333rem;
+}
+#word{
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 0.453333rem;
+}
+#result{
+    color:#fd5353 !important;
+}
+#credit{
+    height: 0.72rem;
+    line-height: 0.72rem;
+    font-size: 0.72rem;
+    width: 100%;
+    text-align: center;
+    color: #fd5353;
+    font-weight: bold;
+}
+#price{
+    font-size: 0.67rem;
+    line-height: 0.81rem;
+    width: 100%;
+    height: 0.81rem;
+    text-align: center;
+    color: #fd5353;
+    font-weight: bold;
+}

@@ -1,0 +1,344 @@
+/* ----------common style start---------- */
+.kdlc_mobile_wraper{
+    margin: 0 auto;
+    width:100%;
+    height: 100%;
+}
+.kdlc_mobile_wraper .content{
+    width: 100%;
+}
+.kdlc_mobile_wraper .padding{
+    padding: 0 6.25%;
+}
+.kdlc_mobile_wraper .bg_fff5d7{
+    background: #fff5d7;
+}
+.kdlc_mobile_wraper .bg_fd5353{
+    background: #fd5353;
+}
+.kdlc_mobile_wraper .bg_bababa{
+    background: #bababa;
+}
+.kdlc_mobile_wraper .bg_fff{
+    background: #fff;
+}
+.kdlc_mobile_wraper .bg_3eb135{
+    background: #3eb135;
+}
+.kdlc_mobile_wraper .bg_4dafea{
+    background: #4dafea;
+}
+.kdlc_mobile_wraper .bg_ff960b{
+    background: #ff960b;
+}
+.kdlc_mobile_wraper .bg_fee039{
+    background: #fee039;
+}
+.kdlc_mobile_wraper .bg_f4f4f4{
+    background: #f4f4f4;
+}
+.kdlc_mobile_wraper .bg_defce8{
+    background: #defce8;
+}
+.kdlc_mobile_wraper .bg_e2f2fa{
+    background: #e2f2fa;
+}
+.kdlc_mobile_wraper .bg_fff2b7{
+    background: #fff2b7;
+}
+.kdlc_mobile_wraper .bg_f5f5f5{
+    background: #f5f5f5;
+}
+.kdlc_mobile_wraper .bg_00a0e9{
+    background: #00a0e9;
+}
+.kdlc_mobile_wraper .bg_f2f2f2{
+    background: #f2f2f2;
+}
+.kdlc_mobile_wraper .bg_fff100{
+    background: #fff100;
+}
+.kdlc_mobile_wraper .bg_00ac00{
+    background: #00ac00;
+}
+.kdlc_mobile_wraper .bg_eee{
+    background: #eee;
+}
+.kdlc_mobile_wraper .bg_ccc{
+    background: #eee;
+}
+.kdlc_mobile_wraper ._bdr_dadada{
+    border-bottom:1px solid #dadada;
+}
+.kdlc_mobile_wraper ._bdr_dddddd{
+    border-bottom:1px solid #dddddd;
+}
+.kdlc_mobile_wraper ._bdr_f2f2f2{
+    border-bottom:1px solid #f2f2f2;
+}
+.kdlc_mobile_wraper ._bdr_f5f5f5{
+    border-bottom:1px solid #f5f5f5;
+}
+.kdlc_mobile_wraper ._bdr_f7f7f7{
+    border-bottom:1px solid #f7f7f7;
+}
+.kdlc_mobile_wraper ._bdr_ededed{
+    border-bottom:1px solid #ededed;
+}
+.kdlc_mobile_wraper ._bdr_eeece6{
+    border-bottom:1px solid #eeece6;
+}
+.kdlc_mobile_wraper .fff{
+    color: #fff;
+}
+.kdlc_mobile_wraper ._323232{
+    color: #323232;
+}
+.kdlc_mobile_wraper ._228c83{
+    color: #228c83;
+}
+.kdlc_mobile_wraper ._9a8e5b{
+    color: #9a8e5b;
+}
+.kdlc_mobile_wraper ._3389ff{
+    color: #3389ff;
+}
+.kdlc_mobile_wraper ._399df4{
+    color: #399df4;
+}
+.kdlc_mobile_wraper ._3e1e1f{
+    color: #3e1e1f;
+}
+.kdlc_mobile_wraper ._8e8e8e{
+    color: #8e8e8e;
+}
+.kdlc_mobile_wraper .ff0003{
+    color: #ff0003;
+}
+.kdlc_mobile_wraper .da6400{
+    color: #da6400;
+}
+.kdlc_mobile_wraper .ff534f{
+    color: #ff534f;
+}
+.kdlc_mobile_wraper ._000{
+    color: #000;
+}
+.kdlc_mobile_wraper ._00a0e9{
+    color: #00a0e9;
+}
+.kdlc_mobile_wraper ._333{
+    color: #333;
+}
+.kdlc_mobile_wraper ._666{
+    color: #666;
+}
+.kdlc_mobile_wraper ._777{
+    color: #777;
+}
+.kdlc_mobile_wraper ._707070{
+    color: #707070;
+}
+.kdlc_mobile_wraper ._888{
+    color: #888;
+}
+.kdlc_mobile_wraper ._999{
+    color: #999;
+}
+.kdlc_mobile_wraper ._969696{
+    color: #969696;
+}
+.kdlc_mobile_wraper .fd5353{
+    color: #fd5353;
+}
+.kdlc_mobile_wraper .ffd801{
+    color: #ffd801;
+}
+.kdlc_mobile_wraper .fc0d1b{
+    color: #fc0d1b;
+}
+.kdlc_mobile_wraper .fa5558{
+    color: #fa5558;
+}
+.kdlc_mobile_wraper .fd5457{
+    color: #fd5457;
+}
+.kdlc_mobile_wraper .fedcdc{
+    color: #fedcdc;
+}
+.kdlc_mobile_wraper .ffbd9d{
+    color: #ffbd9d;
+}
+.kdlc_mobile_wraper .fff3e3{
+    color: #fff3e3;
+}
+.kdlc_mobile_wraper .aaa{
+    color: #aaa;
+}
+.kdlc_mobile_wraper .a7a7a7{
+    color: #a7a7a7;
+}
+.kdlc_mobile_wraper ._5fa2e7{
+    color: #5fa2e7;
+}
+.kdlc_mobile_wraper ._505050{
+    color: #505050;
+}
+.kdlc_mobile_wraper ._4b4b4b{
+    color: #4b4b4b;
+}
+.kdlc_mobile_wraper .dbdbdb{
+    color: #dbdbdb;
+}
+.kdlc_mobile_wraper .d2d2d2{
+    color: #d2d2d2;
+}
+.kdlc_mobile_wraper ._626262{
+    color: #626262;
+}
+.kdlc_mobile_wraper ._22ac38{
+    color: #22ac38;
+}
+.kdlc_mobile_wraper .ff960b{
+    color: #ff960b;
+}
+.kdlc_mobile_wraper .f39800{
+    color: #f39800;
+}
+.kdlc_mobile_wraper .f39700{
+    color: #f39700;
+}
+.kdlc_mobile_wraper ._969696{
+    color: #969696;
+}
+.kdlc_mobile_wraper .fff100{
+    color: #fff100;
+}
+.kdlc_mobile_wraper .a70000{
+    color: #a70000;
+}
+.kdlc_mobile_wraper .em__6{
+    font-size: .6em;
+}
+.kdlc_mobile_wraper .em__8{
+    font-size: .8em;
+}
+.kdlc_mobile_wraper .em__9{
+    font-size: .9em;
+}
+.kdlc_mobile_wraper .em_1{
+    font-size: 1em;
+}
+.kdlc_mobile_wraper .em_1_2{
+    font-size: 1.2em;
+}
+.kdlc_mobile_wraper .em_1_5{
+    font-size: 1.5em;
+}
+.kdlc_mobile_wraper .em_2{
+    font-size: 2em;
+}
+.kdlc_mobile_wraper .em_3{
+    font-size: 3em;
+}
+.kdlc_mobile_wraper .lh_em_1{
+    line-height: 1em;
+}
+.kdlc_mobile_wraper .lh_em_1_2{
+    line-height: 1.2em;
+}
+.kdlc_mobile_wraper .lh_em_1_5{
+    line-height: 1.5em;
+}
+.kdlc_mobile_wraper .lh_em_1_6{
+    line-height: 1.6em;
+}
+.kdlc_mobile_wraper .lh_em_1_8{
+    line-height: 1.8em;
+}
+.kdlc_mobile_wraper .lh_em_2{
+    line-height: 2em;
+}
+.kdlc_mobile_wraper .lh_em_2_2{
+    line-height: 2.2em;
+}
+.kdlc_mobile_wraper .lh_em_2_3{
+    line-height: 2.3em;
+}
+.kdlc_mobile_wraper .lh_em_2_5{
+    line-height: 2.5em;
+}
+.kdlc_mobile_wraper .lh_em_3{
+    line-height: 3em;
+}
+.kdlc_mobile_wraper .lh_em_3_5{
+    line-height: 3.5em;
+}
+.kdlc_mobile_wraper .lh_em_4{
+    line-height: 4em;
+}
+
+/*弹框 begin*/
+.kdlc_mobile_wraper #mask,#circle-mask{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .45;
+    filter: alpha(opacity=45); /* ie6 */
+    -moz-opacity: .45; /* mozilla */
+    -khtml-opacity: .45; /* safari */
+}
+/*弹框 end*/
+/*弹框提示 begin*/
+.kdlc_mobile_wraper #exception_dialog_wraper{
+    width: 80%;
+    max-width: 380px;
+    margin: auto;
+}
+.kdlc_mobile_wraper #exception_dialog{
+    position: fixed;
+    z-index: 2;
+    top: 15%;
+    width: 80%;
+    max-width: 380px;
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px;
+}
+.kdlc_mobile_wraper .exception_dialog_btn{
+    width: 35%;
+    padding: 2.5% 0;
+    margin-left: 10%;
+    margin-bottom: 4%;
+    background-color: #00a0e9;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px;
+}
+.kdlc_mobile_wraper .exception_dialog_btn + .exception_dialog_btn{
+    background-color: #cccccc;
+}
+.kdlc_mobile_wraper #exception_dialog_tips{
+    margin: 12% auto;
+    padding: 0 10%;
+    letter-spacing: 1px;
+}
+/*弹框提示 end*/
+/*弹框加载进度条*/
+#circle-hint{
+    text-align: center;
+    z-index: 502;
+    position: relative;
+    top: 30%;
+}
+#circle-mask{
+    display: none;
+}
+/*弹框加载进度条*/
+/* ----------common style end---------- */

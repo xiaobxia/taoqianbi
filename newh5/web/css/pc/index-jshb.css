@@ -1,0 +1,280 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+img {
+  vertical-align: top;
+  border: 0; }
+
+h3, h4 {
+  font-size: inherit;
+  font-weight: normal; }
+
+a {
+  text-decoration: none; }
+
+/*公共类*/
+.pa {
+  position: absolute;
+  top: 305px;
+  left: 62px; }
+
+.br10 {
+  border-radius: 10px; }
+
+.br25 {
+  border-radius: 25px; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.fixed {
+  position: fixed; }
+
+.downbt {
+  display: block;
+  border: 1px solid #fff;
+  height: 50px;
+  width: 162px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  text-indent: 34px;
+  cursor: pointer; }
+
+.downbt span {
+  position: absolute;
+  height: 24px;
+  width: 20px;
+  left: 34px;
+  top: 13px; }
+
+.downbt span.icon-w {
+  display: block; }
+
+.downbt span.icon-h {
+  display: none; }
+
+.downbt:hover {
+  border-color: #5e66ff;
+  background-color: #fff;
+  color: #5e66ff; }
+
+.downbt:hover span.icon-w {
+  display: none; }
+
+.downbt:hover span.icon-h {
+  display: block; }
+
+.title-dline {
+  font-size: 40px;
+  color: #333; }
+
+.title-dline::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 144px;
+  border-radius: 2px; }
+
+.container {
+  min-width: 1170px; }
+
+.serviceTel {
+  right: 0;
+  top: 300px;
+  z-index: 999; }
+
+.banner {
+  background: url(../../image/jshb/banner.png) no-repeat top center;
+  width: 100%; }
+  .banner .banner-in {
+    width: 1170px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto; }
+    .banner .banner-in .android-down {
+      margin-top: 80px; }
+      .banner .banner-in .android-down span.icon-w {
+        background: url(../../image/jshb/banner_icon_android.png) no-repeat center; }
+      .banner .banner-in .android-down span.icon-h {
+        background: url(../../image/jshb/banner_icon_android_hover.png) no-repeat center; }
+    .banner .banner-in .ios-down span.icon-w {
+      background: url(../../image/jshb/banner_icon_ios.png) no-repeat center;
+      background-size: 24px 24px; }
+    .banner .banner-in .ios-down span.icon-h {
+      background: url(../../image/jshb/banner_icon_ios_hover.png) no-repeat center; }
+    .banner .banner-in .code {
+      margin-left: 280px;
+      margin-top: -40px; }
+.qr-code{
+      position: absolute;
+      top: 300px;
+      left: 270px;
+      width: 180px;
+      height: 180px;
+      background: url(../../image/jshb/qr-code60-1103.png) no-repeat center;
+      }
+.download{
+  font-size: 15px;
+  display: block;
+  position: absolute;
+  top:485px;
+  left:295px;
+  color:#fff;
+}
+.con-title {
+  text-align: center;
+  font-size: 40px;
+  color: #333; }
+  .con-title:after {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 234px;
+    background: url("../../image/jshb/zhixiangxin.png") no-repeat center;
+    margin: 0 auto;
+    margin-top: 12px; }
+
+span {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; }
+
+.con1 {
+  width: 100%;
+  background-color: #fff;
+  padding: 56px 0 80px; }
+  .con1 .con1-text {
+    padding: 92px 105px 0;
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .con1 .con1-text .icon {
+      width: 120px; }
+      .con1 .con1-text .icon span {
+        height: 120px;
+        width: 120px; }
+      .con1 .con1-text .icon p {
+        font-size: 24px;
+        text-align: center;
+        padding-top: 42px;
+        color: #666; }
+      .con1 .con1-text .icon:nth-child(1) span {
+        background-image: url("../../image/jshb/icon-zhuce.png"); }
+      .con1 .con1-text .icon:nth-child(3) span {
+        background-image: url("../../image/jshb/icon-wanshanziliao.png"); }
+      .con1 .con1-text .icon:nth-child(5) span {
+        background-image: url("../../image/jshb/icon-wdurenz.png"); }
+      .con1 .con1-text .icon:nth-child(7) span {
+        background-image: url("../../image/jshb/icon-jisurenzheng.png"); }
+    .con1 .con1-text .arrow {
+      width: 160px; }
+      .con1 .con1-text .arrow span {
+        width: 64px;
+        height: 50px;
+        margin: 34px auto 0;
+        background-image: url("../../image/jshb/arrow.png"); }
+
+.con2 {
+  background-color: #FFF7F6;
+  width: 100%;
+  padding: 50px 0 80px; }
+  .con2 .con2-text {
+    padding: 100px 130px 0;
+    overflow: hidden;
+    width: 910px;
+    margin: 0 auto;
+    text-align: center; }
+    .con2 .con2-text .point {
+      width: 246px;
+      height: 292px;
+      background-color: #fff; }
+      .con2 .con2-text .point:nth-child(1) {
+        margin-right: 86px; }
+        .con2 .con2-text .point:nth-child(1) span {
+          background-image: url("../../image/jshb/zhouqi.png"); }
+      .con2 .con2-text .point:nth-child(2) {
+        margin-right: 86px; }
+        .con2 .con2-text .point:nth-child(2) span {
+          background-image: url("../../image/jshb/linghuo.png"); }
+      .con2 .con2-text .point:nth-child(3) span {
+        background-image: url("../../image/jshb/fangkuankuai.png"); }
+      .con2 .con2-text .point span {
+        width: 80px;
+        height: 86px;
+        margin: 34px auto 0; }
+      .con2 .con2-text .point h3 {
+        padding-top: 50px;
+        font-size: 30px;
+        color: #333; }
+      .con2 .con2-text .point p {
+        padding-top: 20px;
+        font-size: 18px;
+        color: #999; }
+
+.con3 {
+  padding-top: 60px;
+  width: 1036px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 266px; }
+  .con3 .con3-in {
+    height: 388px; }
+    .con3 .con3-in .text {
+      height: 146px;
+      padding-top: 121px; }
+      .con3 .con3-in .text h3 {
+        font-size: 36px;
+        color: #333; }
+      .con3 .con3-in .text p:nth-child(2) {
+        font-size: 28px;
+        color: #999; }
+      .con3 .con3-in .text p:last-child {
+        font-size: 40px;
+        color: #6a4dfc; }
+    .con3 .con3-in .img {
+      width: 435px;
+      height: 388px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+    .con3 .con3-in:nth-child(1) {
+      padding-left: 24px; }
+      .con3 .con3-in:nth-child(1) .text {
+        width: 344px;
+        text-align: right; }
+      .con3 .con3-in:nth-child(1) .img {
+        margin-left: 227px;
+        background-image: url("../../image/jshb/pic-zhouqi.png"); }
+    .con3 .con3-in:nth-child(2) {
+      padding-left: 38px;
+      padding-top: 270px; }
+      .con3 .con3-in:nth-child(2) .img {
+        background-image: url("../../image/jshb/pic-linghuo.png"); }
+      .con3 .con3-in:nth-child(2) .text {
+        margin-left: 220px;
+        width: 316px; }
+    .con3 .con3-in:nth-child(3) {
+      padding-top: 370px; }
+      .con3 .con3-in:nth-child(3) .text {
+        text-align: right;
+        width: 372px; }
+      .con3 .con3-in:nth-child(3) .img {
+        margin-left: 228px;
+        background-image: url("../../image/jshb/pic-fangkuankuai.png"); }
+
+.footer {
+  background-color: #454545;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 14px;
+  color: #fff; }
+
+/*# sourceMappingURL=index-jshb.css.map */

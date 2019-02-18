@@ -1,0 +1,135 @@
+@charset "UTF-8";
+html, body, .container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto; }
+
+._radiu_10px {
+  -moz-border-radius: 0.1333333333rem;
+  -webkit-border-radius: 0.1333333333rem;
+  border-radius: 0.1333333333rem; }
+
+._radiu_20px {
+  -moz-border-radius: 0.2666666667rem;
+  -webkit-border-radius: 0.2666666667rem;
+  border-radius: 0.2666666667rem; }
+
+.channel_happy {
+  background: url("../../image/channel-happy/banner.png") no-repeat center;
+  background-size: 10rem 17.7866666667rem;
+  width: 100%;
+  min-height: 17.7866666667rem;
+  font-size: 0.4rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  /* input placeholder文字颜色 */ }
+  .channel_happy input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #8d8d8d; }
+  .channel_happy input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #8d8d8d; }
+  .channel_happy input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #8d8d8d; }
+  .channel_happy input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #8d8d8d; }
+  .channel_happy .logo {
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4533333333rem;
+    width: 1.8933333333rem;
+    height: 0.5866666667rem; }
+  .channel_happy .main {
+    width: 9.0666666667rem;
+    margin: 0 auto;
+    padding-top: 6.96rem; }
+    .channel_happy .main .input-form {
+      width: 9.0666666667rem;
+      margin: auto;
+      border: 0.1333333333rem solid #fff;
+      box-sizing: border-box;
+      background: #fff; }
+      .channel_happy .main .input-form .form-box {
+        width: 8.8rem;
+        border: 0.0266666667rem solid #dcdcdc;
+        padding: 0.6933333333rem 0.7066666667rem;
+        box-sizing: border-box;
+        background: #fff; }
+        .channel_happy .main .input-form .form-box input {
+          display: block;
+          width: 7.3333333333rem;
+          height: 1.1733333333rem;
+          margin: 0 auto;
+          background-color: #fff;
+          font-size: 0.4rem;
+          margin-bottom: 0.4rem;
+          color: #000;
+          border: 0.0266666667rem solid #bfbfbf;
+          padding-left: 0.9866666667rem;
+          box-sizing: border-box; }
+        .channel_happy .main .input-form .form-box #autoRegister {
+          width: 7.4rem;
+          height: 1.1333333333rem;
+          margin: 0 auto;
+          background: url("../../image/channel-happy/button.png") no-repeat center/cover;
+          background-size: 7.5333333333rem 1.3066666667rem;
+          margin-top: 0.6666666667rem;
+          margin-bottom: 0.04rem; }
+      .channel_happy .main .input-form ._input {
+        position: relative; }
+        .channel_happy .main .input-form ._input .icon {
+          position: absolute;
+          top: -0.0666666667rem;
+          left: 0.3733333333rem; }
+      .channel_happy .main .input-form .input-user .telIcon {
+        background: url("../../image/channel-happy/phoneIcon.png") no-repeat center;
+        background-size: 0.32rem 0.5333333333rem;
+        width: 0.3466666667rem;
+        height: 1.3066666667rem; }
+      .channel_happy .main .input-form .input-user #close {
+        position: absolute;
+        background: url("../../image/channel-happy/cancel.png") no-repeat center;
+        background-size: 0.48rem 0.48rem;
+        width: 0.48rem;
+        height: 0.48rem;
+        right: 0.4666666667rem;
+        top: 0.3333333333rem;
+        display: none; }
+      .channel_happy .main .input-form .input-password .pwdIcon {
+        background: url("../../image/channel-happy/pwdIcon.png") no-repeat center;
+        background-size: 0.32rem 0.3466666667rem;
+        width: 0.3466666667rem;
+        height: 1.3066666667rem; }
+      .channel_happy .main .input-form .input-code .timeIcon {
+        background: url("../../image/channel-happy/timeIcon.png") no-repeat left center;
+        background-size: 0.3333333333rem 0.3333333333rem;
+        width: 0.9333333333rem;
+        height: 1.3066666667rem; }
+      .channel_happy .main .input-form .input-code .btn {
+        position: absolute;
+        top: 0.1866666667rem;
+        right: 0.4266666667rem;
+        width: 2.4rem;
+        height: 0.8rem;
+        background: #fff;
+        line-height: 0.8rem;
+        text-align: center;
+        color: #ff8c00;
+        font-size: 0.4rem; }
+  .channel_happy .footer {
+    position: absolute;
+    bottom: 0.4533333333rem;
+    left: 1.7333333333rem;
+    font-size: 0.3066666667rem;
+    line-height: 0.3066666667rem;
+    color: rgba(0, 0, 0, 0.34); }
+    .channel_happy .footer p {
+      text-align: center;
+      padding-bottom: 0.1733333333rem; }
+
+/*# sourceMappingURL=channel-happy.css.map */

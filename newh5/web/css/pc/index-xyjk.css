@@ -1,0 +1,161 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+img {
+  vertical-align: top;
+  border: 0; }
+
+h3, h4 {
+  font-size: inherit;
+  font-weight: normal; }
+
+a {
+  text-decoration: none; }
+
+/*公共类*/
+.pa {
+  position: absolute;
+  top: 390px;
+  left: 62px; }
+
+.br10 {
+  border-radius: 10px; }
+
+.br25 {
+  border-radius: 25px; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.fixed {
+  position: fixed; }
+
+.downbt {
+  display: block;
+  border: 1px solid #fff;
+  height: 50px;
+  width: 162px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  text-indent: 34px;
+  cursor: pointer; }
+
+.downbt span {
+  position: absolute;
+  height: 24px;
+  width: 20px;
+  left: 34px;
+  top: 13px; }
+
+.downbt span.icon-w {
+  display: block; }
+
+.downbt span.icon-h {
+  display: none; }
+
+.downbt:hover {
+  border-color: #20e2c4;
+  background-color: #fff;
+  color: #20e2c4; }
+
+.downbt:hover span.icon-w {
+  display: none; }
+
+.downbt:hover span.icon-h {
+  display: block; }
+
+.title-dline {
+  font-size: 40px;
+  color: #333; }
+
+.title-dline::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 144px;
+  border-radius: 2px; }
+
+.container {
+  min-width: 1170px; }
+
+.serviceTel {
+  right: 0;
+  top: 300px;
+  z-index: 999; }
+
+.banner {
+  background: url(../../image/xyjk/banner.png) no-repeat top center;
+  width: 100%; }
+  .banner .banner-in {
+    width: 1200px;
+    height: 622px;
+    position: relative;
+    margin: 0 auto; }
+    .banner .banner-in .android-down {
+      margin-top: 80px; }
+      .banner .banner-in .android-down span.icon-w {
+        background: url(../../image/xyjk/banner_icon_android.png) no-repeat center; }
+      .banner .banner-in .android-down span.icon-h {
+        background: url(../../image/xyjk/banner_icon_android_hover.png) no-repeat center; }
+    .banner .banner-in .ios-down span.icon-w {
+      background: url(../../image/xyjk/banner_icon_ios.png) no-repeat center;
+      background-size: 24px 24px; }
+    .banner .banner-in .ios-down span.icon-h {
+      background: url(../../image/xyjk/banner_icon_ios_hover.png) no-repeat center; }
+    .banner .banner-in .code {
+      margin-left: 280px;
+      margin-top: -40px; }
+
+.advantage {
+  width: 100%;
+  background-color: #fff; }
+  .advantage img {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    display: block; }
+
+.con1 {
+  width: 100%;
+  background-color: #fff; }
+  .con1 img {
+    margin: 0 auto;
+    display: block;
+    width: 1200px;
+    height: 564px; }
+
+.con2 {
+  width: 100%;
+  background-color: #fff; }
+  .con2 img {
+    margin: 0 auto;
+    display: block;
+    width: 1200px;
+    height: 566px; }
+
+.con3 {
+  width: 100%;
+  background-color: #fff; }
+  .con3 img {
+    margin: 0 auto;
+    display: block;
+    width: 1200px;
+    height: 562px; }
+
+.footer {
+  background-color: #454545;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 14px;
+  color: #fff; }
+  .footer a {
+    color: #fff; }
+
+/*# sourceMappingURL=index-xyjk.css.map */

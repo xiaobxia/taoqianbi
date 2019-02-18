@@ -1,0 +1,126 @@
+/* ----------------------------------------------------------------- Author:myron ----------------------------------------------------------------- */
+/* ----------Views indiana/index style start---------- */
+#indiana_wraper .line{
+	padding: .4em;
+	background: #F6F6F6;
+}
+#indiana_wraper .list{
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #F1F1F1;
+}
+#indiana_wraper ._left{
+	width: 20%;
+	margin-right: 5%;
+}
+#indiana_wraper ._right{
+	width: 75%;
+}
+#indiana_wraper .progress{
+	display: block;
+	width: 100%;
+	height: .5em;
+	background-color: #F6F6F6;
+}
+#indiana_wraper .progress_con{
+	display: block;
+	height: 100%;
+	background-color: #FD5353;
+}
+#indiana_wraper #btn_wraper{
+	/*background-color: #FFF;*/
+	display: inline-block;
+	bottom: 0;
+	width: 100%;
+	padding-top: .7em;
+	padding-bottom: .7em;
+}
+#btn_top_wraper{
+    /*background-color: #FFF;*/
+    display: inline-block;
+    top: 0;
+    width: 100%;
+    padding-top: .7em;
+    padding-bottom: .7em;
+}
+/* ----------Views indiana/index style end---------- */
+
+/* ----------Views indiana/shop-detail style start---------- */
+#shop_detail_wraper ._icon{
+	padding: 1em 0;
+	border-bottom: 1px solid #FDFDFD;
+}
+#shop_detail_wraper i{
+	font-style: normal;
+}
+#shop_detail_wraper ._shop_info{
+	padding: 1em 0;
+}
+#shop_detail_wraper .line{
+	border-bottom: 1px solid #F5F5F5;
+}
+#shop_detail_wraper ._strip{
+	padding: .3em;
+	background: #F6F6F6;
+}
+#shop_detail_wraper ._user_desc{
+	padding: .8em 0;
+	border-bottom: 1px solid #FBFBFB;
+}
+#shop_detail_wraper .underline,
+#shop_detail_wraper ._user_desc a{
+	text-decoration: underline;
+}
+#shop_detail_wraper #btn_wraper{
+	background-color: #FFF;
+	bottom: 0;
+	width: 100%;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+#shop_detail_wraper #btn_wraper .btn{
+	/*background: #FD5353;*/
+	height: 2.3em;
+	line-height: 2.3em;
+	margin: auto 6.25%;
+}
+#shop_detail_wraper .progress{
+	display: block;
+	width: 100%;
+	height: .5em;
+	background-color: #F6F6F6;
+}
+#shop_detail_wraper .progress_con{
+	display: block;
+	height: 100%;
+	background-color: #FD5353;
+}
+#shop_detail_wraper ._left{
+	display: inline-block;
+	width: 98%;
+}
+#shop_detail_wraper #recode_info{
+	overflow :auto;
+}
+#shop_detail_wraper #recode_header td,
+#shop_detail_wraper #recode_info td{
+	border-bottom: 1px solid #F5F5F5;
+}
+/* ----------Views indiana/shop-detail style end---------- */
+
+/* ----------Views indiana/cal-method style start---------- */
+#cal_method_wraper .line{
+	border-bottom: 1px solid #F4F4F4;
+}
+#cal_method_wraper ._strip{
+	padding: .3em;
+	background: #F6F6F6;
+}
+#cal_method_wraper .column{
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+#cal_method_wraper .underline{
+	text-decoration: underline;
+}
+/* ----------Views indiana/cal-method style end---------- */

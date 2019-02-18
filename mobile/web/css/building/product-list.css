@@ -1,0 +1,100 @@
+html,body{width: 100%;height: 100%;}
+.wrapper{
+    box-sizing:border-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #EBEBEB url(../../image/building/product.png?v=2016071301) no-repeat top center;
+    background-size: 100%;
+}
+.hr {
+    display: inline-block;
+    height:1px;
+    width: 100%;
+    background: #d8d8d8;
+}
+.con {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.4rem;
+}
+.con2 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+#blank{
+    box-sizing: border-box;
+    padding-top: 3.28rem;
+}
+.input-group {
+    box-sizing: border-box;
+    padding: 0.2rem 0.2rem;
+}
+.span_title{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../../image/building/icon2.png) no-repeat bottom center;
+    background-size: 0.35rem 0.35rem;
+}
+.icon{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../../image/building/icon1.png) no-repeat bottom center;
+    background-size: 0.35rem 0.35rem;
+}
+.check {
+    padding: 0.2rem;
+    background-color: white;
+    border: 1px solid white;
+}
+.check_border {
+    padding: 0.2rem;
+    background-color: white;
+    border: 1px solid red;
+}
+p a {
+    font-size: 0.4rem;
+    margin-left: 0.26667rem;
+   
+}
+.content {
+    width: 50% !important;
+    float: left;
+}
+.content label {
+    font-size: 0.4rem;
+    color:#999999;
+    display: inline-block;
+    width: 2.2rem;
+}
+.content.first-label label{
+    width: 1.4rem;
+}
+.content span {
+    font-size: 0.4rem;
+   
+}
+#btn{
+    display: block;
+    width: 100%;
+    height: 1.053333rem;
+    background-color: #fa5558;
+    border-radius: 0.106667rem;
+    font-size: 0.453333rem;
+    color: white;
+    font-weight: bold;
+}
+footer {
+    margin-top: 0.86667rem;
+    padding:0 0.4rem;
+}
+
+
+.pop-box{position: fixed;top: 0px;left: 0px;width: 100%;height: 100%;z-index: 9999;display: -webkit-box;display: box;-webkit-box-orient: horizontal;-webkit-box-pack: center;-webkit-box-align: center;background: rgba(0, 0, 0, 0.4);}
+.pop-box .pop-con{box-sizing:border-box;position: relative;padding: 0.4rem;width: 84%;background-color: #fff;border-radius:0.2rem;text-align: center;}
+.pop-box .pop-con p{padding: 1rem 0;font-size: 14px;}
+.pop-box button{display: block;width: 100%;height: 1.04rem;background: #FD5353;color: #fff;border:none;border-radius:0.12rem;font-size: 14px;}

@@ -1,0 +1,164 @@
+@charset "UTF-8";
+html, body, .container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+._radiu_20px {
+  border-radius: 0.2666666667rem; }
+
+.clear {
+  *zoom: 1; }
+
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+#stream {
+  width: 10rem;
+  height: 38.6666666667rem;
+  color: #fff;
+  position: relative;
+  background: url("../image/bannerBg.png") no-repeat center/cover;
+  /* input placeholder文字颜色 */ }
+  #stream input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #8d8d8d; }
+  #stream input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #8d8d8d; }
+  #stream input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #8d8d8d; }
+  #stream input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #8d8d8d; }
+  #stream .con {
+    width: 100%;
+    position: absolute;
+    top: 10.8266666667rem; }
+    #stream .con ._line {
+      color: #ffebb7;
+      padding: 0 0.5333333333rem; }
+      #stream .con ._line .line {
+        width: 1.8133333333rem;
+        height: 0.0133333333rem;
+        background: #ffebb7;
+        margin-top: 0.16rem; }
+      #stream .con ._line h3 {
+        padding: 0 0.5066666667rem;
+        font-size: 0.3733333333rem;
+        line-height: 0.3733333333rem; }
+    #stream .con .input-form {
+      padding-top: 0.8rem; }
+      #stream .con .input-form input {
+        display: block;
+        width: 8.56rem;
+        margin: 0 auto;
+        margin-bottom: 0.5333333333rem;
+        padding: 0.4533333333rem 0 0.4533333333rem 1.0666666667rem;
+        color: #000;
+        font-size: 15px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.7); }
+        [data-dpr="2"] #stream .con .input-form input {
+          font-size: 30px; }
+        [data-dpr="3"] #stream .con .input-form input {
+          font-size: 45px; }
+      #stream .con .input-form .btn {
+        width: 9.2rem;
+        height: 1.2rem;
+        background: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        margin: 0 auto;
+        color: #ff6457;
+        font-size: 18px; }
+        [data-dpr="2"] #stream .con .input-form .btn {
+          font-size: 36px; }
+        [data-dpr="3"] #stream .con .input-form .btn {
+          font-size: 54px; }
+      #stream .con .input-form .user-input {
+        position: relative; }
+        #stream .con .input-form .user-input .iconUser {
+          position: absolute;
+          left: 1.1333333333rem;
+          top: 0.4rem;
+          background: url("../image/iconUser.png") no-repeat center/cover;
+          width: 0.3066666667rem;
+          height: 0.5466666667rem; }
+        #stream .con .input-form .user-input .iconCancel {
+          display: none;
+          position: absolute;
+          top: 0.4933333333rem;
+          right: 1.2rem;
+          width: 0.48rem;
+          height: 0.48rem;
+          background: url("../image/cancel.png") no-repeat center/cover; }
+      #stream .con .input-form .code-input {
+        width: 9.2rem;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative; }
+        #stream .con .input-form .code-input .iconCode {
+          position: absolute;
+          left: 0.7333333333rem;
+          top: 0.5066666667rem;
+          background: url("../image/iconCode.png") no-repeat center/cover;
+          width: 0.3733333333rem;
+          height: 0.36rem; }
+        #stream .con .input-form .code-input .get_code {
+          width: 2.5333333333rem;
+          position: absolute;
+          top: 0.1066666667rem;
+          right: 0.48rem;
+          background-color: transparent;
+          font-size: 15px;
+          color: #ff4a40; }
+          [data-dpr="2"] #stream .con .input-form .code-input .get_code {
+            font-size: 30px; }
+          [data-dpr="3"] #stream .con .input-form .code-input .get_code {
+            font-size: 45px; }
+      #stream .con .input-form .submit {
+        width: 8.5733333333rem;
+        height: 1.32rem;
+        background: url("../image/button.png") no-repeat center/cover;
+        margin: 0 auto; }
+    #stream .con .about_welfare ._line {
+      margin: 0.9066666667rem 0 0.4266666667rem 0; }
+    #stream .con .about_welfare .line {
+      width: 3.2rem; }
+    #stream .con .about_welfare .welfareBg {
+      width: 8rem;
+      height: 8.8533333333rem;
+      margin: auto;
+      background: url("../image/about1.png") no-repeat center/cover; }
+    #stream .con .about_xybt ._line {
+      margin: 0.5066666667rem 0 0.44rem 0; }
+    #stream .con .about_xybt .line {
+      width: 2.8rem; }
+    #stream .con .about_xybt .xybtBg {
+      width: 8rem;
+      height: 7.7066666667rem;
+      margin: auto;
+      background: url("../image/about2.png") no-repeat center/cover; }
+    #stream .con .p_footer {
+      padding: 0.5333333333rem 0;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 12px; }
+      [data-dpr="2"] #stream .con .p_footer {
+        font-size: 24px; }
+      [data-dpr="3"] #stream .con .p_footer {
+        font-size: 36px; }
+
+/*# sourceMappingURL=stream.css.map */

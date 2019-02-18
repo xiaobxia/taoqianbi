@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <script src="js/flexible.js"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
+  </head>
+  <body>
+    <div class="extension">
+      <style>body{background:#f2f2f2;}</style>
+      <div>
+        <div class="tips">申请还款续期服务需要支付费用，请确认并支付!</div>
+        <ul class="common-list">
+          <li>
+            <label>借款金额</label>
+            <span><i>1000</i> 元 (当前信用可借最高额度)</span>
+          </li>
+          <li>
+            <label>借款期限</label>
+            <span>
+            <select>
+              <option value ="">7</option>
+              <option value ="">14</option>
+            </select>
+            天</span>
+          </li>
+          <li>
+            <label>实际到帐</label>
+            <span><i>900</i> 元</span>
+          </li>
+        </ul>        
+        <p>总服务费：<i>200元</i> <a href="">关于续期></a></p>
+        <a class="common-button" href="">马上支付</a>
+      </div>
+      
+      <div class="reulst" style="display:none">
+        <img alt="" src="img/img-1.png"/>
+        <p>申请展期还款成功，还款日展期至为2016年10月16日。届时请及时还款！</p>
+        <a class="common-button" href="">朕知道了</a>
+      </div>
+      <div style="display:none" class="reulst error">
+        <img alt="" src="img/img-3.png"/>
+        <p>很抱歉，您的展期还款申请未通过审核，请按时完成还款，以免产生逾期和不良信用记录！</p>
+        <a class="common-button" href="">朕知道了</a>
+      </div>
+      
+      <div class="info" style="display:none">
+        <p>1. 适用对象<br/>
+          适用于在到期还款日，因为资金不足而无法正常还款的用户。<br/>比如，小明的还款日是2016年11月11日，还款金额是1000.00元。但是当前可用活期资金为500.00元。此时小明可以申请展期服务。将还款期限延后几天。等资金充裕再完成还款。</p>
+        <p>2.相关费用<br/>
+          目前展期服务所收费用由三部分组成：服务费、操作费、逾期费。<br/>
+          服务费：即一笔借款延期一个借款周期的费用。即一个借款周期所需的费用；<br/>
+          操作费：申请展期服务所需的服务费用；<br/>
+          逾期费：即申请展期服务时该笔借款当前产生的逾期费用，申请展期服务的时候需要优先结算掉。<br/>
+        <p>3.展期次数<br/>
+          目前借款所允许的展期服务次数为3次。以平台最新官方公告为准。</p>
+      </div>
+    </div>
+  
+</html>

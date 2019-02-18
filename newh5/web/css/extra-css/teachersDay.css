@@ -1,0 +1,571 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+@font-face {
+  font-family: "myfont";
+  src: url("../../font/HKHBTW12.ttf"); }
+#teachersDay.index {
+  width: 10.0rem;
+  height: 21.466667rem;
+  margin: 0 auto;
+  background: url("../../image/activity/teachersDay/index/indexBg.png") no-repeat center center/cover;
+  position: relative; }
+  #teachersDay.index .answer {
+    position: absolute;
+    width: 5.04rem;
+    height: 1.466667rem;
+    font-size: 0.533333rem;
+    font-family: "myfont";
+    background: url("../../image/activity/teachersDay/index/anniu.png") no-repeat center center/5.04rem 1.46667rem;
+    line-height: 1.2rem;
+    text-align: center;
+    top: 13.333333rem;
+    left: 50%;
+    margin-left: -2.52rem;
+    color: #fff; }
+  #teachersDay.index .myPrize {
+    position: absolute;
+    font: 0.4rem "myfont";
+    top: 15.3rem;
+    color: #1f3b39;
+    text-decoration: underline;
+    left: 2.5rem; }
+  #teachersDay.index .rules {
+    position: absolute;
+    font: 0.4rem "myfont";
+    top: 15.3rem;
+    color: #1f3b39;
+    text-decoration: underline;
+    right: 2.5rem; }
+
+/* answer*/
+#teachersDay.t_answer .answer {
+  display: none;
+  width: 10.0rem;
+  padding-bottom: 1.8rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: #1f3b39 url("../../image/activity/teachersDay/answer/beijing1.png") no-repeat 0 0/contain; }
+  #teachersDay.t_answer .answer .question {
+    width: 2.413333rem;
+    height: 2.04rem;
+    background: url("../../image/activity/teachersDay/answer/kaishidati.png") no-repeat center center/cover;
+    position: absolute;
+    top: 0.7rem;
+    left: 50%;
+    margin-left: -1.02rem; }
+    #teachersDay.t_answer .answer .question .question_num {
+      width: 1.6rem;
+      height: 0.533333rem;
+      transform: rotate(-10deg);
+      font: 0.32rem "myfont";
+      margin: 1.293333rem auto 0;
+      text-align: center;
+      line-height: 0.533333rem;
+      padding-left: 0.32rem;
+      color: #1f3b39; }
+  #teachersDay.t_answer .answer .title {
+    text-align: center;
+    box-sizing: border-box;
+    margin: 3.2rem auto 0;
+    width: 8.08rem;
+    height: 2.213333rem;
+    font: 0.4rem "myfont";
+    color: #1f3b39;
+    background: url("../../image/activity/teachersDay/answer/dikuang12456.png") no-repeat center center/cover;
+    padding-top: 0.4rem;
+    position: relative; }
+    #teachersDay.t_answer .answer .title span {
+      display: block;
+      color: #FEB519;
+      margin-bottom: 0.133333rem; }
+    #teachersDay.t_answer .answer .title p {
+      padding: 0 0.48rem;
+      line-height: 0.56rem;
+      letter-spacing: 0.06rem; }
+    #teachersDay.t_answer .answer .title .light {
+      position: absolute;
+      top: -0.8rem;
+      left: 0.2rem;
+      width: 1.053333rem;
+      height: 1.013333rem;
+      background: url("../../image/activity/teachersDay/answer/dengpao.png") no-repeat center center/cover; }
+    #teachersDay.t_answer .answer .title .pencil {
+      width: 2.346667rem;
+      height: 2.453333rem;
+      background: url("../../image/activity/teachersDay/answer/bi.png") no-repeat center center/cover;
+      position: absolute;
+      bottom: -1.2rem;
+      right: -0.6rem; }
+  #teachersDay.t_answer .answer .choice {
+    padding-top: 0.933333rem; }
+    #teachersDay.t_answer .answer .choice ul li {
+      box-sizing: border-box;
+      width: 8.28rem;
+      height: 1.213333rem;
+      margin: 0 auto;
+      background: url("../../image/activity/teachersDay/answer/kuang1.png") no-repeat center center/cover;
+      font: 0.4rem "myfont";
+      line-height: 1.213333rem;
+      padding-left: 0.666667rem;
+      color: #f0ebd8;
+      position: relative;
+      margin-bottom: 0.32rem; }
+    #teachersDay.t_answer .answer .choice ul li:last-of-type:before {
+      position: absolute;
+      right: -0.6rem;
+      bottom: -0.426667rem;
+      width: 1.213333rem;
+      height: 0.826667rem;
+      content: "";
+      background: url("../../image/activity/teachersDay/answer/boshimao.png") no-repeat center center/cover; }
+    #teachersDay.t_answer .answer .choice ul .right {
+      background: url("../../image/activity/teachersDay/answer/right.png") no-repeat center center/cover; }
+    #teachersDay.t_answer .answer .choice ul .wrong {
+      background: url("../../image/activity/teachersDay/answer/wrong.png") no-repeat center center/cover; }
+  #teachersDay.t_answer .answer .desc {
+    display: none;
+    width: 8.133333rem;
+    margin: 0.4rem auto 0;
+    font-size: 0.373333rem;
+    color: #f0ebd8; }
+    #teachersDay.t_answer .answer .desc span {
+      color: #2fffdf; }
+    #teachersDay.t_answer .answer .desc p {
+      width: 100%; }
+  #teachersDay.t_answer .answer .next_question {
+    margin: 0.933333rem auto 0;
+    width: 4.253333rem;
+    height: 1.253333rem;
+    background: url("../../image/activity/teachersDay/answer/anniu.png") no-repeat center center/cover;
+    font: 0.48rem "myfont";
+    color: #1f3b39;
+    line-height: 1rem;
+    text-align: center; }
+  #teachersDay.t_answer .answer .title39 {
+    width: 8.12rem;
+    height: 3.706667rem;
+    background: url("../../image/activity/teachersDay/answer/dikuang39.png") no-repeat center center/cover; }
+    #teachersDay.t_answer .answer .title39 p {
+      text-align: left; }
+  #teachersDay.t_answer .answer .title7 {
+    width: 8.12rem;
+    height: 2.76rem;
+    background: url("../../image/activity/teachersDay/answer/dikuang7.png") no-repeat center center/cover; }
+    #teachersDay.t_answer .answer .title7 p {
+      text-align: center; }
+  #teachersDay.t_answer .answer .title8 {
+    width: 8.12rem;
+    height: 3.173333rem;
+    background: url("../../image/activity/teachersDay/answer/dikuang8.png") no-repeat center center/cover; }
+    #teachersDay.t_answer .answer .title8 p {
+      text-align: left; }
+  #teachersDay.t_answer .answer .title10 {
+    width: 8.12rem;
+    height: 4.626667rem;
+    background: url("../../image/activity/teachersDay/answer/dikuang10.png") no-repeat center center/cover; }
+    #teachersDay.t_answer .answer .title10 p {
+      text-align: left; }
+#teachersDay.t_answer .current {
+  display: block; }
+
+.pop1 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .pop1 .chuizi {
+    width: 8.266667rem;
+    height: 6.266667rem;
+    margin: 30% auto 0;
+    background: url("../../image/activity/teachersDay/answer/tanchuang1.png") no-repeat center center/cover; }
+  .pop1 .close {
+    width: 0.666667rem;
+    height: 1.706667rem;
+    margin: 0.4rem auto;
+    background: url("../../image/activity/teachersDay/answer/guanbi.png") no-repeat center center/cover; }
+
+.pop2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .pop2 .chuizi {
+    width: 8.266667rem;
+    height: 6.266667rem;
+    margin: 30% auto 0;
+    background: url("../../image/activity/teachersDay/answer/tanchuang2.png") no-repeat center center/cover; }
+  .pop2 .close {
+    width: 0.666667rem;
+    height: 1.706667rem;
+    margin: 0.4rem auto;
+    background: url("../../image/activity/teachersDay/answer/guanbi.png") no-repeat center center/cover; }
+
+/*teachers-egg*/
+.teachers-egg {
+  position: relative; }
+  .teachers-egg .silverBb {
+    position: absolute;
+    top: -0.4rem;
+    right: 1.3rem;
+    z-index: 9;
+    width: 2.506667rem;
+    height: 2.373333rem;
+    background: url("../../image/activity/teachersDay/egg/silverBb.png") no-repeat center center/cover; }
+  .teachers-egg .goldBb {
+    position: absolute;
+    top: -0.4rem;
+    left: 1.3rem;
+    z-index: 9;
+    width: 2.506667rem;
+    height: 2.373333rem;
+    background: url("../../image/activity/teachersDay/egg/goldBb.png") no-repeat center center/cover; }
+  .teachers-egg .silver {
+    width: 10rem;
+    height: 18.32rem;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url("../../image/activity/teachersDay/egg/silverBg.png") no-repeat center center/cover; }
+    .teachers-egg .silver .light1 {
+      width: 9.0rem;
+      height: 1.253333rem;
+      margin: 8.64rem auto 0;
+      background: url("../../image/activity/teachersDay/egg/light1.png") no-repeat center center/cover; }
+    .teachers-egg .silver .light2 {
+      width: 9.0rem;
+      height: 1.253333rem;
+      margin: 8.64rem auto 0;
+      background: url("../../image/activity/teachersDay/egg/light2.png") no-repeat center center/cover; }
+    .teachers-egg .silver .hammer_num {
+      color: #ab5e3c;
+      font-size: 0.533333rem;
+      position: absolute;
+      right: 0.25rem;
+      top: 2.453333rem; }
+    .teachers-egg .silver .egg1 {
+      width: 2.213333rem;
+      height: 2.853333rem;
+      position: absolute;
+      top: 4.533333rem;
+      left: 1.0rem;
+      background: url("../../image/activity/teachersDay/egg/silveregg.png") no-repeat center center/cover; }
+      .teachers-egg .silver .egg1 .broken {
+        display: none;
+        position: absolute;
+        top: 2.213333rem;
+        left: 0;
+        width: 2.213333rem;
+        height: 1.773333rem;
+        background: url("../../image/activity/teachersDay/egg/suisilver2.png") no-repeat center center/cover; }
+      .teachers-egg .silver .egg1 .liwu {
+        display: none;
+        width: 4.173333rem;
+        height: 4.32rem;
+        position: absolute;
+        top: -1.4rem;
+        left: -0.906667rem;
+        background: url("../../image/activity/teachersDay/egg/suisilver1.png") no-repeat center center/4.17333rem 4.32rem; }
+    .teachers-egg .silver .egg2 {
+      width: 2.213333rem;
+      height: 2.853333rem;
+      position: absolute;
+      top: 6rem;
+      left: 4.0rem;
+      z-index: 3;
+      background: url("../../image/activity/teachersDay/egg/silveregg.png") no-repeat center center/cover; }
+      .teachers-egg .silver .egg2 .broken {
+        display: none;
+        position: absolute;
+        top: 1.0rem;
+        left: 2.04rem;
+        z-index: 3;
+        width: 2.213333rem;
+        height: 1.773333rem;
+        background: url("../../image/activity/teachersDay/egg/suisilver2.png") no-repeat center center/cover; }
+      .teachers-egg .silver .egg2 .liwu {
+        display: none;
+        width: 4.173333rem;
+        height: 4.32rem;
+        position: absolute;
+        top: -1.4rem;
+        left: -0.906667rem;
+        background: url("../../image/activity/teachersDay/egg/suisilver1.png") no-repeat center center/4.17333rem 4.32rem; }
+    .teachers-egg .silver .egg3 {
+      width: 2.213333rem;
+      height: 2.853333rem;
+      position: absolute;
+      top: 4.533333rem;
+      right: 1.0rem;
+      background: url("../../image/activity/teachersDay/egg/silveregg.png") no-repeat center center/cover; }
+      .teachers-egg .silver .egg3 .broken {
+        display: none;
+        position: absolute;
+        top: 1.373333rem;
+        left: -2.213333rem;
+        width: 2.213333rem;
+        height: 1.773333rem;
+        z-index: 0;
+        background: url("../../image/activity/teachersDay/egg/suisilver2.png") no-repeat center center/cover; }
+      .teachers-egg .silver .egg3 .liwu {
+        display: none;
+        width: 4.173333rem;
+        height: 4.32rem;
+        position: absolute;
+        top: -1.4rem;
+        left: -0.906667rem;
+        background: url("../../image/activity/teachersDay/egg/suisilver1.png") no-repeat center center/4.17333rem 4.32rem; }
+    .teachers-egg .silver .introduction {
+      font-size: 0.373333rem;
+      color: #ffebb7;
+      text-align: center;
+      padding-top: 0.533333rem; }
+    .teachers-egg .silver .hammer {
+      position: absolute;
+      z-index: 19;
+      width: 2.013333rem;
+      height: 2.386667rem;
+      background: url("../../image/activity/teachersDay/egg/chuizi.png") no-repeat center center/cover;
+      animation: broken 1 0.5s;
+      -webkit-animation: broken 1 0.5s;
+      -ms-animation: broken 1 0.5s; }
+    .teachers-egg .silver #rollshowbox_s {
+      width: 87%;
+      margin: 0.4rem auto;
+      position: relative;
+      top: 3.426667rem;
+      padding: 0.32rem 0;
+      background-color: rgba(231, 182, 126, 0.2);
+      border-radius: 0.266667rem;
+      -webkit-border-radius: 0.266667rem;
+      padding-top: 0rem; }
+      .teachers-egg .silver #rollshowbox_s #rollshow_s {
+        overflow: hidden;
+        padding-left: 0;
+        height: 2.17rem; }
+        .teachers-egg .silver #rollshowbox_s #rollshow_s ul {
+          text-align: center; }
+        .teachers-egg .silver #rollshowbox_s #rollshow_s ul li {
+          padding: 0.186667rem 0;
+          font-size: 0.32rem;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          height: 0.35rem;
+          color: #fff; }
+  .teachers-egg .gold {
+    width: 10.0rem;
+    height: 21.453333rem;
+    margin: 0 auto;
+    overflow: hidden;
+    display: none;
+    background: url("../../image/activity/teachersDay/egg/goldBg.png") no-repeat center center/cover; }
+    .teachers-egg .gold .light1 {
+      width: 9.0rem;
+      height: 1.253333rem;
+      margin: 8.64rem auto 0;
+      background: url("../../image/activity/teachersDay/egg/light1.png") no-repeat center center/cover; }
+    .teachers-egg .gold .light2 {
+      width: 9.0rem;
+      height: 1.253333rem;
+      margin: 8.64rem auto 0;
+      background: url("../../image/activity/teachersDay/egg/light2.png") no-repeat center center/cover; }
+    .teachers-egg .gold .hammer_num {
+      color: #ab5e3c;
+      font-size: 0.533333rem;
+      position: absolute;
+      right: 0.25rem;
+      top: 2.453333rem; }
+    .teachers-egg .gold .egg1 {
+      width: 2.213333rem;
+      height: 2.853333rem;
+      position: absolute;
+      top: 4.533333rem;
+      left: 1.0rem;
+      background: url("../../image/activity/teachersDay/egg/goldegg.png") no-repeat center center/cover; }
+      .teachers-egg .gold .egg1 .broken {
+        display: none;
+        position: absolute;
+        top: 2.213333rem;
+        left: 0;
+        width: 2.213333rem;
+        height: 1.773333rem;
+        background: url("../../image/activity/teachersDay/egg/suigold2.png") no-repeat center center/cover; }
+      .teachers-egg .gold .egg1 .liwu {
+        display: none;
+        width: 4.173333rem;
+        height: 4.32rem;
+        position: absolute;
+        top: -1.4rem;
+        left: -0.906667rem;
+        background: url("../../image/activity/teachersDay/egg/suigold1.png") no-repeat center center/4.17333rem 4.32rem; }
+    .teachers-egg .gold .egg2 {
+      width: 2.213333rem;
+      height: 2.853333rem;
+      position: absolute;
+      top: 6rem;
+      left: 4.0rem;
+      z-index: 3;
+      background: url("../../image/activity/teachersDay/egg/goldegg.png") no-repeat center center/cover; }
+      .teachers-egg .gold .egg2 .broken {
+        display: none;
+        position: absolute;
+        top: 1.0rem;
+        left: 2.04rem;
+        z-index: 3;
+        width: 2.213333rem;
+        height: 1.773333rem;
+        background: url("../../image/activity/teachersDay/egg/suigold2.png") no-repeat center center/cover; }
+      .teachers-egg .gold .egg2 .liwu {
+        display: none;
+        width: 4.173333rem;
+        height: 4.32rem;
+        position: absolute;
+        top: -1.4rem;
+        left: -0.906667rem;
+        background: url("../../image/activity/teachersDay/egg/suigold1.png") no-repeat center center/4.17333rem 4.32rem; }
+    .teachers-egg .gold .egg3 {
+      width: 2.213333rem;
+      height: 2.853333rem;
+      position: absolute;
+      top: 4.533333rem;
+      right: 1.0rem;
+      background: url("../../image/activity/teachersDay/egg/goldegg.png") no-repeat center center/cover; }
+      .teachers-egg .gold .egg3 .broken {
+        display: none;
+        position: absolute;
+        top: 1.373333rem;
+        left: -2.213333rem;
+        width: 2.213333rem;
+        height: 1.773333rem;
+        z-index: 0;
+        background: url("../../image/activity/teachersDay/egg/suigold2.png") no-repeat center center/cover; }
+      .teachers-egg .gold .egg3 .liwu {
+        display: none;
+        width: 4.173333rem;
+        height: 4.32rem;
+        position: absolute;
+        top: -1.4rem;
+        left: -0.906667rem;
+        background: url("../../image/activity/teachersDay/egg/suigold1.png") no-repeat center center/4.17333rem 4.32rem; }
+    .teachers-egg .gold .introduction {
+      font-size: 0.373333rem;
+      color: #ffebb7;
+      text-align: center;
+      padding-top: 0.533333rem; }
+    .teachers-egg .gold .hammer {
+      position: absolute;
+      z-index: 19;
+      width: 2.013333rem;
+      height: 2.386667rem;
+      background: url("../../image/activity/teachersDay/egg/chuizi.png") no-repeat center center/cover;
+      animation: broken 1 0.5s;
+      -webkit-animation: broken 1 0.5s;
+      -ms-animation: broken 1 0.5s; }
+    .teachers-egg .gold #rollshowbox_g {
+      width: 87%;
+      margin: 3.55rem auto;
+      position: relative;
+      top: 3.426667rem;
+      padding: 0.32rem 0;
+      background-color: rgba(231, 182, 126, 0.2);
+      border-radius: 0.266667rem;
+      -webkit-border-radius: 0.266667rem;
+      padding-top: 0.05rem; }
+      .teachers-egg .gold #rollshowbox_g #rollshow_g {
+        overflow: hidden;
+        padding-left: 0;
+        height: 2.17rem; }
+        .teachers-egg .gold #rollshowbox_g #rollshow_g ul {
+          text-align: center; }
+        .teachers-egg .gold #rollshowbox_g #rollshow_g ul li {
+          padding: 0.186667rem 0;
+          font-size: 0.32rem;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          height: 0.35rem;
+          color: #fff; }
+
+@keyframes broken {
+  from {
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg); }
+  to {
+    transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg); } }
+/*teachers-egg*/
+/* rules */
+#teachersDay.rules {
+  font-family: "myfont";
+  font-weight: 100;
+  font-size: 0.346667rem;
+  position: relative;
+  width: 10.0rem;
+  height: 16.08rem;
+  margin: 0 auto;
+  background: url("../../image/activity/teachersDay/answer/rule.png") no-repeat center center/cover; }
+  #teachersDay.rules ul {
+    position: absolute;
+    top: 2.1rem;
+    left: 1.093333rem; }
+    #teachersDay.rules ul li {
+      width: 7.933333rem;
+      list-style: none;
+      font-size: 0.346667rem;
+      line-height: 0.48rem;
+      color: #1f3b39;
+      padding-bottom: 0.333333rem; }
+
+/* prize */
+#teachersDay.t_prize .prize {
+  font-family: "myfont";
+  font-weight: 100;
+  font-size: 0.346667rem;
+  position: relative;
+  width: 10.0rem;
+  height: 16.08rem;
+  margin: 0 auto;
+  background: url("../../image/activity/teachersDay/answer/prize.png") no-repeat center center/cover; }
+  #teachersDay.t_prize .prize .title {
+    font: 0.4rem "myfont";
+    color: #ffbc2c;
+    display: flex;
+    position: relative;
+    top: 3.733333rem; }
+    #teachersDay.t_prize .prize .title p {
+      text-align: center;
+      flex: 1; }
+  #teachersDay.t_prize .prize .prizes {
+    position: relative;
+    top: 4.2rem;
+    font: 0.32rem "myfont";
+    color: #fff;
+    height: 5.55rem;
+    overflow: hidden; }
+    #teachersDay.t_prize .prize .prizes ul {
+      height: 100%;
+      overflow-y: auto; }
+      #teachersDay.t_prize .prize .prizes ul li {
+        display: flex;
+        line-height: 0.76rem; }
+        #teachersDay.t_prize .prize .prizes ul li p {
+          text-align: center;
+          flex: 1; }
+      #teachersDay.t_prize .prize .prizes ul li p:nth-child(1) {
+        padding-left: 0.5rem; }
+      #teachersDay.t_prize .prize .prizes ul li p:nth-child(2) {
+        padding-right: 0.133333rem; }
+
+/*# sourceMappingURL=teachersDay.css.map */

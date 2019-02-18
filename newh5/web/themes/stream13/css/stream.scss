@@ -1,0 +1,173 @@
+@charset "UTF-8";
+@mixin font-dpr($font-size) {
+	font-size: $font-size;
+	[data-dpr="2"] & {
+		font-size: $font-size * 2;
+	}
+	[data-dpr="3"] & {
+		font-size: $font-size * 3;
+	}
+}
+@function rem($px){
+	@return $px / 75px * 1rem;
+}
+// 公用样式
+html,body,.container{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+._radiu_45px{
+	border-radius: rem(45px);
+}
+
+.clear{
+	*zoom:1;
+}
+.clear:after{
+	content:".";
+	display:block;
+	height:0;
+	overflow:hidden;
+	clear:both;
+	visibility:hidden;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
+
+// 落地页样式
+#stream{
+	width: rem(750px);
+	height: rem(3431px);
+	color: #fff;
+	position: relative;
+	background: url('../image/bannerBg1.png') no-repeat 0 0,
+	url('../image/bannerBg2.png') no-repeat 0 rem(1352px),
+	url('../image/bannerBg3.png') no-repeat 0 rem(2474px);
+	background-size: rem(750px) rem(1352px),rem(750px) rem(1122px),rem(750px) rem(957px);
+
+	/* input placeholder文字颜色 */
+	input::-webkit-input-placeholder { /* WebKit browsers */
+		color: rgba(253,192,255,0.7);
+	}
+	input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		color: rgba(253,192,255,0.7);
+	}
+	input::-moz-placeholder { /* Mozilla Firefox 19+ */
+		color: rgba(253,192,255,0.7);
+	}
+	input:-ms-input-placeholder { /* Internet Explorer 10+ */
+		color: rgba(253,192,255,0.7);
+	}
+	.con{
+		width: 100%;
+		position: absolute;
+		top: rem(872px);
+
+		// form表单样式
+		.input-form{
+			padding-top: rem(60px);
+			input{
+				display: block;
+				width: rem(670px);
+				margin: 0 auto;
+				padding: rem(26px) 0 rem(26px) rem(110px);
+				color: #f3b8ff;
+				line-height:rem(34px);
+				@include font-dpr(15px);
+				box-sizing: border-box;
+				background-color: rgba(255,255,255,0);
+				border: 2px solid #f3b8ff;
+			}
+			.btn{
+				width: rem(670px);
+				height: rem(90px);
+				line-height:rem(90px);
+				background: #f3b8ff;
+				text-align: center;
+				margin: 0 auto;
+				color: #9023bd;
+				@include font-dpr(16px);
+			}
+			.user-input{
+				position: relative;
+				margin: 0 auto;
+				width: rem(670px);
+				margin-bottom: rem(40px);
+				.iconUser{
+					position: absolute;
+					left: rem(38px);
+					top: rem(26px);
+					background: url('../image/iconUser.png') no-repeat center/cover;
+					width: rem(42px);
+					height: rem(41px);
+				}
+				.iconCancel{
+					display: none;
+					position: absolute;
+					top: rem(21px);
+					right: rem(40px);
+					width: rem(48px);
+					height:rem(48px);
+					background: url("../image/cancel.png") no-repeat center;
+					background-size: rem(24px) rem(24px);
+				}
+			}
+			.code-input{
+				width: rem(670px);
+				height: rem(92px);
+				margin: 0 auto;
+				overflow: hidden;
+				position: relative;
+				margin-bottom: rem(60px);
+				.iconCode{
+					position: absolute;
+					left: rem(45px);
+					top: rem(23px);
+					background: url('../image/iconCode.png') no-repeat center/cover;
+					width: rem(32px);
+					height: rem(46px);
+				}
+				._input_sp{
+					width: rem(402px);
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				.get_code{
+					width: rem(192px);
+					position: absolute;
+					top: 0;
+					right: 0;
+					background-color: #f3b8ff;
+					@include font-dpr(15px);
+					color: #9023bd;
+				}
+			}
+			.submit{
+				width: rem(670px);
+				height: rem(98px);
+				line-height: rem(98px);
+				background: #f3b8ff;
+				margin: 0 auto;
+				font-weight: 600;
+				@include font-dpr(18px);
+			}
+		}
+
+	}
+	// 尾部
+	.p_footer{
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		padding: rem(40px) 0;
+		text-align: center;
+		color: rgba(245, 192, 235, 1);
+		@include font-dpr(12px);
+	}
+}

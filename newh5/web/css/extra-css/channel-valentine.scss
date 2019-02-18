@@ -1,0 +1,173 @@
+@charset "UTF-8";
+@mixin font-dpr($font-size) {
+    font-size: $font-size;
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    }
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+}
+@function pxToem($px){
+    @return $px / 75px * 1rem;
+}
+// 公用样式
+html,body,.container{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    // max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+.fl {
+    float: left;
+}
+img {
+    display: block;
+}
+._radiu_16px{
+    border-radius: pxToem(16px);
+}
+._radiu_10px{
+    border-radius: pxToem(10px);
+}
+._radiu_20px{
+    border-radius: pxToem(20px);
+}
+.clear{
+    *zoom:1;
+} 
+.clear:after{
+    content:"."; 
+    display:block; 
+    height:0; 
+    overflow:hidden; 
+    clear:both; 
+    visibility:hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+}
+.hide {
+    display: none;
+}
+body {
+    display: block;
+}
+input:focus, button:focus {
+    outline: 0;
+}
+#mask {
+    cursor: pointer;
+}
+//落地页channel-valentine样式
+#channel-valentine.valentinebg{
+	width: 100%;
+    min-height: 100%;
+    position: relative;
+    .input-form{   
+        width: 94%;
+        position: absolute;
+        top: pxToem(728px);
+        left: 3%;
+        input{
+            display: block;
+            width: 94%;
+            padding: pxToem(24px) 3%;
+            color: #333;
+            background-color: rgba(0,0,0,0.12);
+            @include font-dpr(15px); 
+            margin: 0 auto;
+            margin-bottom: pxToem(24px);
+            height: pxToem(44px);
+        }
+        .btn{
+            width: 100%;
+            height: pxToem(88px);
+            line-height: pxToem(88px);
+            background: #1ebdbd;
+            text-align: center;
+            margin: 0 auto;
+            color: #fff;
+        }
+        .submit{
+             @include font-dpr(19px); 
+            font-weight: bold;
+        }
+        .code-input{
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            ._input_sp{
+                width: 56%;
+                float: left;
+            }
+            .get_code{
+                width: 34%;
+                float: right;
+                @include font-dpr(15px); 
+                color: #fff;
+            }
+        }
+    }
+     //关于极速荷包
+    .about{
+        width: 100%;
+        position: absolute;
+        top: pxToem(1125px);
+        left: 0;
+        .about_img{
+            height: pxToem(56px); 
+            margin: 0 auto;
+        }
+        .about_con{
+            width: 100%;
+            padding-top: pxToem(44px);
+            ul{
+                width: pxToem(626px);
+                margin: 0 auto;
+                li{
+                    float: left;
+                    width: pxToem(265px);
+                    img{
+                        width: pxToem(74px);
+                        height: pxToem(74px);
+                        padding-bottom: pxToem(24px);
+                        margin: 0 auto;
+                    }
+                    h3{
+                       @include font-dpr(16px);
+                       font-weight: bold;
+                       color: #333333; 
+                       text-align: center;
+                    }
+                    p{
+                        @include font-dpr(14px);
+                       color: #666666; 
+                       text-align: center;
+                    }
+                    padding-bottom: pxToem(44px);
+                }
+                li:nth-child(odd){
+                    padding-right: pxToem(96px);
+                }
+            }
+        }
+    }
+    // 尾部
+    .p_footer{
+        width: 100%;
+        position: absolute;
+        bottom: pxToem(15px);
+        left: 0;
+        padding: pxToem(20px) 0;
+        text-align: center;
+        color: #999999;
+        @include font-dpr(12px);
+        p{
+            text-align:center;
+        }
+    }
+}

@@ -1,0 +1,493 @@
+ol,
+ul {
+	list-style: none
+}
+img {
+	border: 0
+}
+input,
+button,
+textarea,
+select {
+	font-size: 100%
+}
+body,
+input,
+button,
+textarea,
+select,
+option {
+	font: 14px/1.5 'Microsoft Yahei', '\5FAE\8F6F\96C5\9ED1', Arial, 'Hiragino Sans GB', '\5B8B\4F53'
+}
+a,
+input,
+select,
+textarea {
+	text-decoration: none;
+	outline: 0
+}
+a,
+img {
+	-webkit-touch-callout: none
+}
+html,
+body {
+	-webkit-user-select: none;
+	user-select: none;
+	width: 100%
+}
+html {
+	-webkit-text-size-adjust: none;
+	word-wrap: break-word;
+	font-size: 20px;
+	-webkit-font-smoothing: antialiased;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	position: relative;
+	font-family: STHeiTi, sans-serif, "Helvetica Neue", Helvetica;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 480px;
+	height: 100%;
+	color: #000;
+	background-color: #FFF;
+	-webkit-user-select: none;
+	-webkit-text-size-adjust: none;
+}
+::-webkit-input-placeholder {
+	color: #bfbfbf;
+	height: 1.85rem;
+	line-height: 1.85rem;
+	font-size: 0.7rem;
+}
+:-moz-placeholder {
+	color: #bfbfbf;
+	height: 1.85rem;
+	line-height: 1.85rem;
+	font-size: 0.7rem;
+}
+::-moz-placeholder {
+	color: #bfbfbf;
+	height: 1.85rem;
+	line-height: 1.85rem;
+	font-size: 0.7rem;
+}
+:-ms-input-placeholder {
+	color: #bfbfbf;
+	height: 1.85rem;
+	line-height: 1.85rem;
+	font-size: 0.7rem;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto
+}
+.phoneNumber,
+.loginPwd,
+.loginNumber {
+	position: relative;
+	margin: 0 auto .512rem;
+	width: 82%
+}
+input {
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #aaa;
+	width: 100%;
+	height: 1.85rem;
+	line-height: 1.85rem
+}
+.loginNumber .errMsg {
+	right: 32%;
+}
+.logincount,
+.registerInfo {
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: .8rem;
+	color: #898989
+}
+.logincount span {
+	color: #fb3c3c
+}
+.registerInfo {
+	font-size: .65rem
+}
+.regsiterBtn a {
+	margin: 1rem auto .75rem;
+	display: block;
+	width: 82%;
+	height: 1.85rem;
+	line-height: 1.85rem;
+	background-color: #fb3c3c;
+	color: #FFF;
+	text-align: center;
+	font-size: .8rem;
+	font-weight: bold;
+	border-radius: 4px
+}
+#testnumber {
+	position: absolute;
+	display: block;
+	width: 30%;
+	height: 1.65rem;
+	line-height: 1.65rem;
+	text-align: center;
+	border-left: 1px solid #aaa;
+	color: #bfbfbf;
+	bottom: .2rem;
+	right: 0;
+	font-size: .7rem;
+	background: #FFF;
+}
+.overlay,
+.sharebg {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .71);
+	z-index: 98
+}
+.sharebg .tips{
+	position: absolute;
+	display: block;
+	top: 0.5rem;
+	right: 1rem;
+	width: 10.85rem;
+	height: 9.475rem;
+	z-index: 99;
+	background: url(../image/register/wx_download.png) no-repeat;
+	background-size: 10.85rem 9.475rem;
+}
+.pop {
+	display: none;
+	position: fixed;
+	padding: 1rem 0 .25rem;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	background-color: #FFF;
+	border-radius: 15px;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 99
+}
+.pop img {
+	display: block;
+	width: 60%;
+	height: auto;
+	margin: .8rem auto;
+}
+.pop h3 {
+	font-size: 1.05rem;
+	text-align: center
+}
+.pop h3+p {
+	margin-bottom: 1rem;
+	font-size: .6rem;
+	text-align: center;
+	color: #666666;
+}
+.pop_btn{
+	padding: 0 .5rem;
+}
+.pop_btn a {
+	display: block;
+	margin: 0 auto .7rem;
+	/*width: 80%;*/
+	height: 1.9rem;
+	line-height: 1.9rem;
+	color: #FFF;
+	text-align: center;
+	font-size: .75rem;
+	background-color: #fd5353;
+	border-radius: 4px;
+	font-weight: bold;
+}
+.pop_btn a:nth-child(2) {
+	margin-bottom: .95rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #FFF;
+	color: #fd5353;
+	border: 1px solid #fd5353
+}
+.pop_info {
+	border-top: 1px solid #c2c2c2;
+	padding: .8rem .5rem 1.8rem;
+	font-size: .55rem
+}
+.pop_close {
+	display: block;
+	position: absolute;
+	top: .7rem;
+	right: .7rem;
+	color: #9b9b9b
+}
+.errMsg {
+	position: absolute;
+	display: none;
+	top: 0;
+	right: 0;
+	height: 1.85rem;
+	line-height: 1.85rem;
+	z-index: 97;
+	color: red;
+	font-size: .5rem;
+}
+
+.list {
+	padding-bottom: 3rem;
+}
+.dialog {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	padding: 5%;
+	width: 80%;
+	background-color: #FFF;
+	border-radius: 15px;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 100;
+}
+.dialog img {
+	display: block;
+	width: 25%;
+	height: auto;
+	margin: 0 auto 5%;
+}
+.dialog p {
+	margin-bottom: 10%;
+	font-size: .7rem;
+	color: #666666;
+}
+.kdlc_mobile_wraper .exception_dialog_btn{
+	float: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	background-color: #fd5353;
+	color: #FFF;
+	height: 2rem;
+	text-align: center;
+	line-height: 2rem;
+	border-radius: 6px;
+	font-size: 0.75rem;
+	letter-spacing: .5rem;
+	font-weight: bold;
+}
+/*mediaquery*/
+
+@media only screen and (max-width: 310px) {
+	html {
+		font-size: 16.66666px;
+	}
+}
+@media only screen and (max-width: 320px) and (min-width: 310px) {
+	html {
+		font-size: 17.22222px;
+	}
+}
+@media only screen and (max-width: 350px) and (min-width: 320px) {
+	html {
+		font-size: 17.77777px;
+	}
+}
+@media only screen and (max-width: 360px) and (min-width: 350px) {
+	html {
+		font-size: 19.44444px;
+	}
+}
+@media only screen and (max-width: 400px) and (min-width: 360px) {
+	html {
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 470px) and (min-width: 400px) {
+	html {
+		font-size: 22.22222px;
+	}
+}
+@media only screen and (max-width: 480px) and (min-width: 470px) {
+	html {
+		font-size: 26.11112px;
+	}
+}
+@media only screen and (max-width: 540px) and (min-width: 480px) {
+	html {
+		font-size: 26.66666px;
+	}
+}
+@media only screen and (max-width: 560px) and (min-width: 540px) {
+	html {
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width: 570px) and (min-width: 560px) {
+	html {
+		font-size: 31.11112px;
+	}
+}
+@media only screen and (max-width: 630px) and (min-width: 570px) {
+	html {
+		font-size: 31.66666px;
+	}
+}
+@media only screen and (max-width: 640px) and (min-width: 630px) {
+	html {
+		font-size: 35px;
+	}
+	#testnumber {
+		font-size: .6rem;
+	}
+	::-webkit-input-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.6rem;
+	}
+	:-moz-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.6rem;
+	}
+	::-moz-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.6rem;
+	}
+	:-ms-input-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.6rem;
+	}
+}
+@media only screen and (max-width: 710px) and (min-width: 640px) {
+	html {
+		font-size: 35.55556px;
+	}
+	#testnumber {
+		font-size: .6rem;
+	}
+	::-webkit-input-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.6rem;
+	}
+	:-moz-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.6rem;
+	}
+	::-moz-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.6rem;
+	}
+	:-ms-input-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.6rem;
+	}
+}
+@media only screen and (max-width: 720px) and (min-width: 710px) {
+	html {
+		font-size: 39.44444px;
+	}
+	#testnumber {
+		font-size: .55rem;
+	}
+	::-webkit-input-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.55rem;
+	}
+	:-moz-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.55rem;
+	}
+	::-moz-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.55rem;
+	}
+	:-ms-input-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.55rem;
+	}
+}
+@media only screen and (min-width: 720px) {
+	html {
+		font-size: 40px;
+	}
+	.pop h3 {
+		font-size: .967rem;
+		text-align: center
+	}
+	#testnumber {
+		font-size: .55rem;
+	}
+	::-webkit-input-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.55rem;
+	}
+	:-moz-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.55rem;
+	}
+	::-moz-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.55rem;
+	}
+	:-ms-input-placeholder {
+		color: #bfbfbf;
+		height: 1.85rem;
+		line-height: 1.85rem;
+		font-size: 0.55rem;
+	}
+	.pop_btn a{
+		height: 1.5rem;
+		line-height: 1.5rem;
+	}
+	.bg img{
+		width: 8rem;
+	}
+	.pop,.dialog{
+		width: 40%;
+	}
+}

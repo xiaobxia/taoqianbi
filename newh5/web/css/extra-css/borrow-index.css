@@ -1,0 +1,277 @@
+body {margin:0; padding:0; font: "微软雅黑",\5FAE\8F6F\96C5\9ED1;}
+h3,h4,p{padding:0; margin:0;}
+img{vertical-align:top;border:0;}
+h3,h4{font-size:inherit; font-weight:normal;} 
+a {text-decoration: none;}
+/*公共类*/
+.pa {
+    position: absolute;
+    top: 380px;
+    left: 101px;
+}
+.br10 {
+    border-radius: 10px;
+}
+.downbt {
+    display: block;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 162px;
+    background-color: #EE2B7A;
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    text-indent: 34px;
+    cursor: pointer;
+}
+.downbt span {
+    position: absolute;
+    height: 24px;
+    width: 20px;
+    left: 34px;
+    top: 13px;
+}
+.downbt span.icon-w {
+    display: block;
+}
+.downbt span.icon-h {
+    display: none;
+}
+.downbt:hover {
+    border-color: #EE2B7A;
+    background-color: #fff;
+    color: #EE2B7A;
+}
+.downbt:hover span.icon-w {
+    display: none;
+}
+.downbt:hover span.icon-h {
+    display: block;
+}
+
+.title-dline {
+    font-size: 40px;
+    color: #333;
+}
+.title-dline::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 144px;
+    border-radius: 2px;
+}
+
+/* container */
+.container {
+    min-width: 1170px;
+}
+
+/*banner*/
+.top {
+    background-color: #fff;
+}
+.top .top_left{
+    background-color: #fff;
+}
+.top .top_right{
+    color: #333;
+}
+.banner {
+    background: #EE2B7A url(../../image/pc-site/borrow-index/banner.png) no-repeat top center;
+    width: 100%;
+}
+.banner .banner-in {
+    width: 1170px;
+    height: 624px;
+    position: relative;
+    left: 50%;
+    margin-left: -585px;
+}
+.banner .banner-in .android-down {
+    margin-top: 90px;
+}
+.banner .banner-in .android-down span.icon-w {
+    background: url(../../image/pc-site/borrow-index/banner_icon_android.png) no-repeat center;
+}
+.banner .banner-in .android-down span.icon-h {
+    background: url(../../image/pc-site/borrow-index/banner_icon_android_hover.png) no-repeat center;
+}
+.banner .banner-in .ios-down span.icon-w {
+    background: url(../../image/pc-site/borrow-index/banner_icon_ios.png) no-repeat center;
+    background-size: 20px 24px;
+}
+.banner .banner-in .ios-down span.icon-h {
+    background: url(../../image/pc-site/borrow-index/banner_icon_ios_hover.png) no-repeat center;
+}
+.banner .banner-in .code {
+    margin-left: 216px; 
+    margin-top: -25px;
+}
+
+/*con1*/
+.con1 {
+    width: 100%;
+    background-color: #fff;
+    padding: 74px 0 120px;
+}
+.con1 .con1-title {
+    text-align: center;
+}
+.con1 .con1-title:after {
+    margin: 11px auto 0;
+    background-color: #EE2B7A; 
+} 
+.con1 .con1-text {
+    padding: 96px 0 220px;
+    width: 1170px;
+    margin: 0 auto;
+}
+.con1 .con1-text .flc {
+    /*width: 390px;*/
+    float: left;
+    text-align: center;
+}
+.con1-text .flc .con-icon {
+    margin-bottom: 14px;
+    width: 96px;
+    margin: 0 auto;
+}
+.con1-text .flc .con-icon span {
+    display: block;
+    width: 62px;
+    height: 58px;
+    background-position: center;
+    transition: all 1s;
+    margin: 0 auto;
+}
+.con1-text .flc .con-icon i {
+    display: block;
+    height: 14px;
+    width: 58px;
+    background: url(../../image/pc-site/borrow-index/content_icon01_ty.png) no-repeat center; 
+    border-radius: 2px;
+    margin: 10px auto;
+}
+.con1-text .flc:hover .con-icon span {
+    animation: tada 1s;
+}
+@keyframes tada{
+    0%{transform:rotate(0);}
+    10%, 20%{transform:rotate(-5deg);}
+    30%, 50%, 70%, 90%{transform:rotate(5deg);}
+    40%, 60%, 80%{transform:rotate(-5deg);}
+    100%{transform:rotate(0);}
+}
+.con1-text .fast {
+    width: 282px;
+    margin-right: 150px;
+}
+.con1-text .fast span {
+    background: url(../../image/pc-site/borrow-index/content_icon01.png) no-repeat center;
+}
+.con1-text .convenience {
+    width: 270px;
+    margin-right: 150px;
+}
+.con1-text .convenience span {
+    background: url(../../image/pc-site/borrow-index/content_icon02.png) no-repeat center;
+}
+.con1-text .flexible {
+    width: 305px;
+    
+}
+.con1-text .flexible span {
+    background: url(../../image/pc-site/borrow-index/content_icon03.png) no-repeat center;
+}
+
+.con1-text .flc h4 {
+    font-size: 20px;
+    color: #333;
+    line-height: 40px;
+}
+.con1-text .flc p {
+    font-size: 14px;
+    color: #666;
+}
+
+.con2 {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.con2 .con2-in {
+    height: 494px;
+}
+.con2 .con2-in .con2-left {
+    float: left;
+    background: url(../../image/pc-site/borrow-index/content_img_01.png) no-repeat center;
+    width: 398px;
+    height: 424px;
+}
+.con2 .con2-in .con2-right {
+    float: right;
+}
+.con2-right .text-gra:after {
+    content: "500~10000元";
+    color: #FD31FF;
+}
+.con3 .con3-in {
+    height: 504px;
+}
+.con3-left .text-gra:after {
+    content: "快至3分钟";
+    color: #FD31FF;
+}
+.text-gra {
+    position: relative;
+    font-size: 24px;
+    line-height: 48px;
+    margin-top: 26px;
+}
+.text-gra span {
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    z-index: 2;
+    color: #7735E9;
+    -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    -moz-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+}
+.text {
+    font-size: 16px;
+    font-family: "宋体";
+    color: #333;
+}
+ .con3 {
+     width: 100%;
+     background-color: #fff;
+ }
+ .con-common {
+    width: 990px;
+    margin: 0 auto;
+}
+.con3-in .con3-left {
+    float: left;
+}
+.con3 .con3-in .con3-right {
+    float: right;
+    background: url(../../image/pc-site/borrow-index/content_img_02.png) no-repeat center;
+    width: 340px;
+    height: 434px;
+}
+.con-img {
+    margin-top: 70px;
+    
+}
+.con-text h3 {
+    margin-top: 170px;
+}
+.con-text h3:after {
+    margin-top: 14px;
+    background-color: #DBDBDB; 
+}
+
+/* 尾部 */
+#bottom,#bottom .bottom{
+    background-color: #EE2B7A;
+}

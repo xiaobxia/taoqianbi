@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="format-detection" content="telephone=no">
+    <title>还款方式选择</title>
+    <script src="js/flexible.js"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    <!-- <link href="css/theme-orange.css" rel="stylesheet"/> -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
+    <script src="js/spin.js"></script>
+  </head>
+  <body>
+    <div class="choose" style="display:none">
+      <div class="head">
+        <h3>请选择还款方式</h3>
+      </div>
+      <ul>
+        <li> <a href=""> <h2>银行代扣</h2> <span>招商银行(0233)</span> <i></i> </a> </li>
+        <li> <a href=""> <h2>支付定转账</h2> <i></i> </a> </li>
+        <li> <a href=""> <h2>个人转账</h2> <i></i> </a> </li>
+      </ul>
+      <p>备注：若在借款期间内未主动发起借款，则默认于还款日当天从绑定银行卡（招商银行0268）自动扣除所借款项，请保证在扣款之前帐户资金充足。k</p>
+    </div>
+    
+    <div class="popup" style="display:none">
+      <div class="overlay"></div>
+      <div class="dialog pay">
+        <span class="close"></span>  
+        <h2>请输入交易密码</h2>
+        <p class="clearfix">
+          <i></i> <i></i> <i></i> <i></i> <i></i> <i></i>
+        </p>
+        <input autofocus name="" type="number" value="" pattern="\d*"/>
+        <p class="error-tips">密码错误</p>
+        <a href="">忘记密码?</a>
+      </div>
+    </div>
+    
+    <div class="popup" id="defray" style="display:none">
+      <div class="overlay"></div>
+      <div class="dialog">
+        <span class="close"></span>  
+        <h2>还款总额</h2>
+        <h1>1060.00元</h1>
+        <p class="clearfix">
+          <i></i> <i></i> <i></i> <i></i> <i></i> <i></i>
+        </p>
+        <p class="error-tips">密码错误</p>
+        <input name="" type="number" value="" pattern="\d*"/>
+        <a href="">忘记密码?</a>
+      </div>
+    </div>
+
+    <div class="popup" style="display:none">
+      <div class="overlay"></div>
+      <div class="error">
+        <img alt="" src="img/icon-error.png"/>
+        <h2>密码错误，请重新输入</h2>
+        <p>
+          <a href="">重试</a>
+          <a href="">找回密码</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="popup" style="display:none">
+      <div class="overlay"></div>
+      <div class="error alert">
+        <h2>密码错误，请重新输入</h2>
+        <p>
+          <a href="">确定</a>
+          <a href="">取消</a>
+        </p>
+      </div>
+    </div>
+    
+    <script>
+      $(function(){
+        var interval = null;
+        $('#defray .close').click(function(event){
+            $('#defray').hide();
+        })
+          
+        $('#defray p').click(function(event){
+            $('#defray input').focus();
+        })
+        $('#defray input').focus(function(){
+            var interval = setInterval(function(){
+              if(document.activeElement.nodeName == 'INPUT'){
+                 console.log('input')
+                 $('#defray .dialog').css({top:0,marginTop:0});
+              }else{
+                 $('#defray .dialog').attr('style','')
+                 if (interval) {
+                   clearInterval(interval);
+                   interval = null;
+                 }
+              }
+            },500)
+        });
+        $('#defray input').bind('input',function(event){
+          var val = $(this).val();
+          $('#defray i').removeClass('point');
+          for(var i = 0; i < val.length; i++){
+              $('#defray i').eq(i).addClass('point')
+          }
+          if (val.length >= 6){
+            $(this).val(val.slice(0,6));
+            console.log(val.slice(0,6))
+          }
+        })
+      })
+    </script>
+    
+    <div class="pay-result" style="display:none">
+      <div class="head"></div>
+      <p>请将支付金额转入到支付宝账户中并<i>标明备注</i>。</p>
+      <h1>支付宝账号：ygd@staff.kdqugou.com</h1>
+      <h1>备注：您的姓名+注册手机号</h1>
+      <a href="" class="button">点击复制账号</a>
+    </div>
+    
+    <div class="pay-result" style="display:none">
+      <div class="head"></div>
+      <p>请将支付金额转入到支付宝账户中并<i>标明备注</i>。</p>
+      <h1>收 款 人：黄铭</h1>
+      <h1>收 款 行：中国银行上海市创智天地科技园支行</h1>
+      <h1>银行卡号：6216 6108 0000 8133 523</h1>
+      <h1>备注：您的姓名+注册手机号</h1>
+      <a href="" class="button">点击复制账号</a>
+    </div>
+
+    <div class="phone-verify" >
+      <ul>
+        <li><input name="" type="tel" value="" placeholder="请输入短信查询码" /></li>
+        <li class="tel">13917884931</li>
+        <li>
+          <input class="verify" name="" type="tel" value="" placeholder="请输入短信校验码" />
+          <a class="send" href="">重新发送</a>
+          <a href="">忘记密码？</a>
+        </li>
+      </ul>
+      <p class="error">输入不正确</p>
+      <p class="tips">温馨提示： <br/>1. 请输入正确的运营商（移动、联通、电信）服务密码，如若忘记可通过拨打运营上服务电话或者登录网上营业厅找回密码； <br/>2.运营商认证需要2~3分钟，请耐心等待；</p>
+      <a class="button" href="">确认</a>
+      <p id="bank-verify-note">银行级数据加密防护</p>
+    </div>
+    <div class="popup" id="loading">
+       <div class="overlay">
+         <p class="tips-msg">运营商认证需要2~3分钟…</p>
+       </div> 
+       <div class="spin" id="preview">
+       </div>     
+    </div>
+    <script>
+      (function(){
+        var dpr = lib.flexible.dpr;
+        new Spinner({color:'#fff',width:3*dpr,radius:11*dpr,length:8*dpr}).spin(document.getElementById('preview'));
+        document.getElementById('loading').style.display='none'
+      }())
+    </script>
+  </body>
+</html>

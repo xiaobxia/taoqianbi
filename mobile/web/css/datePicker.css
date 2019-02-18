@@ -1,0 +1,108 @@
+#datePlugin {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1111111;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#datePlugin * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-clip: padding-box;
+}
+#datePlugin .d-date-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+  background-color: #fff;
+  border-radius: 6px;
+  width: 90%;
+}
+#datePlugin .d-date-title {
+  text-align: center;
+  font-size: 18px;
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  background-color: #FD5353;
+  border-radius: 6px 6px 0 0;
+}
+#datePlugin .d-date-info {
+  display: none;
+}
+#datePlugin .d-date-wrap {
+  margin: 0.15rem auto;
+  width: 90%;
+  height: 180px;
+  position: relative;
+  border: 1px solid #dddddd;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#datePlugin .d-date-wrap .op{
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background: url(../image/insurance/op.png) no-repeat;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#datePlugin .d-date-wrap .op2{
+  top: auto;
+  bottom: 0;
+}
+#datePlugin .d-time-wrap {
+  border-top: 1px solid #f70;
+}
+#datePlugin .d-time-wrap .d-date-cell {
+  width: 50%;
+}
+#datePlugin .d-date-mark {
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+}
+#datePlugin .d-date-cell {
+  float: left;
+  width: 33.33333%;
+  height: 100%;
+  overflow: hidden;
+}
+#datePlugin .d-date-cell li {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+#datePlugin .d-date-btns{
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+#datePlugin .d-date-btns .d-btn {
+  background: #fd5353;
+  display: inline-block;
+  width: 49%;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 6px;
+  margin-right: 2%;
+}
+#datePlugin .d-date-btns #d-cancleBtn {
+  background: #b5b5b5;
+  margin-right: 0;
+}

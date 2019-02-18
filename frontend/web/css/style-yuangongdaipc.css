@@ -1,0 +1,449 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block; }
+
+/* Handle box-sizing while better addressing child elements:
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Responsive images and other embedded objects */
+/* if you don't have full control over `img` tags (if you have to overcome attributes), consider adding height: auto */
+img,
+object,
+embed {
+  max-width: 100%; }
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+In fact, it *will* cause problems with Google Maps' controls at small size.
+If this is the case for you, try uncommenting the following:
+#map img {
+max-width: none;
+}
+*/
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll; }
+
+/* we use a lot of ULs that aren't bulleted.
+you'll have to restore the bullets within content,
+which is fine because they're probably customized anyway */
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+select, input, textarea {
+  font: 99% sans-serif; }
+
+table {
+  font-size: inherit;
+  font: 100%; }
+
+small {
+  font-size: 85%; }
+
+strong {
+  font-weight: bold; }
+
+td, td img {
+  vertical-align: top; }
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0; }
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible; }
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/* let's clear some floats */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+* {
+  font-family: Helvetica, "Microsoft YaHei"; }
+
+body {
+  color: #333; }
+
+.header {
+  padding: 20px 0; }
+  .header > div {
+    position: relative; }
+  .header .logo {
+    float: left; }
+    .header .logo img {
+      display: block;
+      float: left; }
+    .header .logo div {
+      text-align: center;
+      padding-left: 90px; }
+      .header .logo div h1 {
+        font-size: 40px; }
+      .header .logo div p {
+        font-size: 18px; }
+  .header ul {
+    float: right;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    .header ul li {
+      float: left;
+      padding-left: 20px; }
+      .header ul li a {
+        color: #333;
+        text-decoration: none; }
+    .header ul li.current a {
+      color: #6eccfb; }
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto; }
+
+.banar {
+  height: 580px;
+  background: #06bafa url(../img/bar-1.jpg) 50% 0 no-repeat;
+  background-size: 1920px 580px; }
+  .banar img {
+    margin-top: 90px; }
+  .banar .wrap {
+    position: relative; }
+  .banar a {
+    display: block;
+    width: 265px;
+    height: 75px;
+    position: absolute;
+    left: 440px; }
+  .banar a.ios {
+    top: 290px; }
+  .banar a.android {
+    top: 394px; }
+
+div .wrap {
+  font-size: 26px; }
+  div .wrap h1 {
+    font-size: 38px;
+    font-weight: bold; }
+
+.content-1 ul {
+  padding: 40px 0;
+  color: #604416; }
+  .content-1 ul li {
+    font-size: 22px;
+    float: left;
+    width: 250px;
+    text-align: center; }
+
+.content-2 {
+  background: #ffe28f;
+  color: #5d4603; }
+  .content-2 div.wrap {
+    padding: 100px 30px;
+    position: relative; }
+    .content-2 div.wrap div {
+      position: absolute;
+      left: 588px;
+      top: 130px; }
+    .content-2 div.wrap:after {
+      content: '';
+      display: block;
+      width: 44px;
+      height: 44px;
+      background: url(../img/icon-5.png) 0 0 no-repeat;
+      background-size: 44px 44px;
+      position: absolute;
+      left: 50%;
+      bottom: -22px; }
+
+.content-3 {
+  background: #ffdede; }
+  .content-3 div.wrap {
+    position: relative; }
+    .content-3 div.wrap:after {
+      content: '';
+      display: block;
+      width: 44px;
+      height: 44px;
+      background: url(../img/icon-6.png) 0 0 no-repeat;
+      background-size: 44px 44px;
+      position: absolute;
+      left: 50%;
+      bottom: -22px; }
+    .content-3 div.wrap img {
+      display: block;
+      padding: 36px 0 75px;
+      margin-left: 588px; }
+    .content-3 div.wrap div {
+      position: absolute;
+      left: 36px;
+      top: 126px; }
+      .content-3 div.wrap div h1 {
+        color: #6e0d0d; }
+      .content-3 div.wrap div p {
+        color: #5d4603; }
+
+.content-4 {
+  background: #f2f2f2; }
+  .content-4 div.wrap {
+    position: relative; }
+    .content-4 div.wrap:after {
+      content: '';
+      display: block;
+      width: 44px;
+      height: 44px;
+      background: url(../img/icon-7.png) 0 0 no-repeat;
+      background-size: 44px 44px;
+      position: absolute;
+      left: 50%;
+      bottom: -22px; }
+    .content-4 div.wrap img {
+      display: block;
+      padding: 94px 0 72px; }
+    .content-4 div.wrap div {
+      position: absolute;
+      left: 588px;
+      top: 135px; }
+      .content-4 div.wrap div h1, .content-4 div.wrap div p {
+        color: #333333; }
+
+.content-5 {
+  background: #c1eeba; }
+  .content-5 div.wrap {
+    position: relative; }
+    .content-5 div.wrap img {
+      display: block;
+      padding: 78px 0 103px 588px; }
+    .content-5 div.wrap div {
+      position: absolute;
+      left: 36px;
+      top: 137px; }
+      .content-5 div.wrap div h1, .content-5 div.wrap div p {
+        color: #115007; }
+
+.liOne {
+  box-sizing: content-box;
+  float: left;
+  background: url(../img/icon-5.png) 0 50% no-repeat;
+  padding-left: 70px;
+  margin-right: 50px;
+  padding-right: 51px;
+  border-right: 1px solid #999; }
+
+.liTwo {
+  box-sizing: content-box;
+  float: left;
+  background: url(../img/icon-9.png) 0 50% no-repeat;
+  position: relative;
+  padding-left: 70px;
+  margin-right: 50px;
+  padding-right: 51px;
+  border-right: 1px solid #999; }
+
+.liTwo:before {
+  content: '';
+  display: none;
+  width: 236px;
+  height: 254px;
+  position: absolute;
+  left: -87px;
+  top: -260px;
+  background: url(../img/icon-8.png) 0 0 no-repeat; }
+
+.liTwo:hover {
+  background-image: url(../img/icon-6.png); }
+  .liTwo:hover:before {
+    display: block; }
+
+.liThree {
+  box-sizing: content-box;
+  float: left;
+  background: url(../img/icon-10.png) 0 50% no-repeat;
+  height: 57px;
+  line-height: 57px;
+  padding-left: 70px;
+  padding-right: 0;
+  margin-right: 0;
+  border-right: none; }
+
+.footer {
+  background: #232328; }
+  .footer div {
+    padding-bottom: 50px;
+    background: #232328;
+    position: relative; }
+  .footer ul {
+    padding: 60px 0; }
+    .footer ul li h1 {
+      font-size: 30px;
+      color: #bcbcbd;
+      font-weight: normal; }
+  .footer p {
+    font-size: 14px;
+    line-height: 1.8em;
+    color: #999; }
+  .footer a {
+    position: absolute;
+    left: 650px;
+    bottom: 60px; }
+
+.about {
+  background: #f2f2f2; }
+  .about .header {
+    background: #fff;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#999999, direction=180, strength=5);
+    -webkit-box-shadow: 0 3px 10px #999999;
+    -moz-box-shadow: 0 3px 10px #999999;
+    box-shadow: 0 3px 10px #999999; }
+  .about .section {
+    padding-top: 30px; }
+  .about .nav {
+    float: left;
+    border-left: 10px solid #61cae4; }
+    .about .nav h1 {
+      font-size: 18px;
+      padding: 10px 40px;
+      background: #fff;
+      border: 1px solid #dddddd; }
+  .about .section .content {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 48px 48px 100px;
+    margin-bottom: 120px;
+    margin-left: 200px;
+    font-size: 20px; }
+    .about .section .content img {
+      display: block; }
+    .about .section .content h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 35px; }
+    .about .section .content h2.no-margin {
+      margin-top: 0; }
+    .about .section .content p {
+      font-size: 14px;
+      line-height: 1.5em; }
+    .about .section .content i {
+      color: #61cae4;
+      font-style: normal; }

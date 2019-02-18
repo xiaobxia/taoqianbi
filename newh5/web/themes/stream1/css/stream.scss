@@ -1,0 +1,116 @@
+body,html,.layout{
+	width: 100%;
+}
+._radiu_10px{
+	border-radius: 0.133333rem;
+	-webkit-border-radius: 0.133333rem;
+}
+#new_channel_reg_one{
+	img{
+		width: 100%
+	}
+	ul{
+		clear:both;
+		overflow:hidden;
+		li{
+			float: left;
+			width:33.33%;
+			height:2.32rem;
+			p{
+				text-align:center;
+				span{
+					display:block;
+				}
+				span:nth-child(1){
+					font-size: 0.426667rem;
+					color:#333;
+				}
+				span:nth-child(2){
+					font-size: 0.32rem;
+					color:#bbb;
+					margin-top:-0.133333rem;
+				}
+			}
+		}
+		.zhouqi{
+			i{
+				display:block;
+				width: 1.066667rem;
+				height: 1.146667rem;
+				margin:0 auto;
+				background: url("../../image/new-channel-reg-one/zhouqi.png") no-repeat center center/cover;
+			}
+		}
+		.linghuo{
+			i{
+				display: block;
+				width: 1.066667rem;
+				height: 1.066667rem;
+				margin:0 auto;
+				background: url("../../image/new-channel-reg-one/linghuo.png") no-repeat center center/cover;
+			}
+		}
+		.fangkuan{
+			i{
+				display:block;
+				width: 0.76rem;
+				height: 1.146667rem;
+				margin:0 auto;
+				background: url("../../image/new-channel-reg-one/fangkuankuai.png") no-repeat center center/cover;
+			}
+		}
+	}
+	.input-form{
+		width: 90%;
+		margin: 0 auto ;
+		background-color: #f2f3f7;
+		.title{
+			text-align:center;
+			height: 1.173333rem;
+			line-height: 1.173333rem;
+			font-size: 0.373333rem;
+			color:#81858e;
+		}
+		.form-box{
+			padding:0 5% 5%;
+			input{
+				width: 90%;
+				font-size: 0.373333rem;
+				background-color: #fff;
+				padding: 5%;
+				background-color: #f2f3f7;
+				border: 1px solid #ccc;
+			}
+			.input-code{
+				margin: 0.4rem 0;
+				input{
+					width: 45%;
+				}
+				.get-code{
+					float: right;
+					width: 40%;
+					color: #fff;
+					font-size: 0.373333rem;
+					text-align: center;
+					padding: 4.4% 0;
+					background-color: #27b2db;
+				}	
+			}
+			#autoRegister{
+					text-align: center;
+					padding: 4.4% 0;
+					background-color: #fc5b03;
+					font-size: 0.373333rem;
+					color:#fff;
+				}
+		}
+	}
+	.footer{
+		font-size: 0.32rem;
+		text-align: center;
+		margin-top: 0.666667rem;
+		background-color: #104a72;
+		color:#fff;
+		padding:0.16rem 0;
+	}
+}

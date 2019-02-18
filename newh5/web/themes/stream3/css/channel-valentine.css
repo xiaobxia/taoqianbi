@@ -1,0 +1,162 @@
+html, body, .container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.fl {
+  float: left; }
+
+img {
+  display: block; }
+
+._radiu_16px {
+  border-radius: 0.2133333333rem; }
+
+._radiu_10px {
+  border-radius: 0.1333333333rem; }
+
+._radiu_20px {
+  border-radius: 0.2666666667rem; }
+
+.clear {
+  *zoom: 1; }
+
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+.hide {
+  display: none; }
+
+body {
+  display: block; }
+
+input:focus, button:focus {
+  outline: 0; }
+
+#mask {
+  cursor: pointer; }
+
+#channel-valentine.valentinebg {
+  width: 100%;
+  min-height: 100%;
+  position: relative; }
+  #channel-valentine.valentinebg .input-form {
+    width: 94%;
+    position: absolute;
+    top: 9.7066666667rem;
+    left: 3%; }
+    #channel-valentine.valentinebg .input-form input {
+      display: block;
+      width: 94%;
+      padding: 0.32rem 3%;
+      color: #333;
+      background-color: rgba(0, 0, 0, 0.12);
+      font-size: 15px;
+      margin: 0 auto;
+      margin-bottom: 0.32rem;
+      height: 0.5866666667rem; }
+      [data-dpr="2"] #channel-valentine.valentinebg .input-form input {
+        font-size: 30px; }
+      [data-dpr="3"] #channel-valentine.valentinebg .input-form input {
+        font-size: 45px; }
+    #channel-valentine.valentinebg .input-form .btn {
+      width: 100%;
+      height: 1.1733333333rem;
+      line-height: 1.1733333333rem;
+      background: #1ebdbd;
+      text-align: center;
+      margin: 0 auto;
+      color: #fff; }
+    #channel-valentine.valentinebg .input-form .submit {
+      font-size: 19px;
+      font-weight: bold; }
+      [data-dpr="2"] #channel-valentine.valentinebg .input-form .submit {
+        font-size: 38px; }
+      [data-dpr="3"] #channel-valentine.valentinebg .input-form .submit {
+        font-size: 57px; }
+    #channel-valentine.valentinebg .input-form .code-input {
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden; }
+      #channel-valentine.valentinebg .input-form .code-input ._input_sp {
+        width: 56%;
+        float: left; }
+      #channel-valentine.valentinebg .input-form .code-input .get_code {
+        width: 34%;
+        float: right;
+        font-size: 15px;
+        color: #fff; }
+        [data-dpr="2"] #channel-valentine.valentinebg .input-form .code-input .get_code {
+          font-size: 30px; }
+        [data-dpr="3"] #channel-valentine.valentinebg .input-form .code-input .get_code {
+          font-size: 45px; }
+  #channel-valentine.valentinebg .about {
+    width: 100%;
+    position: absolute;
+    top: 15rem;
+    left: 0; }
+    #channel-valentine.valentinebg .about .about_img {
+      height: 0.7466666667rem;
+      margin: 0 auto; }
+    #channel-valentine.valentinebg .about .about_con {
+      width: 100%;
+      padding-top: 0.5866666667rem; }
+      #channel-valentine.valentinebg .about .about_con ul {
+        width: 8.3466666667rem;
+        margin: 0 auto; }
+        #channel-valentine.valentinebg .about .about_con ul li {
+          float: left;
+          width: 3.5333333333rem;
+          padding-bottom: 0.5866666667rem; }
+          #channel-valentine.valentinebg .about .about_con ul li img {
+            width: 0.9866666667rem;
+            height: 0.9866666667rem;
+            padding-bottom: 0.32rem;
+            margin: 0 auto; }
+          #channel-valentine.valentinebg .about .about_con ul li h3 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+            text-align: center; }
+            [data-dpr="2"] #channel-valentine.valentinebg .about .about_con ul li h3 {
+              font-size: 32px; }
+            [data-dpr="3"] #channel-valentine.valentinebg .about .about_con ul li h3 {
+              font-size: 48px; }
+          #channel-valentine.valentinebg .about .about_con ul li p {
+            font-size: 14px;
+            color: #666666;
+            text-align: center; }
+            [data-dpr="2"] #channel-valentine.valentinebg .about .about_con ul li p {
+              font-size: 28px; }
+            [data-dpr="3"] #channel-valentine.valentinebg .about .about_con ul li p {
+              font-size: 42px; }
+        #channel-valentine.valentinebg .about .about_con ul li:nth-child(odd) {
+          padding-right: 1.28rem; }
+  #channel-valentine.valentinebg .p_footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
+    padding: 0.2666666667rem 0;
+    text-align: center;
+    color: #999999;
+    font-size: 12px; }
+    [data-dpr="2"] #channel-valentine.valentinebg .p_footer {
+      font-size: 24px; }
+    [data-dpr="3"] #channel-valentine.valentinebg .p_footer {
+      font-size: 36px; }
+    #channel-valentine.valentinebg .p_footer p {
+      text-align: center; }
+
+/*# sourceMappingURL=channel-valentine.css.map */

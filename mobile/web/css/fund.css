@@ -1,0 +1,954 @@
+@media screen and (max-width: 319px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 413px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 110.4px;
+  }
+}
+/*CSS Reset*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+hgroup,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+figcaption,
+menu,
+button {
+  margin: 0;
+  padding: 0;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+  font-size: 0.15rem;
+  color: #000;
+  background-color: #f2f2f2;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+li {
+  list-style: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0;
+}
+button {
+  -webkit-appearance: none;
+  border: 0;
+  background: none;
+}
+a {
+  -webkit-touch-callout: none;
+  text-decoration: none;
+}
+:focus {
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+i,
+em {
+  font-style: normal;
+}
+/*清楚浮动*/
+.clearfix {
+  clear: both;
+  overflow: hidden;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/*默认placeholder样式*/
+::-webkit-input-placeholder {
+  color: #999;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #999;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999;
+}
+:-ms-input-placeholder {
+  color: #999;
+}
+/*几个常用的颜色以及字体大小*/
+.cGray {
+  color: #999999;
+}
+.cGray1 {
+  color: #666;
+}
+.cBlack {
+  color: #333333;
+}
+.cRed {
+  color: #fd5353;
+}
+.cWhite {
+  color: #fff;
+}
+.cGreen {
+  color: #009944;
+}
+.font24 {
+  font-size: 0.12rem;
+}
+.font26 {
+  font-size: 0.13rem;
+}
+.font28 {
+  font-size: 0.14rem;
+}
+.font30 {
+  font-size: 0.15rem;
+}
+.font100 {
+  font-size: 0.5rem;
+}
+/*1px border hack*/
+.border-t {
+  border-top: 1px solid #ddd;
+}
+.border-b {
+  border-bottom: 1px solid #ddd;
+}
+.border-tb {
+  border-top: #ddd 1px solid;
+  border-bottom: #ddd 1px solid;
+  background-image: none;
+}
+.border-l {
+  border-left: 1px solid #ddd;
+}
+.border-r {
+  border-right: 1px solid #ddd;
+}
+.border {
+  border: 1px solid #ddd;
+}
+.border-radius {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .border-radius {
+    position: relative;
+    border: 0;
+  }
+  .border-radius:before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #ddd;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    padding: 1px;
+    -webkit-box-sizing: border-box;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .border-t,
+  .border-b,
+  .border-l,
+  .border-r,
+  .border-tb {
+    border: 0;
+  }
+  .border-t {
+    background-position: left top;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #ddd), to(#ddd));
+  }
+  .border-b {
+    background-position: left bottom;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #ddd), to(#ddd));
+  }
+  .border-t,
+  .border-b,
+  .border-tb {
+    background-repeat: repeat-x;
+    -webkit-background-size: 100% 1px;
+  }
+  .border-tb {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #ddd), to(#ddd)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #ddd), to(#ddd));
+    background-position: top, bottom;
+  }
+  .border-l {
+    background-position: left top;
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0.5, transparent), color-stop(0.5, #ddd), to(#ddd));
+  }
+  .border-r {
+    background-position: right top;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #ddd), to(#ddd));
+  }
+  .border-l,
+  .border-r {
+    background-repeat: repeat-y;
+    -webkit-background-size: 1px 100%;
+  }
+  .border:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #ddd), to(#ddd)), -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #ddd), to(#ddd)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #ddd), to(#ddd)), -webkit-gradient(linear, right top, left top, color-stop(0.5, transparent), color-stop(0.5, #ddd), to(#ddd));
+    -webkit-background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+    background-repeat: no-repeat;
+    background-position: top, right, bottom, left;
+    padding: 1px;
+    -webkit-box-sizing: border-box;
+    z-index: 10;
+    pointer-events: none;
+  }
+}
+/*通用类*/
+.borderBox {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.posr {
+  position: relative;
+}
+.posf {
+  position: fixed;
+}
+.posa {
+  position: absolute;
+}
+.db {
+  display: block;
+}
+.dn {
+  display: none;
+}
+.inline {
+  display: inline;
+}
+.dbinline {
+  display: inline-block;
+}
+.text-center {
+  text-align: center;
+}
+.overHidden {
+  overflow: hidden;
+}
+.fl {
+  float: left;
+}
+/*
+rem使用方法，假如设计稿是750宽度，那么按照iPhone6的实际尺寸是375，DPI是2，所以实际切图应该减半处理，在reset里面有写mediaquery，375宽度下是100px，所以写css的时候应该以实际像素除以200rem;
+ * */
+/*layout*/
+/*fund-detail*/
+.fund-detail {
+  background-color: #FFF;
+}
+.fund-top {
+  padding: 0.345rem 0.15rem 0.27rem;
+}
+.fund-top .info {
+  margin: 0 auto;
+  width: 2.575rem;
+  height: 0.25rem;
+  line-height: 0.25rem;
+  border-radius: 18px;
+}
+.fund-top span {
+  padding: 0 0.125rem;
+}
+.fund-bottom {
+  padding: 0 0.15rem 0.095rem;
+}
+.fund-bottom > div {
+  position: relative;
+  padding: 0.255rem 0 0.2rem;
+}
+.fund-bottom .triangle {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 0.11rem solid #fd6262;
+  border-left: 0.11rem solid transparent;
+}
+.fund-bottom h3 {
+  margin-bottom: 0.1rem;
+}
+.fund-bottom li {
+  line-height: 0.215rem;
+}
+.fund-bottom .dbinline {
+  width: 49.4%;
+}
+.fund-tab-hd {
+  margin: 0 auto;
+  width: 3.45rem;
+  margin-top: 0.25rem;
+}
+.fund-tab-hd a {
+  display: block;
+  float: left;
+  background-color: #acacac;
+  color: #FFF;
+  margin-right: 0.0675rem;
+  width: 1.105rem;
+  height: 0.385rem;
+  line-height: 0.385rem;
+  border-radius: 4px;
+}
+.fund-tab-hd a:last-child {
+  margin-right: 0;
+}
+.fund-tab-hd a.on {
+  background-color: #fd6262;
+}
+.fund-jc {
+  margin-top: 0.175rem;
+}
+.fund-jc a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.fund-bottom3 p.cWhite {
+  margin-bottom: 0.125rem;
+}
+.fund-bottom3 p span {
+  display: block;
+  float: left;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  background-color: #ffc4c4;
+  width: 0.665rem;
+  margin-right: 0.03rem;
+}
+.fund-bottom3 p span:last-child {
+  margin-right: 0;
+}
+.fund-bottom3 p span.on {
+  background-color: #fd6262;
+}
+.fund-bottom4 .fund-btm-manager {
+  line-height: 0.3rem;
+}
+.fund-bottom4 .fund-btm-manager p {
+  float: left;
+  width: 50%;
+}
+.fund-bottom4 p span {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.1rem;
+  top: 0.02rem;
+  width: 0.16rem;
+  height: 0.16rem;
+  border-radius: 4px;
+  background-color: #ffe1e1;
+}
+.fund-bottom4 p:nth-child(2) span {
+  background-color: #ffd1d1;
+}
+.fund-bottom4 p:nth-child(3) span {
+  background-color: #feacac;
+}
+.fund-bottom4 p:nth-child(4) span {
+  background-color: #ff8585;
+}
+.fund-bottom4 p:nth-child(5) span {
+  background-color: #fd6262;
+}
+.fund-bottom .fund-bottom5 {
+  padding-bottom: 0.675rem;
+}
+.fund-btn {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #FFF;
+  margin-top: 0.325rem;
+  padding: 0.065rem 0 0.095rem;
+}
+.fund-btn button {
+  margin: 0 auto;
+  width: 3.45rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  background-color: #fd5353;
+  font-size: 0.17rem;
+  border-radius: 5px;
+}
+.fund-chart {
+  margin: 0 auto;
+  width: 3.41rem;
+  height: 1.5rem;
+}
+.fund-tab-bd .date-list {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 10%;
+  width: 100%;
+  top: 1.17rem;
+  left: 0;
+}
+.fund-tab-bd .date-list span {
+  width: 15.384615384615385%;
+  text-align: center;
+}
+/*基金申购*/
+.fund-apply,
+.openaccount,
+.fund-redeem {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.fund-apply h3 {
+  padding: 0.18rem 0.27rem;
+  background-color: #fff;
+}
+.fund-apply .fund-apply-userinfo {
+  padding: 0.16rem 0.27rem 0;
+  font-size: 0.17rem;
+}
+.fund-apply .fund-btn,
+.openaccount .fund-btn,
+.fund-redeem .fund-btn {
+  background-color: transparent;
+}
+/*基金开户*/
+.cl_logo {
+  padding: 0.125rem 0;
+}
+.cl_logo img {
+  margin: 0 auto;
+  max-width: 3.46rem;
+  height: auto;
+}
+.openaccount-top {
+  background-color: #FFF;
+}
+.openaccount h3 {
+  font-size: 0.17rem;
+}
+.authorize h3 {
+  padding: 0 0.27rem;
+}
+.openaccount .progress {
+  margin: 0.195rem auto 0.14rem;
+  width: 2.43rem;
+  height: 0.1rem;
+  background: url(../image/fund/progress.png) no-repeat;
+  background-size: 100% auto;
+}
+.openaccount-top .progress p {
+  width: 2.42rem;
+  height: 0.1rem;
+  top: 0;
+  left: 0;
+  background: url(../image/fund/progress.png) no-repeat;
+  background-size: 100% auto;
+}
+.openaccount-top p.progress1 {
+  background: url(../image/fund/progress1.png) no-repeat;
+  background-size: 100% auto;
+}
+.openaccount-top p.progress2 {
+  background: url(../image/fund/progress2.png) no-repeat;
+  background-size: 100% auto;
+}
+.openaccount-top .step {
+  margin: 0 auto;
+  width: 3.46rem;
+  line-height: 0.17rem;
+  padding-bottom: 0.2rem;
+}
+.openaccount-top .step span {
+  float: left;
+  width: 33.333333%;
+}
+.openaccount-info,
+.setpassword {
+  margin-top: 0.09rem;
+  background-color: #FFF;
+}
+.openaccount-info div,
+.setpassword p {
+  padding: 0.075rem 0.27rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+}
+.openaccount-info label {
+  display: inline-block;
+  width: 1rem;
+}
+.openaccount-info input,
+.setpassword input {
+  display: inline-block;
+  width: 2.21rem;
+  height: 100%;
+  color: #333;
+  border: none;
+}
+.openaccount-info i.arrow {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0.24rem;
+  margin-top: -0.0575rem;
+  width: 0.205rem;
+  height: 0.115rem;
+  background: url(../image/fund/arrow.png) no-repeat;
+  background-size: 0.205rem 0.115rem;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+.openaccount-info i.arrowtranslate {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.openaccount-info i.rotate {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.setPwd-info {
+  padding: 0.22rem 0.27rem;
+}
+.bindcardInfo {
+  padding: 0.1rem 0.27rem;
+}
+.bindcardReg .sendCode {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 1.29rem;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #fd5353;
+  color: #FFF;
+}
+.bindcardNotice {
+  padding: 0.21rem 0.27rem 0;
+}
+.bindcardNotice input,
+.bindcardNotice i {
+  display: block;
+  position: absolute;
+  top: 0.225rem;
+  left: 0.27rem;
+  width: 0.15rem;
+  height: 0.15rem;
+  background: url(../image/fund/check.png) no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  z-index: 2;
+}
+.bindcardNotice input[type="checkbox"]{
+  opacity: 0;
+}
+.bindcardNotice .checked {
+  z-index: 3;
+  background: url(../image/fund/checked.png) no-repeat;
+  background-size: 100% 100%;
+}
+.bindcardNotice p {
+  padding-left: 0.18rem;
+}
+.bindcardNotice p a {
+  text-decoration: underline;
+}
+.reviewList input,
+.reviewList i {
+  top: 0.15rem;
+  left: 0;
+}
+.reviewList h4,
+.reviewList li {
+  margin-bottom: 0.05rem;
+  padding: 0.1rem 0;
+}
+.reviewList .list {
+  margin-bottom: 0.2rem;
+  font-size: 0.17rem;
+}
+/*基金申购*/
+.openaccount-info ul {
+  display: none;
+  margin: 0 0.27rem;
+  overflow: hidden;
+}
+.openaccount-info li {
+  height: 0.195rem;
+  line-height: 0.195rem;
+  padding: 0.11rem 0 0.11rem 1rem;
+}
+.openaccount-info .bank-icon {
+  position: relative;
+  top: 3px;
+  width: 0.195rem;
+  height: 0.195rem;
+}
+/*支付成功*/
+.purchase-success h3 {
+  margin-top: 0.375rem;
+  margin-bottom: 0.185rem;
+}
+.purchase-success p {
+  margin: 0 auto;
+  width: 2.6rem;
+}
+.trade{
+	margin: 0 auto;
+  width: 2.51rem;
+}
+.trade input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  padding: 0.15rem;
+  border: none;
+  background: none;
+}
+/*持有基金 赎回*/
+.redeem-top {
+  padding: 0.1rem 0.27rem;
+  background-color: #FFF;
+}
+.redeem-top p {
+  float: left;
+  width: 50%;
+}
+.redeem-top p:last-child {
+  text-align: right;
+}
+.redeem-detail {
+  padding: 0.1rem 0.24rem;
+  background-color: #FFF;
+  margin-bottom: 0.09rem;
+}
+.fund-intro {
+  padding: 0 0.24rem;
+  text-decoration: underline;
+}
+/*基金赎回确认*/
+.redeem-confirm .openaccount-top p {
+  width: 2.6rem;
+  margin: 0 auto;
+}
+.redeem-confirm .openaccount-top p:last-child{
+	padding-bottom: 0.125rem;
+}
+.redeem-confirm-notice {
+  padding: 0.1rem 0.27rem 0;
+}
+.redeem-confirm .openaccount-info input {
+  color: #999;
+}
+.redeem-confirm-success .openaccount-top {
+  padding: 0.25rem 0 0.45rem;
+}
+.redeem-confirm-success .openaccount-top h3{
+	margin-bottom: .15rem;
+}
+/*银行列表*/
+.banklist {
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+}
+.banklist h3 {
+  padding: 0 0.27rem;
+  height: 0.405rem;
+  line-height: 0.405rem;
+  background-color: #F2F2F2;
+}
+.banklist li {
+  padding: 0 0.27rem;
+  height: 0.465rem;
+  line-height: 0.2325rem;
+  background-color: #FFF;
+}
+.banklist li .bank-icon {
+  float: left;
+  width: 14.285714285714285%;
+}
+.banklist li .bank-icon img {
+  display: block;
+  margin-top: 0.1075rem;
+  width: 0.25rem;
+  height: 0.25rem;
+}
+.banklist li .bank-info {
+  float: left;
+  width: 85.71428571428571%;
+}
+/*弹窗*/
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 99;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-transition: opacity .3s ease;
+          transition: opacity .3s ease;
+}
+.overlayshow {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+}
+.pop-box {
+	position: relative;
+  width: 2.81rem;
+  padding-bottom: .2rem;
+  background-color: #FFF;
+}
+.pop-box h3 {
+  height: .49rem;
+  line-height: .49rem;
+  border-bottom: 1px solid #fd5353;
+}
+.pop-box .pop-con {
+  padding: .29rem 0.31rem;
+}
+.pop-box .btn {
+	margin: .25rem auto 0;
+  width: 2.51rem;
+  height: .39rem;
+  line-height: .39rem;
+  border-radius: 5px;
+  background-color: #FD5353;
+}
+.pop-box .pop-close{
+	display: block;
+	position: absolute;
+	width: 0.1rem;
+	height: 0.1rem;
+	top: .195rem;
+	right: .15rem;
+	background: url(../image/fund/close.png) no-repeat;
+	text-indent: -9999px;
+	background-size: cover;
+}
+.highcharts-axis,
+.highcharts-xaxis-labels {
+  display: none;
+}
+.errorpage {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  background-color: #FFF;
+  font-size: 0.18rem;
+}
+.errorpage img {
+  margin: 0 auto;
+  width: 0.91rem;
+}
+/*pan 2015-10-10 add*/
+.fund-msg {
+  height: 0.2rem;
+  line-height: 0.2rem;
+  padding: 0.075rem 0.27rem;
+}
+/*pan 2015-10-12 add*/
+.fund-agreement {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.15rem 0.15rem 1rem;
+}
+.fund-agreement h2 {
+  font-weight: bold;
+  font-size: 0.17rem;
+}
+.fund-agreement h3 {
+  font-weight: bold;
+  margin: 0.05rem 0 0.075rem;
+}
+.fund-agreement h4 {
+  font-weight: 600;
+  margin: 0.05rem 0 0.075rem;
+}
+/*pan 2015-10-15 add*/
+.fund-history {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1rem;
+  background-color: #fff;
+}
+.fund-history h3 {
+  padding: 0 0.125rem;
+  height: 0.24rem;
+  line-height: 0.24rem;
+  background-color: #F2F2F2;
+  font-weight: bold;
+  margin-bottom: 0.135rem;
+}
+.fund-history .history {
+  width: 3.5rem;
+}
+.fund-history .history th {
+  width: 0.87rem;
+  height: 0.36rem;
+  line-height: 0.36rem;
+  color: #FFF;
+  background-color: #FD5353;
+  border: 1px solid #FFF;
+}
+.fund-history .history td {
+  font-size: 0.12rem;
+  color: #999;
+  height: 0.36rem;
+  line-height: 0.36rem;
+  background-color: #f5f4f4;
+  border: 1px solid #FFF;
+}
+/*pan 2015-11-11 add 基金说明*/
+.fund-info{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: .15rem;
+	width: 100%;
+	background-color: #FFF;
+	font-size: .14rem;
+}
+.fund-info h3{
+	text-align: center;
+	font-weight: bold;
+	font-size: .18rem;
+}
+.fund-info h4{
+	font-weight: bold;
+}
+.fund-info p{
+	margin-bottom: .15rem;
+}
+.fund-info p strong{
+	color: #FD5353;
+}

@@ -1,0 +1,66 @@
+body{margin:0;padding:0;font-family: "微软雅黑"}
+#content1{width: 100%;min-width:1320px;height: 1123px;background-image: url(../image/pc-site/home_img_back.png);border: 0px solid red}
+#content2{width: 100%;min-width:1320px;height: 787px;border: 0px solid red}
+#content3{width: 100%;min-width:1320px;height: 787px;background-color: #e5f0f9;border: 0px solid red}
+#content4{width: 100%;min-width:1320px;border: 0px solid red}
+
+.top{width: 100%;min-width:1320px;height: 88px;background-color: rgb(55, 145, 225);position: absolute;border: 0px solid red}
+.top_left{width: 714px;height: 88px;background-color: rgb(23, 130, 224);position: absolute;border: 0px solid red}
+.top_right{float: right;padding: 35px 400px;font-size: 16px;color: #feffff;}
+.top_img{padding:25px 40px;float: right;}
+
+
+.mid{width: 1300px;height: 787px;margin: 0 auto;border: 0px solid red}
+.mid2{width: 100%;height: 787px;border: 0px solid red}
+.mid4{width: 100%;height: 850px;border: 0px solid red}
+.mid4s{width: 1300px;height: 850px;margin: 0 auto;border: 0px solid red}
+.mid_left{width: 654px;height: 272px;margin-top: 306px;border: 0px solid red;position: absolute;margin-left: 10px;}
+.mid_right{width: 558px;height: 474px;margin-top: 218px;position: relative;float: right;border: 0px solid red;position: relative;}
+.mid_button{margin-top: 56px;}
+.mid_button_left{position: absolute;background-image: url(../image/pc-site/home_btn_ios_nor.png);width:205px;height: 58px}
+.mid_button_left:hover{background-image: url(../image/pc-site/home_btn_ios_hover.png);}
+.mid_button_right{position: absolute;margin-left: 235px;background-image: url(../image/pc-site/home_btn_and_nor.png);width:205px;height: 58px}
+.mid_button_right:hover{background-image: url(../image/pc-site/home_btn_and_hover.png);}
+
+.mid_right1{width: 116px;height: 73px;left:10px;top: 50px;position:absolute;border: 0px solid red}
+.mid_right2{width: 94px;height: 59px;top: 22px;right: 108px;position:absolute;border: 0px solid red}
+.mid_right3{width: 94px;height: 59px;top: 225px;right: 22px;position:absolute;border: 0px solid red}
+.mid_right4{width: 114px;height: 72px;top: 400px;right: 115px;position:absolute;border: 0px solid red}
+.mid_right5{width: 94px;height: 59px;left: 0px;top: 295px;position:absolute;border: 0px solid red}
+
+.mid2_txt{width: 578px;height: 460px;border: 0px solid red;margin: 190px 200px 0;position: absolute;}
+.mid2_right{width: 340px;height: 260px;float:right;margin-top: 298px;text-align: right;border: 0px solid red;}
+.mid2_right .dzq{font-size:48px;margin: 0px;color: #333333}
+.mid2_right .gjq{font-size:24px;margin: 0px;}
+.mid2_right .asd{font-size:40px;color: #1782e0;text-align: right;margin-top: 24px;}
+
+.mid3_txt{width: 678px;height: 500px;position: absolute;margin: 160px 0 0 600px;border: 0px solid red;margin-top: 167px;}
+.mid3_left{height: 260px;margin: 280px 0px 0 200px;text-align:left;border: 0px solid red;position: absolute;}
+.mid3_left .dzq{font-size:48px;margin: 0px;color: #333333}
+.mid3_left .gjq{font-size:24px;margin: 0px;}
+.mid3_left .asd{font-size:40px;color: #1782e0;margin-top: 24px;}
+.mid3_txt_left{width: 56px;height: 18px;position: absolute;border: 0px solid red;top: 355px;left: 72px;}
+.mid3_txt_right{width: 56px;height: 28px;position: absolute;border: 0px solid red;top: 76px;right: 30px;}
+
+.mid4_right{width: 320px;height: 260px;margin: 330px 80px 0 0;position: absolute;text-align: right;border: 0px solid red;}
+.mid4_right .dzq{font-size:48px;margin: 0px;color: #333333}
+.mid4_right .gjq{font-size:24px;margin: 0px;}
+.mid4_right .asd{font-size:40px;color: #1782e0;text-align: right;margin-top: 24px;}
+
+.mid4_icon2{position: absolute;top: 100px;right: 110px;}
+.mid4_icon3{position: absolute;top: 80px;right:260px}
+.mid4_icon4{ position: absolute;top: 410px;right: 103px;}
+.mid4s .icon1{position: absolute;top: 0px;left: -35px;}
+
+.icon1{position: absolute;top: -50px;left: -35px;}
+.icon2{position: absolute;top: -20px;right:80px}
+.icon3{position: absolute;top: 140px;right:95px}
+.icon4{position: absolute;top: 295px;right:55px}
+.icon5{position: absolute;top: 299px;left: -55px}
+.icon6{position: absolute;top: 140px;left:40px}
+
+
+#bottom{width: 100%;height: 120px;background-color: rgb(55, 145, 225);;border: 0px solid red}
+.bottom{color: #ffffff;font-family: "微软雅黑";text-align: center;margin: 0 auto;padding-top: 50px;}
+.bottom a { text-decoration: none; color: #fff; }
+

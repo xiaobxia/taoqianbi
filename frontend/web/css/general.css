@@ -1,0 +1,338 @@
+/*通用CSS css权重：important > 内联 > ID > 类 > 标签 | 伪类 | 属性选择 > 伪对象 > 继承 > 通配符 通配符 > 继承*/
+/*书写顺序规则
+  定位属性（比如：display， position， float， clear， visibility， table-layout等）
+  自身属性（比如：width， height， margin， padding， border等）
+  文本属性（比如：font， line-height， text-align， text-indent， vertical-align等）
+  其他属性（比如：color， background， opacity， cursor，content， list-style， quotes等）*/
+*{
+    padding:0;
+    margin: 0;
+    border: 0 none;
+    text-decoration: none;
+    list-style: none;
+    -webkit-font-smoothing: antialiased;
+}
+html, body, div, span, h1, h2, h3, p, em, img, dl, dt, dd, ol, ul, li, table, tr,th,td, form,input,select{
+    margin:0;
+    padding:0;
+}
+/* 修正IE5.x和IE6的斜体溢出bug起 */
+* html body{
+    overflow:visible;
+}
+* html iframe, * html frame{
+    overflow:auto;
+}
+* html frameset,.o_hidden{
+    /*IE7--下兼容overflow:hidden加position*/
+    position: relative;
+    overflow: hidden;
+}
+body{
+    /*去除微信游览器a标签元素点击的时候出现蓝色的边框*/
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+body {
+  font-family: "helvetica neue", helvetica, stheiti, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  height: 100%;
+  margin: 0 auto;
+  color: #000;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  z-index: 1;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 修正IE5.x和IE6的斜体溢出bug终 */
+a,*[onclick],._cursor{
+    cursor: pointer;
+}
+/* 去掉链接的虚线框 */
+a,input,textarea{
+    outline:none;
+}
+/* 使盒子计算宽高不包含padding */
+._box_sizing, ._box_sizing:before, ._box_sizing:after {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+/*适用textarea*/
+._textarea{
+    display: block;
+    height: auto;
+    width: 100%;
+    resize: none;
+    overflow: auto;
+}
+/*结构：div._select>div>select*/
+._select{ 
+    width: 100%;
+    padding: .6em 0 .6em .6em;
+    margin-bottom: .8em;
+    background: #FFF url('http://res.koudailc.com/article/20160401/356fdf093f2d13.png') no-repeat 97% center;
+    background-size: 3%;
+    border: 1px solid #F3F3F3;
+}
+._select div{
+    width: 92%;
+    overflow: hidden;
+}
+._select div select{
+    width: 109%;
+    margin:-3px;
+    padding: 3px;
+    background: #FFF;
+    outline:none;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+._select div select::-ms-expand{
+    display: none;
+}
+/*适用input[file]*/
+._upload_file{
+    position: relative;
+    overflow: hidden;
+}
+._upload_file input[type="file"]{
+    /*使按钮足够大*/
+    font-size: 10em; 
+    height: 10em;
+    position: absolute;
+    background: #FFF;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    -ms-filter:"alpha(opacity=0)";
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+a:focus{
+    outline:none;
+    -moz-outline:none;
+}
+a:hover,a:link,a:active,a:visited,a:focus{
+    border: none;
+}
+a:active{
+    star:expression(this.onFocus=this.blur());
+}
+a.indie{
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+ /* WebKit browsers,Mozilla Firefox 4 to 18,
+ Mozilla Firefox 19+,Internet Explorer 10+ */
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+._placeholder{
+    color: #999999;
+}
+em,
+i {
+  font-style: normal;
+}
+.clear{
+    clear: both;
+}
+.a_left{
+    text-align: left;
+}
+.a_center{
+    text-align: center;
+}
+.a_right{
+    text-align: right;
+}
+.v_center{
+    vertical-align: middle;
+}
+.v_top{
+    vertical-align: top;
+    vertical-align: text-top;
+}
+.v_bottom{
+    vertical-align: bottom;
+    vertical-align: text-bottom;
+}
+.scatter {
+text-align:justify;
+text-justify:distribute-all-lines;/*ie6-8*/
+text-align-last:justify;/* ie9*/
+-moz-text-align-last:justify;/*ff*/
+-webkit-text-align-last:justify;/*chrome 20+*/
+}
+.m_center{
+    margin: auto auto;
+}
+.f_right{
+    float: right;
+}
+.f_left{
+    float: left;
+}
+.clear_inline_block{
+    /*消除inline-block元素间间距*/
+    font-size: 0;
+}
+._hidden{
+    display: none;
+}
+.v_hidden{
+    visibility: hidden;
+}
+.o_hidden{
+    /*IE7--下兼容overflow:hidden加position*/
+    position: relative;
+    overflow: hidden;
+}
+._l_item{
+    display: list-item;
+    list-style: disc inside;
+}
+._cursor_noallowed{
+    cursor: not-allowed;
+}
+._inline_block{
+    display:inline-block;
+     /*_zoom:1;*/
+    /**display: inline;*/
+}
+.p_relative{
+    position: relative !important;
+}
+.p_absolute{
+    position: absolute !important;
+}
+.p_fixed{
+    /*ie7 ff*/
+    position: fixed !important;
+}
+.zero_opacity{
+    opacity: 0;
+    /* Mozilla */
+    -moz-opacity: 0;
+    /* Safari */
+    -khtml-opacity: 0;
+    /* IE */
+    filter: alpha(opacity=0);
+    /* 旧版IE */
+    -ms-filter:"alpha(opacity=0)";
+}
+.full_opacity{
+    opacity: 1;
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter:"alpha(opacity=100)";
+}
+._b_radius{
+    border-radius: 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px;
+}
+._b_radius_round{
+    border-radius: 999999px;
+    -moz-border-radius: 999999px 999999px 999999px 999999px;
+    -webkit-border-radius: 999999px;
+}
+/*强制换行*/
+._word_wrap{
+    /*截断单词*/
+    word-break:break-all; 
+    /*不截断单词*/
+    word-wrap:break-word;
+}
+._word_wrap_no{
+    word-break:keep-all; 
+    word-wrap:normal;
+}
+/*锚点向上偏移位置 保留*/
+.anchor_offset{
+    padding-top: 250px;
+    margin-top: -250px;
+}
+.t_underline{
+    text-decoration: underline;
+}
+.t_line_through{
+    text-decoration: line-through;
+}
+._shadow{
+    /*box-shadow：none | <shadow> [ , <shadow> ]*
+    <shadow> = inset? && [ <length>{2,4} && <color>? ]
+    取值：
+    none： 无阴影 
+    <length>①： 第1个长度值用来设置对象的阴影水平偏移值。可以为负值 
+    <length>②： 第2个长度值用来设置对象的阴影垂直偏移值。可以为负值 
+    <length>③： 如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值 
+    <length>④： 如果提供了第4个长度值则用来设置对象的阴影外延值。可以为负值 
+    <color>： 设置对象的阴影的颜色。 
+    inset： 设置对象的阴影类型为内阴影。该值为空时，则对象的阴影类型为外阴影 */
+    /*  -webkit-box-shadow:3px 3px 10px #9edeff inset;
+        box-shadow:3px 3px 10px #9edeff inset;*/
+}
+._outline:focus{
+    outline: none;
+}
+._transparent{
+    background: transparent;
+}
+.vertical_lr{
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+}
+.vertical_rl{
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+._ellipsis{
+    display:block;/*内联对象需加*/
+    width:21em; /*根据情况重新定义*/
+    word-break:keep-all;/* 不换行 */
+    white-space:nowrap;/* 不换行 */
+    text-overflow: ellipsis;
+    -o-text-overflow:ellipsis; 
+    overflow: hidden;
+}
+._ellipsis_no{
+    white-space: nowrap;
+    overflow: hidden;
+}
+._text_justify_x_y{
+    /*letter-spacing: 2em; */
+    /*margin-right: -2em;*/ /*去除最后一个文字的空格*/
+    /*如果需要y个字与x个文字两端对齐，则为(x-y)/(y-1),这里是（4-2）/(2-1)=2em */
+}
+table.gridtable {
+    width: 100%;
+    border: 1px solid #dadada;
+    border-collapse: collapse;
+    color:#666666;
+}
+table.gridtable th {
+    border: 1px solid #dadada;
+    padding: .5em;
+}
+table.gridtable td {
+    border: 1px solid #dadada;
+    padding: .5em;
+    background-color: #ffffff;
+}

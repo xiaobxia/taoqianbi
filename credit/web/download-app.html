@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><?php echo APP_NAMES;?>APP下载</title>
+    <style>
+    a{display: block;font-size: 2.6vh;position:absolute;top:35%;left:10%;width: 80%;height: 8vh;line-height: 8vh;text-align: center;background: #61cae4;border-radius:30px;color: #fff;text-decoration: none;}
+    </style>
+  </head>
+  <body id="results">
+    <script>
+      (function() {
+        var url = (function() {
+          var u = navigator.userAgent;
+
+          if (!(getQueryString && typeof(getQueryString) == 'function')) {
+            var getQueryString = function(name) {
+              var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+              var r = window.location.search.substr(1).match(reg);
+              if (r != null) return unescape(r[2]);
+              return null;
+            }
+          }
+
+          var isAndroid = u.indexOf("Android") > -1 || u.indexOf("Adr") > -1,
+            isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+            isWeixin = (/micromessenger/i).test(u),
+            isQQ = (/QQBrowser/i).test(u),
+            sourceTag = getQueryString('source_tag');
+
+          if (isAndroid) {
+            if (!isWeixin) {
+              if (sourceTag) {
+                return 'http://res.koudailc.com/download/app/xianjinka_' + sourceTag + '.apk';
+              } else {
+                return "http://res.koudailc.com/download/app/xianjinka.apk";
+              }
+            } else {
+              return "http://a.app.qq.com/o/simple.jsp?pkgname=com.kdlc.mcc";
+            }
+          }
+          if (isiOS) {
+            if (isWeixin) {
+              return "http://a.app.qq.com/o/simple.jsp?pkgname=com.kdlc.mcc";
+            } else {
+              return  (sourceTag === "H5-jsq" || sourceTag === "H5-mmjr" || sourceTag === "H5-jsq3" || sourceTag === "H5-jsq7") ? "alipay-app" : "https://itunes.apple.com/us/app/xian-jin-ka/id1156410247?l=zh&ls=1&mt=8";
+            }
+          }
+        }());
+        if(url !== "alipay-app"){
+          location.href = url || "http://res.koudailc.com/download/app/xianjinka.apk";
+        } else {
+          var a = document.createElement("a");
+          a.href = "https://itunes.apple.com/us/app/xian-jin-ka/id1156410247?l=zh&ls=1&mt=8";
+          a.innerText = "点击下载";
+          document.getElementById("results").appendChild(a);
+        }
+      }())
+    </script>
+  </body>
+</html>

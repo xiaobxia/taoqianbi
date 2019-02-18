@@ -1,0 +1,470 @@
+@charset "UTF-8";
+html, body, .container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+#turntable-rules {
+  position: relative;
+  /* 如果浏览器不支持渐变，使用纯色作为背景 */
+  background: #06b4e5;
+  /* Webkit: Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0cc6e0), to(#00a0ea));
+  /* Webkit: Safari 5.1+, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #0cc6e0, #00a0ea);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #0cc6e0, #00a0ea);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #0cc6e0, #00a0ea);
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #0cc6e0, #00a0ea);
+  /* IE < 10 */
+  /* 注意：这一行必须写在最后 */
+  FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#0cc6e0, endColorStr=#00a0ea);
+  width: 100%; }
+  #turntable-rules .top-bgcolor {
+    height: 3.09333rem;
+    width: 100%;
+    /* 如果浏览器不支持渐变，使用纯色作为背景 */
+    background: #06b4e5;
+    /* Webkit: Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0081bc), to(#11bedf));
+    /* Webkit: Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #0081bc, #11bedf);
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, #0081bc, #11bedf);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #0081bc, #11bedf);
+    /* IE 10 */
+    background: -ms-linear-gradient(top, #0081bc, #11bedf);
+    position: absolute;
+    top: 0;
+    left: 0; }
+  #turntable-rules .main {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 0.50667rem;
+    background: url("../../image/turntable/beijing-top.png") no-repeat top center;
+    background-size: 10rem 4.4rem; }
+    #turntable-rules .main .activity-time {
+      color: #fff;
+      font-size: 13px;
+      line-height: 0.48rem;
+      text-align: center;
+      padding-top: 2.61333rem; }
+      [data-dpr="2"] #turntable-rules .main .activity-time {
+        font-size: 26px; }
+      [data-dpr="3"] #turntable-rules .main .activity-time {
+        font-size: 39px; }
+    #turntable-rules .main .rules {
+      width: 92%;
+      margin: 0.32rem auto 0;
+      background-color: #f3fbfd;
+      border-radius: 0.4rem;
+      color: #497082;
+      position: relative;
+      z-index: 1; }
+      #turntable-rules .main .rules ul {
+        padding: 0.08rem 0.4rem 0.32rem; }
+        #turntable-rules .main .rules ul li {
+          font-size: 15px;
+          line-height: 0.53333rem;
+          margin-top: 0.4rem;
+          padding-left: 0.88rem;
+          position: relative; }
+          [data-dpr="2"] #turntable-rules .main .rules ul li {
+            font-size: 30px; }
+          [data-dpr="3"] #turntable-rules .main .rules ul li {
+            font-size: 45px; }
+          #turntable-rules .main .rules ul li i {
+            font-family: 'SimSun';
+            font-size: 18px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0.64rem;
+            height: 0.69333rem;
+            background: url("../../image/turntable/biaohao.png") no-repeat center top;
+            background-size: 0.58667rem 0.64rem;
+            text-align: center;
+            color: #fff;
+            line-height: 0.58667rem; }
+            [data-dpr="2"] #turntable-rules .main .rules ul li i {
+              font-size: 36px; }
+            [data-dpr="3"] #turntable-rules .main .rules ul li i {
+              font-size: 54px; }
+  #turntable-rules .bgBottomImage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3.30667rem;
+    background: url("../../image/turntable/beijing-bottom.png") no-repeat bottom center;
+    background-size: 10rem 3.30667rem; }
+
+#dialog-wraper {
+  font-size: 0.42667rem;
+  position: fixed;
+  z-index: 2;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  color: #000000;
+  border-radius: 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px; }
+  #dialog-wraper #turntable-title {
+    background: url("../../image/turntable/wujilulittle.png") no-repeat center top;
+    background-size: contain;
+    height: 1.68rem; }
+  #dialog-wraper #prize-title {
+    background: url("../../image/turntable/head.png") no-repeat center top;
+    background-size: contain;
+    height: 4.52rem;
+    width: 8.93333rem;
+    position: relative;
+    bottom: -0.33333rem;
+    left: -0.46667rem; }
+  #dialog-wraper .content {
+    background-color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    padding: 0.61333rem 0.53333rem 0.53333rem;
+    line-height: 0.64rem;
+    color: #497082; }
+    #dialog-wraper .content p {
+      font-size: 0.4rem; }
+    #dialog-wraper .content .voucher {
+      background-size: contain;
+      height: 2.26667rem; }
+    #dialog-wraper .content .voucher.yuan2 {
+      background: url("../../image/turntable/2yuan.png") no-repeat center top;
+      background-size: 5.45333rem 2.26667rem; }
+    #dialog-wraper .content .voucher.yuan5 {
+      background: url("../../image/turntable/5yuan.png") no-repeat center top;
+      background-size: 5.45333rem 2.26667rem; }
+    #dialog-wraper .content .voucher.yuan10 {
+      background: url("../../image/turntable/10yuan.png") no-repeat center top;
+      background-size: 5.45333rem 2.26667rem; }
+  #dialog-wraper .btn {
+    padding: 0 0.53333rem 0.53333rem;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px; }
+    #dialog-wraper .btn button {
+      height: 0.93333rem;
+      width: 3.06667rem;
+      color: #fff;
+      font-size: 0.42667rem;
+      line-height: 0.93333rem;
+      border-radius: 10px; }
+    #dialog-wraper .btn .noChance {
+      height: 1.6rem;
+      background: url("../../image/turntable/deltet.png") no-repeat center top;
+      background-size: 0.93333rem 1.6rem; }
+
+#wx-wraper {
+  font-size: 0.42667rem;
+  line-height: 1.24rem;
+  position: fixed;
+  z-index: 2;
+  top: 27%;
+  left: 10%;
+  width: 80%;
+  color: #000000;
+  border-radius: 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px;
+  text-align: center;
+  background-color: #fff; }
+
+#turntable-winning-record {
+  width: 100%;
+  height: 100%;
+  background: url("../../image/turntable/beijing-zhongjiang.png") no-repeat center top;
+  background-size: 100% auto;
+  color: #497082; }
+  #turntable-winning-record .record-head {
+    z-index: 9;
+    position: relative;
+    height: 4.05333rem;
+    background: url("../../image/turntable/beijing-jilu.png") no-repeat top center;
+    background-size: 9.46667rem 4.04rem;
+    top: 0.96rem; }
+  #turntable-winning-record .record-main {
+    width: 73.6%;
+    margin: 0 auto;
+    height: 7.84rem;
+    border-radius: 0.4rem;
+    margin-top: 4.0rem;
+    padding: 0 6%; }
+    #turntable-winning-record .record-main .winner-record .record-title {
+      padding-top: 1.01333rem;
+      font-size: 0.48rem;
+      line-height: 0.77333rem;
+      text-align: center;
+      font-weight: 700;
+      overflow: hidden; }
+      #turntable-winning-record .record-main .winner-record .record-title .fl {
+        width: 3.06667rem; }
+      #turntable-winning-record .record-main .winner-record .record-title .fr {
+        width: 2.21333rem; }
+    #turntable-winning-record .record-main .winner-record ul {
+      height: 5.2rem;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch; }
+      #turntable-winning-record .record-main .winner-record ul li {
+        font-size: 0.4rem;
+        line-height: 2em;
+        overflow: hidden;
+        width: 100%; }
+    #turntable-winning-record .record-main .no-win {
+      width: 6.26667rem;
+      margin: 0 auto;
+      padding-top: 2.13333rem; }
+      #turntable-winning-record .record-main .no-win .no-win-title {
+        width: 4.426667rem;
+        height: 2.76rem;
+        background: url("../../image/turntable/wujilu.png") no-repeat center top/cover;
+        margin: 0 auto; }
+      #turntable-winning-record .record-main .no-win p {
+        font-size: 0.48rem;
+        line-height: 0.64rem;
+        text-align: center; }
+
+/* turnable抽奖首页index 样式 */
+#turntable.index {
+  width: 100%;
+  height: 34.253333rem;
+  background: url("../../image/turntable/bg2.png") no-repeat center center/cover;
+  position: relative;
+  overflow: hidden; }
+  #turntable.index .rules {
+    position: fixed;
+    top: 0.493333rem;
+    left: 0;
+    width: 1.293333rem;
+    height: 1.173333rem;
+    line-height: 1.173333rem;
+    text-align: center;
+    background: url("../../image/turntable/rules.png") no-repeat center center/cover;
+    text-decoration: none;
+    z-index: 1; }
+  #turntable.index .records {
+    position: fixed;
+    right: 0;
+    top: 4.773333rem;
+    width: 1.29333rem;
+    height: 1.173333rem;
+    line-height: 1.173333rem;
+    text-align: center;
+    background: url("../../image/turntable/record.png") no-repeat center center/cover;
+    text-decoration: none;
+    z-index: 1; }
+  #turntable.index .cards {
+    width: 9.2rem;
+    margin: 9.455rem auto 0;
+    height: 3.98rem;
+    display: flex; }
+    #turntable.index .cards > div {
+      width: 33.33%;
+      height: 100%; }
+      #turntable.index .cards > div .wx, #turntable.index .cards > div .loan, #turntable.index .cards > div .repayment {
+        width: 2.9rem;
+        height: 100%;
+        margin: 0 auto;
+        background: url("../../image/turntable/renwuditu1.png") no-repeat center top/cover;
+        border-radius: 0.266667rem;
+        -webkit-border-radius: 0.266667rem;
+        text-align: center;
+        font-size: 0.426667rem;
+        color: #808080; }
+        #turntable.index .cards > div .wx .title, #turntable.index .cards > div .loan .title, #turntable.index .cards > div .repayment .title {
+          height: 0.84rem;
+          line-height: 1rem;
+          background-color: transparent; }
+        #turntable.index .cards > div .wx p, #turntable.index .cards > div .loan p, #turntable.index .cards > div .repayment p {
+          color: #808080;
+          font-size: 0.426667rem; }
+          #turntable.index .cards > div .wx p span, #turntable.index .cards > div .loan p span, #turntable.index .cards > div .repayment p span {
+            display: block; }
+          #turntable.index .cards > div .wx p :last-child, #turntable.index .cards > div .loan p :last-child, #turntable.index .cards > div .repayment p :last-child {
+            margin-top: -0.106667rem; }
+      #turntable.index .cards > div .wx-icon {
+        width: 1.2rem;
+        height: 0.973333rem;
+        margin: 0.4rem auto 0;
+        background-image: url("../../image/turntable/weixin.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover; }
+      #turntable.index .cards > div .wx-bg {
+        width: 1.706667rem;
+        height: 0.546667rem;
+        margin: -0.266667rem auto 0;
+        background: url("../../image/turntable/weixindi.png") no-repeat center center/cover; }
+      #turntable.index .cards > div .loan-icon {
+        width: 1.093333rem;
+        height: 0.693333rem;
+        margin: 0.50667rem auto 0;
+        background-image: url("../../image/turntable/jiekuan.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover; }
+      #turntable.index .cards > div .loan-bg {
+        width: 1.706667rem;
+        height: 0.546667rem;
+        margin: -0.173333rem auto 0.053333rem;
+        background: url("../../image/turntable/jiekuandi.png") no-repeat center center/cover; }
+      #turntable.index .cards > div .repayment-icon {
+        width: 0.8rem;
+        height: 0.853333rem;
+        margin: 0.4rem auto 0;
+        background-image: url("../../image/turntable/naozhong.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover; }
+      #turntable.index .cards > div .repayment-bg {
+        width: 1.706667rem;
+        height: 0.546667rem;
+        margin: -0.24rem auto 0.04rem;
+        background: url("../../image/turntable/huankuandi.png") no-repeat center center/cover; }
+  #turntable.index .circle {
+    margin: 1.39rem auto 0;
+    width: 100%;
+    height: 9.12rem;
+    position: relative;
+    background: url("../../image/turntable/circle.png") no-repeat center center/contain; }
+    #turntable.index .circle .blink {
+      position: absolute;
+      width: 100%;
+      height: 9.12rem;
+      background-image: url("../../image/turntable/paomadeng1.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      -webkit-background-size: contain; }
+    #turntable.index .circle .blink.paomadeng2 {
+      background-image: url("../../image/turntable/paomadeng2.png"); }
+    #turntable.index .circle .wheel {
+      width: 9.12rem;
+      height: 9.12rem;
+      margin: 0 auto;
+      background: url("../../image/turntable/zhuanpan.png") no-repeat center center/contain; }
+    #turntable.index .circle .pointer {
+      width: 2.293333rem;
+      height: 2.96rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -1.81rem;
+      margin-left: -1.14rem;
+      background: url("../../image/turntable/dianwo.png") no-repeat center center/cover; }
+  #turntable.index .person {
+    width: 2.04rem;
+    height: 3.386667rem;
+    position: absolute;
+    top: 21.64rem;
+    right: 0.96rem;
+    background: url("../../image/turntable/ren.png") no-repeat center center/cover; }
+  #turntable.index .redpag {
+    width: 2.786667rem;
+    height: 1.72rem;
+    position: absolute;
+    top: 22.52rem;
+    left: 0.4rem;
+    background: url("../../image/turntable/hongbaoren.png") no-repeat center center/cover; }
+  #turntable.index .times {
+    width: 100%;
+    margin-top: 3.626667rem;
+    margin-bottom: 0.466667rem;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    position: relative; }
+    [data-dpr="2"] #turntable.index .times {
+      font-size: 34px; }
+    [data-dpr="3"] #turntable.index .times {
+      font-size: 51px; }
+    #turntable.index .times .num {
+      text-decoration: underline;
+      color: #fff600; }
+    #turntable.index .times i:nth-of-type(1) {
+      position: absolute;
+      top: 50%;
+      left: 2.826667rem;
+      width: 0.533333rem;
+      height: 0.08rem;
+      background: url("../../image/turntable/zhen.png") no-repeat center center/cover; }
+    #turntable.index .times i:nth-of-type(2) {
+      position: absolute;
+      top: 50%;
+      right: 2.826667rem;
+      width: 0.533333rem;
+      height: 0.08rem;
+      background: url("../../image/turntable/zhen1.png") no-repeat center center/cover; }
+  #turntable.index #channel-page-one {
+    width: 100%;
+    background-color: transparent; }
+    #turntable.index #channel-page-one #rollshowbox {
+      width: 87%;
+      margin: 0.4rem auto;
+      position: relative;
+      padding: 0.32rem 0;
+      background-color: rgba(64, 11, 139, 0.4);
+      border-radius: 0.266667rem;
+      -webkit-border-radius: 0.266667rem;
+      padding-top: 0.15rem; }
+      #turntable.index #channel-page-one #rollshowbox #rollshow {
+        overflow: hidden;
+        padding-left: 0;
+        height: 2.17rem; }
+        #turntable.index #channel-page-one #rollshowbox #rollshow ul {
+          text-align: center; }
+        #turntable.index #channel-page-one #rollshowbox #rollshow ul li {
+          padding: 0.18667rem 0;
+          font-size: 14px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          height: 0.35rem;
+          color: #fff; }
+          [data-dpr="2"] #turntable.index #channel-page-one #rollshowbox #rollshow ul li {
+            font-size: 28px; }
+          [data-dpr="3"] #turntable.index #channel-page-one #rollshowbox #rollshow ul li {
+            font-size: 42px; }
+  #turntable.index .footer {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: -0.066667rem; }
+
+@keyframes jump {
+  0% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5); }
+  30% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1); }
+  70% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1); }
+  0% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5); } }
+
+/*# sourceMappingURL=turntable.css.map */

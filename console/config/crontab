@@ -1,0 +1,92 @@
+############################ 周期性执行
+#计算额度  @347
+*/5 * * * * /usr/bin/php /data/www/default/yii credit-line/set-credit-line 347 >/dev/null 2>&1
+#重新Push超时额度
+*/5  * * * * /usr/bin/php /data/www/default/yii user-credit-detail/credit-detail-updated >/dev/null 2>&1
+#机审步骤1(收集数据)
+*/5 * * * * /usr/bin/php /data/www/default/yii credit-check/get-data-source >/dev/null 2>&1
+#机审步骤2（执行决策）
+*/5 * * * * /usr/bin/php /data/www/default/yii risk-control/auto-check >>/tmp/auto-check.log 2>&1
+#初审
+*/10 * * * * /usr/bin/php /data/www/default/yii risk-manual-check/check 322 >/dev/null 2>&1
+
+
+############################ 定期执行
+#老用户跳过机审
+* * * * * /usr/bin/php /data/www/default/yii credit-check/check-orders >/dev/null 2>&1
+#复审
+#* * * * * /usr/bin/php /data/www/default/yii risk-control/update-loan >/dev/null 2>&1
+#生成打款记录
+* * * * * /usr/bin/php /data/www/default/yii ygd-check/ygd-zc-cw-check >/dev/null 2>&1
+#打款脚本
+#* * * * * /usr/bin/php /data/www/default/yii financial-loan-pay/lite-withdraw-fsyf >/dev/null 2>&1
+#查询订单打款状态
+15 */1 * * * /usr/bin/php /data/www/default/yii financial-loan-pay/search-order-status >/dev/null 2>&1
+定时更新支付宝还款
+*/5 * * * * /usr/bin/php /data/www/default/yii ygd-check/ali-pay-repayment >/dev/null 2>&1
+
+############################ 守护执行
+#用户通讯录/手机短信/手机app数据等落地
+* * * * * /usr/bin/flock -n /tmp/down-redis-contents.lock -c "/usr/bin/php /data/www/default/yii user/down-redis-contents 3" >/dev/null 2>&1
+#发送异步短信
+* * * * * /usr/bin/flock -n /tmp/send-user-captcha.lock -c "/usr/bin/php /data/www/default/yii message-send/send-user-captcha" >/dev/null 2>&1
+#营销短信
+* * * * * /usr/bin/flock -n /tmp/send-promotion-sms.lock -c "/usr/bin/php /data/www/default/yii message-send/send-promotion-sms" >/dev/null 2>&1
+
+############################ 其他
+#计算逾期费
+0 4 * * * /usr/bin/php /data/www/default/yii loan-collection/calculation-interest >/dev/null 2>&1
+#生成扣款记录
+0 5 * * * /usr/bin/php /data/www/default/yii ygd-reject/apply-to-financial-debit >/dev/null 2>&1
+#自动扣款
+0 11,13,16,20 * * * /usr/bin/php /data/www/default/yii ygd-reject/auto-debit >/dev/null 2>&1
+#代扣查询
+10 */1 * * * /usr/bin/php /data/www/default/yii ygd-reject/search-debit-status >/dev/null 2>&1
+#到期前一天自动发短信提醒
+0 8 * * * /usr/bin/php /data/www/default/yii message-notice/send-message-repayment >/dev/null 2>&1
+#合作资产订单反馈
+*/30 * * * * /usr/bin/php /data/www/default/yii order/fund-order-event-handle >/dev/null 2>&1
+
+############################  数据分析
+#每日日报数据
+0 6 * * * /usr/bin/php /data/www/default/yii daily/daily-data >/dev/null 2>&1
+#每日通过率
+10 6 * * * /usr/bin/php /data/www/default/yii risk-analysis/statistics-pass-rate-daily >/dev/null 2>&1
+#平台数据日报
+20 6 * * * /usr/bin/php /data/www/default/yii core-data/app-key-data-run >/dev/null 2>&1
+#用户画像分析
+30 6 * * * /usr/bin/php /data/www/default/yii operate/channel-position-analysis >/dev/null 2>&1
+#每日禁止项
+40 6 * * * /usr/bin/php /data/www/default/yii risk-analysis/statistics-ban-items >/dev/null 2>&1
+#每日机审项结果
+50 6 * * * /usr/bin/php /data/www/default/yii risk-analysis/allcheck >/dev/null 2>&1
+#用户认证数据统计
+55 6 * * * /usr/bin/php /data/www/default/yii  core-data/verification-run >/dev/null 2>&1
+
+############################  催收脚本
+#每天扫描订单，逾期还款的订单入催(注：本脚本需要在每日计算逾期脚本后跑)
+10 4 * * * /usr/bin/php /data/www/default/yii collection/collection-input >/dev/null 2>&1
+#更新逾期等级
+20 4 * * * /usr/bin/php /data/www/default/yii collection/update-level >/dev/null 2>&1
+#回收催单
+30 4 * * * /usr/bin/php /data/www/default/yii collection/recycle-loan-orders >/dev/null 2>&1
+#派单
+40 4 * * * /usr/bin/php /data/www/default/yii collection/new-dispatch >/dev/null 2>&1
+#订单概览统计
+*/30 * * * * /usr/bin/php /data/www/default/yii collection/order-overview-statistics1 >/dev/null 2>&1
+#每日催收统计
+0 5 * * * /usr/bin/php /data/www/default/yii collection/statistics-daily >/dev/null 2>&1
+#为催收成功，但无催收建议的记录提供贷款建议
+10 5 * * * /usr/bin/php /data/www/default/yii collection/auto-suggestion >/dev/null 2>&1
+#逾期一天自动发催收短信
+20 5 * * * /usr/bin/php /data/www/default/yii collection/send-mess >/dev/null 2>&1
+#逾期31天自动发催收警告短信
+30 5 * * * /usr/bin/php /data/www/default/yii collection/overdue-latest-send-mess >/dev/null 2>&1
+#统计按金额分段、逾期等级的催回情况
+40 5 * * * /usr/bin/php /data/www/default/yii collection/crontab-statistics-stage >/dev/null 2>&1
+#催收预警
+50 5 * * * /usr/bin/php /data/www/default/yii collection/info-warning-pay-failed >/dev/null 2>&1
+#单人统计
+0 6 * * * /usr/bin/php /data/www/default/yii collection-statistic/all-admin-statistic >/dev/null 2>&1
+#催收成功状态更新
+*/10 6-20 * * * /usr/bin/php /data/www/default/yii collection/collection-out >/dev/null 2>&1

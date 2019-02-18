@@ -1,0 +1,256 @@
+body {margin:0; padding:0; font: "微软雅黑",\5FAE\8F6F\96C5\9ED1;}
+h3,h4,p{padding:0; margin:0;}
+img{vertical-align:top;border:0;}
+h3,h4{font-size:inherit; font-weight:normal;} 
+a {
+    text-decoration: none;
+}
+/*公共类*/
+.pa {
+    position: absolute;
+    top: 380px;
+    left: 65px;
+}
+.br10 {
+    border-radius: 10px;
+}
+.downbt {
+    display: block;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 162px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    text-indent: 34px;
+    cursor: pointer;
+}
+.downbt span {
+    position: absolute;
+    height: 24px;
+    width: 20px;
+    left: 34px;
+    top: 13px;
+}
+.downbt span.icon-w {
+    display: block;
+}
+.downbt span.icon-h {
+    display: none;
+}
+.downbt:hover {
+    border-color: #10b5c9;
+    background-color: #fff;
+    color: #10b5c9;
+}
+.downbt:hover span.icon-w {
+    display: none;
+}
+.downbt:hover span.icon-h {
+    display: block;
+}
+
+.title-dline {
+    font-size: 40px;
+    color: #333;
+}
+.title-dline::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 144px;
+    border-radius: 2px;
+}
+
+/* container */
+.container {
+    min-width: 1170px;
+}
+
+/*banner*/
+.banner {
+    background: url(../../image/pc-site/sxd-index/banner.png) no-repeat top center;
+    width: 100%;
+}
+.banner .banner-in {
+    width: 1170px;
+    height: 624px;
+    position: relative;
+    left: 50%;
+    margin-left: -585px;
+}
+.banner .banner-in .android-down {
+    margin-top: 90px;
+}
+.banner .banner-in .android-down span.icon-w {
+    background: url(../../image/pc-site/sxd-index/banner_icon_android.png) no-repeat center;
+}
+.banner .banner-in .android-down span.icon-h {
+    background: url(../../image/pc-site/sxd-index/banner_icon_android_hover.png) no-repeat center;
+}
+.banner .banner-in .ios-down span.icon-w {
+    background: url(../../image/pc-site/sxd-index/banner_icon_ios.png) no-repeat center;
+    background-size: 20px 24px;
+}
+.banner .banner-in .ios-down span.icon-h {
+    background: url(../../image/pc-site/sxd-index/banner_icon_ios_hover.png) no-repeat center;
+}
+.banner .banner-in .code {
+    margin-left: 264px; 
+    margin-top: -35px;
+}
+
+/*con1*/
+.con1 {
+    width: 100%;
+    background-color: #fff;
+    padding: 74px 0 120px;
+}
+.con1 .con1-title {
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+}
+.con1 .con1-title-text {
+    text-align: center;
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 16px;
+    position: relative;
+}
+.con1 .con1-title-text .title-dline {
+    padding: 0 40px;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-size: 30px;
+    color: #999;
+}
+.con1 .con1-title-text .title-dline:after {
+    /* 如果浏览器不支持渐变，使用图像作为背景 */ 
+    background: #11bece; 
+    /* Webkit: Safari 4-5, Chrome 1-9 */ 
+    background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#046fad), to(#11bece)); 
+    /* Webkit: Safari 5.1+, Chrome 10+ */ 
+    background: -webkit-linear-gradient(left, #046fad, #11bece); 
+    /* Firefox 3.6+ */ 
+    background: -moz-linear-gradient(left, #046fad, #11bece); 
+    /* Opera 11.10+ */ 
+    background: -o-linear-gradient(left, #046fad, #11bece); 
+    /* IE 10 */ 
+    background: -ms-linear-gradient(left, #046fad, #11bece); 
+    /* IE < 10 */ 
+    /* 注意：这一行必须写在最后 */ 
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#046fad, endColorStr=#11bece);
+    width: 110px;
+    margin: 5px auto;
+}
+.con1 .con1-title-text .line {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    background-color: #dcdcdc;
+    height: 1px;
+    width: 100%;
+}
+.con1 .con1-text {
+    padding: 96px 0 220px;
+    width: 1170px;
+    margin: 0 auto;
+}
+.con1 .con1-text .flc {
+    /*width: 390px;*/
+    float: left;
+    text-align: center;
+}
+.con1-text .flc .con-icon {
+    margin-bottom: 14px;
+    width: 96px;
+    margin: 0 auto;
+}
+.con1-text .flc .con-icon span {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    transition: all 1s;
+    margin: 0 auto;
+}
+.con1-text .flc .con-icon i {
+    display: block;
+    height: 14px;
+    width: 58px;
+    background: url(../../image/pc-site/sxd-index/content_icon01_ty.png) no-repeat center;
+    border-radius: 2px;
+    margin: 10px auto;
+}
+.con1-text .flc:hover .con-icon span {
+    animation: tada 1s;
+}
+@keyframes tada{
+    0%{transform:rotate(0);}
+    10%, 20%{transform:rotate(-5deg);}
+    30%, 50%, 70%, 90%{transform:rotate(5deg);}
+    40%, 60%, 80%{transform:rotate(-5deg);}
+    100%{transform:rotate(0);}
+}
+.con1-text .fast {
+    width: 282px;
+    margin-right: 150px;
+}
+.con1-text .fast span {
+    background: url(../../image/pc-site/sxd-index/content_icon01.png) no-repeat center;
+}
+.con1-text .convenience {
+    width: 270px;
+    margin-right: 150px;
+}
+.con1-text .convenience span {
+    background: url(../../image/pc-site/sxd-index/content_icon02.png) no-repeat center;
+}
+.con1-text .flexible {
+    width: 305px;
+    
+}
+.con1-text .flexible span {
+    background: url(../../image/pc-site/sxd-index/content_icon03.png) no-repeat center;
+}
+
+.con1-text .flc h4 {
+    font-size: 20px;
+    color: #333;
+    line-height: 40px;
+}
+.con1-text .flc p {
+    font-size: 14px;
+    color: #666;
+}
+
+/*con2*/
+.con2 {
+    background: #f7ffff url('../../image/pc-site/sxd-index/pic-xunsu05.png') no-repeat center;
+    height: 564px;
+}
+/*con3*/
+.con3 {
+    background: #f7ffff url('../../image/pc-site/sxd-index/pic-fangbian_06.png') no-repeat center;
+    height: 566px;
+}
+/*con3*/
+.con4 {
+    background: #f7ffff url('../../image/pc-site/sxd-index/pic-linghuo09.png') no-repeat center;
+    height: 562px;
+}
+.footer {
+    text-align: center;
+    padding-top: 30px;
+    height: 50px;
+    background-color: #49bee6;
+    color: #fff;
+
+}
+.footer a{
+    color: #fff;
+}

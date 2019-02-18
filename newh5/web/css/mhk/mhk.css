@@ -1,0 +1,365 @@
+body, html {
+  width: 100%;
+  min-width: 1920px; }
+
+#mhk {
+  width: 100%; }
+  #mhk .heart {
+    width: 1360px;
+    margin: 0 auto;
+    text-align: center; }
+  #mhk .tel {
+    position: fixed;
+    top: 25%;
+    right: -150px;
+    height: 68px;
+    line-height: 68px;
+    border-radius: 34px;
+    color: #fff;
+    text-align: left;
+    padding-left: 94px;
+    padding-right: 30px;
+    font-size: 16px;
+    background: #4c516a url("../../image/mhk/icon_call.png") no-repeat 40px center;
+    transition: all 1s;
+    z-index: 99; }
+  #mhk .tel:hover {
+    right: 0; }
+  #mhk .header {
+    width: 100%;
+    height: 740px;
+    position: relative;
+    background: #1f2a42 url("../../image/mhk/img_banner.png") no-repeat center center; }
+    #mhk .header .heart {
+      height: 740px;
+      position: relative; }
+    #mhk .header .erweima {
+      position: absolute;
+      width: 168px;
+      height: 168px;
+      top: 414px;
+      left: 285px;
+      background: url("../../image/mhk/erweima.png") no-repeat 0 0; }
+    #mhk .header .ios {
+      display: block;
+      position: absolute;
+      top: 425px;
+      left: 68px;
+      width: 172px;
+      height: 54px;
+      line-height: 54px;
+      border: 1px solid #fff;
+      font-size: 16px;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: all 1s; }
+      #mhk .header .ios i {
+        float: left;
+        width: 22px;
+        height: 24px;
+        margin-top: 12px;
+        margin-left: 34px;
+        margin-right: 8px;
+        background: url("../../image/mhk/ios.png") no-repeat 0 0; }
+      #mhk .header .ios span {
+        float: left; }
+    #mhk .header .ios:hover {
+      background-color: #FFF;
+      border: 1px solid rgba(255, 255, 255, 0.1); }
+      #mhk .header .ios:hover i {
+        background: url("../../image/mhk/ios-move.png") no-repeat 0 0; }
+      #mhk .header .ios:hover span {
+        color: #4c516a; }
+    #mhk .header .android {
+      display: block;
+      position: absolute;
+      top: 516px;
+      left: 68px;
+      width: 172px;
+      height: 54px;
+      line-height: 54px;
+      border: 1px solid #fff;
+      font-size: 16px;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: all 1s; }
+      #mhk .header .android i {
+        float: left;
+        width: 22px;
+        height: 22px;
+        margin-top: 15px;
+        margin-left: 34px;
+        margin-right: 8px;
+        background: url("../../image/mhk/anzhuo.png") no-repeat 0 0; }
+      #mhk .header .android span {
+        float: left; }
+    #mhk .header .android:hover {
+      background-color: #FFF;
+      border: 1px solid rgba(255, 255, 255, 0.1); }
+      #mhk .header .android:hover i {
+        background: url("../../image/mhk/anzhuo-move.png") no-repeat 0 0; }
+      #mhk .header .android:hover span {
+        color: #4c516a; }
+    #mhk .header .logo {
+      position: absolute;
+      width: 150px;
+      height: 53px;
+      top: 38px;
+      left: -32px;
+      background: url("../../image/mhk/banner_logo.png") no-repeat 0 0/cover; }
+    #mhk .header .icon {
+      position: absolute;
+      top: 220px;
+      left: 450px;
+      width: 58px;
+      height: 43px;
+      animation: icon infinite 4s;
+      background: url("../../image/mhk/banner_icon01.png") no-repeat 0 0, url("../../image/mhk/banner_icon02.png") no-repeat 0 86px;
+      background-size: cover; }
+    #mhk .header .phone-box {
+      position: absolute;
+      bottom: 0;
+      left: 673px;
+      width: 612px;
+      height: 628px; }
+      #mhk .header .phone-box .phone-one {
+        width: 363px;
+        height: 517px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        background: url("../../image/mhk/phone_01.png") no-repeat 0 0/cover;
+        transition: all 1s; }
+      #mhk .header .phone-box .phone-two {
+        width: 384px;
+        height: 627px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: url("../../image/mhk/phone_02.png") no-repeat 0 0/cover;
+        transition: all 1s; }
+    #mhk .header .phone-box:hover .phone-one {
+      left: -10px; }
+    #mhk .header .phone-box:hover .phone-two {
+      right: -10px; }
+  #mhk .advantage {
+    overflow: hidden; }
+    #mhk .advantage .title {
+      width: 331px;
+      height: 47px;
+      margin: 130px auto 0;
+      background: url("../../image/mhk/content_bt01.png") no-repeat center center; }
+    #mhk .advantage ul {
+      padding-top: 130px; }
+      #mhk .advantage ul li {
+        float: left;
+        width: 33.3%;
+        padding-bottom: 128px; }
+        #mhk .advantage ul li > div {
+          width: 260px;
+          height: 297px;
+          padding-top: 58px;
+          margin: 0 auto;
+          border-radius: 12px;
+          background-color: #f0f2f8;
+          transition: all 1s;
+          -webkit-transition: all 1s; }
+          #mhk .advantage ul li > div p {
+            margin: 88px  auto; }
+            #mhk .advantage ul li > div p span:nth-child(1) {
+              display: block;
+              font-size: 18px;
+              font-weight: 600;
+              color: #b6843d;
+              padding-bottom: 5px;
+              transition: all 1s; }
+            #mhk .advantage ul li > div p span:nth-child(2) {
+              display: block;
+              font-size: 14px;
+              color: #4c516a;
+              transition: all 1s; }
+      #mhk .advantage ul li > div:hover {
+        box-shadow: 0px 0px 50px #ccc; }
+      #mhk .advantage ul li:nth-child(1) > div i {
+        width: 80px;
+        height: 88px;
+        display: block;
+        margin: 0 auto;
+        background: url("../../image/mhk/content_bt_icon01.png") no-repeat 0 0/cover;
+        transition: all 1s; }
+      #mhk .advantage ul li:nth-child(2) > div i {
+        width: 84px;
+        height: 84px;
+        display: block;
+        margin: 0 auto;
+        background: url("../../image/mhk/content_bt_icon02.png") no-repeat 0 0/cover;
+        transition: all 1s; }
+      #mhk .advantage ul li:nth-child(3) > div i {
+        width: 97px;
+        height: 84px;
+        display: block;
+        margin: 0 auto;
+        background: url("../../image/mhk/content_bt_icon03.png") no-repeat 0 0/cover;
+        transition: all 1s; }
+  #mhk .process {
+    background-color: #f0f2f8;
+    padding-top: 121px; }
+    #mhk .process .title {
+      width: 228px;
+      height: 49px;
+      margin: 0px auto 74px;
+      background: url("../../image/mhk/content_bt02.png") no-repeat center center; }
+    #mhk .process ul li {
+      width: 20%;
+      float: left; }
+      #mhk .process ul li > div {
+        width: 240px;
+        height: 310px;
+        margin: 0 auto; }
+        #mhk .process ul li > div .arrow {
+          display: block;
+          width: 76px;
+          height: 64px;
+          margin: 120px auto;
+          background: url("../../image/mhk/arrow.png") no-repeat center center; }
+    #mhk .process ul li:nth-child(1) > div {
+      background: url("../../image/mhk/process_1.png") no-repeat center 0; }
+    #mhk .process ul li:nth-child(3) > div {
+      background: url("../../image/mhk/process_2.png") no-repeat center 35px; }
+    #mhk .process ul li:nth-child(5) > div {
+      background: url("../../image/mhk/process_3.png") no-repeat center 0; }
+  #mhk .program {
+    padding-bottom: 100px; }
+    #mhk .program .title {
+      width: 253px;
+      height: 48px;
+      margin: 135px auto 106px;
+      background: url("../../image/mhk/content_bt03.png") no-repeat center center; }
+    #mhk .program .content {
+      padding-left: 100px; }
+      #mhk .program .content .img {
+        float: left;
+        width: 496px;
+        height: 520px;
+        background: url("../../image/mhk/content_bt03_icon.png") no-repeat center center; }
+      #mhk .program .content .tips {
+        float: left;
+        width: 631px;
+        padding-top: 40px;
+        margin-left: 100px; }
+        #mhk .program .content .tips ul li {
+          position: relative;
+          margin-bottom: 40px;
+          border-radius: 12px;
+          padding-left: 20px;
+          transition: all 1s;
+          -webkit-transition: all 1s; }
+          #mhk .program .content .tips ul li > div {
+            width: 631px;
+            height: 134px; }
+            #mhk .program .content .tips ul li > div p {
+              color: #4c516a;
+              text-align: left;
+              padding-top: 35px; }
+              #mhk .program .content .tips ul li > div p span:nth-child(1) {
+                display: block;
+                font-size: 22px;
+                font-weight: 600;
+                padding-bottom: 10px; }
+              #mhk .program .content .tips ul li > div p span:nth-child(2) {
+                display: block;
+                font-size: 16px;
+                margin-left: 20px; }
+          #mhk .program .content .tips ul li > span {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: -15px;
+            top: 46%;
+            background-color: #fff;
+            transform: rotate(45deg); }
+        #mhk .program .content .tips ul li:hover {
+          box-shadow: 0px 0px 60px #ccc; }
+  #mhk .app-down {
+    background-color: #f0f2f8;
+    height: 344px; }
+    #mhk .app-down .heart .left {
+      float: left;
+      width: 40%;
+      height: 344px;
+      position: relative; }
+      #mhk .app-down .heart .left i {
+        position: absolute;
+        right: 50px;
+        top: 100px;
+        width: 144px;
+        height: 144px;
+        background: url("../../image/mhk/nav_logo.png") no-repeat 0 0; }
+    #mhk .app-down .heart .right {
+      float: left;
+      width: 60%;
+      text-align: left;
+      color: #4c516a;
+      padding: 114px 0;
+      position: relative; }
+      #mhk .app-down .heart .right p:nth-child(1) {
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 10px; }
+      #mhk .app-down .heart .right p:nth-child(2) {
+        font-size: 18px;
+        padding-bottom: 25px; }
+      #mhk .app-down .heart .right span {
+        display: block;
+        width: 500px;
+        height: 17px;
+        padding-left: 129px;
+        background: url("../../image/mhk/nav_icon_star.png") no-repeat 0 center; }
+      #mhk .app-down .heart .right .b-ios, #mhk .app-down .heart .right .b-anzhuo {
+        position: absolute;
+        width: 82px;
+        height: 28px;
+        background-color: #4c516a;
+        border-radius: 13px;
+        line-height: 28px;
+        text-align: center;
+        top: 200px;
+        color: #fff;
+        transition: all 1s; }
+      #mhk .app-down .heart .right .b-ios {
+        left: 200px; }
+      #mhk .app-down .heart .right .b-ios:hover, #mhk .app-down .heart .right .b-anzhuo:hover {
+        color: #4c516a;
+        background-color: #FFF; }
+      #mhk .app-down .heart .right .b-anzhuo {
+        left: 300px; }
+      #mhk .app-down .heart .right .back {
+        position: absolute;
+        bottom: 0px;
+        right: 100px;
+        color: #b6843d;
+        font-size: 14px;
+        height: 72px;
+        padding: 55px 20px 0px;
+        background: url("../../image/mhk/back.png") no-repeat center 0; }
+  #mhk .footer {
+    height: 98px;
+    line-height: 98px;
+    background-color: #4c516a;
+    font-size: 14px;
+    color: #fff; }
+
+@keyframes icon {
+  0% {
+    background: url("../../image/mhk/banner_icon01.png") no-repeat 0 0, url("../../image/mhk/banner_icon02.png") no-repeat 0 86px, url("../../image/mhk/banner_icon01.png") no-repeat 0 172px; }
+  25% {
+    background: url("../../image/mhk/banner_icon01.png") no-repeat 0 -43px, url("../../image/mhk/banner_icon02.png") no-repeat 0 43px, url("../../image/mhk/banner_icon01.png") no-repeat 0 129px; }
+  50% {
+    background: url("../../image/mhk/banner_icon01.png") no-repeat 0 -86px, url("../../image/mhk/banner_icon02.png") no-repeat 0 0px, url("../../image/mhk/banner_icon01.png") no-repeat 0 86px; }
+  75% {
+    background: url("../../image/mhk/banner_icon01.png") no-repeat 0 -129px, url("../../image/mhk/banner_icon02.png") no-repeat 0 -43px, url("../../image/mhk/banner_icon01.png") no-repeat 0 43px; }
+  100% {
+    background: url("../../image/mhk/banner_icon01.png") no-repeat 0 -172px, url("../../image/mhk/banner_icon02.png") no-repeat 0 -86px, url("../../image/mhk/banner_icon01.png") no-repeat 0 0px; } }
+
+/*# sourceMappingURL=mhk.css.map */

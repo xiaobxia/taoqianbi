@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@mixin font-dpr($font-size) {
+    font-size: $font-size;
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    }
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+}
+@function rem($px){
+    @return $px / 75px * 1rem;
+}
+// 公用样式
+html,body,.container{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+._radiu_16px{
+    border-radius: rem(16px);
+}
+._radiu_45px{
+    border-radius: rem(45px);
+}
+.clear{
+    *zoom:1;
+} 
+.clear:after{
+    content:"."; 
+    display:block; 
+    height:0; 
+    overflow:hidden; 
+    clear:both; 
+    visibility:hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+}
+ 
+// 落地页样式
+#stream{
+    width: rem(750px);
+   	height: rem(2251px);
+    color: #fff;
+    position: relative;
+	background: url('../image/bannerBg.png') no-repeat center/cover;
+    /* input placeholder文字颜色 */
+    input::-webkit-input-placeholder { /* WebKit browsers */
+      color: rgba(255,243,193,0.6);
+    }
+    input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: rgba(255,243,193,0.6);
+    }
+    input::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: rgba(255,243,193,0.6);
+    }
+    input:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: rgba(255,243,193,0.6);
+    }
+    .con{
+        width: 100%;
+		padding-top: rem(700px);
+        // form表单样式
+        .input-form{
+            input{
+                display: block;
+                width: rem(670px);
+                margin: 0 auto;
+                margin-bottom: rem(40px);
+                padding:rem(26px) 0 rem(26px) rem(110px);
+                line-height:rem(34px);
+                color: #fff3c1;
+                @include font-dpr(15px);
+                box-sizing: border-box; 
+                background-color: transparent;  
+                border: 2px solid #fff3c1;
+            }
+            input:focus{
+              color:#fff3c1;
+            }
+            .btn{
+                width: rem(690px);
+                height: rem(90px);
+                line-height:rem(90px);
+                background: #fff3c1;
+                text-align: center;
+                margin: 0 auto;
+                color: #ff6457;
+                @include font-dpr(18px); 
+            }
+            .user-input{
+                position: relative;
+                .iconUser{
+                    position: absolute;
+                    left: rem(80px);
+                    top: rem(23px);
+                    background: url('../image/iconUser.png') no-repeat center/cover;
+
+                    width: rem(42px);
+                    height: rem(42px);
+                }
+            }
+            .code-input{
+                width: rem(670px);
+                margin: 0 auto;
+                overflow: hidden;
+                position: relative;
+                .iconMsg{
+                    position: absolute;
+                    left: rem(40px);
+                    top: rem(23px);
+                    background: url('../image/iconMsg.png') no-repeat center/cover;
+                    width: rem(42px);
+                    height: rem(42px);
+                }
+                ._input_sp{
+                    width: rem(400px);
+                    float: left;
+                }
+                .get_code{
+                    width: rem(190px);
+                    float: right;
+                    @include font-dpr(15px); 
+                    color: #ff6457;
+                }
+            }
+            .submit{
+                margin: rem(10px) auto;
+            }
+        }
+    }
+    
+}

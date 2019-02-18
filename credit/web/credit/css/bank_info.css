@@ -1,0 +1,43 @@
+*{padding:0;margin:0;}
+div,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,img,ol,ul,li,table,th,td,p,span,a{border:0;}
+img,input{border:none;vertical-align:middle;}
+body{font-family:Tahoma,Arial,Helvetica,"宋体";font-size:12px;text-align:center;background:#FFF;color:#000;}
+html{overflow-y:scroll;}
+ul,ol{list-style-type:none;}
+th,td,input{font-size:12px;}
+h3{font-size:14px;}
+button{border:none;cursor:pointer;font-size:12px;background-color:transparent;}
+select{border-width:1px;_zoom:1;border-style:solid;padding-top:2px;font-size:12px;}
+.clear{clear:both;font-size:1px;height:0;visibility:hidden;line-height:0;}
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+a:link,a:visited{text-decoration:none;}
+a:hover,a:active{text-decoration:none;}
+
+.bank_list{list-style: none;
+    border-bottom: 1px solid #E6E6E6;
+    height: 9vh;
+    width: 100%;
+    line-height: 9vh;
+    text-align: left;
+}
+.bank_list img{list-style: none;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    width: 4vh;
+    margin-bottom: 1.2vh;
+}
+.bank_list span{list-style: none;
+    font-size: 2.5vh;
+    color: #3A3A3A;
+    font-family: 'Microsoft YaHei', 微软雅黑, sans-serif;
+}
+.flag{height: 2vh;
+    background-color:#F2F2F2 ;
+}
+.container{
+    padding: 0 0 0;
+
+}
+
+

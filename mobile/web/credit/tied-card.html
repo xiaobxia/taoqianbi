@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <script src="js/flexible.js"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
+  </head>
+  <body>
+    <div class="tied-card">
+      <style>body{background:#eff3f5;}</style>
+      <div>
+        <p class="tips">添加打款银行卡</p>
+        <ul class="common-list">
+          <li>
+            <label>持卡人</label>
+            <span>张二</span>
+          </li>
+          <li>
+            <label>选择银行</label>
+            <select>
+              <option value ="">请选择银行</option>
+              <option value ="">14</option>
+            </select>
+          </li>
+          <li>
+            <label>卡号</label>
+            <span><input placeholder="请输入银行卡号" name="" type="text" value=""/></span>
+          </li>
+          <li>
+            <label>手机号</label>
+            <span><input placeholder="请输入银行预留手机号" name="" type="text" value=""/></span>
+          </li>
+          <li class="code">
+            <label>验证码</label>
+            <span><input placeholder="请输入验证码" name="" type="text" value=""/><a href="">点击获取</a></span>
+          </li>
+        </ul>
+        <p class="error">卡号错误</p>
+        <p class="info">由于邮政储蓄银行不支持还款代扣，建议优先选择其他银行卡。</p>
+        <a class="common-button disabled-button" href="">下一步</a>
+      </div>
+    </div>
+  
+</html>

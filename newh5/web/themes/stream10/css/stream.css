@@ -1,0 +1,118 @@
+@charset "UTF-8";
+html, body, .container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto; }
+
+._radiu_16px {
+  border-radius: 0.2133333333rem; }
+
+._radiu_45px {
+  border-radius: 0.6rem; }
+
+.clear {
+  *zoom: 1; }
+
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+#stream {
+  width: 10rem;
+  height: 30.0133333333rem;
+  color: #fff;
+  position: relative;
+  background: url("../image/bannerBg.png") no-repeat center/cover;
+  /* input placeholder文字颜色 */ }
+  #stream input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: rgba(255, 243, 193, 0.6); }
+  #stream input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: rgba(255, 243, 193, 0.6); }
+  #stream input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: rgba(255, 243, 193, 0.6); }
+  #stream input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: rgba(255, 243, 193, 0.6); }
+  #stream .con {
+    width: 100%;
+    padding-top: 9.3333333333rem; }
+    #stream .con .input-form input {
+      display: block;
+      width: 8.9333333333rem;
+      margin: 0 auto;
+      margin-bottom: 0.5333333333rem;
+      padding: 0.3466666667rem 0 0.3466666667rem 1.4666666667rem;
+      line-height: 0.4533333333rem;
+      color: #fff3c1;
+      font-size: 15px;
+      box-sizing: border-box;
+      background-color: transparent;
+      border: 2px solid #fff3c1; }
+      [data-dpr="2"] #stream .con .input-form input {
+        font-size: 30px; }
+      [data-dpr="3"] #stream .con .input-form input {
+        font-size: 45px; }
+    #stream .con .input-form input:focus {
+      color: #fff3c1; }
+    #stream .con .input-form .btn {
+      width: 9.2rem;
+      height: 1.2rem;
+      line-height: 1.2rem;
+      background: #fff3c1;
+      text-align: center;
+      margin: 0 auto;
+      color: #ff6457;
+      font-size: 18px; }
+      [data-dpr="2"] #stream .con .input-form .btn {
+        font-size: 36px; }
+      [data-dpr="3"] #stream .con .input-form .btn {
+        font-size: 54px; }
+    #stream .con .input-form .user-input {
+      position: relative; }
+      #stream .con .input-form .user-input .iconUser {
+        position: absolute;
+        left: 1.0666666667rem;
+        top: 0.3066666667rem;
+        background: url("../image/iconUser.png") no-repeat center/cover;
+        width: 0.56rem;
+        height: 0.56rem; }
+    #stream .con .input-form .code-input {
+      width: 8.9333333333rem;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative; }
+      #stream .con .input-form .code-input .iconMsg {
+        position: absolute;
+        left: 0.5333333333rem;
+        top: 0.3066666667rem;
+        background: url("../image/iconMsg.png") no-repeat center/cover;
+        width: 0.56rem;
+        height: 0.56rem; }
+      #stream .con .input-form .code-input ._input_sp {
+        width: 5.3333333333rem;
+        float: left; }
+      #stream .con .input-form .code-input .get_code {
+        width: 2.5333333333rem;
+        float: right;
+        font-size: 15px;
+        color: #ff6457; }
+        [data-dpr="2"] #stream .con .input-form .code-input .get_code {
+          font-size: 30px; }
+        [data-dpr="3"] #stream .con .input-form .code-input .get_code {
+          font-size: 45px; }
+    #stream .con .input-form .submit {
+      margin: 0.1333333333rem auto; }
+
+/*# sourceMappingURL=stream.css.map */

@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@function rem($px) {
+  @return $px / 75px * 1rem;
+}
+
+// 公用样式
+html, body, .container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+._radiu_10px {
+  -moz-border-radius: rem(10px);
+  -webkit-border-radius: rem(10px);
+  border-radius: rem(10px);
+}
+
+._radiu_20px {
+  -moz-border-radius: rem(20px);
+  -webkit-border-radius: rem(20px);
+  border-radius: rem(20px);
+}
+
+// 开心借 channel-happy 样式
+.channel_happy {
+  background: url("../../image/channel-happy/banner.png") no-repeat center;
+  background-size: rem(750px) rem(1334px);
+  width: 100%;
+  min-height: rem(1334px);
+  font-size: rem(30px);
+  position: relative;
+  top: 0;
+  left: 0;
+  /* input placeholder文字颜色 */
+  input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #8d8d8d;
+  }
+  input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #8d8d8d;
+  }
+  input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #8d8d8d;
+  }
+  input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #8d8d8d;
+  }
+  //logo样式
+  .logo {
+    position: absolute;
+    top: rem(30px);
+    left: rem(34px);
+    width: rem(142px);
+    height: rem(44px);
+  }
+  .main {
+    width: rem(680px);
+    margin: 0 auto;
+    padding-top: rem(522px);
+    // form表单样式
+    .input-form {
+      width: rem(680px);
+      margin: auto;
+      border: rem(10px) solid #fff;
+      box-sizing: border-box;
+      background: #fff;
+      .form-box {
+        width: rem(660px);
+        border: rem(2px) solid #dcdcdc;
+        padding: rem(52px) rem(53px);
+        box-sizing: border-box;
+        background: #fff;
+        input {
+          display: block;
+          width: rem(550px);
+          height: rem(88px);
+          margin: 0 auto;
+          background-color: #fff;
+          font-size: rem(30px);
+          margin-bottom: rem(30px);
+          color: #000;
+          border: rem(2px) solid #bfbfbf;
+          padding-left: rem(74px);
+          box-sizing: border-box;
+
+        }
+        //  急速借款按钮
+        #autoRegister {
+          width: rem(555px);
+          height: rem(85px);
+          margin: 0 auto;
+          background: url('../../image/channel-happy/button.png') no-repeat center/cover;
+          background-size: rem(565px) rem(98px);
+          margin-top: rem(50px);
+          margin-bottom: rem(3px);
+        }
+      }
+      ._input{
+        position: relative;
+        .icon{
+          position: absolute;
+          top: rem(-5px);
+          left: rem(28px);
+        }
+      }
+      .input-user {
+        .telIcon {
+          background: url('../../image/channel-happy/phoneIcon.png') no-repeat center;
+          background-size: rem(24px) rem(40px);
+          width: rem(26px);
+          height: rem(98px);
+        }
+        //取消输入号码按钮
+        #close {
+          position: absolute;
+          background: url('../../image/channel-happy/cancel.png') no-repeat center;
+          background-size: rem(36px) rem(36px);
+          width: rem(36px);
+          height: rem(36px);
+          right: rem(35px);
+          top: rem(25px);
+          display: none;
+        }
+
+      }
+      .input-password {
+        .pwdIcon {
+          background: url('../../image/channel-happy/pwdIcon.png') no-repeat center;
+          background-size: rem(24px) rem(26px);
+          width: rem(26px);
+          height: rem(98px);
+        }
+      }
+      .input-code {
+        .timeIcon {
+          background: url('../../image/channel-happy/timeIcon.png') no-repeat left center;
+          background-size: rem(25px) rem(25px);
+          width: rem(70px);
+          height: rem(98px);
+        }
+        // 获取验证码按钮
+        .btn {
+          position: absolute;
+          top: rem(14px);
+          right: rem(32px);
+          width: rem(180px);
+          height: rem(60px);
+          background: #fff;
+          line-height: rem(60px);
+          text-align: center;
+          color: #ff8c00;
+          font-size: rem(30px);
+        }
+      }
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: rem(34px);
+    left: rem(130px);
+    font-size: rem(23px);
+    line-height:rem(23px);
+    color: rgba(0, 0, 0, 0.34);
+    p {
+      text-align: center;
+      padding-bottom: rem(13px);
+    }
+  }
+}
+
