@@ -91,8 +91,8 @@ return [
         'url' => 'http://101.227.68.68:7891/mt',
         'collurl' => '',
         'balance_url' => '',
-        'account' => '811580',
-        'password' => 'Xinb1305',
+        'account' => '811306',
+        'password' => 'DEU25VNM',
         'expid' => '',
 
     ],

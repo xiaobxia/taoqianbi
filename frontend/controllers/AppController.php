@@ -512,7 +512,7 @@ class AppController extends BaseController {
         $device->device_info = $this->client->deviceName;
         $device->os_type = $this->client->clientType;
         $device->os_version = $this->client->osVersion;
-        $device->app_type = IntegralWallService::APP_TYPE_KJ;
+//        $device->app_type = IntegralWallService::APP_TYPE_KJ;
         $device->app_version = $this->client->appVersion;
         $device->source_tag = $this->client->appMarket;
         $device->reserved = ''; # 备用字段
