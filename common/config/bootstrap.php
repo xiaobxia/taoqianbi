@@ -2,7 +2,7 @@
 defined('APP_DOWNLOAD_URL') or define('APP_DOWNLOAD_URL','http://www.jisuhh.cn/xhb.apk');
 defined('APP_IOS_DOWNLOAD_URL') or define('APP_IOS_DOWNLOAD_URL','https://fir.im/zgyk');
 
-defined('SITE_TEL') or define('SITE_TEL', '400-8577900');
+defined('SITE_TEL') or define('SITE_TEL', '13285711611');
 
 //报警手机号
 defined('NOTICE_MOBILE') or define('NOTICE_MOBILE', '13285711611');//主要的
@@ -19,19 +19,19 @@ defined('WEIXIN_APPID') or define('WEIXIN_APPID', 'wx8407c2f12362fc2c');//微信
 defined('WEIXIN_SECRET') or define('WEIXIN_SECRET', '12070845213cff02fccd4f6617f1ab05');//微信公众号key
 defined('WEIXIN_Token') or define('WEIXIN_Token', 'weixin_jshh_online');//微信公众号token
 
-defined('ALIPAY_ACCOUNT') or define('ALIPAY_ACCOUNT', '3527375680@qq.com');
-defined('ALIPAY_NAME') or define('ALIPAY_NAME', '杭州恿鑫电子商务有限公司');//浙江省杭州市西湖区文二西路669号407室（入驻创富港商务秘书托管013号）
+defined('ALIPAY_ACCOUNT') or define('ALIPAY_ACCOUNT', '13285711611');
+defined('ALIPAY_NAME') or define('ALIPAY_NAME', '长沙顺网互联网科技有限公司');//浙江省杭州市西湖区文二西路669号407室（入驻创富港商务秘书托管013号）
 
 define('WEIXIN_GONGZHONGNHAO', '淘钱币');
 define('WEIXIN_GONGZHONGNHAO_SHORENAME', 'XHBGZH');//微信公众号英文名称
 defined('APP_NAMES') or define('APP_NAMES', '淘钱币');
 
-defined('COMPANY_NAME') or define('COMPANY_NAME', '杭州恿鑫电子商务有限公司');
-defined('COMPANY_ADDRESS') or define('COMPANY_ADDRESS', '浙江省杭州市西湖区文二西路669号407室（入驻创富港商务秘书托管013号）');
-defined('COMPANY_AREA') or define('COMPANY_AREA', '杭州市');
+defined('COMPANY_NAME') or define('COMPANY_NAME', '长沙顺网互联网科技有限公司');
+defined('COMPANY_ADDRESS') or define('COMPANY_ADDRESS', '长沙经济技术开发区板仓>南路29号新长海中心服务外包基地3栋A座501');
+defined('COMPANY_AREA') or define('COMPANY_AREA', '长沙市');
 
-defined('SITE_EMAIL') or define('SITE_EMAIL', 'service@sdpurse.com');
-defined('SITE_ICP') or define('SITE_ICP', '浙ICP备18026675号-1');
+defined('SITE_EMAIL') or define('SITE_EMAIL', 'service@jisuhh.com');
+defined('SITE_ICP') or define('SITE_ICP', '湘ICP备18016418号');
 defined('POLICE_ICP_CODE') or define('POLICE_ICP_CODE', '31011002000164');//公安机关备案号http://www.beian.gov.cn/ 申请
 defined('POLICE_ICP') or define('POLICE_ICP', '浙公网安备 31011002000164号');//公安机关备案号
 
@@ -46,11 +46,11 @@ if(isset($_SERVER['HTTP_HOST'])){
     defined('APP_DOMAIN') or define('APP_DOMAIN', '.jisuhh.cn');
 }
 
-defined('OSS_RES_DOMAIN') or define('OSS_RES_DOMAIN', 'sdhb-pros.oss-cn-hangzhou-internal.aliyuncs.com');
+defined('OSS_RES_DOMAIN') or define('OSS_RES_DOMAIN', 'jshh.oss-cn-beijing.aliyuncs.com');
 defined('OSS_RES_PROTOCOL') or define('OSS_RES_PROTOCOL', 'http');
 defined('OSS_RES_URL') or define('OSS_RES_URL', OSS_RES_PROTOCOL.'://'.OSS_RES_DOMAIN.'/');
-defined('OSS_RES_URL_OUTSIDE') or define('OSS_RES_URL_OUTSIDE', OSS_RES_PROTOCOL.'://sdhb-pros.oss-cn-hangzhou.aliyuncs.com/');//外网地址
-defined('OSS_HOST') or define('OSS_HOST', 'oss-cn-hangzhou-internal.aliyuncs.com');
+defined('OSS_RES_URL_OUTSIDE') or define('OSS_RES_URL_OUTSIDE', OSS_RES_PROTOCOL.'://jshh.oss-cn-beijing.aliyuncs.com/');//外网地址
+defined('OSS_HOST') or define('OSS_HOST', 'oss-cn-beijing.aliyuncs.com');
 
 defined('APP_IP_ADDRESS') or define('APP_IP_ADDRESS', isset($_SERVER['HTTP_CLIENT_IP']) ? $_SERVER['HTTP_CLIENT_IP'] : "");
 
