@@ -52,7 +52,7 @@ return [
     'verification'          => [
         'title_mark_must_color'     => '#ff8003', //必填 色值
         'title_mark_option_color'   => '#999999', //选填 色值
-        'operator_color'            => '#6a4dfc', //已填写  色值
+        'operator_color'            => '#1ec8e1', //已填写  色值
     ],
 
     //公积金提示信息

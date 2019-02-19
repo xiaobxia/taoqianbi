@@ -304,14 +304,14 @@ abstract class BaseController extends Controller {
      * 获取主题色
      */
     public function getColor($source = ''){
-        $color = '#6a4dfc';//默认
+        $color = '#1ec8e1';//默认
         if(empty($source) || !isset($source)){
             $source = $this->getSource();
         }
 
         switch ($source){
             case LoanPerson::PERSON_SOURCE_MOBILE_CREDIT://极速荷包
-                $color = '#6a4dfc';//默认
+                $color = '#1ec8e1';//默认
                 break;
         }
         return $color;

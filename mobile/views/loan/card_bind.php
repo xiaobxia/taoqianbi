@@ -4,7 +4,7 @@ use yii\helpers\Url;
 use common\models\LoanPerson;
 switch ($source_type){
     case LoanPerson::PERSON_SOURCE_MOBILE_CREDIT;
-        $color = "#6a4dfc";
+        $color = "#1ec8e1";
         break;
     case LoanPerson::PERSON_SOURCE_HBJB;
         $color = "#ff6462";
@@ -124,7 +124,7 @@ switch ($source_type){
             var flag = checkbox.is(":checked");
             console.log(flag);
             if (flag === true) {
-                $('.sumbit-button').css('background-color', '#6a4dfc');
+                $('.sumbit-button').css('background-color', '#1ec8e1');
                 $('.sumbit-button').attr("href", "#");
             } else {
                 $(".sumbit-button").css('background-color', '#eee');
