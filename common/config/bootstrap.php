@@ -10,9 +10,11 @@ defined('NOTICE_MOBILE2') or define('NOTICE_MOBILE2', '13285711611');//异常报
 defined('NOTICE_MOBILE3') or define('NOTICE_MOBILE3', '13285711611');//异常报警
 
 //报警邮箱
-defined('NOTICE_MAIL') or define('NOTICE_MAIL', 'lige@sdpurse.com');
-defined('NOTICE_MAIL2') or define('NOTICE_MAIL2', 'lige@sdpurse.com');
-defined('NOTICE_MAIL3') or define('NOTICE_MAIL3', 'lige@sdpurse.com');
+defined('NOTICE_MAIL') or define('NOTICE_MAIL', '1771372000@qq.com');
+defined('NOTICE_MAIL2') or define('NOTICE_MAIL2', '1771372000@qq.com');
+defined('NOTICE_MAIL3') or define('NOTICE_MAIL3', '1771372000@qq.com');
+
+defined('QQ_SERVICE') or define('QQ_SERVICE', '790257282');
 
 defined('API_PAYURL') or define('API_PAYURL', '10.0.30.113:15422');//网关支付 端口 pay.jisuhh.cn:15422 47.110.250.145
 defined('WEIXIN_APPID') or define('WEIXIN_APPID', 'wx8407c2f12362fc2c');//微信公众号id

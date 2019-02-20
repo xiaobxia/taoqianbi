@@ -347,12 +347,12 @@ class AppController extends BaseController {
             'configVersion'		=> $confVer,
             'iosVersion'		=> Yii::$app->params['appConfig']['iosVersion'],
             'androidVersion'	=> Yii::$app->params['appConfig']['androidVersion'],
-            'siteUrl'			=> 'www.kdqugou.com',
+            'siteUrl'			=> SITE_DOMAIN,
             'callCenter'        => '',
-            'callQQService'		=> '',
+            'callQQService'		=> QQ_SERVICE,
             'callQQGroup'       => '',
             'companyAddress'	=> COMPANY_ADDRESS,
-            'companyEmail'		=> 'hr@kdqugou.com',
+            'companyEmail'		=> SITE_EMAIL,
             'register_protocol_url'=>'https://api.kdqugou.com/page/detail?id=535',
             'companyAbout'		=> '
 公司简介：
