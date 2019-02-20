@@ -1,13 +1,13 @@
 <?php
 //oss配置
 //ACCESS_ID
-define('OSS_ACCESS_ID', 'LTAI9jYLQylTWyoT');
+define('OSS_ACCESS_ID', 'LTAI3gpgugB7lToi');
 
 //ACCESS_KEY
-define('OSS_ACCESS_KEY', 'rkcT7wqGpZ8PpOy2UIM9OoYDpXZgN8');
+define('OSS_ACCESS_KEY', 'AANnh2E4aXMQFpshxWmnRp4jOtTFiw');
 
 //ACCESS_KEY
-define('DEFAULT_OSS_BUCKET', 'sdhb-pros');
+define('DEFAULT_OSS_BUCKET', 'jshh');
 
 //是否记录日志
 define('ALI_LOG', FALSE);
