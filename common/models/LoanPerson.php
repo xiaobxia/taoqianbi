@@ -469,7 +469,8 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
 //        self::USER_AGENT_KXJIE,
 //        self::USER_AGENT_XH,
         self::USER_AGENT_SDHB,
-        self::USER_AGENT_OTHER
+        self::USER_AGENT_OTHER,
+        'Postman'
     ];
 
     # 全部的短息渠道
