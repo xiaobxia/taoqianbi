@@ -6,7 +6,7 @@
  *
  * crontab:
     * * * * * echo >>/tmp/schedule.log; date >>/tmp/schedule.log 2>&1
-    * * * * * /usr/local/bin/php /data/www/wzdai.com/yii schedule/run --scheduleFile=@console/config/schedule_financial.php >>/tmp/schedule_.log 2>&1
+    * * * * * /usr/bin/php /data/www/wzdai.com/yii schedule/run --scheduleFile=@console/config/schedule_financial.php >>/tmp/schedule_.log 2>&1
  */
 
 $_date = \date('Ymd');
