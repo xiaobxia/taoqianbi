@@ -5,8 +5,8 @@
  * manaual:   ./yii schedule/run --scheduleFile=@console/config/schedule_financial.php
  *
  * crontab:
-    * * * * * echo >>/tmp/schedule.log; date >>/tmp/schedule.log 2>&1
-    * * * * * /usr/bin/php /data/www/wzdai.com/yii schedule/run --scheduleFile=@console/config/schedule_financial.php >>/tmp/schedule_.log 2>&1
+    * * * * * echo >>/tmp/schedule_financial.log; date >>/tmp/schedule_financial.log 2>&1
+    * * * * * /usr/bin/php /data/taoqianbi/yii schedule/run --scheduleFile=@console/config/schedule_financial.php >>/tmp/schedule_.log 2>&1
  */
 
 $_date = \date('Ymd');
