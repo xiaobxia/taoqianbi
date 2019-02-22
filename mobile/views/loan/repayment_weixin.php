@@ -40,7 +40,7 @@ use mobile\components\ApiUrl;
          text-decoration: none;
          padding: 0.333333rem 0.3rem 0.333333rem 0.2rem;
          border-radius: .15rem;
-         color: #6a4dfc;
+         color: #1ec8e1
          text-decoration: none;
          -webkit-tap-highlight-color:transparent;
     }
@@ -50,8 +50,8 @@ use mobile\components\ApiUrl;
     }
     .pay-result .container p  span a span{
         padding: 0.133333rem 0.333333rem;
-        border: 1px solid #6a4dfc;
-        color: #6a4dfc;
+        border: 1px solid #1ec8e1
+        color: #1ec8e1
         border-radius: 0.133333rem;
     }
 
@@ -59,7 +59,7 @@ use mobile\components\ApiUrl;
         background: #fff;
         display: block;
         text-decoration: none;
-        color: #6a4dfc;
+        color: #1ec8e1
         font-size: 0.4rem;
         text-align: center;
         height: 1.3333333333rem;

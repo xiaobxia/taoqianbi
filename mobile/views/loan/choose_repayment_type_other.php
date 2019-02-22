@@ -22,7 +22,7 @@ body{
 }
 .popup .dialog a {
     font-size: 0.3466666667rem;
-    color: #6a4dfc;
+    color: #1ec8e1
     text-decoration: none;
     display: block;
     width: 100%;

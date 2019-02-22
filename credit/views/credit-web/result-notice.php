@@ -77,11 +77,11 @@ $baseUrl = Yii::$app->getRequest()->getAbsoluteBaseUrl();
     .pop-tip .pop-btn{
         margin-top: 0.4rem;
         padding: 0.14rem 0;
-        background: #6a4dfc;
+        background: #1ec8e1
         color: #fff;
     }
     .pop-tip .pop-btn.xybt{
-        background: #6a4dfc;
+        background: #1ec8e1
     }
     .pop-tip .pop-btn.hbqb{
         background: #ff6462;

@@ -22,7 +22,7 @@ use  mobile\components\ApiUrl;
 		width: 100%;
 		height: 1.4rem;
 		line-height: 1.4rem;
-		background-color: #6a4dfc;
+		background-color: #1ec8e1
 		color: #fff;
 		font-size: 0.45rem;
 		text-align: center;

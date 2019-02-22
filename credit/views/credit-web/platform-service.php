@@ -1,6 +1,6 @@
 <style type="text/css">
 #btn_download{
-    background: #6a4dfc;
+    background: #1ec8e1
 }
 </style>
 <?php

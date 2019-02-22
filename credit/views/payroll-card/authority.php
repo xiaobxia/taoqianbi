@@ -78,7 +78,7 @@ span.underline {
     width: 80%;
     height: 6vh;
     margin: 0 auto;
-    background-color: #6a4dfc;
+    background-color: #1ec8e1
     color: #fff;
     line-height: 6vh;
     border-radius: 3vh;

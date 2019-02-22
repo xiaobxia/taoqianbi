@@ -4,7 +4,7 @@ use yii\helpers\Url;
 <style type="text/css">
 /*新增 B*/
 #zjmobliestart1{
-    /*background: #6a4dfc;*/
+    /*background: #1ec8e1*/
     background: url('<?= $this->absBaseUrl;?>/image/anniu@3x.png') no-repeat;
 }
 .phone-verify p span{ line-height: 0.72rem; }
@@ -26,7 +26,7 @@ use yii\helpers\Url;
 
 /*.phone-verify p.other label a {
     text-decoration: none;
-    color: #6a4dfc;
+    color: #1ec8e1
 }*/
 .phone-verify ul li a {
     display: inline-block;

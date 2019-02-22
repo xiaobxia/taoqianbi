@@ -8,10 +8,10 @@ use yii\helpers\Url;
           background:#eff3f5;
       }
       .disabled-button {
-          background: #6a4dfc;
+          background: #1ec8e1
       }
       .common-button{
-          background: #6a4dfc;
+          background: #1ec8e1
       }
   </style>
   <ul>
