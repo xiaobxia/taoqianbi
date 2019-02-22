@@ -624,7 +624,7 @@ if($selectBank){
             showMask(cName);
             var bg_color = '#ffffff'; // 弹框默认背景颜色
             var txt_color = '#000000'; // 弹框默认字体颜色
-            var btn_bg_color = '#6a4dfc'; // 按钮默认背景颜色
+            var btn_bg_color = '#1ec8e1'; // 按钮默认背景颜色
             var btn_txt_color = '#ffffff'; // 按钮默认字体颜色
             var btn_txt_size = 'inherit'; // 按钮默认字体大小
             if(params){

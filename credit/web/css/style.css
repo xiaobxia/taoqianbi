@@ -932,10 +932,10 @@ input:focus {
 #loan-dialog .dialog.coupon .coupon-main .checkbox.checked {
 	border-color: #1ec8e1
 	background: #1ec8e1
-	background: -webkit-radial-gradient(center center, #6a4dfc 55%, #fff 55%);
-	background: -moz-radial-gradient(center center, #6a4dfc 55%, #fff 55%);
-	background: -o-radial-gradient(center center, #6a4dfc 55%, #fff 55%);
-	background: radial-gradient(center center, #6a4dfc 55%, #fff 55%); }
+	background: -webkit-radial-gradient(center center, #1ec8e1 55%, #fff 55%);
+	background: -moz-radial-gradient(center center, #1ec8e1 55%, #fff 55%);
+	background: -o-radial-gradient(center center, #1ec8e1 55%, #fff 55%);
+	background: radial-gradient(center center, #1ec8e1 55%, #fff 55%); }
 
 .choose .head {
 	height: 0.8rem;

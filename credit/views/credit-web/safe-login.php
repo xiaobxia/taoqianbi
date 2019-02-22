@@ -31,7 +31,7 @@ use yii\helpers\Url;
             var flag = checkbox.is(":checked");
 
             if (flag === true) {
-                $('#zjmobliestart').css('background-color', '#6a4dfc');
+                $('#zjmobliestart').css('background-color', '#1ec8e1');
                 $('#zjmobliestart').attr("href", "javascript:void(0);").attr("target", "_blank");
             } else {
                 $("#zjmobliestart").css('background-color', '#eee');

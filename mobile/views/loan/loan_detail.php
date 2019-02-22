@@ -923,7 +923,7 @@ use mobile\components\ApiUrl;
                 break;
             case 5:
                 $(".repayment-detail.wrap .content ul").find("li").eq(2).attr("class","sType2");//待还款5
-                $(".repayment-detail.wrap .content .pay-status").find("h1").css("color","#6a4dfc");
+                $(".repayment-detail.wrap .content .pay-status").find("h1").css("color","#1ec8e1");
                 break;
             case 4:
                 $(".repayment-detail.wrap .content ul").find("li").eq(3).attr("class","sType3");// 已逾期4

@@ -74,7 +74,7 @@ use yii\helpers\Url;
       for(var i = 0; i < val.length; i++){
           $('#defray i').eq(i).addClass('point');
           if((i+1) <= 5){
-            $('#defray i').eq(i+1).css("border","1px solid #6a4dfc").siblings().css("border","1px solid #e6e6e6");
+            $('#defray i').eq(i+1).css("border","1px solid #1ec8e1").siblings().css("border","1px solid #e6e6e6");
           }else{
               $('#defray i').css("border","1px solid #e6e6e6");
           }

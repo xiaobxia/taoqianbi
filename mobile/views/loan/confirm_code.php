@@ -41,7 +41,7 @@ use yii\helpers\Url;
                     $('#resend').html('还需'+caption_count+'秒');
                 }else{
                     window.clearInterval(caption_intval);
-                    $('#resend').html('重新发送').css('background-color','#6a4dfc');
+                    $('#resend').html('重新发送').css('background-color','#1ec8e1');
                 }
             },1000);
         }
