@@ -49,7 +49,7 @@ if (YII_ENV_PROD) { #非线上环境，手动执行
 
     $schedule->command("ygd-check/ali-pay-repayment >>/data/tqb_log/_alipay_repayment_{$_date}.log 2>&1 &\; ls ")->cron('*/2 * * * *'); #定时更新支付宝还款
     $schedule->command("ygd-check/wei-xin-repayment >>/data/tqb_log/_wei_xin_repayment_{$_date}.log 2>&1 &\; ls ")->cron('*/2 * * * *'); #定时更新微信还款
-    $schedule->command("ygd-reject-new/update-query-number >>/data/tqb_log/_update-query-number_{$_date}.log 2>&1 &\; ls ")->cron('*/25 * * * *');//未回调 脚本置为失败的查询次数25分钟查询一次
+//    $schedule->command("ygd-reject-new/update-query-number >>/data/tqb_log/_update-query-number_{$_date}.log 2>&1 &\; ls ")->cron('*/25 * * * *');//未回调 脚本置为失败的查询次数25分钟查询一次
     ######################还款脚本 end
 
     $schedule->command("ygd-reject-new/auto-check-over-principal >>/data/tqb_log/_auto_check_over_principal_{$_date}.log 2>&1 &\; ls ")->cron('55 23 * * *'); #逾期7天以上还完借款本金后，将借款订单修改为已还款，同时加入黑名单(23点55)
