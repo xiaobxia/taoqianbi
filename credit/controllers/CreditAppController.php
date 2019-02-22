@@ -150,7 +150,7 @@ class CreditAppController extends BaseController {
             'index_card_bg' => $this->staticUrl('image/card/card_bg.png'),
             'show_type' => $show,
             'callCenter' => $call,
-            'callQQService' => QQ_SERVICE,//$qq,
+            'callQQService' => $qq,
             'callQQGroup' => $this->t('callQQGroup'),
             'companyAddress' => $this->t('companyAddress'),
             'companyEmail' => $this->t('companyEmail'),
