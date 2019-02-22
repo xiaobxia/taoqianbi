@@ -42,7 +42,6 @@ if (YII_ENV_PROD) { #非线上环境，手动执行
         $schedule->command("credit-line/set-credit-line 347 {$i} >>/data/tqb_log/_set_credit_line_{$_date}.log 2>&1 &\; ls")->cron('* * * * *'); #计算额度  @347
     }
 
-
     $_get_ds = 1;
     for ($j = 0; $j < $_get_ds; $j++) {
         $schedule->command("credit-check/get-data-source 0 {$j} >>/data/tqb_log/_get_data_source_{$_date}.log 2>&1 &\; ls")->cron('* * * * *'); #机审步骤1(收集数据)
