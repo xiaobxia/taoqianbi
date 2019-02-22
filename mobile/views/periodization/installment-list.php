@@ -33,12 +33,12 @@ use common\models\IndianaUserWish;
 -->
 </style>
 <div id="installment_list_wraper">
-    <img src="<?php echo $this->absBaseUrl;?>/image/indiana/banner_fenqi.png" width="100%">
+<!--    <img src="--><?php //echo $this->absBaseUrl;?><!--/image/indiana/banner_fenqi.png" width="100%">-->
     <div class="bg_fff padding lh_em_3 p_relative">
-        <i class="_969696" style="padding-left:6%;background:url('<?php echo $this->absBaseUrl;?>/image/indiana/icon_edit.png') no-repeat left center;background-size:8%;">填写心愿单，想要啥就有啥</i>
-        <span class="f_right a_right icon_arrow">&nbsp;<img class="v_center" src="<?php echo $this->absBaseUrl;?>/image/indiana/icon-arrow.png" alt="" width="50%"></span>
+<!--        <i class="_969696" style="padding-left:6%;background:url('--><?php //echo $this->absBaseUrl;?>/*/*/image/indiana/icon_edit.png') no-repeat left center;background-size:8%;">填写心愿单，想要啥就有啥</i>*/*/
+<!--        <span class="f_right a_right icon_arrow">&nbsp;<img class="v_center" src="--><?php //echo $this->absBaseUrl;?><!--/image/indiana/icon-arrow.png" alt="" width="50%"></span>-->
         <p class="clear"></p>
-        <a class="indie" href="<?=Url::toRoute(['user/wish','source'=>IndianaUserWish::SOUCE_FENQI],true)?>"></a>
+<!--        <a class="indie" href="--><?//=Url::toRoute(['user/wish','source'=>IndianaUserWish::SOUCE_FENQI],true)?><!--"></a>-->
     </div>
     <p class="line"></p>
 
@@ -51,7 +51,7 @@ use common\models\IndianaUserWish;
                     <div style="height:5em;margin:5% 0;background:url(<?=$val['img_url']?>) no-repeat center center;background-size:60%;"></div>
                     <p style="max-width:140px;" class="a_left lh_em_1_5 _000 o_hidden _ellipsis"><?=$val['title']?></p>
                     <p class="a_left lh_em_2 em__9 _999">总价：<i class="_999"><?=$val['installment_price']/100?></i></p>
-                    <p class="a_left lh_em_2 em__9 _999">月费率：<i class="_999 t_line_through"><?php echo IndianaOrder::FEE_RATE;?>%</i>&nbsp;<span class="bg_fd5353 fff _b_radius">&nbsp;0%&nbsp;</span></p>
+<!--                    <p class="a_left lh_em_2 em__9 _999">月费率：<i class="_999 t_line_through">--><?php //echo IndianaOrder::FEE_RATE;?><!--%</i>&nbsp;<span class="bg_fd5353 fff _b_radius">&nbsp;0%&nbsp;</span></p>-->
                     <p class="a_left lh_em_2 em__9 _999">月供：<i class="fd5353">&yen;<?=$val['month_pay'];?>&times;<?= $val['max_month'];?></i></p>
                     <p class="a_left lh_em_2 em__9 _999">分期人数：<i class="_999"><?=$val['installment_buy_count'];?></i></p>
                     <a class="indie" href="<?=Url::toRoute(['indiana/shop-installment','indiana_id'=>$val['id']],true)?>"></a>
@@ -74,8 +74,8 @@ use common\models\IndianaUserWish;
     <?php } ?>
     <p class="line"></p>
     <div class="bg_fff padding column lh_em_3 p_relative">
-        <span class="_999"><img class="v_center" src="<?php echo $this->absBaseUrl;?>/image/indiana/icon_share.png" alt="" width="5%"><i class="v_center">&nbsp;&nbsp;分享给好友</i></span>
-        <i class="f_right a_right">&nbsp;<img class="v_center" src="<?php echo $this->absBaseUrl;?>/image/indiana/right.png" alt="" width="40%"></i>
+<!--        <span class="_999"><img class="v_center" src="--><?php //echo $this->absBaseUrl;?><!--/image/indiana/icon_share.png" alt="" width="5%"><i class="v_center">&nbsp;&nbsp;分享给好友</i></span>-->
+<!--        <i class="f_right a_right">&nbsp;<img class="v_center" src="--><?php //echo $this->absBaseUrl;?><!--/image/indiana/right.png" alt="" width="40%"></i>-->
         <p class="clear"></p>
         <a class="indie" href="javascript:sharePacket()"></a>
     </div>
