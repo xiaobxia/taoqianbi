@@ -106,11 +106,11 @@ class DevUtilController extends BaseController {
         }
 
 
-        $loan_order = UserLoanOrder::findOne(['user_id' => $user_id]);
-        if ($loan_order) {
-            CommonHelper::stderr("loan order founded, cannot delete.\n");
-            return self::EXIT_CODE_ERROR;
-        }
+//        $loan_order = UserLoanOrder::findOne(['user_id' => $user_id]);
+//        if ($loan_order) {
+//            CommonHelper::stderr("loan order founded, cannot delete.\n");
+//            return self::EXIT_CODE_ERROR;
+//        }
 
         $list = [
             'tb_loan_person',
