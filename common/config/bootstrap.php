@@ -16,7 +16,7 @@ defined('NOTICE_MAIL3') or define('NOTICE_MAIL3', '1771372000@qq.com');
 
 defined('QQ_SERVICE') or define('QQ_SERVICE', '1771372000');
 
-defined('API_PAYURL') or define('API_PAYURL', '10.0.30.113:15422');//网关支付 端口 pay.jisuhh.cn:15422 47.110.250.145
+defined('API_PAYURL') or define('API_PAYURL', 'pay.jisuhh.cn:15422');//网关支付 端口 pay.jisuhh.cn:15422 47.110.250.145
 defined('WEIXIN_APPID') or define('WEIXIN_APPID', 'wx8407c2f12362fc2c');//微信公众号id
 defined('WEIXIN_SECRET') or define('WEIXIN_SECRET', '12070845213cff02fccd4f6617f1ab05');//微信公众号key
 defined('WEIXIN_Token') or define('WEIXIN_Token', 'weixin_jshh_online');//微信公众号token
