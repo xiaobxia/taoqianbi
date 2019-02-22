@@ -44,9 +44,9 @@ return [
 
     //基本信息
     'callCenter'            => SITE_TEL,
-    'callQQService'         => '',
+    'callQQService'         => QQ_SERVICE,
     'companyAddress'        => COMPANY_ADDRESS,
-    'companyEmail'          => '',
+    'companyEmail'          => NOTICE_MAIL,
 
     //认证列表
     'verification'          => [
