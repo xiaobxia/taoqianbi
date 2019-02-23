@@ -1408,7 +1408,6 @@ class OrderService extends Component
             }
             if (YII_ENV_PROD) {
                 UserLoanOrder::sendSMS(NOTICE_MOBILE, $e->getMessage());
-//                UserLoanOrder::sendSMS(NOTICE_MOBILE2, $e->getMessage());
             }
             return [
                 'code'=>$e->getCode() ? $e->getCode() : -1,
@@ -2822,7 +2821,6 @@ class OrderService extends Component
             }
             if (YII_ENV_PROD) {
                 UserLoanOrder::sendSMS(NOTICE_MOBILE, $e->getMessage());
-//                UserLoanOrder::sendSMS(NOTICE_MOBILE2, $e->getMessage());
             }
             return [
                 'code'=>$e->getCode() ? $e->getCode() : -1,

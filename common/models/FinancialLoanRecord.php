@@ -220,9 +220,7 @@ class FinancialLoanRecord extends ActiveRecord
 
     //财务小组成员
     public static $FinancialManagerList = [
-        "haoyu" => NOTICE_MOBILE2,
         "yuchen" => NOTICE_MOBILE,
-//		"lijia" => NOTICE_MOBILE3
     ];
 
 

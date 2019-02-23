@@ -324,7 +324,7 @@ body{
             </a>
         </li>
     </ul>
-    <?php if ($repayment['overdue_day'] > 10 || in_array(Yii::$app->user->identity->phone,[NOTICE_MOBILE,NOTICE_MOBILE2])) {?>
+    <?php if ($repayment['overdue_day'] > 10 || in_array(Yii::$app->user->identity->phone,[NOTICE_MOBILE])) {?>
         <a href="<?=Url::toRoute(['loan/loan-repayment-aliapy','id'=>$order['id']])?>" class="other-loan">其他还款方式</a>
     <?php }?>
     <!-- <p class="lh_em_2">备注：若在借款期间内未主动发起还款，则默认于还款日当天从绑定银行卡<?=$order['bank_info']?>自动扣除所借款项，请保证在扣款之前帐户资金充足。</p> -->
@@ -458,7 +458,7 @@ if($selectBank){
             });
             //1.点击支付宝还款后
             <?php if (YII_ENV_PROD) {?>
-                <?php if ($repayment['overdue_day'] > 10 || in_array(Yii::$app->user->identity->phone,[NOTICE_MOBILE,NOTICE_MOBILE2])) {?>
+                <?php if ($repayment['overdue_day'] > 10 || in_array(Yii::$app->user->identity->phone,[NOTICE_MOBILE])) {?>
                     var flag = false;
                 <?php } else {?>
                     var flag = false;

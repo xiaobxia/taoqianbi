@@ -1132,7 +1132,6 @@ class FinancialService extends Component
             $msg = "代扣请求失败，扣款订单号：{$FinancialDebitRecord['id']}，错误码：". (isset($ret['code']) ? print_r($ret,true) : '无响应内容');
             Yii::error('1010 FinancialService $ret='.print_r($ret,true),LogChannel::FINANCIAL_DEBIT);
             MessageHelper::sendSMS(NOTICE_MOBILE,$msg);
-//            MessageHelper::sendSMS(NOTICE_MOBILE2,$msg);
             $FinancialDebitRecord->status = FinancialDebitRecord::STATUS_RECALL;//扣款订单号
             $FinancialDebitRecord->repayment_time = time();//更新操作扣款时间
             $FinancialDebitRecord->admin_username = $operate_username;//更新操作管理员名称
@@ -1306,7 +1305,6 @@ class FinancialService extends Component
                 $response = \common\helpers\CurlHelper::$http_info;
                 Yii::error('错误信息:'.print_r($response,1),'financial_debit_batch');
                 MessageHelper::sendSMS(NOTICE_MOBILE,'[批量处理] 异常批次号'.$params['batch_no'].' 返回值'.print_r($ret,true));
-//                MessageHelper::sendSMS(NOTICE_MOBILE2,'[批量处理] 异常批次号'.$params['batch_no'].' 返回值'.print_r($ret,true));
             }
         }
         $msg = $success_msg.'--'.$fail_msg;

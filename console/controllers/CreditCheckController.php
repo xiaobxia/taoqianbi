@@ -162,7 +162,6 @@ class CreditCheckController extends BaseController {
             $error_msg = "push delay order to data_source_list failed, error: " . $e->getMessage();
             $this->printMessage($error_msg);
             MessageHelper::sendSMS(NOTICE_MOBILE, $error_msg);
-//            MessageHelper::sendSMS(NOTICE_MOBILE2, $error_msg);
         }
 
         return self::EXIT_CODE_NORMAL;

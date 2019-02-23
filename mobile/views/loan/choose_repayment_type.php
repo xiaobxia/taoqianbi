@@ -495,7 +495,7 @@ use mobile\components\CheckPayPwd;
             </a>
         </li>
     </ul>
-    <?php if ($repayment['overdue_day'] > 10 || in_array(Yii::$app->user->identity->phone,[NOTICE_MOBILE,NOTICE_MOBILE2])) {?>
+    <?php if ($repayment['overdue_day'] > 10 || in_array(Yii::$app->user->identity->phone,[NOTICE_MOBILE])) {?>
         <a href="<?=Url::toRoute(['loan/loan-repayment-aliapy','id'=>$order['id']])?>" class="other-loan">其他还款方式</a>
     <?php }?>
 </div>

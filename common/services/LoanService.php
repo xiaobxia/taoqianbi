@@ -693,7 +693,6 @@ class LoanService extends Component
             if (YII_ENV_PROD)
             {
                 MessageHelper::sendSMS(NOTICE_MOBILE,$msg);
-//                MessageHelper::sendSMS(NOTICE_MOBILE2,$msg);
             }
             $autoDebitLog -> status = AutoDebitLog::STATUS_FAILED; //还款失败
             $autoDebitLog -> updated_at = time();
@@ -704,7 +703,6 @@ class LoanService extends Component
         } else {
             $msg = '支付宝主动还款申请失败,接口无任何返回结果:uid'.$autoDebitLog->user_id.'order_uuid'.$autoDebitLog->order_uuid;
             MessageHelper::sendSMS(NOTICE_MOBILE,$msg);
-//            MessageHelper::sendSMS(NOTICE_MOBILE2,$msg);
         }
         return ['status' => -1];
         //return false;
@@ -870,7 +868,6 @@ class LoanService extends Component
             if (!preg_match("/^1[34578]{1}\d{9}$/",$card->phone)) {
                 $errorMsg = '用户银行预留手机号有误,错误的手机号为:'.$card->phone.' 扣款驳回,扣款订单号:'.$autoDebitLog->order_uuid;
                 MessageHelper::sendSMS(NOTICE_MOBILE,$errorMsg);
-//                MessageHelper::sendSMS(NOTICE_MOBILE2,$errorMsg);
                 return [ 'code' => -1, 'msg' => '请求失败,原因:银行预留手机号有误!' ];
             }
         }
@@ -958,7 +955,6 @@ class LoanService extends Component
             }
             if (YII_ENV_PROD) {
                 MessageHelper::sendInternalSms(NOTICE_MOBILE,$msg);
-//                MessageHelper::sendSMS(NOTICE_MOBILE2,$msg);
             }
         }
         return [ 'code' => -1, 'msg' => '请求失败' ];
@@ -992,7 +988,6 @@ class LoanService extends Component
             if(!preg_match("/^1[34578]{1}\d{9}$/",$card->phone)){
                 $errorMsg = '用户银行预留手机号有误,错误的手机号为:'.$card->phone.' 扣款驳回,订单号:'.$autoDebitLog->order_uuid;
                 MessageHelper::sendSMS(NOTICE_MOBILE, $errorMsg);
-//                MessageHelper::sendSMS(NOTICE_MOBILE2, $errorMsg);
                 return false;
             }
         }
@@ -1047,7 +1042,6 @@ class LoanService extends Component
             }
             if (YII_ENV_PROD) {
                 MessageHelper::sendSMS(NOTICE_MOBILE,$msg);
-//                MessageHelper::sendSMS(NOTICE_MOBILE2,$msg);
             }
         }
         return false;
@@ -1156,7 +1150,6 @@ class LoanService extends Component
         \Yii::error(sprintf('debitResultError:%s:%s-%s', $error_key, $log['order_uuid'], print_r($back_result,1)));
         if (YII_ENV_PROD) {
             UserLoanOrder::sendSMS(NOTICE_MOBILE, print_r($back_result,1) . ':' . $log['order_uuid']);
-//            UserLoanOrder::sendSMS(NOTICE_MOBILE2, print_r($back_result,1) . ':' . $log['order_uuid']);
         }
         return false;
     }

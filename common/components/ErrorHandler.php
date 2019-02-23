@@ -186,7 +186,6 @@ EOT;
                     \yii::$app->id, $server_ip, $client_ip, $key,
                     $exception->getMessage(), $exception->getFile(), $exception->getLine());
                 MessageHelper::sendInternalSms(NOTICE_MOBILE, $message); #异常短信报警
-//                MessageHelper::sendInternalSms(NOTICE_MOBILE2, $message); #异常短信报警
                 \yii::$app->cache->set($key, 1, 300);
             }
         }
@@ -202,8 +201,7 @@ EOT;
                 $message = sprintf('[%s][%s][%s]异常:%s. %s in %s:%s',
                     \yii::$app->id, $server_ip, $client_ip, $key,
                     $exception->getMessage(), $exception->getFile(), $exception->getLine());
-                MessageHelper::sendInternalSms(NOTICE_MOBILE, $message); #异常短信报警-余晨
-//                MessageHelper::sendInternalSms(NOTICE_MOBILE2, $message); #异常短信报警-黄文派
+                MessageHelper::sendInternalSms(NOTICE_MOBILE, $message); #异常短信报警
                 \yii::$app->cache->set($key, 1, 300);
             }
         }

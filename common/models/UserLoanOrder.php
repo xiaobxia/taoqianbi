@@ -625,7 +625,7 @@ class UserLoanOrder extends \common\components\ARModel {
         if ($obj && isset($obj['sub_order_type']) && $obj['sub_order_type']) { //信用卡
             $channel = self::getSmsService($obj['sub_order_type']);
         } else {
-            $channel = "smsServiceXQB_XiAo";
+            $channel = "smsService_TianChang_HY";
         }
 
         return MessageHelper::sendSMS($phone, $message, $channel, true, $sms_channel);

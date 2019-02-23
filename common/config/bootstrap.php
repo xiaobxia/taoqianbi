@@ -6,8 +6,7 @@ defined('SITE_TEL') or define('SITE_TEL', '13285711611');
 
 //报警手机号
 defined('NOTICE_MOBILE') or define('NOTICE_MOBILE', '13285711611');//主要的
-defined('NOTICE_MOBILE2') or define('NOTICE_MOBILE2', '13285711611');//异常报警
-defined('NOTICE_MOBILE3') or define('NOTICE_MOBILE3', '13285711611');//异常报警
+defined('NOTICE_MOBILE2') or define('NOTICE_MOBILE2', '17682449388');//异常报警
 
 //报警邮箱
 defined('NOTICE_MAIL') or define('NOTICE_MAIL', '1771372000@qq.com');

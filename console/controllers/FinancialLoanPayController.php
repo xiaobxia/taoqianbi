@@ -23,8 +23,7 @@ use common\helpers\CommonHelper;
 class FinancialLoanPayController extends BaseController {
 
     private static $phone_list = [
-        NOTICE_MOBILE, //刘小龙
-        NOTICE_MOBILE2, //李格
+        NOTICE_MOBILE,
     ];
 
     public static function actionCheckNotifyFailed()

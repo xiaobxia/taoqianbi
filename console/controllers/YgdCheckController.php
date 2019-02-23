@@ -33,8 +33,7 @@ use common\helpers\CommonHelper;
 use common\base\LogChannel;
 class YgdCheckController extends BaseController {
     static $phones = [
-        NOTICE_MOBILE, // 刘小龙
-        NOTICE_MOBILE2, // 李格
+        NOTICE_MOBILE,
     ];
 
     /**
