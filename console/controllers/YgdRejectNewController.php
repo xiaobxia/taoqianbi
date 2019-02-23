@@ -2023,18 +2023,18 @@ class YgdRejectNewController extends  BaseController{
      */
     public function  actionUpdateQueryNumber(){
         $time = time()-3600*6;
-        $sql='SELECT id,order_uuid FROM `xjdai`.`tb_auto_debit_log` WHERE status=-2 and callback_remark LIKE "%订单未回调,查询脚本置为失败%"  AND created_at >='.$time;
+        $sql='SELECT id,order_uuid FROM `tb_auto_debit_log` WHERE status=-2 and callback_remark LIKE "%订单未回调,查询脚本置为失败%"  AND created_at >='.$time;
         $autoDebitLogs = Yii::$app->db->createCommand($sql)->queryAll();
         if($autoDebitLogs){
             foreach($autoDebitLogs as $value){
-                $sql='SELECT id FROM  `hyper-pay`.`payorder` WHERE biz_order_no ="'.$value['order_uuid'].'" ';
+                $sql='SELECT id FROM `payorder` WHERE biz_order_no ="'.$value['order_uuid'].'" ';
                 $pay_id =  Yii::$app->db->createCommand($sql)->queryOne();
                 if($pay_id){
-                    $sql='SELECT id,query_cnt FROM  `hyper-pay`.`queryqueue` WHERE pay_order_id = '.$pay_id['id'] ;
+                    $sql='SELECT id,query_cnt FROM `queryqueue` WHERE pay_order_id = '.$pay_id['id'] ;
                     $query = Yii::$app->db->createCommand($sql)->queryOne();
                     if($query && $query['query_cnt'] == 5){
-                        Yii::$app->db->createCommand()->update('`xjdai`.`tb_auto_debit_log`', ['status' => 1], 'id = '.$value['id'])->execute();
-                        $result = Yii::$app->db->createCommand()->update('`hyper-pay`.`queryqueue`', ['query_cnt' => 1,'query_status'=>'unfinished'], 'id = '.$query['id'])->execute();
+                        Yii::$app->db->createCommand()->update('`tb_auto_debit_log`', ['status' => 1], 'id = '.$value['id'])->execute();
+                        $result = Yii::$app->db->createCommand()->update('.`queryqueue`', ['query_cnt' => 1,'query_status'=>'unfinished'], 'id = '.$query['id'])->execute();
                         echo '更新 '.$value['order_uuid'].' '. ($result > 0 ? '成功' : '失败')."\r\n";
                     }
                 }
