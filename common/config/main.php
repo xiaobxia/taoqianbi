@@ -96,65 +96,70 @@ $db_1 = [
     'username' => 'jisuhuahua',
     'password' => 'SUPER!@#jisuhuahua',
 ];
+$_db_2 = [
+    'host' => 'rm-uf63ksw9v20wm810b.mysql.rds.aliyuncs.com;port=3306',
+    'user' => 'jisuhuahua',
+    'pass' => 'SUPER!@#jisuhuahua',
+];
 
 $dbConfig = [
     'db' => [
-        'dsn' => 'mysql:host='.$db_1['host'].';dbname=xjdai',
+        'dsn' => 'mysql:host='.$db_1['host'].';dbname=tqb_xjdai',
         'username' => $db_1['username'],
         'password' => $db_1['password'],
     ],
     'db_kdkj' => [
-        'dsn' => 'mysql:host='.$db_1['host'].';dbname=xjdai',
+        'dsn' => 'mysql:host='.$db_1['host'].';dbname=tqb_xjdai',
         'username' => $db_1['username'],
         'password' => $db_1['password'],
     ],
     'db_kdkj_rd' => [
-        'dsn' => 'mysql:host='.$db_1['host'].';dbname=xjdai',
+        'dsn' => 'mysql:host='.$db_1['host'].';dbname=tqb_xjdai',
         'username' => $db_1['username'],
         'password' => $db_1['password'],
     ],
     'db_kdkj_rd2' => [
-        'dsn' => 'mysql:host='.$db_1['host'].';dbname=xjdai',
+        'dsn' => 'mysql:host='.$db_1['host'].';dbname=tqb_xjdai',
         'username' => $db_1['username'],
         'password' => $db_1['password'],
     ],
     'db_kdkj_rd_new' => [
-        'dsn' => 'mysql:host='.$db_1['host'].';dbname=xjdai',
+        'dsn' => 'mysql:host='.$db_1['host'].';dbname=tqb_xjdai',
         'username' => $db_1['username'],
         'password' => $db_1['password'],
     ],
     'db_rcm' => [
-        'dsn' => 'mysql:host='.$db_1['host'].';dbname=xjdai',
+        'dsn' => 'mysql:host='.$db_1['host'].';dbname=tqb_xjdai',
         'username' => $db_1['username'],
         'password' => $db_1['password'],
     ],
     'db_kdkj_risk' => [
-        'dsn' => 'mysql:host='.$db_1['host'].';dbname=xjdai',
+        'dsn' => 'mysql:host='.$db_1['host'].';dbname=tqb_xjdai',
         'username' => $db_1['username'],
         'password' => $db_1['password'],
     ],
     'db_kdkj_risk_rd' => [
-        'dsn' => 'mysql:host='.$db_1['host'].';dbname=xjdai',
+        'dsn' => 'mysql:host='.$db_1['host'].';dbname=tqb_xjdai',
         'username' => $db_1['username'],
         'password' => $db_1['password'],
     ],
     'db_financial' => [
-        'dsn' => 'mysql:host='.$db_1['host'].';dbname=xjdai',
+        'dsn' => 'mysql:host='.$db_1['host'].';dbname=tqb_xjdai',
         'username' => $db_1['username'],
         'password' => $db_1['password'],
     ],
     'db_stats' => [
-        'dsn' => 'mysql:host='.$db_1['host'].';dbname=xjdai_stats',
+        'dsn' => 'mysql:host='.$db_1['host'].';dbname=tqb_stats',
         'username' => $db_1['username'],
         'password' => $db_1['password'],
     ],
     'db_stats_read' => [
-        'dsn' => 'mysql:host='.$db_1['host'].';dbname=xjdai_stats',
+        'dsn' => 'mysql:host='.$db_1['host'].';dbname=tqb_stats',
         'username' => $db_1['username'],
         'password' => $db_1['password'],
     ],
     'db_assist' => [
-        'dsn' => 'mysql:host='.$db_1['host'].';dbname=xjdai_assist',
+        'dsn' => 'mysql:host='.$db_1['host'].';dbname=tqb_assist',
         'username' => $db_1['username'],
         'password' => $db_1['password'],
     ],
