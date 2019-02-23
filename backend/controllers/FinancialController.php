@@ -3862,7 +3862,7 @@ class FinancialController extends  BaseController
         $fund_id = $search['fund_id'] ?? 3;
         $condition .= " AND fund_id = {$fund_id}";
         $sql="select a.* from tb_repay_rates_list a join (
-SELECT max(id) as myid FROM `xjdai`.`tb_repay_rates_list` where($condition) GROUP BY date_format(date,'%Y-%m')) b on a.id=b.myid ORDER BY myid DESC;";
+SELECT max(id) as myid FROM `tb_repay_rates_list` where($condition) GROUP BY date_format(date,'%Y-%m')) b on a.id=b.myid ORDER BY myid DESC;";
 
         $info=RepayRatesList::findBySql($sql)->asArray()->all(Yii::$app->get('db_kdkj_rd'));
         $pages = new SqlDataProvider([
