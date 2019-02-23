@@ -889,11 +889,11 @@ class JshbService extends BaseService {
             }
 
             //记录到mongodb中
-            Yii::error(json_encode($ret),'card-auth-confirm');
             $msg='四要素鉴权失败';
             if(isset($ret['msg'])){
                 $msg=$ret['msg'];
             }
+            Yii::error(json_encode($ret),'card-auth-confirm');
             return [
                 'code' => 500,
                 'message' => $msg,
@@ -932,7 +932,7 @@ class JshbService extends BaseService {
         $product_name = FinancialService::KD_PROJECT_NAME;
         $customParams['sign'] = $this->getSign($customParams,$product_name);
         $url = $this->api. self::card_quick_verify_api_url;
-        Yii::error($url.'params='.json_encode($customParams),'card-auth-confirm');
+        Yii::info($url.'params='.json_encode($customParams),'card-auth-confirm');
         $ret = CurlHelper::FinancialCurl($url, $type, $customParams, 120);
         return $ret;
     }
