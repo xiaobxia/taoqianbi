@@ -729,7 +729,7 @@ class UserInfoController extends BaseController {
                             $user = LoanPerson::findOne($user_id);
 //                             $phone_msg = '尊敬的'.$user->name.'，由于您的信用良好，信用额度已调整为'.($amount_limit['amount']/100+$add_limit/100).'元，感谢您的支持，良好的信用受益终生！';
                             $phone_msg = ' 尊敬的'.$user->name.'，您的'.APP_NAMES.'信用额度已调整为'.($amount_limit['amount']/100+$add_limit/100).'元，感谢您对我们的支持。';
-                            MessageHelper::sendSMS($user->phone, $phone_msg, 'smsServiceXQB_XiAo', $user->source_id);
+                            MessageHelper::sendSMS($user->phone, $phone_msg, 'smsService_TianChang_HY', $user->source_id);
                             return $this->redirectMessage('审核成功', self::MSG_SUCCESS, "$url.?r=user-info%2Fadd-limit-list&status=$status");
                         }
                     } else {

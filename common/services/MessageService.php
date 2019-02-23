@@ -467,7 +467,7 @@ class MessageService extends Component
      * 查看短信发送状态
      * @return [type] [description]
      */
-    public static function statusMessage($smsServiceUse = 'smsServiceXQB_XiAo_YX')
+    public static function statusMessage($smsServiceUse = 'smsService_TianChang_HY_YX')
     {
         $smsServiceParams = \Yii::$app->params[$smsServiceUse];
         $url = $smsServiceParams['rpturl'];

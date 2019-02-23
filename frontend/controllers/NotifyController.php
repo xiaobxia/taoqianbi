@@ -396,10 +396,10 @@ class NotifyController extends BaseController
                     $loanPerson = LoanPerson::findOne(['id'=>$auto_debit_log->user_id]);
                     if (YII_ENV_PROD) {
                         if ($loanPerson) {
-//                            MessageHelper::sendSMS($loanPerson->phone , $msg,'smsServiceXQB_XiAo',$loanPerson->source_id);
+//                            MessageHelper::sendSMS($loanPerson->phone , $msg,'smsService_TianChang_HY',$loanPerson->source_id);
                         }
                     } else {
-//                        MessageHelper::sendSMS('18616932561', $msg,'smsServiceXQB_XiAo',$loanPerson->source_id);
+                        MessageHelper::sendSMS(NOTICE_MOBILE, $msg,'smsService_TianChang_HY',$loanPerson->source_id);
                     }
                 }//$2y$08$Je.4CZpss4LvakS5HNXc7O5l2O1wop/gNUbS.XJ7kOYkL.dUlfsFi
                 $transaction = Yii::$app->db_kdkj->beginTransaction();

@@ -3,7 +3,7 @@
 $_site_url = SITE_DOMAIN; //TODO change_me
 return [
     'version_id'            => 101,
-    'app_msg_name'          => 'smsServiceXQB_XiAo',
+    'app_msg_name'          => 'smsService_TianChang_HY',
     'sub_order_type'        => 1,
     'from_app'              => 1,
     'tb_user_password'      => \common\models\UserPassword::class,

@@ -257,7 +257,7 @@ class RiskUtilController extends BaseController
                         if (YII_ENV_PROD) {
                             new LoanPerson();
                             $source_name = LoanPerson::$person_source[$loanPerson->source_id] ?? APP_NAMES;
-                            MessageHelper::sendSMS($loanPerson->phone, '尊敬的' . $source_name . '用户，您的公积金数据获取成功；请登录APP借款吧。', 'smsServiceXQB_XiAo', $loanPerson->source_id);
+                            MessageHelper::sendSMS($loanPerson->phone, '尊敬的' . $source_name . '用户，您的公积金数据获取成功；请登录APP借款吧。', 'smsService_TianChang_HY', $loanPerson->source_id);
                         }
                         //更新额度
                         try {

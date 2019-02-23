@@ -636,7 +636,7 @@ class FinancialService extends Component
                     "status" => FinancialDebitRecord::STATUS_PAYING,
                 ])->execute();
                 if(empty($affected_row)) {
-                    MessageHelper::sendSMS(NOTICE_MOBILE, "联动口袋快借银行扣款成功，更新用户扣款订单失败！order_id：" . $params['order_id'], 'smsServiceXQB_XiAo', $user->source_id);
+                    MessageHelper::sendSMS(NOTICE_MOBILE, "联动口袋快借银行扣款成功，更新用户扣款订单失败！order_id：" . $params['order_id'], 'smsService_TianChang_HY', $user->source_id);
                 }
                 FinancialLog::addLogDetail("联动扣款成功更新扣款订单结果成功");
                 return true;
@@ -761,7 +761,7 @@ class FinancialService extends Component
                     "platform" => $params['platform'],
                 ],"user_id=".$pay_order['user_id'].' and id='.$pay_order['id'].' and status <>'.FinancialDebitRecord::STATUS_SUCCESS)->execute();
                 if(empty($affected_row)) {
-                    MessageHelper::sendSMS(NOTICE_MOBILE, $platform_name."银行扣款成功，更新用户扣款订单失败！order_id：" . $params['order_id'], 'smsServiceXQB_XiAo', $user->source_id);
+                    MessageHelper::sendSMS(NOTICE_MOBILE, $platform_name."银行扣款成功，更新用户扣款订单失败！order_id：" . $params['order_id'], 'smsService_TianChang_HY', $user->source_id);
                 }
                 FinancialLog::addLogDetail($platform_name."扣款成功更新扣款订单结果成功");
                 return true;

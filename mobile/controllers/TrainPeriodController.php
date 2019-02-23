@@ -208,44 +208,44 @@ class TrainPeriodController extends  BaseController
      * @throws \Exception
      * 发送聚信立短信授权
      */
-    public function actionJxlSms(){
-        $this->response->format = Response::FORMAT_JSON;
-        $person_id = $this->_getPersonId();
-        $loanperson = LoanPerson::findOne($person_id);
-        $sms_limit = 20;    //短信每日限制次数
-        $sms_interval = 55; //发送短信间隔
-        $phone = $loanperson->phone;    //获取借款人手机号
-        $content = '请尽快在 http://wechat.juxinli.com/#/XiaoYuJinFu/apply 完成聚信立的信用评测。';    //短信内容
-        $current_time = time();
-        $today = strtotime('today');
-        $count = CreditJxlSmsLog::find()->where(['loan_person_id'=>$person_id,'send_status'=>1])->andWhere(['>','send_time',$today])->count();   //统计借款人当日发送短信数量
-        if( ! is_null($count)){
-            if($count > $sms_limit){
-                Yii::info(" method:".__METHOD__." line:".__LINE__.'loan_person_id:'.$person_id.'message:'."超出当日短信发送次数");
-                return $this->messageError('jxl','超过当日短信发送次数');
-            }
-        }
-        $log = CreditJxlSmsLog::find()->where(['loan_person_id'=>$person_id])->orderBy('id desc')->one();
-        if( ! is_null($log)){
-            $send_time = $log->send_time;
-            if(($current_time - $send_time) < $sms_interval){
-                Yii::info(" method:".__METHOD__." line:".__LINE__.'loan_person_id:'.$person_id.'message:'."短信发送间隔过短");
-                return $this->messageError('jxl','短信发送失败');
-            }
-        }
-        // $result = MessageHelper::sendSMS($phone,$content,'smsService8');
-        $result = MessageHelper::sendSMS($phone, $content, 'smsServiceXQB_XiAo', $loanperson->source_id);
-        $smslog = new CreditJxlSmsLog();
-        $smslog->loan_person_id = $person_id;
-        $smslog->send_status = $result ? 1 : 2;
-        $smslog->send_time = time();
-        $smslog->save();
-        if($result){
-            return $this->messageSuccess('jxl','短信发送成功');
-        }else{
-            return $this->messageError('jxl','短信发送失败');
-        }
-    }
+//    public function actionJxlSms(){
+//        $this->response->format = Response::FORMAT_JSON;
+//        $person_id = $this->_getPersonId();
+//        $loanperson = LoanPerson::findOne($person_id);
+//        $sms_limit = 20;    //短信每日限制次数
+//        $sms_interval = 55; //发送短信间隔
+//        $phone = $loanperson->phone;    //获取借款人手机号
+//        $content = '请尽快在 http://wechat.juxinli.com/#/XiaoYuJinFu/apply 完成聚信立的信用评测。';    //短信内容
+//        $current_time = time();
+//        $today = strtotime('today');
+//        $count = CreditJxlSmsLog::find()->where(['loan_person_id'=>$person_id,'send_status'=>1])->andWhere(['>','send_time',$today])->count();   //统计借款人当日发送短信数量
+//        if( ! is_null($count)){
+//            if($count > $sms_limit){
+//                Yii::info(" method:".__METHOD__." line:".__LINE__.'loan_person_id:'.$person_id.'message:'."超出当日短信发送次数");
+//                return $this->messageError('jxl','超过当日短信发送次数');
+//            }
+//        }
+//        $log = CreditJxlSmsLog::find()->where(['loan_person_id'=>$person_id])->orderBy('id desc')->one();
+//        if( ! is_null($log)){
+//            $send_time = $log->send_time;
+//            if(($current_time - $send_time) < $sms_interval){
+//                Yii::info(" method:".__METHOD__." line:".__LINE__.'loan_person_id:'.$person_id.'message:'."短信发送间隔过短");
+//                return $this->messageError('jxl','短信发送失败');
+//            }
+//        }
+//        // $result = MessageHelper::sendSMS($phone,$content,'smsService8');
+//        $result = MessageHelper::sendSMS($phone, $content, 'smsServiceXQB_XiAo', $loanperson->source_id);
+//        $smslog = new CreditJxlSmsLog();
+//        $smslog->loan_person_id = $person_id;
+//        $smslog->send_status = $result ? 1 : 2;
+//        $smslog->send_time = time();
+//        $smslog->save();
+//        if($result){
+//            return $this->messageSuccess('jxl','短信发送成功');
+//        }else{
+//            return $this->messageError('jxl','短信发送失败');
+//        }
+//    }
 
     public function actionPageApply(){
         $person_id = $this->_getPersonId();

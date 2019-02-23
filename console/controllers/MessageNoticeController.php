@@ -1094,7 +1094,7 @@ class MessageNoticeController extends BaseController {
             return self::EXIT_CODE_ERROR;
         }
 
-        $messages = MessageService::statusMessage('smsServiceXQB_XiAo_YX');
+        $messages = MessageService::statusMessage('smsService_TianChang_HY_YX');
         if (empty($messages)) {
             echo '没有数据' . date('Y-m-d H:i:s') . PHP_EOL;
             return self::EXIT_CODE_NORMAL;

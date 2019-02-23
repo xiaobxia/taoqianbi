@@ -2277,7 +2277,7 @@ class UserService extends Component
 
         $flag = Yii::$container->get('userService')->setUserCreditDetail($user_id, 0, 0, "未能获取到运营商数据", '-1');
         if ($flag) {
-            if (MessageHelper::sendSMS($loanPerson->phone, $message, 'smsServiceXQB_XiAo', $loanPerson->source_id)) {
+            if (MessageHelper::sendSMS($loanPerson->phone, $message, 'smsService_TianChang_HY', $loanPerson->source_id)) {
                 $date = \date('Y-m-d', time());
                 $creditLineMsgCount = CreditLineMsgCount::findOne(['date' => $date]);
                 if (empty($creditLineMsgCount)) {

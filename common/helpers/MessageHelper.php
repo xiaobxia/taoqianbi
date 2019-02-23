@@ -42,7 +42,7 @@ class MessageHelper {
 
 	//目前可用的通道
 	static $channels = [
-		'smsServiceXQB_XiAo',
+//		'smsServiceXQB_XiAo',
 		'smsService_TianChang_HY',
 		//'smsService_TianChang_CS',
 		'smsService_TianChang_TZ',
@@ -99,7 +99,7 @@ class MessageHelper {
 		],
 	];
 
-	static $channel_default = 'smsServiceXQB_XiAo'; #验证码短信默认通道
+	static $channel_default = 'smsService_TianChang_HY'; #验证码短信默认通道 smsServiceXQB_XiAo
 	static $channel_yx_default = 'smsServiceXQB_XiAo_YX'; #营销短信默认通道
 
 	/**
@@ -144,7 +144,7 @@ class MessageHelper {
 	 * 发送短信
 	 * @param int $phone 手机号
 	 * @param string $message 信息
-	 * @param string $smsServiceUse 渠道名 smsServiceXQB_XiAo
+	 * @param string $smsServiceUse 渠道名 smsService_TianChang_HY smsServiceXQB_XiAo
 	 * @param string $boolUseBack 使用备用通道？
 	 * @param string $returnService
 	 * @return boolean
@@ -1152,7 +1152,7 @@ class MessageHelper {
 		*/
 	public static function sendSyncSMS($phone, $message, $smsServiceUse = 'smsService', $dbLog=1, $auto=true){
 		if (($auto && Yii::$app instanceof Yii\web\Application) && Yii::$app->id == 'app-credit') {
-			$smsServiceUse = Util::t('app_msg_name') ?? 'smsServiceXQB_XiAo';
+			$smsServiceUse = Util::t('app_msg_name') ?? 'smsService_TianChang_HY';
 		}
 
 		$msg  = \urlencode($message);
