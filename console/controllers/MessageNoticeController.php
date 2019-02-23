@@ -793,7 +793,7 @@ class MessageNoticeController extends BaseController {
                 $html .= "<tr><td>{$value['phone']}</td><td>{$value['user_loan_order_id']}</td></tr>";
             }
             $html .= "</table>";
-            MailHelper::sendMass([NOTICE_MAIL2,NOTICE_MAIL3], date('Y-m-d H:i:s')." 活动短信|推送发送失败名单", $html);
+            MailHelper::sendMass([NOTICE_MAIL], date('Y-m-d H:i:s')." 活动短信|推送发送失败名单", $html);
         }
     }
 

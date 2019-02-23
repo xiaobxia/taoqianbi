@@ -75,7 +75,6 @@ class UserMobileContactsMongo extends \yii\mongodb\ActiveRecord {
             $msg = sprintf('save user_mobile_contacts_mongo error. user_id:%s, mobile:%s, name:%s, data:%s, exception:%s',
                 $user_id, $mobile, $name, json_encode($data), $e->getMessage());
             MailHelper::sendQueueMail($msg, '', [
-                NOTICE_MAIL2,
                 NOTICE_MAIL,
             ]);
             \yii::warning($msg, LogChannel::USER_UPLOAD);

@@ -11,8 +11,6 @@ defined('NOTICE_MOBILE3') or define('NOTICE_MOBILE3', '13285711611');//异常报
 
 //报警邮箱
 defined('NOTICE_MAIL') or define('NOTICE_MAIL', '1771372000@qq.com');
-defined('NOTICE_MAIL2') or define('NOTICE_MAIL2', '1771372000@qq.com');
-defined('NOTICE_MAIL3') or define('NOTICE_MAIL3', '1771372000@qq.com');
 
 defined('QQ_SERVICE') or define('QQ_SERVICE', '1771372000');
 

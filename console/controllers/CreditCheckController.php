@@ -360,7 +360,6 @@ class CreditCheckController extends BaseController {
                         $_notice = "{$order_id} 征信数据采集失败";
                         $this->printMessage($_notice);
                         MailHelper::send(NOTICE_MAIL, $_notice);
-                        MailHelper::send(NOTICE_MAIL2, $_notice);
                     }
                 }
                 catch (\Exception $e) {

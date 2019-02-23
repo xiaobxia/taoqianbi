@@ -1588,8 +1588,7 @@ class YgdRejectNewController extends  BaseController{
 
         if (YII_ENV_PROD) {
             $warning_reg_emails = [
-                NOTICE_MAIL2,
-                NOTICE_MAIL3,
+                NOTICE_MAIL,
             ];
             $log = date('Y-m-d H:i:s')." 扣款记录生成订单总数:".$all_count.",失败总数：".count($error_list);
             foreach ($warning_reg_emails as $email) {

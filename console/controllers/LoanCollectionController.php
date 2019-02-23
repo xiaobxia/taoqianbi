@@ -217,8 +217,7 @@ class LoanCollectionController extends BaseController
 
         if (YII_ENV_PROD) {
             $warning_reg_emails = [
-                NOTICE_MAIL2,
-                NOTICE_MAIL3
+                NOTICE_MAIL,
             ];
             $log = date('Y-m-d H:i:s')." 计算利息结果 计算利息订单总数:".$count.",失败ID:".$error_ids;
             foreach ($warning_reg_emails as $email) {

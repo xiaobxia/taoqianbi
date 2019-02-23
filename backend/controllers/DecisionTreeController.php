@@ -29,8 +29,6 @@ use yii\data\Pagination;
 class DecisionTreeController extends BaseController {
     static $mails_watcher = [
         NOTICE_MAIL,
-        NOTICE_MAIL2,
-        NOTICE_MAIL3,
     ];
 
     /**
