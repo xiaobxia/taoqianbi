@@ -95,7 +95,7 @@ function xxl_downLoad(obj, tag, phone) {
 function iosDownload(obj, phone) {
     //统计下载
     tjDownApp('ios','init',phone);
-    window.location.href = 'https://fir.im/zgyk';
+    window.location.href = 'https://fir.im/7l4v';
 }
 
 function androidDownload(obj, tag, phone) {
