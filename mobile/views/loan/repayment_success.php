@@ -12,43 +12,43 @@ use yii\helpers;
     </div>
     <div class="wx-wrap">
         <div class="wx-tdCode">
-            
+
         </div>
-        <p>关注并绑定<?php echo WEIXIN_GONGZHONGNHAO ?>微信公众号尊享更多福利</p>
+        <p style="display: none">关注并绑定<?php echo WEIXIN_GONGZHONGNHAO ?>微信公众号尊享更多福利</p>
         <p style="display: none">关注并绑定微信公众号尊享更多福利(公众号正在审核中)</p>
         <div class="wx-bindBtn">
-            <div class="bindBtn-head">
+            <div class="bindBtn-head" style="display: none">
             • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
                 <span class="">1</span>
                 <span class="">2</span>
             </div>
-            <div class="bindBtn-title">
+            <div class="bindBtn-title" style="display: none">
                <p class="fl">微信搜索“<?php echo WEIXIN_GONGZHONGNHAO_SHORENAME; ?>”</p>
-               <p class="fr">关注并完成绑定</p> 
+               <p class="fr">关注并完成绑定</p>
             </div>
             <div class="bindBtn">
                 <?php if(isset($wx_info)):?>
-                <button class="fl" type="disabled">公众号已绑定</button>
+                <button class="fl" type="disabled" style="display: none">公众号已绑定</button>
                 <?php else:?>
-                    <button class="fl" id="copy_wx" type="">复制去关注</button>
+                    <button class="fl" id="copy_wx" type="" style="display: none">复制去关注</button>
                 <?php endif;?>
                 <a href="<?php if(isset($order_id)):?><?php echo helpers\Url::toRoute(['loan/loan-detail', 'id' => $order_id])?><?php endif;?>" class="fr" >查看借款详情</a>
 <!--                <a href="#" class="fr" >查看借款详情</a>-->
             </div>
         </div>
        <!-- <div class="wx-wrap-bottom">
-            
+
         </div>-->
     </div>
 
    <!-- <div class="activity">
         <div class="activity-head">
-            
+
         </div>
         <div class="events">
             <p class="prize">送您一次拿<span>iphone</span>的机会</p>
 
-             <p class="obtain">借款申请通过后可参与</p> 
+             <p class="obtain">借款申请通过后可参与</p>
 
             <a href="#" class="activity-detail" >查看详情</a>
         </div>-->
@@ -67,7 +67,7 @@ use yii\helpers;
     try {
         setWebViewFlag();
         //页面进入时打点
-        MobclickAgent.onEvent('returnresult','还款结果页面事件') 
+        MobclickAgent.onEvent('returnresult','还款结果页面事件')
     } catch(e) {
         console.log(e);
     }

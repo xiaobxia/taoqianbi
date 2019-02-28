@@ -12,7 +12,7 @@ use mobile\components\ApiUrl;
     }
     body {
         background-color: #f2f2f2;
-    }    
+    }
 </style>
 <?php if($is_xjbt == 1){?>
 <style>
@@ -103,7 +103,7 @@ use mobile\components\ApiUrl;
                             }
                             document.getElementById("timeShow").innerHTML = pad(hour, 2) + ":" + pad(min, 2) + ":" + pad(sec, 2);
 
-                            t = setTimeout(time, 1000); //设定定时器，循环执行             
+                            t = setTimeout(time, 1000); //设定定时器，循环执行
                         }
                         function pad(num, n) {
                             var len = num.toString().length;
@@ -325,7 +325,7 @@ use mobile\components\ApiUrl;
                 借款申请提交成功
             </p>
         </div>
-        <div class="wx-prompt">
+        <div class="wx-prompt" style="display: none">
             <p class="prompt-title">
                 友情提示
             </p>
@@ -413,7 +413,7 @@ use mobile\components\ApiUrl;
 
     });
 
-    var rmb = $('.fixed-button.c_f_btn .fb-text').children('i').html(); //应还款总额 
+    var rmb = $('.fixed-button.c_f_btn .fb-text').children('i').html(); //应还款总额
     // 优惠券选择框
     $('.dialog.coupon .coupon').click(function(){
         $('.dialog.coupon .coupon').find('.checkbox').removeClass('checked');
@@ -448,7 +448,7 @@ use mobile\components\ApiUrl;
     $('.to-repaid').click(function(){
         $('.dialog.wx').hide();
         $("#loan-dialog").show();
-        $('.dialog.coupon').show(); 
+        $('.dialog.coupon').show();
         return false;
     })
 
@@ -597,7 +597,7 @@ use mobile\components\ApiUrl;
                 break;
             case 2:
                 $(".repayment-detail.wrap .content ul").find("li").eq(1).attr("class","sType1");//打款中2
-            
+
                 break;
             case 5:
                 $(".repayment-detail.wrap .content ul").find("li").eq(2).attr("class","sType2");//待还款5
@@ -605,13 +605,13 @@ use mobile\components\ApiUrl;
                 break;
             case 4:
                 $(".repayment-detail.wrap .content ul").find("li").eq(3).attr("class","sType3");// 已逾期4
-                $(".repayment-detail.wrap .content .pay-status").find("h1").css("color","#f41c1c"); 
+                $(".repayment-detail.wrap .content .pay-status").find("h1").css("color","#f41c1c");
                 break;
             case 6:
                 $(".repayment-detail.wrap .content ul").find("li").eq(1).attr("class","sType3");// 审核未通过6
                 break;
             default:
-                $(".repayment-detail.wrap .content .pay-status").find("h1").css("color","#666"); 
+                $(".repayment-detail.wrap .content .pay-status").find("h1").css("color","#666");
         }
     }
 </script>

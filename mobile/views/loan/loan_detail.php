@@ -563,7 +563,7 @@ use mobile\components\ApiUrl;
                         借款申请提交成功
                     </p>
                 </div>
-                <div class="wx-prompt">
+                <div class="wx-prompt" style="display: none">
                     <p class="prompt-title">
                         友情提示
                     </p>
