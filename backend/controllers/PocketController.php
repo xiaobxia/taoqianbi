@@ -1864,6 +1864,9 @@ STR;
 
                 //修改订单状态
                 $user_loan_order=UserLoanOrder::findOne($id);
+                if (empty($user_loan_order)){
+                    return $this->redirectMessage(\sprintf('id：%s 订单号有误', $id), self::MSG_ERROR);
+                }
                 if($user_loan_order->status!=UserLoanOrder::STATUS_CANCEL){
                     return $this->redirectMessage(\sprintf('id：%s 状态不是初审驳回', $id), self::MSG_ERROR);
                 }
