@@ -104,7 +104,7 @@ class RiskControlCheckService extends Component {
 
         return [
             'risk' => self::LOW_RISK,
-            'detail' => json_encode($detail),
+            'detail' => $detail,
             'value' => $count,
         ];
     }
