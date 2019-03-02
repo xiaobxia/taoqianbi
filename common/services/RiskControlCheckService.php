@@ -5077,27 +5077,16 @@ class RiskControlCheckService extends Component {
      */
     public function checkUserLoanOrderRepayment($data, $params)
     {
-
-        $loan_person = $data['loan_person'];
-
-        // $repayment = UserLoanOrderRepayment::find()->where(['user_id' => $loan_person->id])->orderBy('id desc')->one(Yii::$app->get('db_kdkj_rd'));
-
-        // $repayments = UserLoanOrderRepayment::find()->where(['user_id' => $loan_person->id])->orderBy('created_at desc')->all(Yii::$app->get('db_kdkj_rd'));
         $repayments = $data['user_loan_order_repayments'];
 
-        if (empty($repayments) || !isset($repayments[0])) {
-            $repayment = null;
-        } else {
+        $result = ['risk' => self::MEDIUM_RISK, 'detail' => '没有还款单', 'value' => 0];
+        if (!empty($repayments) && !isset($repayments[0])) {
             $repayment = $repayments[0];
+            if (!empty($repayment) && isset($repayment['overdue_day'])) {
+                $overdue_day = $repayment['overdue_day'];
+                $result = ['risk' => self::MEDIUM_RISK, 'detail' => '逾期天数' . $overdue_day, 'value' => $overdue_day];
+            }
         }
-
-
-        if (empty($repayment)) {
-            $result = ['risk' => self::MEDIUM_RISK, 'detail' => '没有还款单', 'value' => 0];
-            return $result;
-        }
-        $overdue_day = $repayment['overdue_day'];
-        $result = ['risk' => self::MEDIUM_RISK, 'detail' => '逾期天数' . $overdue_day, 'value' => $overdue_day];
 
         return $result;
     }
