@@ -57,14 +57,14 @@ class CreditLineService extends Component
         }
         $valid_time = $credit_line->valid_time;
         // 公积金
-        $accumulation = AccumulationFund::findLatestOne([
-            'user_id' => $user->id,
-            'status' => AccumulationFund::STATUS_SUCCESS,
-        ]);
-        if ($valid_time <= \date('Y-m-d H:i:s') ||
-            ($accumulation && $accumulation->updated_at > $credit_line->update_time)) { //超过有效期则更新
-            return $this->createCreditLine($user, $rule_id, $credit_line);
-        }
+//        $accumulation = AccumulationFund::findLatestOne([
+//            'user_id' => $user->id,
+//            'status' => AccumulationFund::STATUS_SUCCESS,
+//        ]);
+//        if ($valid_time <= \date('Y-m-d H:i:s') ||
+//            ($accumulation && $accumulation->updated_at > $credit_line->update_time)) { //超过有效期则更新
+//            return $this->createCreditLine($user, $rule_id, $credit_line);
+//        }
 
         return [
             'credit_line' => $credit_line->credit_line,
