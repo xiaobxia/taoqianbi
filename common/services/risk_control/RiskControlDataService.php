@@ -83,16 +83,16 @@ class RiskControlDataService extends Component
             'jxl' => $this->logTime('getJxlData', $loan_person),        // 聚信立
             'yys' => $this->logTime('getYysData', $loan_person),        // 运营商
             'td' => $this->logTime('getTdData', $loan_person),          // 同盾
-            'zm' => $this->logTime('getZmData', $loan_person),          // 芝麻
+//            'zm' => $this->logTime('getZmData', $loan_person),          // 芝麻
             'mg' => $this->logTime('getMgData', $loan_person),
-            'sauron' => $this->logTime('getSauronData', $loan_person),
-            'jsqb' => $this->logTime('getJsqbData', $loan_person),
-            'jsqb_blacklist' => $this->logTime('getJsqbBlacklist', $loan_person),
+//            'sauron' => $this->logTime('getSauronData', $loan_person),
+//            'jsqb' => $this->logTime('getJsqbData', $loan_person),
+//            'jsqb_blacklist' => $this->logTime('getJsqbBlacklist', $loan_person),
             'br' => $this->logTime('getBrData', $loan_person),
             'bqs' => $this->logTime('getBqsData', $loan_person),
-            'yx' => $this->logTime('getYxData', $loan_person),
-            'yx_af' => $this->logTime('getYxAfData', $loan_person),//宜信阿福数据
-            'zzc' => $this->logTime('getZzcData', $loan_person),
+//            'yx' => $this->logTime('getYxData', $loan_person),
+//            'yx_af' => $this->logTime('getYxAfData', $loan_person),//宜信阿福数据
+//            'zzc' => $this->logTime('getZzcData', $loan_person),
 //
             'card_infos' => $this->logTime('getCardInfos', $loan_person),
             'user_detail' => $this->logTime('getUserDetail', $loan_person),
@@ -147,14 +147,14 @@ class RiskControlDataService extends Component
                 'jxl' => $this->logTime('getJxlData', $loan_person),
                 'yys' => $this->logTime('getYysData', $loan_person),
                 'td' => $this->logTime('getTdData', $loan_person),
-                'zm' => $this->logTime('getZmData', $loan_person),
+//                'zm' => $this->logTime('getZmData', $loan_person),
                 'mg' => $this->logTime('getMgData', $loan_person),
-                'sauron' => $this->logTime('getSauronData', $loan_person),
-                'jsqb' => $this->logTime('getJsqbData', $loan_person),
+//                'sauron' => $this->logTime('getSauronData', $loan_person),
+//                'jsqb' => $this->logTime('getJsqbData', $loan_person),
                 'br' => $this->logTime('getBrData', $loan_person),
                 'bqs' => $this->logTime('getBqsData', $loan_person),
-                'yx' => $this->logTime('getYxData', $loan_person),
-                'zzc' => $this->logTime('getZzcData', $loan_person),
+//                'yx' => $this->logTime('getYxData', $loan_person),
+//                'zzc' => $this->logTime('getZzcData', $loan_person),
 
                 'card_infos' => $this->logTime('getCardInfos', $loan_person),
                 'user_detail' => $this->logTime('getUserDetail', $loan_person),
