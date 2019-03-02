@@ -5019,28 +5019,17 @@ class RiskControlCheckService extends Component {
      */
     public function checkIsOldUser($data, $params)
     {
-
         $loan_person = $data['loan_person'];
-        // $repayment = UserLoanOrderRepayment::find()->where(['user_id' => $loan_person->id])->orderBy('id desc')->one(Yii::$app->get('db_kdkj_rd'));
-        // $repayments = UserLoanOrderRepayment::find()->where(['user_id' => $loan_person->id])->orderBy('created_at desc')->all(Yii::$app->get('db_kdkj_rd'));
         $repayments = $data['user_loan_order_repayments'];
-        if (empty($repayments) || !isset($repayments[0])) {
-            $repayment = null;
-        } else {
+
+        $result = ['risk' => self::MEDIUM_RISK, 'detail' => '不是老用户', 'value' => self::NO];
+        if (!empty($repayments) && isset($repayments[0])) {
             $repayment = $repayments[0];
-        }
-
-        $time = time();
-
-        //没有还款记录或者最近还款记录大于一个月
-        if (empty($repayment) || (($time - $repayment['updated_at']) > 31 * 86400) || $repayment['status'] != UserLoanOrderRepayment::STATUS_REPAY_COMPLETE) {
-            if($loan_person->customer_type==LoanPerson::CUSTOMER_TYPE_OLD && $loan_person->is_leading==1){
-                $result = ['risk' => self::MEDIUM_RISK, 'detail' => '导入的老用户', 'value' => self::YES];
-            }else{
-                $result = ['risk' => self::MEDIUM_RISK, 'detail' => '没有还款记录或者最近还款记录大于一个月', 'value' => self::NO];
+            $time = time();
+            //没有还款记录或者最近还款记录大于一个月
+            if ($loan_person->customer_type==LoanPerson::CUSTOMER_TYPE_OLD && (($time - $repayment['updated_at']) <= 31 * 86400) && $repayment['status'] == UserLoanOrderRepayment::STATUS_REPAY_COMPLETE) {
+                $result = ['risk' => self::MEDIUM_RISK, 'detail' => '老用户', 'value' => self::YES];
             }
-        } else {
-            $result = ['risk' => self::MEDIUM_RISK, 'detail' => '有一个月内的还款记录', 'value' => self::YES];
         }
 
         return $result;
