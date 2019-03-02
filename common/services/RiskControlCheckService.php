@@ -3153,13 +3153,9 @@ class RiskControlCheckService extends Component {
      */
     public function checkPaymentOverdueDays($data, $params)
     {
-        $loan_person = $data['loan_person'];
-
-        // $loan_data = UserLoanOrderRepayment::find()->where(['user_id' => $loan_person->id])->andWhere(['<>', 'status', 0])->orderBy('created_at desc')->one(Yii::$app->get('db_kdkj_rd'));
-        // $repayments = UserLoanOrderRepayment::find()->where(['user_id' => $loan_person->id])->all(Yii::$app->get('db_kdkj_rd'));
         $repayments = $data['user_loan_order_repayments'];
         if (empty($repayments)) {
-            return ['risk' => self::LOW_RISK, 'detail' => '没有借款记录', 'value' => '没有借款记录'];
+            return ['risk' => self::LOW_RISK, 'detail' => '没有借款记录', 'value' => self::NULL];
         }
 
         $loan_data = '';
@@ -3171,39 +3167,40 @@ class RiskControlCheckService extends Component {
         }
 
         if (empty($loan_data)) {
-            return ['risk' => self::LOW_RISK, 'detail' => '没有借款记录', 'value' => '没有借款记录'];
+            return ['risk' => self::LOW_RISK, 'detail' => '没有借款记录', 'value' => self::NULL];
         }
 
 
         if ($loan_data['overdue_day'] > 10) {
-            return ['risk' => self::HIGH_RISK, 'detail' => '还款逾期天数' . $loan_data['overdue_day'], 'value' => '上次还款逾期大于10天'];
+            return ['risk' => self::HIGH_RISK, 'detail' => '还款逾期天数' . $loan_data['overdue_day'], 'value' => $loan_data['overdue_day']];
         } else if ($loan_data['overdue_day'] >= 1) {
-            return ['risk' => self::LOW_RISK, 'detail' => '还款逾期天数' . $loan_data['overdue_day'], 'value' => '上次还款逾期' . $loan_data['overdue_day'] . '天'];
+            return ['risk' => self::LOW_RISK, 'detail' => '还款逾期天数' . $loan_data['overdue_day'], 'value' => $loan_data['overdue_day']];
         } else if ($loan_data['overdue_day'] == 0) {
             // $loan = UserLoanOrderRepayment::find()->where(['user_id' => $loan_person->id])->andWhere(['<>', 'status', 0])->orderBy('created_at desc')->limit(3)->all(Yii::$app->get('db_kdkj_rd'));
-            $loan = [];
-            foreach ($repayments as $key => $value) {
-                if ($value['status'] != 0) {
-                    $loan[] = $value;
-                }
-                if (count($loan) >= 3) {
-                    break;
-                }
-            }
-
-            $time = 0;
-            foreach ($loan as $v) {
-                if ($v['overdue_day'] != 0) {
-                    break;
-                } else {
-                    if ($v['status'] == UserLoanOrderRepayment::STATUS_REPAY_COMPLETE) {
-                        $time++;
-                    }
-                }
-            }
-            return ['risk' => self::LOW_RISK, 'detail' => '正常还款', 'value' => '连续' . $time . '次正常还款'];
+//            $loan = [];
+//            foreach ($repayments as $key => $value) {
+//                if ($value['status'] != 0) {
+//                    $loan[] = $value;
+//                }
+//                if (count($loan) >= 3) {
+//                    break;
+//                }
+//            }
+//
+//            $time = 0;
+//            foreach ($loan as $v) {
+//                if ($v['overdue_day'] != 0) {
+//                    break;
+//                } else {
+//                    if ($v['status'] == UserLoanOrderRepayment::STATUS_REPAY_COMPLETE) {
+//                        $time++;
+//                    }
+//                }
+//            }
+            return ['risk' => self::LOW_RISK, 'detail' => '正常还款', 'value' => 0];
+//            return ['risk' => self::LOW_RISK, 'detail' => '正常还款', 'value' => '连续' . $time . '次正常还款'];
         }
-        return ['risk' => self::LOW_RISK, 'detail' => '没有借款记录', 'value' => '没有借款记录'];
+        return ['risk' => self::LOW_RISK, 'detail' => '没有借款记录', 'value' => self::NULL];
     }
 
     /**
