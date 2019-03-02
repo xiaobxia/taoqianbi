@@ -5017,7 +5017,7 @@ class RiskControlCheckService extends Component {
      * param    array            默认配置
      * return   array            ['risk'=>"0:低风险, 1:中风险, 2:高风险", 'detail' => "描述"]
      */
-    public function checkIsOldUser($data, $params)
+    public function checkIsOldUser($data)
     {
         $loan_person = $data['loan_person'];
         $repayments = $data['user_loan_order_repayments'];
@@ -5046,16 +5046,11 @@ class RiskControlCheckService extends Component {
      * param    array            默认配置
      * return   array            ['risk'=>"0:低风险, 1:中风险, 2:高风险", 'detail' => "描述"]
      */
-    public function checkUserLoanCollection($data, $params)
+    public function checkUserLoanCollection($data)
     {
-
-        $loan_person = $data['loan_person'];
-
-        // $collection = LoanCollectionOrder::find()->where(['user_id' => $loan_person->id, 'status' => LoanCollectionOrder::STATUS_COLLECTION_FINISH])->orderBy('id desc')->one(LoanCollectionOrder::getDb_rd());
         $collection = $data['loan_collection_order'];
-        if (empty($collection)) {
-            $result = ['risk' => self::MEDIUM_RISK, 'detail' => '催收建议审核，,或无建议', 'value' => self::OTHER];
-        } else {
+        $result = ['risk' => self::MEDIUM_RISK, 'detail' => '催收建议审核，,或无建议', 'value' => self::OTHER];
+        if (!empty($collection)) {
             if (in_array($collection['next_loan_advice'], [LoanCollectionOrder::RENEW_REJECT])) {
                 $result = ['risk' => self::MEDIUM_RISK, 'detail' => '催收建议拒绝', 'value' => self::NO];
             } elseif (in_array($collection['next_loan_advice'], [LoanCollectionOrder::RENEW_DEFAULT, LoanCollectionOrder::RENEW_CHECK])) {
