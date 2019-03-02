@@ -5182,20 +5182,7 @@ class RiskControlCheckService extends Component {
     // 当前用户借款中的数量
     public function checkUserUsableLoanOrderCount($data, $params)
     {
-        $loan_person = $data['loan_person'];
-
         $count = 0;
-
-        // $result = UserLoanOrder::find()->where(['user_id' => $loan_person->id])
-        //     ->andWhere(['not in', 'status', [
-        //         UserLoanOrder::STATUS_REPAY_REPEAT_CANCEL,
-        //         UserLoanOrder::STATUS_REPAY_CANCEL,
-        //         UserLoanOrder::STATUS_PENDING_CANCEL,
-        //         UserLoanOrder::STATUS_REPEAT_CANCEL,
-        //         UserLoanOrder::STATUS_CANCEL,
-        //         UserLoanOrder::STATUS_REPAY_COMPLETE,
-        //         10000,
-        //         10001]])->all();
 
         $result = $data['usable_user_loan_orders'];
 
