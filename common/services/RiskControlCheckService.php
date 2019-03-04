@@ -792,7 +792,7 @@ class RiskControlCheckService extends Component {
     }
 
     /**
-     *
+     *停用
 
      *
      * 联系人通话检验规则
@@ -1116,7 +1116,7 @@ class RiskControlCheckService extends Component {
     }
 
     /**
-     *
+     *魔蝎停用
 
      *
      * 第二联系人通话时间
@@ -1346,9 +1346,9 @@ class RiskControlCheckService extends Component {
             foreach ($data['behavior_check'] as $v) {
                 if ($v['check_point'] == 'phone_used_time' || $v['check_point_cn'] == '号码使用时间') {
                     if ($v['score'] == '2') {
-                        $result = ['risk' => self::HIGH_RISK, 'detail' => '运营商：号码使用时间评分过高' . $v['score']];
+                        $result = ['risk' => self::HIGH_RISK, 'detail' => '运营商：号码使用时间评分过高' . $v['score'], 'value' => $v['score']];
                     } else {
-                        $result = ['risk' => self::LOW_RISK, 'detail' => '运营商：号码使用时间评分' . $v['score']];
+                        $result = ['risk' => self::LOW_RISK, 'detail' => '运营商：号码使用时间评分' . $v['score'], 'value' => $v['score']];
                     }
                 }
             }
