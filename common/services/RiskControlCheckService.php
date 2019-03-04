@@ -1097,8 +1097,8 @@ class RiskControlCheckService extends Component {
                 foreach ($data['behavior_check'] as $v) {
                     if ($v['check_point'] == 'contact_each_other') {
                         if (preg_match('/有([\d|\.]+)个/', $v['evidence'], $time)) {
-                            if (isset($time[0])) {
-                                $t = $time[0];
+                            if (isset($time[1])) {
+                                $t = $time[1];
                             }
                             $detail = $v['evidence'];
                         }
