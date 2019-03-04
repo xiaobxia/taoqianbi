@@ -1,5 +1,5 @@
 <?php
-defined('APP_DOWNLOAD_URL') or define('APP_DOWNLOAD_URL','http://www.jisuhh.cn/xhb.apk');
+defined('APP_DOWNLOAD_URL') or define('APP_DOWNLOAD_URL','http://www.jisuhh.cn/tqb.apk_1.0.1.apk');
 defined('APP_IOS_DOWNLOAD_URL') or define('APP_IOS_DOWNLOAD_URL','https://fir.im/7l4v');
 
 defined('SITE_TEL') or define('SITE_TEL', '13285711611');
