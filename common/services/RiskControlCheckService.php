@@ -1059,7 +1059,7 @@ class RiskControlCheckService extends Component {
      *
 
      *
-     * 第一联系人通话时间
+     * 详单互通个数 第一联系人通话时间
      *
      * param    array
      * param    array            默认配置
@@ -1074,31 +1074,31 @@ class RiskControlCheckService extends Component {
 
         $t = -1;
         $detail = '聚信立：未找到与联系人互动情况相关信息';
-        if (isset($data['application_check']['0']['check_points'])) {
-            foreach ($data['application_check'] as $v) {
-                if ($v['app_point'] == "contact") {
-                    if (preg_match('/共([\d|\.]+)分钟/', $v['check_points']['check_mobile'], $time)) {
-                        if (isset($time[1])) {
-                            $t = $time[1];
-                        }
-                        $detail = $v['check_points']['check_mobile'];
-                    }
-                    break;
-                }
-            }
-            $result = [
-                'risk' => self::LOW_RISK,
-                'detail' => $detail,
-                'value' => $t
-            ];
-        } else
+//        if (isset($data['application_check']['0']['check_points'])) {
+//            foreach ($data['application_check'] as $v) {
+//                if ($v['app_point'] == "contact") {
+//                    if (preg_match('/共([\d|\.]+)分钟/', $v['check_points']['check_mobile'], $time)) {
+//                        if (isset($time[1])) {
+//                            $t = $time[1];
+//                        }
+//                        $detail = $v['check_points']['check_mobile'];
+//                    }
+//                    break;
+//                }
+//            }
+//            $result = [
+//                'risk' => self::LOW_RISK,
+//                'detail' => $detail,
+//                'value' => $t
+//            ];
+//        } else
 
             if (!empty($data['behavior_check'])) {
                 foreach ($data['behavior_check'] as $v) {
-                    if ($v['check_point'] == '与联系人互动情况') {
-                        if (preg_match('/共([\d|\.]+)分钟/', $v['evidence'], $time)) {
-                            if (isset($time[1])) {
-                                $t = $time[1];
+                    if ($v['check_point'] == 'contact_each_other') {
+                        if (preg_match('/有([\d|\.]+)个/', $v['evidence'], $time)) {
+                            if (isset($time[0])) {
+                                $t = $time[0];
                             }
                             $detail = $v['evidence'];
                         }

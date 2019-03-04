@@ -232,17 +232,18 @@ class RiskControlDataService extends Component
                 return [];
             }
             if ($jxl->status == 1) {
-                return json_decode($jxl->info, true);
-            }
-        } elseif ($v->real_yys_status == UserVerification::VERIFICATION_YYS) {
-            $hljr = CreditYys::find()->where(['person_id' => $loan_person->id])->one(Yii::$app->get('db_kdkj_risk_rd'));
-            if (is_null($hljr)) {
-                return [];
-            }
-            if ($hljr->status == 1) {
-                return json_decode($hljr->data, true);
+                return json_decode($jxl->data, true);
             }
         }
+//        elseif ($v->real_yys_status == UserVerification::VERIFICATION_YYS) {
+//            $hljr = CreditYys::find()->where(['person_id' => $loan_person->id])->one(Yii::$app->get('db_kdkj_risk_rd'));
+//            if (is_null($hljr)) {
+//                return [];
+//            }
+//            if ($hljr->status == 1) {
+//                return json_decode($hljr->data, true);
+//            }
+//        }
 
         return [];
     }
