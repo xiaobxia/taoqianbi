@@ -260,7 +260,7 @@ use mobile\components\ApiUrl;
         margin: auto;
         content: "";
         display: block;
-        background-color:#1ec8e1
+        background-color:#1ec8e1;
         width: 0.25rem;
         height: 0.25rem;
         border-radius: 50%;
