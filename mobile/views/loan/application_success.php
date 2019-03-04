@@ -38,21 +38,22 @@ body {
         </div>
         <p style="display: none">关注并绑定<?php echo WEIXIN_GONGZHONGNHAO ?>微信公众号尊享更多福利</p>
         <p style="display: none">关注并绑定微信公众号尊享更多福利(公众号正在审核中)</p>
+        <p>首次还款添加微信lxw17788598965得50元红包，非首次还款可以的得小红包！具体详情看app公告</p>
         <div class="wx-bindBtn">
-            <div class="bindBtn-head"  style="display: none">
+            <div class="bindBtn-head">
             • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
                 <span class="">1</span>
                 <span class="">2</span>
             </div>
-            <div class="bindBtn-title"  style="display: none">
-               <p class="fl">微信搜索“<?php echo WEIXIN_GONGZHONGNHAO_SHORENAME; ?>”</p>
-               <p class="fr">关注并完成绑定</p>
+            <div class="bindBtn-title">
+               <p class="fl">微信搜索“lxw17788598965”</p>
+               <p class="fr">获得红包</p>
             </div>
             <div class="bindBtn">
                 <?php if(@$wx_info):?>
                 <button class="fl" type="disabled"  style="display: none">公众号已绑定</button>
                 <?php else:?>
-                    <button class="fl" id="copy_wx" type=""  style="display: none">复制去关注</button>
+                    <button class="fl" id="copy_wx" type="">复制去关注</button>
                 <?php endif;?>
 
                 <a href="<?php if(isset($order_id)):?><?php echo helpers\Url::toRoute(['loan/loan-detail', 'id' => $order_id])?><?php endif;?>" class="fr" >查看借款详情</a>
@@ -73,7 +74,7 @@ body {
         console.log(e);
     }
     $("#copy_wx").click(function(){
-        copyText('<?php echo WEIXIN_GONGZHONGNHAO_SHORENAME; ?>');
+        copyText('lxw17788598965');
         returnNative('14');
     })
 </script>
