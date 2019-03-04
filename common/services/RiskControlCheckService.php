@@ -743,7 +743,7 @@ class RiskControlCheckService extends Component {
     {
 
         $data = $data['jxl'];
-        $result = ['risk' => self::MEDIUM_RISK, 'detail' => '聚信立:没有相关信息'];
+        $result = ['risk' => self::MEDIUM_RISK, 'detail' => '聚信立:没有相关信息', 'value' => self::NULL];
         if (!empty($data['application_check'])) {
             $flag = true;
             $hit = "";
@@ -783,9 +783,9 @@ class RiskControlCheckService extends Component {
             }
 
             if ($flag) {
-                $result = ['risk' => self::LOW_RISK, 'detail' => '聚信立:未命中以下黑名单:' . $miss];
+                $result = ['risk' => self::LOW_RISK, 'detail' => '聚信立:未命中以下黑名单:' . $miss, 'value' => self::NO];
             } else {
-                $result = ['risk' => self::HIGH_RISK, 'detail' => '聚信立:命中以下黑名单:' . $hit];
+                $result = ['risk' => self::HIGH_RISK, 'detail' => '聚信立:命中以下黑名单:' . $hit, 'value' => self::YES];
             }
         }
         return $result;
