@@ -1483,7 +1483,7 @@ class RiskControlCheckService extends Component {
         $result = ['risk' => self::MEDIUM_RISK, 'detail' => '聚信立:没有相关信息'];
         if (!empty($data['behavior_check'])) {
             foreach ($data['behavior_check'] as $v) {
-                if ($v['check_point'] == '贷款类号码联系情况' || $v['check_point'] == 'contact_loan') {
+                if ($v['check_point'] == 'contact_loan' || $v['check_point_cn'] == '贷款类号码联系情况') {
                     $detail = $v['evidence'];
                     $flag = true;
                     if (preg_match_all('/主叫([1-9]\d*)次共(.*?)分钟/', $v['evidence'], $phone_call)) {
@@ -1505,7 +1505,11 @@ class RiskControlCheckService extends Component {
                 }
             }
 
-            $result = ['risk' => $flag ? self::LOW_RISK : self::HIGH_RISK, 'detail' => $detail];
+            $result = ['risk' => self::LOW_RISK, 'detail' => $detail, 'value' => self::NO];
+            if ($flag == false){
+                $result = ['risk' => self::HIGH_RISK, 'detail' => $detail, 'value' => self::YES];
+            }
+
         }
 
         return $result;
