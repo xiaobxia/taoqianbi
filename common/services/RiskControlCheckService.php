@@ -1344,7 +1344,7 @@ class RiskControlCheckService extends Component {
         $result = ['risk' => self::MEDIUM_RISK, 'detail' => '运营商：没有相关信息'];
         if (!empty($data['behavior_check'])) {
             foreach ($data['behavior_check'] as $v) {
-                if ($v['check_point'] == '号码使用时间' || $v['check_point'] == 'phone_used_time') {
+                if ($v['check_point'] == 'phone_used_time' || $v['check_point_cn'] == '号码使用时间') {
                     if ($v['score'] == '2') {
                         $result = ['risk' => self::HIGH_RISK, 'detail' => '运营商：号码使用时间评分过高' . $v['score']];
                     } else {
@@ -1369,18 +1369,10 @@ class RiskControlCheckService extends Component {
      */
     public function checkContactsCount($data, $params)
     {
-
         $jxldata = $data['jxl'];
-        $data = $data['yys'];
 
         $result = ['risk' => self::MEDIUM_RISK, 'detail' => '运营商：没有相关信息', 'value' => self::NULL];
-//        if (!empty($data['contact_list'])) {
-//            $count = count($data['contact_list']);
-//            $detail = "互通过电话的号码数量为" . $count;
-//            $result = ['risk' => self::LOW_RISK, 'detail' => $detail, 'value' => $count];
-//        }
 
-        if (!empty($jxldata)) {
             if(array_key_exists('behavior_check',$jxldata)){
                 $str='';
                 foreach($jxldata['behavior_check'] as $k=>$v){
