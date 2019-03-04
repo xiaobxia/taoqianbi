@@ -1411,9 +1411,8 @@ class RiskControlCheckService extends Component {
      */
     public function checkPhoneClose($data, $params)
     {
-
         $data = $data['jxl'];
-        $max_close_day = $params['max_close_day'];
+
         $max = 0;
         $result = ['risk' => self::MEDIUM_RISK, 'detail' => '聚信立:没有相关信息', 'value' => self::NULL];
         if (!empty($data['behavior_check'])) {
