@@ -1108,7 +1108,7 @@ class RiskControlCheckService extends Component {
                 $result = [
                     'risk' => self::LOW_RISK,
                     'detail' => $detail,
-                    'value' => $t
+                    'value' => intval($t)
                 ];
             }
 
