@@ -282,6 +282,8 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
     ];
 
     const USER_AGENT_XYBT = 'tqb'; #极速荷包
+    const USER_AGENT_BBY = 'bby'; #极速荷包
+    const USER_AGENT_SDHS = 'sdhs'; #极速荷包
     const USER_AGENT_XYQB = 'xyqb'; #信用钱包
     const USER_AGENT_HBQB = 'hbqb'; #汇邦钱包
 
@@ -461,6 +463,8 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
     public static $user_agent_list = [
         self::USER_AGENT_XYBT,
         self::USER_AGENT_XYQB,
+        self::USER_AGENT_BBY,
+        self::USER_AGENT_SDHS,
 //        self::USER_AGENT_HBQB,
 //        self::USER_AGENT_KDJZ,
 //        self::USER_AGENT_JBGJ,
