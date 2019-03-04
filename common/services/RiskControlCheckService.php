@@ -1578,7 +1578,7 @@ class RiskControlCheckService extends Component {
     }
 
     /**
-     *
+     *暂不使用
 
      *
      * 最晚联系校验
@@ -5805,12 +5805,12 @@ class RiskControlCheckService extends Component {
      */
     public function checkCourtBlackList($data, $params) {
         $data = $data['jxl'];
-        $count = 0;
+        $count = self::NO;
         $detail = '聚信立:没有相关信息';
         if (!empty($data['application_check'])) {
             foreach ($data['application_check'] as $v) {
-                if ($v['check_point'] == "申请人姓名+身份证是否出现在法院黑名单") {
-                    $count = 1;
+                if ($v['check_point'] == "contact_court" && strstr($v['result'], '无') == null) {
+                    $count = self::YES;
                     $detail = '聚信立:命中法院黑名单';
                 }
             }
