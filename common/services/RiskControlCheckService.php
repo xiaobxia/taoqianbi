@@ -1373,6 +1373,7 @@ class RiskControlCheckService extends Component {
 
         $result = ['risk' => self::MEDIUM_RISK, 'detail' => '运营商：没有相关信息', 'value' => self::NULL];
 
+        if (!empty($jxldata)) {
             if(array_key_exists('behavior_check',$jxldata)){
                 $str='';
                 foreach($jxldata['behavior_check'] as $k=>$v){
