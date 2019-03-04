@@ -5807,8 +5807,8 @@ class RiskControlCheckService extends Component {
         $data = $data['jxl'];
         $count = self::NO;
         $detail = '聚信立:没有相关信息';
-        if (!empty($data['application_check'])) {
-            foreach ($data['application_check'] as $v) {
+        if (!empty($data['behavior_check'])) {
+            foreach ($data['behavior_check'] as $v) {
                 if ($v['check_point'] == "contact_court" && strstr($v['result'], '无') == null) {
                     $count = self::YES;
                     $detail = '聚信立:命中法院黑名单';
