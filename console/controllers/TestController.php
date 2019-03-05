@@ -46,13 +46,8 @@ class TestController extends BaseController {
     public function actionSendMess(){
         $appPath = __DIR__ . DIRECTORY_SEPARATOR;
         //读取文件内容
-        define('UTF32_BIG_ENDIAN_BOM', chr(0x00) . chr(0x00) . chr(0xFE) . chr(0xFF));
-        define('UTF32_LITTLE_ENDIAN_BOM', chr(0xFF) . chr(0xFE) . chr(0x00) . chr(0x00));
-        define('UTF16_BIG_ENDIAN_BOM', chr(0xFE) . chr(0xFF));
-        define('UTF16_LITTLE_ENDIAN_BOM', chr(0xFF) . chr(0xFE));
-        define('UTF8_BOM', chr(0xEF) . chr(0xBB) . chr(0xBF));
         $str = file_get_contents($appPath.'test.txt');//将整个文件内容读入到一个字符串中
-//        var_dump($str);exit;
+        echo $str;exit;
 //        $str_encoding = mb_convert_encoding($str, 'UTF-8', 'UTF-8,GBK,GB2312,BIG5');//转换字符集（编码）
         $arr = explode("\r\n", $str);
         foreach ($arr as &$row){
