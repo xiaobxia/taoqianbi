@@ -49,7 +49,7 @@ class TestController extends BaseController {
         //读取文件内容
         $arr = [];
         if (file_exists($appPath)){
-            $str = file_get_contents('test.txt');
+            $str = file_get_contents($appPath);
             $str_encoding = mb_convert_encoding($str, 'UTF-8', 'UTF-8,GBK,GB2312,BIG5');
 
             $arr = explode(".", $str_encoding);
