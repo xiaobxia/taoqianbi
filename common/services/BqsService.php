@@ -52,9 +52,9 @@ class BqsService extends Component
      * @return bool|mixed
      */
     public function getData($params){
-        $params['partnerId'] = 'sdpurse';
-        $params['verifyKey'] = '5e7e4e37bc6948da9066e291c9b9c60d';
-        $params['appId'] = 'prod';
+        $params['partnerId'] = 'gyxx';
+        $params['verifyKey'] = '04b0cc1a49940ebb207fb52f6b68f92';
+        $params['appId'] = 'sdz201902';
         $params = json_encode($params);
         $url = 'https://api.baiqishi.com/services/decision';
         return CurlHelper::curlHttp($url, 'JXL', $params);
