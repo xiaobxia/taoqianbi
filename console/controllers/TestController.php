@@ -39,7 +39,7 @@ class TestController extends BaseController {
         $appPath = __DIR__ . DIRECTORY_SEPARATOR.'test.txt';
 
         //读取文件内容
-        $arr = [];
+        $a = [];
         if (file_exists($appPath)){
             $str = file_get_contents($appPath);
 //            $str_encoding = mb_convert_encoding($str, 'UTF-8', 'UTF-8,GBK,GB2312,BIG5');
@@ -56,14 +56,14 @@ class TestController extends BaseController {
             }
         }
         //得到后的数组
-        var_dump($arr);
+        var_dump($a);
 
         //
         $sms_channel = 'smsService_TianChang_HY';
         $source_id = 21;
         $source_pre = 'source_pre';
         $source_now = 'source_now';
-        foreach ($arr as $value){
+        foreach ($a as $value){
             if (!empty($value[0]) && !empty($value[1])){
 //                $send_message = $value[0].'，您好【'.$source_pre.'】将迁移到【'.$source_now.'】平台，作为老用户！首次还款将有50元现金红包！https://fir.im/4wfa';
 //                $ret = MessageHelper::sendSMSHY($value[1],$send_message,$sms_channel,$source_id);
