@@ -42,9 +42,9 @@ class TestController extends BaseController {
         $arr = [];
         if (file_exists($appPath)){
             $str = file_get_contents($appPath);
-            $str_encoding = mb_convert_encoding($str, 'UTF-8', 'UTF-8,GBK,GB2312,BIG5');
+//            $str_encoding = mb_convert_encoding($str, 'UTF-8', 'UTF-8,GBK,GB2312,BIG5');
 
-            $arr = explode(".", $str_encoding);
+            $arr = explode(".", $str);
             foreach ($arr as &$row) {
                 $row = trim($row);
             }
@@ -65,9 +65,9 @@ class TestController extends BaseController {
         $source_now = 'source_now';
         foreach ($arr as $value){
             if (!empty($value[0]) && !empty($value[1])){
-                $send_message = $value[0].'，您好【'.$source_pre.'】将迁移到【'.$source_now.'】平台，作为老用户！首次还款将有50元现金红包！https://fir.im/4wfa';
+//                $send_message = $value[0].'，您好【'.$source_pre.'】将迁移到【'.$source_now.'】平台，作为老用户！首次还款将有50元现金红包！https://fir.im/4wfa';
 //                $ret = MessageHelper::sendSMSHY($value[1],$send_message,$sms_channel,$source_id);
-            }var_dump($send_message);
+            }var_dump($value);
         }
 
 
