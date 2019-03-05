@@ -109,7 +109,7 @@ class RiskControlDataService extends Component
             'user_loan_order_repayments' => $this->logTime('getUserLoanOrderRepayments', $loan_person),
             // TODO:alexding disable jizhang
             //'external_account' => $this->logTime('getExternalAccount', $loan_person),
-            'external_account' => '',
+//            'external_account' => '',
             'accumulation_fund' => $this->logTime('getAccumulationFund', $loan_person),
             'face_id_card' => $this->logTime('getFaceIdCard', $loan_person),
 
@@ -547,18 +547,18 @@ class RiskControlDataService extends Component
      * @param LoanPerson $loanPerson
      * @return array
      */
-    public function getExternalAccount(LoanPerson $loanPerson) {
-        $ret = [
-            'code' => -1,
-            'data' => []
-        ];
-        if (UserChannelMap::findOne(['user_id' => $loanPerson->getId(), 'channel' => ExternalChannelService::CHANNEL_JIZHANG])) {
-            $info = UserExternalAccount::findOne(['user_id' => $loanPerson->id]);
-            $ret = $info ? ['code' => 1, 'data' => $info->toArray()] : ['code' => 0, 'data' => []];
-        }
-
-        return $ret;
-    }
+//    public function getExternalAccount(LoanPerson $loanPerson) {
+//        $ret = [
+//            'code' => -1,
+//            'data' => []
+//        ];
+//        if (UserChannelMap::findOne(['user_id' => $loanPerson->getId(), 'channel' => ExternalChannelService::CHANNEL_JIZHANG])) {
+//            $info = UserExternalAccount::findOne(['user_id' => $loanPerson->id]);
+//            $ret = $info ? ['code' => 1, 'data' => $info->toArray()] : ['code' => 0, 'data' => []];
+//        }
+//
+//        return $ret;
+//    }
 
     /**
      * 获取公积金数据
