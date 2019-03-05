@@ -2,24 +2,18 @@
 
 namespace console\controllers;
 
-use common\models\CreditJsqb;
 use common\models\CreditYx;
 use common\services\WLService;
 use common\services\Yxservice;
 use Yii;
 use common\api\RedisQueue;
 use common\helpers\CurlHelper;
-use common\helpers\MailHelper;
 use common\helpers\MessageHelper;
-use common\models\Channel;
 use common\models\CreditBqs;
 use common\models\CreditBr;
-use common\models\CreditJxl;
 use common\models\CreditJxlQueue;
 use common\models\CreditMg;
 use common\models\LoanPerson;
-use common\models\mongo\risk\RuleReportMongo;
-use common\models\risk\Rule;
 use common\models\UserContact;
 use common\models\UserCreditData;
 use common\models\UserLoanOrderRepayment;
@@ -28,7 +22,6 @@ use common\models\UserVerification;
 use common\models\WeixinUser;
 use common\services\CreditCheckService;
 use common\services\fundChannel\JshbService;
-use common\services\JxlService;
 use common\services\RiskControlCheckService;
 use common\services\RiskControlService;
 use console\soa\UserLoanOrder;
@@ -39,23 +32,45 @@ use common\helpers\Util;
 use common\models\UserCreditMoneyLog;
 use common\models\UserRegisterInfo;
 use common\models\mongo\risk\OrderReportMongo;
-use yii\helpers\ArrayHelper;
 
 class TestController extends BaseController {
 
     public function actionSendMess(){
-        $appPath = __DIR__ . DIRECTORY_SEPARATOR;
+        $appPath = __DIR__ . DIRECTORY_SEPARATOR.'test.txt';
+
         //读取文件内容
-        $str = file_get_contents($appPath.'test.txt');//将整个文件内容读入到一个字符串中
-        echo $str;exit;
-//        $str_encoding = mb_convert_encoding($str, 'UTF-8', 'UTF-8,GBK,GB2312,BIG5');//转换字符集（编码）
-        $arr = explode("\r\n", $str);
-        foreach ($arr as &$row){
-            $row = trim($row);
+        $a = [];
+        if (file_exists($appPath)){
+            $str = file_get_contents($appPath);
+//            $str_encoding = mb_convert_encoding($str, 'UTF-8', 'UTF-8,GBK,GB2312,BIG5');
+
+            $arr = explode(".", $str);
+            foreach ($arr as &$row) {
+                $row = trim($row);
+            }
+            unset($row);
+            foreach ($arr as $v){
+                if (!empty($v)){
+                    $a[] = explode("\t", $v);
+                }
+            }
         }
-        unset($row);
         //得到后的数组
-        var_dump($arr);
+//        var_dump($a);
+
+        //
+        $sms_channel = 'smsService_TianChang_HY';
+        $source_id = 21;
+        $source_pre = '极速花花';
+        $source_now = '淘钱币';
+        foreach ($a as $value){
+            if (!empty($value[0]) && !empty($value[1])){
+                $send_message = $value[0].'，您好【'.$source_pre.'】将迁移到【'.$source_now.'】平台，作为老用户！首次还款将有50元现金红包！https://fir.im/4wfa';
+                $ret = MessageHelper::sendSMSHY($value[1],$send_message,$sms_channel,$source_id);
+                echo $ret.$send_message."\r\n";
+            }
+        }
+
 
 //        $sms_channel = 'smsService_TianChang_HY';
 //        $source_id = 21;
