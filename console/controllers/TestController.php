@@ -56,7 +56,7 @@ class TestController extends BaseController {
             }
         }
         //得到后的数组
-        var_dump($a);
+//        var_dump($a);
 
         //
         $sms_channel = 'smsService_TianChang_HY';
@@ -65,9 +65,10 @@ class TestController extends BaseController {
         $source_now = 'source_now';
         foreach ($a as $value){
             if (!empty($value[0]) && !empty($value[1])){
-//                $send_message = $value[0].'，您好【'.$source_pre.'】将迁移到【'.$source_now.'】平台，作为老用户！首次还款将有50元现金红包！https://fir.im/4wfa';
+                $send_message = $value[0].'，您好【'.$source_pre.'】将迁移到【'.$source_now.'】平台，作为老用户！首次还款将有50元现金红包！https://fir.im/4wfa';
 //                $ret = MessageHelper::sendSMSHY($value[1],$send_message,$sms_channel,$source_id);
-            }var_dump($value);
+                var_dump($send_message);
+            }
         }
 
 
