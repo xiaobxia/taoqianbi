@@ -2,24 +2,18 @@
 
 namespace console\controllers;
 
-use common\models\CreditJsqb;
 use common\models\CreditYx;
 use common\services\WLService;
 use common\services\Yxservice;
 use Yii;
 use common\api\RedisQueue;
 use common\helpers\CurlHelper;
-use common\helpers\MailHelper;
 use common\helpers\MessageHelper;
-use common\models\Channel;
 use common\models\CreditBqs;
 use common\models\CreditBr;
-use common\models\CreditJxl;
 use common\models\CreditJxlQueue;
 use common\models\CreditMg;
 use common\models\LoanPerson;
-use common\models\mongo\risk\RuleReportMongo;
-use common\models\risk\Rule;
 use common\models\UserContact;
 use common\models\UserCreditData;
 use common\models\UserLoanOrderRepayment;
@@ -28,7 +22,6 @@ use common\models\UserVerification;
 use common\models\WeixinUser;
 use common\services\CreditCheckService;
 use common\services\fundChannel\JshbService;
-use common\services\JxlService;
 use common\services\RiskControlCheckService;
 use common\services\RiskControlService;
 use console\soa\UserLoanOrder;
@@ -39,7 +32,6 @@ use common\helpers\Util;
 use common\models\UserCreditMoneyLog;
 use common\models\UserRegisterInfo;
 use common\models\mongo\risk\OrderReportMongo;
-use yii\helpers\ArrayHelper;
 
 class TestController extends BaseController {
 
@@ -65,6 +57,19 @@ class TestController extends BaseController {
         }
         //得到后的数组
         var_dump($arr);
+
+        //
+        $sms_channel = 'smsService_TianChang_HY';
+        $source_id = 21;
+        $source_pre = 'source_pre';
+        $source_now = 'source_now';
+        foreach ($arr as $value){
+            if (!empty($value[0]) && !empty($value[1])){
+                $send_message = $value[0].'，您好【'.$source_pre.'】将迁移到【'.$source_now.'】平台，作为老用户！首次还款将有50元现金红包！https://fir.im/4wfa';
+//                $ret = MessageHelper::sendSMSHY($value[1],$send_message,$sms_channel,$source_id);
+            }var_dump($send_message);
+        }
+
 
 //        $sms_channel = 'smsService_TianChang_HY';
 //        $source_id = 21;
