@@ -275,7 +275,8 @@ class TestController extends BaseController {
         ]);
 //        var_dump($loanPerson);exit();
 
-        $ccs = new CreditCheckService;
+//        $ccs = new CreditCheckService;
+        $ccs = Yii::$container->get('creditCheckService');
 
 //        //百融-特殊名单
 //        $br_dat = $ccs->getBrData($loanPerson, false);
