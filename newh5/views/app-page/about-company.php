@@ -10,7 +10,6 @@ use common\models\LoanPerson;
 <div id="about_company_wraper">
     <div class="padding em__9" style="padding: 0 4.25%;">
             <h3 style="padding-top:4%" class="lh_em_2 _666">公司介绍</h3>
-            <p class="lh_em_1_8 _8d8d8d"><?php echo $app_name?>隶属于<?php echo $company?>。</p>
         <div class="lh_em_1_8 _8d8d8d">
             <p class="column1"><?php echo $app_name?>是基于移动互联网的网络借贷App。公司为解决城市年轻白领与蓝领人群资金周转的难题，提供短期借款服务。</p>
             <p class="column1"<?php echo $app_name?>研发团队实力雄厚，采用先进的大数据技术，分析不同人群的需求，提供最适合该类人群的借贷解决方案。在海量数据的基础上，团队致力于研发高效、精准的风控系统，采用全线上、无打扰自动审核程序，极大降低传统借贷的繁琐流程，提供无抵押、无担保地便捷借款服务。</p>
