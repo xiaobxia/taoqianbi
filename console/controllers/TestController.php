@@ -287,19 +287,19 @@ class TestController extends BaseController {
 //        );
 //
         //百融-多次申请核查v2
-        $br_apply = $ccs->getBrApplyData($loanPerson, false);
-        \call_user_func(
-            [CommonHelper::class, ($br_apply ? 'info' : 'error')],
-            "br_apply: {$loanPerson->id} " . ($br_apply ? 'success' :  'failed') . PHP_EOL
-        );
+//        $br_apply = $ccs->getBrApplyData($loanPerson, false);
+//        \call_user_func(
+//            [CommonHelper::class, ($br_apply ? 'info' : 'error')],
+//            "br_apply: {$loanPerson->id} " . ($br_apply ? 'success' :  'failed') . PHP_EOL
+//        );
 //        exit();
 
         //白骑士-决策信息
-//        $bqs_dat = $ccs->getBqsData($loanPerson, false);
-//        \call_user_func(
-//            [CommonHelper::class, ($bqs_dat ? 'stdout' : 'stderr')],
-//            "bqs_dat: {$loanPerson->id} " . ($bqs_dat ? 'success' :  'failed') . PHP_EOL
-//        );
+        $bqs_dat = $ccs->getBqsData($loanPerson, false);
+        \call_user_func(
+            [CommonHelper::class, ($bqs_dat ? 'stdout' : 'stderr')],
+            "bqs_dat: {$loanPerson->id} " . ($bqs_dat ? 'success' :  'failed') . PHP_EOL
+        );
 
         //face++检测
 //        $face_data = $ccs->getFacePlus($loanPerson, 2, 13);
