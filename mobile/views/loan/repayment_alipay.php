@@ -82,7 +82,6 @@ $company = (isset($company_name)&&$company_name) ? $company_name : ALIPAY_NAME;
         <p>1、进入支付宝首页，点击【转账】，选择【转到支付宝账户】，输入支付宝账户 <i><?php echo ALIPAY_ACCOUNT;?></i>
             <span>
                 <a href="javascript:copyText('<?php echo ALIPAY_ACCOUNT;?>')" class="copytext"><span>复制账号</span></a>
-                可通过账户全名“<?php echo $company;?>”进行校验
             </span>
         </p>
         <p>2、点击【下一步】，输入转账金额，并添加备注 <i><?php echo $data['name']; ?> <?php echo $data['phone']; ?> <?php echo '还款';?></i><span><a href="javascript:copyText('<?php echo $data['name']; ?> <?php echo $data['phone'] ; ?> <?php echo '还款';?>')" > <span>复制备注</span></a></span></p>
