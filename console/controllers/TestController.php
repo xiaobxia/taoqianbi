@@ -270,28 +270,28 @@ class TestController extends BaseController {
 
     public function actionTest($node = 166) {
         $loanPerson = LoanPerson::findOne([
-            'id' => 6,
+            'id' => 38,
             'status' => LoanPerson::PERSON_STATUS_PASS,
         ]);
 //        var_dump($loanPerson);exit();
 
         $ccs = new CreditCheckService;
 
-        //百融-特殊名单
-        $br_dat = $ccs->getBrData($loanPerson, false);
-        var_dump($br_dat);
-        \call_user_func(
-            [CommonHelper::class, ($br_dat ? 'stdout' : 'stderr')],
-            "br_dat: {$loanPerson->id} " . ($br_dat ? 'success' :  'failed') . PHP_EOL
-        );
-
-        //百融-多次申请核查v2
-        $br_apply = $ccs->getBrApplyData($loanPerson, false);
-        \call_user_func(
-            [CommonHelper::class, ($br_apply ? 'info' : 'error')],
-            "br_apply: {$loanPerson->id} " . ($br_apply ? 'success' :  'failed') . PHP_EOL
-        );
-        exit();
+//        //百融-特殊名单
+//        $br_dat = $ccs->getBrData($loanPerson, false);
+//        var_dump($br_dat);
+//        \call_user_func(
+//            [CommonHelper::class, ($br_dat ? 'stdout' : 'stderr')],
+//            "br_dat: {$loanPerson->id} " . ($br_dat ? 'success' :  'failed') . PHP_EOL
+//        );
+//
+//        //百融-多次申请核查v2
+//        $br_apply = $ccs->getBrApplyData($loanPerson, false);
+//        \call_user_func(
+//            [CommonHelper::class, ($br_apply ? 'info' : 'error')],
+//            "br_apply: {$loanPerson->id} " . ($br_apply ? 'success' :  'failed') . PHP_EOL
+//        );
+//        exit();
 
         //白骑士-决策信息
         $bqs_dat = $ccs->getBqsData($loanPerson, false);
@@ -301,34 +301,34 @@ class TestController extends BaseController {
         );
 
         //face++检测
-        $face_data = $ccs->getFacePlus($loanPerson, 2, 13);
-        \call_user_func(
-            [CommonHelper::class, ($face_data ? 'stdout' : 'stderr')],
-            "face_dat: {$loanPerson->id} " . ($face_data ? 'success' :  'failed') . PHP_EOL
-        );
+//        $face_data = $ccs->getFacePlus($loanPerson, 2, 13);
+//        \call_user_func(
+//            [CommonHelper::class, ($face_data ? 'stdout' : 'stderr')],
+//            "face_dat: {$loanPerson->id} " . ($face_data ? 'success' :  'failed') . PHP_EOL
+//        );
 
 
 
-        try {
-            //获取聚信立报告
-            $jxl_ret = $ccs->getJxlBaseReport($loanPerson);
-            \call_user_func(
-                [CommonHelper::class, ($jxl_ret ? 'stdout' : 'stderr')],
-                "jxl_ret: {$loanPerson->id} " . ($jxl_ret ? 'success' :  'failed') . PHP_EOL
-            );
-        }
-        catch (\Exception $e) {
-            throw new \Exception("{$loanPerson->id} JxlBaseReport获取异常: {$e}", 3000);
-        }
+//        try {
+//            //获取聚信立报告
+//            $jxl_ret = $ccs->getJxlBaseReport($loanPerson);
+//            \call_user_func(
+//                [CommonHelper::class, ($jxl_ret ? 'stdout' : 'stderr')],
+//                "jxl_ret: {$loanPerson->id} " . ($jxl_ret ? 'success' :  'failed') . PHP_EOL
+//            );
+//        }
+//        catch (\Exception $e) {
+//            throw new \Exception("{$loanPerson->id} JxlBaseReport获取异常: {$e}", 3000);
+//        }
 
 
         //同盾
-        $td_data = $ccs->getTdData($loanPerson, false);
-//        var_dump($td_data);exit();
-        \call_user_func(
-            [CommonHelper::class, ($td_data ? 'stdout' : 'stderr')],
-            "td_ret: {$loanPerson->id} " . ($td_data ? 'success' :  'failed') . PHP_EOL
-        );
+//        $td_data = $ccs->getTdData($loanPerson, false);
+////        var_dump($td_data);exit();
+//        \call_user_func(
+//            [CommonHelper::class, ($td_data ? 'stdout' : 'stderr')],
+//            "td_ret: {$loanPerson->id} " . ($td_data ? 'success' :  'failed') . PHP_EOL
+//        );
 
 
 
