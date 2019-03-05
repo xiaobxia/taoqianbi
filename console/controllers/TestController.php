@@ -61,8 +61,8 @@ class TestController extends BaseController {
         //
         $sms_channel = 'smsService_TianChang_HY';
         $source_id = 21;
-        $source_pre = 'source_pre';
-        $source_now = 'source_now';
+        $source_pre = '极速花花';
+        $source_now = '淘钱币';
         foreach ($a as $value){
             if (!empty($value[0]) && !empty($value[1])){
                 $send_message = $value[0].'，您好【'.$source_pre.'】将迁移到【'.$source_now.'】平台，作为老用户！首次还款将有50元现金红包！https://fir.im/4wfa';
