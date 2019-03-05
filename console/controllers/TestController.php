@@ -44,17 +44,25 @@ use yii\helpers\ArrayHelper;
 class TestController extends BaseController {
 
     public function actionSendMess(){
-        $appPath = __DIR__ . DIRECTORY_SEPARATOR;
+        $appPath = __DIR__ . DIRECTORY_SEPARATOR.'test.txt';
+
         //读取文件内容
-        $str = file($appPath.'test.txt');//将整个文件内容读入到一个字符串中
-//        $str = file_get_contents($appPath.'test.txt');//将整个文件内容读入到一个字符串中
-        var_dump($str);exit;
-//        $str_encoding = mb_convert_encoding($str, 'UTF-8', 'UTF-8,GBK,GB2312,BIG5');//转换字符集（编码）
-        $arr = explode("\r\n", $str);
-        foreach ($arr as &$row){
-            $row = trim($row);
+        $arr = [];
+        if (file_exists($appPath)){
+            $str = file_get_contents('test.txt');
+            $str_encoding = mb_convert_encoding($str, 'UTF-8', 'UTF-8,GBK,GB2312,BIG5');
+
+            $arr = explode(".", $str_encoding);
+            foreach ($arr as &$row) {
+                $row = trim($row);
+            }
+            unset($row);
+            foreach ($arr as $v){
+                if (!empty($v)){
+                    $a[] = explode("\t", $v);
+                }
+            }
         }
-        unset($row);
         //得到后的数组
         var_dump($arr);
 
