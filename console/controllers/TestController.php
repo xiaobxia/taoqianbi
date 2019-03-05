@@ -44,7 +44,7 @@ use yii\helpers\ArrayHelper;
 class TestController extends BaseController {
 
     public function actionSendMess(){
-        $appPath = __DIR__ . DIRECTORY_SEPARATOR;var_dump($appPath.'../../test.txt');exit;
+        $appPath = __DIR__ . DIRECTORY_SEPARATOR;var_dump($appPath.'test.txt');exit;
         //读取文件内容
         $str = file_get_contents($appPath.'test.txt');//将整个文件内容读入到一个字符串中
         var_dump($str);exit;
