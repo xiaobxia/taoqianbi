@@ -16,7 +16,7 @@ use mobile\components\ApiUrl;
     .repayment-detail.wrap .fixed-button .fb-btn {
         float: right;
         text-decoration: none;
-        background-color: #1ec8e1
+        background-color: #1ec8e1;
         color: #fff;
         width: 3.84rem;
     }
@@ -25,14 +25,14 @@ use mobile\components\ApiUrl;
         left: 0;
         top: 0;
         font-size: 0.77333rem;
-        color: #1ec8e1
+        color: #1ec8e1;
     }
     .repayment-detail.wrap .content ul > li:before {
         content: '';
         display: block;
         width: 0.05333rem;
         height: 0.77333rem;
-        background: #1ec8e1
+        background: #1ec8e1;
         position: absolute;
         top: -0.72rem;
         left: 0.38667rem;
@@ -43,13 +43,13 @@ use mobile\components\ApiUrl;
         display: block;
         width: 0.05333rem;
         height: 100%;
-        background: #1ec8e1
+        background: #1ec8e1;
         position: absolute;
         top: 0.77333rem;
         left: 0.38667rem;
     }
     .more_chance_button_background{
-        background: #1ec8e1
+        background: #1ec8e1;
         height:1.173333rem;
         width: 7.6rem;
         line-height:1.173333rem;
@@ -104,7 +104,7 @@ use mobile\components\ApiUrl;
     .repayment-detail.wrap .content ul > li h1 {
         font-size: 18px;
         padding-bottom: 0.13333rem;
-        color: #1ec8e1 }
+        color: #1ec8e1; }
     .repayment-detail.wrap .content ul > li.sType3 .iconfont {
         color: rgb(244, 28, 28); }
     .repayment-detail.wrap .content ul > li.sType3 h1 {
@@ -114,11 +114,11 @@ use mobile\components\ApiUrl;
     .repayment-detail.wrap .content ul > li.sType3 p > span {
         color: rgb(244, 28, 28); }
     .repayment-detail.wrap .item ul li a {
-        color: #1ec8e1
+        color: #1ec8e1;
         text-decoration: none;
         float: right; }
     .item .item-head span{
-        color: #1ec8e1
+        color: #1ec8e1;
         float: right;
         font-size: 0.4rem;
     }
@@ -148,8 +148,8 @@ use mobile\components\ApiUrl;
         display: block;
         width: 0.366667rem;
         height: 0.366667rem;
-        border-top: 0.036667rem solid #1ec8e1
-        border-right: 0.036667rem solid #1ec8e1
+        border-top: 0.036667rem solid #1ec8e1;
+        border-right: 0.036667rem solid #1ec8e1;
         transform: rotate(45deg);
         float: right;
         margin-top: 0.293333rem;
@@ -221,7 +221,7 @@ use mobile\components\ApiUrl;
         height: 1.333333rem;
         line-height: 1.333333rem;
         font-size: 0.48rem;
-        color: #1ec8e1
+        color: #1ec8e1;
         border-top: 1px solid #d6d7dc;
         text-align: center; }
     input.repayment {

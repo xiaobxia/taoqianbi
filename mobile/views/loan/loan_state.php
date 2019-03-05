@@ -48,7 +48,7 @@ use newh5\components\ApiUrl;
 			line-height: 1.386667rem;
 			width: 90%;
 			margin: 1.866667rem auto;
-			background-color: #1ec8e1
+			background-color: #1ec8e1;
 			border-radius: 0.133333rem;
 		}
 </style>

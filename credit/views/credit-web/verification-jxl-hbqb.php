@@ -26,7 +26,7 @@ use yii\helpers\Url;
 
 /*.phone-verify p.other label a {
     text-decoration: none;
-    color: #1ec8e1
+    color: #1ec8e1;
 }*/
 .phone-verify ul li a {
     display: inline-block;

@@ -20,7 +20,7 @@ use mobile\components\CheckPayPwd;
         height: 2.4rem;
     }
     .choose ul li:first-child a i{
-        border-color:#1ec8e1
+        border-color:#1ec8e1;
         top:1.1rem;
     }
     .choose .head {
@@ -29,7 +29,7 @@ use mobile\components\CheckPayPwd;
     }
     .popup .dialog a {
         font-size: 0.3466666667rem;
-        color: #1ec8e1
+        color: #1ec8e1;
         text-decoration: none;
         display: block;
         width: 100%;
@@ -43,7 +43,7 @@ use mobile\components\CheckPayPwd;
         background: url('<?= $this->absBaseUrl;?>/image/apply_img/content_icon_zfb.png') no-repeat 0.2666rem 0.65rem/0.88rem 0.866666rem;
     }
     .choose ul li:nth-child(3) a i{
-        border-color:#1ec8e1
+        border-color:#1ec8e1;
         top:0.866667rem;
     }
     .choose ul li .desc{
@@ -86,7 +86,7 @@ use mobile\components\CheckPayPwd;
     }
     .popup .dialog h1{
         font-size: 0.88rem;
-        color: #1ec8e1
+        color: #1ec8e1;
         line-height: 0.88rem;
         /*    padding-bottom: 0.72rem;*/
     }
@@ -148,7 +148,7 @@ use mobile\components\CheckPayPwd;
         border-bottom: 1px solid #dbdbdb;
         margin: 0 auto;
         font-size: 0.746667rem;
-        color: #1ec8e1
+        color: #1ec8e1;
         text-align: center;
         height: 1.706667rem;
         line-height: 1.706667rem;
@@ -202,7 +202,7 @@ use mobile\components\CheckPayPwd;
     }
     .choose .other-loan{
         font-size: 0.4rem;
-        color: #1ec8e1
+        color: #1ec8e1;
         text-decoration: underline;
         text-align: center;
         display: block;
@@ -265,7 +265,7 @@ use mobile\components\CheckPayPwd;
         height: 1.2rem;
         line-height: 1.2rem;
         margin:0.266667rem auto;
-        background-color: #1ec8e1
+        background-color: #1ec8e1;
         font-size: 0.426667rem;
         color: #fff;
         text-decoration: none;
@@ -356,7 +356,7 @@ use mobile\components\CheckPayPwd;
         display: inline-block;
         position: absolute;
         top: 0;
-        background-color: #1ec8e1
+        background-color: #1ec8e1;
         border-radius: 100%;
 
         -webkit-animation: bounce 2.0s infinite ease-in-out;
@@ -416,7 +416,7 @@ use mobile\components\CheckPayPwd;
         line-height: 2.666667rem;
         background-color: transparent;
         font-size: 0.773333rem;
-        color: #1ec8e1
+        color: #1ec8e1;
         margin: -2.8rem auto;
     }
     .roll_pop #waiting{

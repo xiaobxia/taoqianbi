@@ -11,11 +11,11 @@
         border-right: 1px solid #ffffff;
     }
     .help-center h3{
-        color: #1ec8e1
+        color: #1ec8e1;
     },
     .help-center .consultation .online-consultation h4,
     .help-center .consultation .phone-consultation h4{
-        color: #1ec8e1
+        color: #1ec8e1;
     }
     .help-center .consultation{
         background: #fff;
@@ -29,7 +29,7 @@
     }
     .help-center .consultation .online-consultation h4, .help-center .consultation .phone-consultation h4 {
         font-size: 0.4rem;
-        color: #1ec8e1
+        color: #1ec8e1;
         text-align: center;
         position: relative;
         margin-top: 1.6rem;

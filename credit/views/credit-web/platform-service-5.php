@@ -1,6 +1,6 @@
 <style type="text/css">
     #btn_download{
-        background: #1ec8e1
+        background: #1ec8e1;
     }
 </style>
 <div class="reg-agreement">

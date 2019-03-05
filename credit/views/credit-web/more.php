@@ -5,7 +5,7 @@ $baseUrl=Yii::$app->getRequest()->getAbsoluteBaseUrl();
 ?>
 <style>
     #save{
-        color: #1ec8e1
+        color: #1ec8e1;
     }
 </style>
 <div class="more">

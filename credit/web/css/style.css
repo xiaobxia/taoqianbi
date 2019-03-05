@@ -209,18 +209,18 @@ input, button {
 	float: right; }
 
 a {
-	color: #1ec8e1
+	color: #1ec8e1;
 	text-decoration: none; }
 
 a:visited {
 	text-decoration: none; }
 
 a:hover {
-	color: #1ec8e1
+	color: #1ec8e1;
 	text-decoration: none; }
 
 a:active {
-	color: #1ec8e1
+	color: #1ec8e1;
 	text-decoration: none; }
 
 /****************************************************************************************************/
@@ -441,7 +441,7 @@ input:focus {
 	display: block;
 	width: 0.05333rem;
 	height: 0.77333rem;
-	background: #1ec8e1
+	background: #1ec8e1;
 	position: absolute;
 	top: -0.72rem;
 	left: 0.38667rem; }
@@ -450,7 +450,7 @@ input:focus {
 	display: block;
 	width: 0.05333rem;
 	height: 100%;
-	background: #1ec8e1
+	background: #1ec8e1;
 	position: absolute;
 	top: 0.77333rem;
 	left: 0.38667rem; }
@@ -459,11 +459,11 @@ input:focus {
 	left: 0;
 	top: 0;
 	font-size: 0.77333rem;
-	color: #1ec8e1 }
+	color: #1ec8e1; }
 .repayment-detail.wrap .content ul > li h1 {
 	font-size: 18px;
 	padding-bottom: 0.13333rem;
-	color: #1ec8e1 }
+	color: #1ec8e1; }
 [data-dpr="2"] .repayment-detail.wrap .content ul > li h1 {
 	font-size: 36px; }
 [data-dpr="3"] .repayment-detail.wrap .content ul > li h1 {
@@ -624,7 +624,7 @@ input:focus {
 .repayment-detail.wrap .fixed-button .fb-btn {
 	float: right;
 	text-decoration: none;
-	background-color: #1ec8e1
+	background-color: #1ec8e1;
 	color: #fff;
 	width: 3.84rem; }
 .repayment-detail.wrap .fixed-button.c_f_btn .fb-text-chooseCoupon {
@@ -739,7 +739,7 @@ input:focus {
 	height: 7.09333rem;
 	width: 16.10667rem;
 	border-radius: 50%;
-	background-color: #1ec8e1
+	background-color: #1ec8e1;
 	position: absolute;
 	top: -4.16rem;
 	left: 4.26667rem;
@@ -767,7 +767,7 @@ input:focus {
 	border-bottom: 1px solid #e5e5e5;
 	border-width: thin; }
 #loan-dialog .dialog.wx .wx-prompt .prompt-title {
-	color: #1ec8e1
+	color: #1ec8e1;
 	font-size: 0.4rem;
 	background-color: #fff;
 	position: absolute;
@@ -795,10 +795,10 @@ input:focus {
 	text-align: center;
 	padding: 0.26667rem 0 0.53333rem; }
 #loan-dialog .dialog.wx .wx-prompt .wx-number span {
-	color: #1ec8e1 }
+	color: #1ec8e1; }
 #loan-dialog .dialog.wx .wx-btn {
 	text-align: center;
-	color: #1ec8e1
+	color: #1ec8e1;
 	font-size: 0.48rem;
 	font-weight: 700;
 	padding: 0.34667rem 0;
@@ -817,7 +817,7 @@ input:focus {
 	background-color: #fff; }
 #loan-dialog .dialog.coupon .coupon-title .close {
 	float: right;
-	color: #1ec8e1
+	color: #1ec8e1;
 	padding-right: 0.32rem;
 	font-size: 0.4rem; }
 #loan-dialog .dialog.coupon .coupon-main {
@@ -930,8 +930,8 @@ input:focus {
 	border: 1px solid #a1a1a1;
 	border-width: thin; }
 #loan-dialog .dialog.coupon .coupon-main .checkbox.checked {
-	border-color: #1ec8e1
-	background: #1ec8e1
+	border-color: #1ec8e1;
+	background: #1ec8e1;
 	background: -webkit-radial-gradient(center center, #1ec8e1 55%, #fff 55%);
 	background: -moz-radial-gradient(center center, #1ec8e1 55%, #fff 55%);
 	background: -o-radial-gradient(center center, #1ec8e1 55%, #fff 55%);
@@ -3208,11 +3208,11 @@ div.bonus div.history ul li span i {
 .application-success .loan_status ul li:first-child:before {
 	display: none; }
 .application-success .loan_status ul li:first-child:after {
-	background-color: #1ec8e1 }
+	background-color: #1ec8e1; }
 .application-success .loan_status ul li:first-child .iconfont {
-	color: #1ec8e1 }
+	color: #1ec8e1; }
 .application-success .loan_status ul li:first-child p {
-	color: #1ec8e1 }
+	color: #1ec8e1; }
 .application-success .wx-wrap {
 	background-color: #fff; }
 .application-success .wx-wrap .wx-tdCode {
@@ -3235,7 +3235,7 @@ div.bonus div.history ul li span i {
 .application-success .wx-wrap .wx-bindBtn .bindBtn-head {
 	width: 5.33333rem;
 	margin: 0 auto;
-	color: #1ec8e1
+	color: #1ec8e1;
 	height: 0.53333rem;
 	line-height: 0.53333rem;
 	overflow: hidden;
@@ -3246,7 +3246,7 @@ div.bonus div.history ul li span i {
 	width: 0.53333rem;
 	height: 0.53333rem;
 	border-radius: 50%;
-	background-color: #1ec8e1
+	background-color: #1ec8e1;
 	text-align: center;
 	line-height: 0.53333rem;
 	position: absolute;
@@ -3274,13 +3274,13 @@ div.bonus div.history ul li span i {
 	border-radius: 0.24rem; }
 .application-success .wx-wrap .wx-bindBtn .bindBtn button.fl {
 	color: #fff;
-	background-color: #1ec8e1 }
+	background-color: #1ec8e1; }
 .application-success .wx-wrap .wx-bindBtn .bindBtn button.fl[type="disabled"] {
 	background-color: #ccc; }
 .application-success .wx-wrap .wx-bindBtn .bindBtn .fr {
 	background-color: #fff;
-	border: 1px solid #1ec8e1
-	color: #1ec8e1
+	border: 1px solid #1ec8e1;
+	color: #1ec8e1;
 	display: block;
 	text-align: center; }
 .application-success .wx-wrap .wx-wrap-bottom {
@@ -3354,7 +3354,7 @@ div.bonus div.history ul li span i {
 	width: 100%; }
 .share .share-dialog .close {
 	font-size: 0.53333rem;
-	color: #1ec8e1
+	color: #1ec8e1;
 	line-height: 2.8em; }
 
 /*# sourceMappingURL=style.css.map */

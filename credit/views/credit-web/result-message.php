@@ -30,8 +30,8 @@ $banner_int = 0;
     }
     .message-center div.tab a.current {
         background: #fff;
-        color: #1ec8e1
-        border-bottom: 6px solid #1ec8e1
+        color: #1ec8e1;
+        border-bottom: 6px solid #1ec8e1;
     }
     .message-center div.tab a {
         display: inline-block;

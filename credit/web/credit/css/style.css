@@ -195,7 +195,7 @@ input:focus {
   text-align: center;
   font-size: 0.4266666667rem;
   color: #fff;
-  background: #1ec8e1
+  background: #1ec8e1;
   border: none;
   border-radius: 0.6133333333rem;
   margin: 0 auto;
@@ -217,7 +217,7 @@ input:focus {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  background: #1ec8e1 }
+  background: #1ec8e1; }
 
 .common-list {
   background: #fff; }
@@ -324,7 +324,7 @@ input:focus {
       color: #ff8003; }
       .repayment-detail.wrap .prompt span.time i {
         margin-right: 0.1333333333rem;
-        background: #1ec8e1
+        background: #1ec8e1;
         font-style: normal;
         color: #fff;
         display: inline-block;
@@ -383,7 +383,7 @@ input:focus {
     .repayment-detail.wrap .content ul > li.do:first-child {
       background-image: url(../img/icon_01.png); }
       .repayment-detail.wrap .content ul > li.do:first-child:after {
-        background: #1ec8e1 }
+        background: #1ec8e1; }
       .repayment-detail.wrap .content ul > li.do:first-child h1 {
         color: #000; }
         .repayment-detail.wrap .content ul > li.do:first-child h1 span {
@@ -432,7 +432,7 @@ input:focus {
       color: #fff;
       text-align: center;
       text-decoration: none;
-      background: #1ec8e1
+      background: #1ec8e1;
       border-radius: 0.2666666667rem; }
 
 .choose .head {
@@ -610,7 +610,7 @@ input:focus {
     color: #ff8003; }
   .popup .dialog a {
     font-size: 0.3466666667rem;
-    color: #1ec8e1
+    color: #1ec8e1;
     text-decoration: none;
     display: block;
     width: 100%; }
@@ -659,7 +659,7 @@ input:focus {
       width: 49%;
       text-decoration: none;
       font-size: 0.4266666667rem;
-      color: #1ec8e1 }
+      color: #1ec8e1; }
       .popup .error p a:nth-child(2) {
         border-left: 1px solid #e6e6e6; }
 
@@ -690,7 +690,7 @@ input:focus {
   .pay-result a.copy {
     float: right;
     font-size: 0.4rem;
-    color: #1ec8e1
+    color: #1ec8e1;
     text-decoration: none; }
   .pay-result .content {
     color: #666;
@@ -714,7 +714,7 @@ input:focus {
     background: #fff;
     display: block;
     text-decoration: none;
-    color: #1ec8e1
+    color: #1ec8e1;
     font-size: 0.4rem;
     text-align: center;
     height: 1.3333333333rem;
@@ -723,7 +723,7 @@ input:focus {
     position: fixed;
     bottom: 0;
     left: 0;
-    border-top: 1px solid #1ec8e1 }
+    border-top: 1px solid #1ec8e1; }
 
 .phone-verify {
   background: #f2f2f2;
@@ -754,10 +754,10 @@ input:focus {
       .phone-verify ul li a {
         display: inline-block;
         text-decoration: none;
-        color: #1ec8e1 }
+        color: #1ec8e1; }
       .phone-verify ul li a.send {
         color: #fff;
-        background: #1ec8e1
+        background: #1ec8e1;
         height: 0.8rem;
         line-height: 0.8rem;
         width: 2.1333333333rem;
@@ -774,7 +774,7 @@ input:focus {
     text-decoration: none;
     color: #fff;
     text-align: center;
-    background: #1ec8e1
+    background: #1ec8e1;
     border-radius: 0.6666666667rem;
     height: 1.2rem;
     line-height: 1.2rem;
@@ -822,9 +822,9 @@ input:focus {
     width: 3.0666666667rem;
     height: 0.9333333333rem;
     font-size: 0.4266666667rem;
-    border: 0.0266666667rem solid #1ec8e1
+    border: 0.0266666667rem solid #1ec8e1;
     border-right: none;
-    color: #1ec8e1
+    color: #1ec8e1;
     background: #fff; }
     .forget-password .tab li:first-child {
       border-top-left-radius: 0.1066666667rem;
@@ -832,10 +832,10 @@ input:focus {
     .forget-password .tab li:last-child {
       border-top-right-radius: 0.1333333333rem;
       border-bottom-right-radius: 0.1333333333rem;
-      border-right: 0.0266666667rem solid #1ec8e1 }
+      border-right: 0.0266666667rem solid #1ec8e1; }
   .forget-password .tab li.action {
     color: #fff;
-    background: #1ec8e1 }
+    background: #1ec8e1; }
 
 .forget-password .piece {
   padding: 0 0.4rem;
@@ -847,7 +847,7 @@ input:focus {
     line-height: 0.8rem;
     font-size: 0.4266666667rem;
     color: #fff;
-    background: #1ec8e1
+    background: #1ec8e1;
     border: none;
     border-radius: 0.4rem; }
     .forget-password .piece button a {
@@ -867,7 +867,7 @@ input:focus {
       margin-top: 0.3333333333rem; }
     .forget-password .piece .head i {
       font-style: normal;
-      color: #1ec8e1
+      color: #1ec8e1;
       display: inline-block;
       margin-left: 0.1333333333rem; }
   .forget-password .piece .content {
@@ -878,7 +878,7 @@ input:focus {
       line-height: 1.6em; }
     .forget-password .piece .content a {
       text-decoration: none;
-      color: #1ec8e1 }
+      color: #1ec8e1; }
 
 .alipay-certification .tips {
   height: 0.8rem;
@@ -927,7 +927,7 @@ input:focus {
     line-height: 0.7333333333rem;
     text-align: center;
     float: right;
-    background: #1ec8e1
+    background: #1ec8e1;
     color: #fff;
     text-decoration: none;
     font-size: 0.3466666667rem;
@@ -952,7 +952,7 @@ input:focus {
   line-height: 1.6em; }
   .alipay-certification .result p a {
     text-decoration: none;
-    color: #1ec8e1
+    color: #1ec8e1;
     font-size: 0.4266666667rem; }
 
 .bank-card {
@@ -1013,7 +1013,7 @@ input:focus {
     display: block;
     float: right;
     text-decoration: none;
-    color: #1ec8e1 }
+    color: #1ec8e1; }
 
 .extension a.common-button {
   margin-top: 0.8666666667rem; }
@@ -1078,7 +1078,7 @@ input:focus {
     .tied-card ul li.code input {
       width: 4.8666666667rem; }
     .tied-card ul li.code a {
-      color: #1ec8e1
+      color: #1ec8e1;
       text-decoration: none;
       font-size: 0.4rem;
       text-align: right;
@@ -1126,9 +1126,9 @@ input:focus {
 
 .more .footer a {
   display: block;
-  border: 1px solid #1ec8e1
+  border: 1px solid #1ec8e1;
   border-radius: 0.6666666667rem;
-  background-color: #1ec8e1
+  background-color: #1ec8e1;
   color: white;
   height: 1.2rem;
   line-height: 1.2rem;
@@ -1168,7 +1168,7 @@ input:focus {
   display: block;
   width: 100%;
   height: 1.04rem;
-  background: #1ec8e1
+  background: #1ec8e1;
   color: #fff;
   border: none;
   border-radius: 0.12rem;
@@ -1243,7 +1243,7 @@ input:focus {
     height: 2.6666666667rem;
     margin: 1.3333333333rem auto; }
   .wx-login input {
-    border: 1px solid #1ec8e1
+    border: 1px solid #1ec8e1;
     border-radius: 0.1333333333rem;
     width: 100%;
     font-size: 0.4533333333rem;
@@ -1257,7 +1257,7 @@ input:focus {
     border: 0px;
     border-radius: 0.1333333333rem;
     font-size: 0.4rem;
-    background: #1ec8e1
+    background: #1ec8e1;
     width: 100%;
     line-height: 0.96rem; }
   .wx-login .disabled {
@@ -1283,7 +1283,7 @@ input:focus {
     height: 3.0933333333rem; }
   .wx-result a {
     text-decoration: none;
-    color: #1ec8e1 }
+    color: #1ec8e1; }
 
 .repayment-description {
   width: 10rem;
@@ -1295,7 +1295,7 @@ input:focus {
     font-size: 0.4rem; }
     .repayment-description h3 a {
       float: right;
-      color: #1ec8e1
+      color: #1ec8e1;
       font-size: 0.32rem;
       padding-right: 0.4rem;
       text-decoration: none; }
@@ -1332,7 +1332,7 @@ input:focus {
       border-top: 1px solid #999;
       border-right: 1px solid #999; }
     .repayment-description ul li.active {
-      color: #1ec8e1 }
+      color: #1ec8e1; }
       .repayment-description ul li.active p {
         display: block; }
     .repayment-description ul li.active:before {
@@ -1436,7 +1436,7 @@ input:focus {
     height: 1rem;
     margin: 0.2666666667rem auto;
     font-size: 0.48rem;
-    background: #1ec8e1
+    background: #1ec8e1;
     border: none;
     border-radius: 0.3733333333rem 0.3733333333rem;
     text-align: center;
@@ -1444,7 +1444,7 @@ input:focus {
   .safe-login form a.disabled {
     background-color: #d9d9d9; }
   .safe-login form a {
-    color: #1ec8e1
+    color: #1ec8e1;
     text-decoration: none;
     font-size: 0.32rem; }
 
@@ -1487,7 +1487,7 @@ input:focus {
       height: 0.8666666667rem;
       border-radius: 0.08rem;
       border: none;
-      background-color: #1ec8e1
+      background-color: #1ec8e1;
       float: right;
       margin: 0.2333333333rem 0.4rem 0 0;
       color: #fff;
@@ -1502,7 +1502,7 @@ input:focus {
     height: 1.2rem;
     margin-left: 0.4rem;
     border: none;
-    background-color: #1ec8e1
+    background-color: #1ec8e1;
     color: #fff;
     font-size: 0.48rem;
     border-radius: 0.6rem;
