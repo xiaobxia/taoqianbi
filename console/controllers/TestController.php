@@ -67,7 +67,7 @@ class TestController extends BaseController {
             if (!empty($value[0]) && !empty($value[1])){
                 $send_message = $value[0].'，您好【'.$source_pre.'】将迁移到【'.$source_now.'】平台，作为老用户！首次还款将有50元现金红包！https://fir.im/4wfa';
                 $ret = MessageHelper::sendSMSHY($value[1],$send_message,$sms_channel,$source_id);
-                echo $send_message."\r\n";
+                echo $ret.$send_message."\r\n";
             }
         }
 
