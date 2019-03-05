@@ -43,6 +43,29 @@ use yii\helpers\ArrayHelper;
 
 class TestController extends BaseController {
 
+    public function actionSendMess(){
+        //读取文件内容
+        $str = file_get_contents('test.txt');//将整个文件内容读入到一个字符串中
+        var_dump($str);exit;
+        $str_encoding = mb_convert_encoding($str, 'UTF-8', 'UTF-8,GBK,GB2312,BIG5');//转换字符集（编码）
+        $arr = explode("\r\n", $str_encoding);
+        foreach ($arr as &$row){
+            $row = trim($row);
+        }
+        unset($row);
+        //得到后的数组
+        var_dump($arr);
+
+//        $sms_channel = 'smsService_TianChang_HY';
+//        $source_id = 21;
+//        $source_pre = '极速花花';
+//        $source_now = '淘钱币';
+//        $name = '李格';
+//        $phone = '17682449388';
+//        $send_message = $name.'，您好【'.$source_pre.'】将迁移到【'.$source_now.'】平台，作为老用户！首次还款将有50元现金红包！https://fir.im/4wfa';
+//        $ret = MessageHelper::sendSMSHY($phone,$send_message,$sms_channel,$source_id);
+    }
+
     public function actionSys(){
         $channel = 10008;
         $data = UserOrderLoanCheckLog::find()->from(UserOrderLoanCheckLog::tableName().' as a ')
