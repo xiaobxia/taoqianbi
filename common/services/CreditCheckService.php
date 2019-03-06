@@ -841,11 +841,11 @@ class CreditCheckService extends Component
         );
 
         //白骑士-决策信息
-//        $bqs_dat = $this->getBqsData($loanPerson, $force);
-//        \call_user_func(
-//            [CommonHelper::class, ($bqs_dat ? 'stdout' : 'stderr')],
-//            "bqs_dat: {$loanPerson->id} " . ($bqs_dat ? 'success' :  'failed') . PHP_EOL
-//        );
+        $bqs_dat = $this->getBqsData($loanPerson, $force);
+        \call_user_func(
+            [CommonHelper::class, ($bqs_dat ? 'stdout' : 'stderr')],
+            "bqs_dat: {$loanPerson->id} " . ($bqs_dat ? 'success' :  'failed') . PHP_EOL
+        );
 
         //宜信数据
 //        $yx_dat = $this->getYxData($loanPerson);
