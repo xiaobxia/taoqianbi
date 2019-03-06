@@ -53,7 +53,7 @@ class BqsService extends Component
      */
     public function getData($params){
         $params['partnerId'] = 'gyxx';
-        $params['verifyKey'] = '04b0cc1a49940ebb207fb52f6b68f92';
+        $params['verifyKey'] = 'a04b0cc1a49940ebb207fb52f6b68f92';
         $params['appId'] = 'sdz201902';
         $params = json_encode($params);
         $url = 'https://api.baiqishi.com/services/decision';
