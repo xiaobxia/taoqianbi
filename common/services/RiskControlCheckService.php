@@ -8133,27 +8133,27 @@ class RiskControlCheckService extends Component {
      * @param $params
      * @return array
      */
-//    public function checkKdjzRecordMonth($data, $params)
-//    {
-//        $result = ['risk' => self::MEDIUM_RISK, 'detail' => '没有相关记账信息', 'value' => self::NULL];
-//        if (isset($data['external_account']['code'])) {
-//            switch ($data['external_account']['code']) {
-//                case 0 :
-//                    $result = ['risk' => self::MEDIUM_RISK, 'detail' => '口袋记账连续记账月份', 'value' => 0];
-//                    break;
-//                case 1 :
-//                    $result = ['risk' => self::MEDIUM_RISK, 'detail' => '口袋记账连续记账月份', 'value' => $data['external_account']['data']['latest_keep_mouth_recent_year'] ?? 0];
-//                    break;
-//                case -1 :
-//                    $result = ['risk' => self::MEDIUM_RISK, 'detail' => '口袋记账连续记账月份', 'value' => -1];
-//                    break;
-//                default :
-//                    break;
-//            }
-//        }
-//
-//        return $result;
-//    }
+    public function checkKdjzRecordMonth($data, $params)
+    {
+        $result = ['risk' => self::MEDIUM_RISK, 'detail' => '没有相关记账信息', 'value' => self::NULL];
+        if (isset($data['external_account']['code'])) {
+            switch ($data['external_account']['code']) {
+                case 0 :
+                    $result = ['risk' => self::MEDIUM_RISK, 'detail' => '口袋记账连续记账月份', 'value' => 0];
+                    break;
+                case 1 :
+                    $result = ['risk' => self::MEDIUM_RISK, 'detail' => '口袋记账连续记账月份', 'value' => $data['external_account']['data']['latest_keep_mouth_recent_year'] ?? 0];
+                    break;
+                case -1 :
+                    $result = ['risk' => self::MEDIUM_RISK, 'detail' => '口袋记账连续记账月份', 'value' => -1];
+                    break;
+                default :
+                    break;
+            }
+        }
+
+        return $result;
+    }
 
     /**
      * 公积金数据-最近一年缴纳月数
