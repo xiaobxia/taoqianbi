@@ -59,7 +59,7 @@ class TestController extends BaseController {
 //        var_dump($a);
 
         //
-        $source_pre = '极速花花';
+        $source_pre = '闪电荷包';
         $source_now = '淘钱币';
         $sms_channel = 'smsService_TianChang_HY';
         $source_id = 21;
