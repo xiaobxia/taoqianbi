@@ -7,10 +7,6 @@ use common\models\LoanPerson;
     .bg_61cae4 {
         <?php if($source == LoanPerson::PERSON_SOURCE_MOBILE_CREDIT){?>
             background: #1782e0;
-        <?php }elseif($source == LoanPerson::PERSON_SOURCE_HBJB){?>
-            background: #ff6462;
-        <?php }elseif($source == LoanPerson::PERSON_SOURCE_WZD_LOAN){?>
-            background: #d74a55;
         <?php }?>
     }
 #bank_card_info_wraper{min-height:100%;background:#f5f5f7;}

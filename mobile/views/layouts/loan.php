@@ -12,10 +12,8 @@ use common\helpers\Util;
         <meta name="appVersion" content="<?php $data = $this->actionSetHeaderUrl();if(isset($data['appVersion'])){echo $data['appVersion'];}?>">
         <?php
         $source = \Yii::$app->controller->getSource();
-        if($source == \common\models\LoanPerson::PERSON_SOURCE_HBJB){?>
+        if($source == \common\models\LoanPerson::APPMARKET_XJBT_PRO){?>
             <link href="<?=$this->staticUrl('css/style-hbqb.css?v=20170830',2); ?>" rel="stylesheet"/>
-        <?php }else if(Util::getMarket() == \common\models\LoanPerson::APPMARKET_XJBT_PRO){?>
-            <link href="<?=$this->staticUrl('css/style-pro.css?v=20170830',2); ?>" rel="stylesheet"/>
         <?php }else{?>
             <link href="<?=$this->staticUrl('css/style.css?v=20170830',2); ?>" rel="stylesheet"/>
         <?php }?>

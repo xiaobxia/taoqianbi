@@ -151,12 +151,8 @@ $banner_int = 0;
 <?php else: ?>
     <div class="msg-box">
         <div>
-        <?php if ($source == LoanPerson::PERSON_SOURCE_HBJB) { ?>
+        <?php if ($source == LoanPerson::APPMARKET_XJBT_PRO) { ?>
         <img src="<?= $this->staticUrl('image/card/hbqb_icon_norecord.png', 1); ?>" width="60%" />
-        <?php }elseif ($source == LoanPerson::PERSON_SOURCE_WZD_LOAN){ ?>
-        <img src="<?= $this->staticUrl('image/card/content_icon_prompt.png', 1); ?>" width="60%" />
-        <?php }elseif (\common\helpers\Util::getMarket() == LoanPerson::APPMARKET_XJBT_PRO){ ?>
-        <img src="<?= $this->staticUrl('image/card/content_icon_prompt_pro.png', 1); ?>" width="60%" />
         <?php }elseif ($source == LoanPerson::PERSON_SOURCE_MOBILE_CREDIT){ ?>
         <img src="<?= $this->staticUrl('image/card/icon-1-03.png', 1); ?>" width="60%" />
         <?php } ?>

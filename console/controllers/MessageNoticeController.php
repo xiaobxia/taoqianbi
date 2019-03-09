@@ -303,44 +303,12 @@ class MessageNoticeController extends BaseController {
                                 if(in_array($source_id,LoanPerson::$source_register_list)){
                                     $sms_channel = "smsService_TianChang_HY";  //当日到期 早8点 天畅换亿美
                                 }
-                                //不知名天畅短信
-//                                elseif ($source_id == LoanPerson::PERSON_SOURCE_SX_LOAN){
-//                                    $sms_channel = "smsService_TianChang_SXD";
-//                                }elseif ($source_id == LoanPerson::PERSON_SOURCE_WZD_LOAN){
-//                                    $sms_channel = "smsService_TianChang_WZD";
-//                                }elseif($source_id == LoanPerson::PERSON_SOURCE_HBJB){
-//                                    $sms_channel = "smsService_TianChang_HBQB";
-//                                }elseif($source_id == LoanPerson::PERSON_SOURCE_JBGJ){
-//                                    $sms_channel = "smsService_TianChang_JZGJ";
-//                                }elseif($source_id == LoanPerson::PERSON_SOURCE_KDJZ){
-//                                    $sms_channel = "smsService_TianChang_KDJZ";
-//                                }
                                 $ret = MessageHelper::sendSMSHY($phone,$send_message,$sms_channel,$source_id);
                             }elseif(in_array($type,[6,7,8])){
                                 //当日提醒，走营销账号
                                 $sms_channel = "smsService_TianChang_HY";
                                 #$sms_channel = "smsService_TianChang";
                                 $pre_meg = '【'.APP_NAMES.'】';
-                                //渠道暂未使用
-//                                if($source_id == LoanPerson::PERSON_SOURCE_MOBILE_CREDIT){
-//                                    $pre_meg = '【'.APP_NAMES.'】';
-//                                    $sms_channel = "smsService_TianChang";
-//                                }elseif ($source_id == LoanPerson::PERSON_SOURCE_SX_LOAN){
-//                                    $pre_meg = '【随心贷】';
-//                                    $sms_channel = "smsService_TianChang_SXD_YX";
-//                                }elseif ($source_id == LoanPerson::PERSON_SOURCE_WZD_LOAN){
-//                                    $pre_meg = '【温州贷借款】';
-//                                    $sms_channel = "smsService_TianChang_WZD_YX";
-//                                }elseif($source_id == LoanPerson::PERSON_SOURCE_HBJB){
-//                                    $pre_meg = '【汇邦钱包】';
-//                                    $sms_channel = "smsService_TianChang_HBQB_YX";
-//                                }elseif($source_id == LoanPerson::PERSON_SOURCE_JBGJ){
-//                                    $pre_meg = '【记账管家】';
-//                                    $sms_channel = "smsService_TianChang_JZGJ_YX";
-//                                }elseif($source_id == LoanPerson::PERSON_SOURCE_KDJZ){
-//                                    $pre_meg = '【口袋记账】';
-//                                    $sms_channel = "smsService_TianChang_KDJZ_YX";
-//                                }
                                 $send_message = $pre_meg.$send_message;
                                 $ret = MessageHelper::sendSMSYX($phone,$send_message,$sms_channel,$source_id);
                             }elseif(in_array($type,[9,10])){

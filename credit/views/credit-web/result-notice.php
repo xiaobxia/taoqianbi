@@ -107,15 +107,7 @@ $baseUrl = Yii::$app->getRequest()->getAbsoluteBaseUrl();
         </div>
     <?php }else{?>
         <div class="none-notice">
-            <?php if ($source == LoanPerson::PERSON_SOURCE_HBJB) {?>
-                <img src="<?= $this->staticUrl('image/card/hbqb_icon_norecord.png', 1); ?>" width="60%" />
-            <?php }elseif ($source == LoanPerson::PERSON_SOURCE_WZD_LOAN) { ?>
-                <img src="<?= $this->staticUrl('image/card/content_icon_prompt.png', 1); ?>" width="60%" />
-            <?php }elseif (Util::getMarket() == LoanPerson::APPMARKET_XJBT_PRO ) {?>
-                <img src="<?= $this->staticUrl('image/card/content_icon_prompt_pro.png', 1); ?>" width="60%" />
-            <?php }elseif ($source == LoanPerson::PERSON_SOURCE_SX_LOAN) {?>
-                <img src="<?= $this->staticUrl('image/card/sxd_icon_no-date.png', 1); ?>" width="60%" />
-            <?php }elseif ($source == LoanPerson::PERSON_SOURCE_MOBILE_CREDIT) { ?>
+            <?php if ($source == LoanPerson::PERSON_SOURCE_MOBILE_CREDIT) {?>
                 <img src="<?= $this->staticUrl('image/card/icon-1-03.png', 1); ?>" width="60%" />
             <?php } ?>
             <div>您还没有任何的消息记录~~</div>

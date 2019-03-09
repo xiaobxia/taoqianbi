@@ -6,12 +6,6 @@ switch ($source_type){
     case LoanPerson::PERSON_SOURCE_MOBILE_CREDIT;
         $color = "#1ec8e1";
         break;
-    case LoanPerson::PERSON_SOURCE_HBJB;
-        $color = "#ff6462";
-        break;
-    case LoanPerson::PERSON_SOURCE_WZD_LOAN;
-        $color = "#d74a55";
-        break;
 }
 ?>
 <style type="text/css">

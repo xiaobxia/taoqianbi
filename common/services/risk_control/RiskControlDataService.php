@@ -494,16 +494,16 @@ class RiskControlDataService extends Component
     public function getUsableUserLoanOrders(LoanPerson $loan_person){
 
         //汇邦钱包、随心贷只查看自身渠道订单数
-        if (in_array($loan_person->source_id, [
-            LoanPerson::PERSON_SOURCE_HBJB,
-            LoanPerson::PERSON_SOURCE_SX_LOAN
-        ])) {
-            $condition = ['user_id' => $loan_person->id];
-        } else {
+//        if (in_array($loan_person->source_id, [
+//            LoanPerson::PERSON_SOURCE_HBJB,
+//            LoanPerson::PERSON_SOURCE_SX_LOAN
+//        ])) {
+//            $condition = ['user_id' => $loan_person->id];
+//        } else {
             $loan_persons = LoanPerson::find()->where(['id_number' => $loan_person->id_number])->asArray()->all();
             $user_ids = ArrayHelper::getColumn($loan_persons, 'id');
             $condition = ['in', 'user_id', $user_ids];
-        }
+//        }
 
         $info = UserLoanOrder::find()->where($condition)
             ->andWhere(['not in', 'status', [

@@ -521,13 +521,7 @@ class CreditWebController extends BaseController {
 
         $source = $this->getSource();
         switch ($source){
-            case LoanPerson::PERSON_SOURCE_HBJB:
-                $authorization = '淮北汇邦小额贷款股份有限公司';
-                break;
             case LoanPerson::PERSON_SOURCE_MOBILE_CREDIT:
-                $authorization = COMPANY_NAME;
-                break;
-            case LoanPerson::PERSON_SOURCE_WZD_LOAN:
                 $authorization = COMPANY_NAME;
                 break;
 
@@ -758,26 +752,9 @@ class CreditWebController extends BaseController {
                 }
             break;
 
-            case LoanPerson::PERSON_SOURCE_HBJB:
-                $img = 'chenggong-hbqb.png';
-                $check_img = 'xuanze.png';
-                break;
-
-            case LoanPerson::PERSON_SOURCE_WZD_LOAN:
-                $img = 'chenggong-wzd.png';
-                $check_img = 'wxuanze.png';
-                break;
-
-            case LoanPerson::PERSON_SOURCE_SX_LOAN:
-                $img = 'chenggong-sxd.png';
-                $check_img = 'sxuanze.png';
-                break;
         }
 
         $view = 'verification-jxl';
-        if ($source_id == LoanPerson::PERSON_SOURCE_HBJB){
-            $view = 'verification-jxl-hbqb';
-        }
 
         $jump = false;
         if ($appmarket == LoanPerson::APPMARKET_XJBT_PRO) {
@@ -836,11 +813,7 @@ class CreditWebController extends BaseController {
 
         $source = $this->getSource();
         $source_color = 'xybt';
-        if($source == LoanPerson::PERSON_SOURCE_HBJB){
-            $source_color = 'hbqb';
-        }else if($source == LoanPerson::PERSON_SOURCE_WZD_LOAN){
-            $source_color = 'wzdai_loan';
-        }
+
         return $this->render('result-notice', array(
             'data_list' => $data,
             'source' => $source,

@@ -81,9 +81,7 @@ class AppPageController extends BaseController
         $source = $this->getSource();
         $view = 'more-user-info';
         //$color = '#1782e0';
-        if($source == LoanPerson::PERSON_SOURCE_HBJB){
-            $view = 'more-user-info-hbqb';
-        }
+
         $color = $this->getColor();
         $this->view->title = '更多信息';
         return $this->render($view,[
@@ -109,9 +107,7 @@ class AppPageController extends BaseController
         }
         $color = $this->getColor();
         $view = 'bank-card-info';
-        if($source == LoanPerson::PERSON_SOURCE_HBJB){
-            $view = 'bank-card-info-hbqb';
-        }
+
         return $this->render($view, [
             'color'=>$color,
             'card_info' => $cards[0],

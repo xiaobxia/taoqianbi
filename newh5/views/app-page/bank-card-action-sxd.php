@@ -4,7 +4,7 @@ use common\models\LoanPerson;
 ?>
 
 <style type="text/css">
-<?php if ($source != LoanPerson::PERSON_SOURCE_HBJB) : ?>
+<?php if ($source != LoanPerson::USER_AGENT_XYBT) : ?>
     .bg_61cae4 {
         background: #<?= $color?>;
     }
@@ -21,7 +21,7 @@ use common\models\LoanPerson;
     #bank_card_action_wraper ._select{width:auto;margin-bottom:0;}
     #bank_card_action_wraper #code{width:60%;}
     #bank_card_action_wraper .get_code{display:block;width:20%;height:25px;line-height:25px;border:1px solid #<?= $color?>;}
-<?php elseif ($source == LoanPerson::PERSON_SOURCE_HBJB) : ?>
+<?php elseif ($source == LoanPerson::USER_AGENT_XYBT) : ?>
     /*新增B 仅修改border颜色*/
     #bank_card_action_wraper .get_code {display: block; width: 20%; height: 25px;line-height: 25px;border: 1px solid #ff6462;}
     /*新增E*/
