@@ -35,7 +35,7 @@ $this->showsubmenu('风控管理', array(
             <td><?php echo isset($source[$value['source_id']]) ? $source[$value['source_id']] : ''; ?></td>
             <td><?php echo $value['reg_num']; ?></td>
             <td><?php echo $value['loan_num']; ?></td>
-            <td><?php echo $value['loan_money']; ?></td>
+            <td><?php echo $value['loan_money']/100; ?></td>
             <td><?php echo $value['date_time']; ?></td>
         </tr>
     <?php endforeach; ?>

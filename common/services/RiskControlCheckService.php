@@ -2955,20 +2955,20 @@ class RiskControlCheckService extends Component {
      * @param $params
      * @return array
      */
-    public function checkBqsDecisionInfo($data)
-    {
-        if (empty($data = $data['bqs'])) {
-            $result = ['risk' => self::MEDIUM_RISK, 'detail' => '白骑士:没有相关信息', 'value' => self::NULL];
-        } else {
-
-            $result = [
-                'risk' => ($data['finalDecision'] == 'Accept') ? self::LOW_RISK : (($data['finalDecision'] == 'Review') ? self::MEDIUM_RISK : self::HIGH_RISK),
-                'detail' => '白骑士决策信息：' . $data['finalDecision'],
-                'value' =>  $data['finalDecision']
-            ];
-        }
-        return $result;
-    }
+//    public function checkBqsDecisionInfo($data)
+//    {
+//        if (empty($data = $data['bqs'])) {
+//            $result = ['risk' => self::MEDIUM_RISK, 'detail' => '白骑士:没有相关信息', 'value' => self::NULL];
+//        } else {
+//
+//            $result = [
+//                'risk' => ($data['finalDecision'] == 'Accept') ? self::LOW_RISK : (($data['finalDecision'] == 'Review') ? self::MEDIUM_RISK : self::HIGH_RISK),
+//                'detail' => '白骑士决策信息：' . $data['finalDecision'],
+//                'value' =>  $data['finalDecision']
+//            ];
+//        }
+//        return $result;
+//    }
 
     /**
      * author 王成
