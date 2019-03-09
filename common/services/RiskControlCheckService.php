@@ -1506,7 +1506,7 @@ class RiskControlCheckService extends Component {
                 }
             }
 
-            $result = ['risk' => self::LOW_RISK, 'detail' => json_encode($phone_called), 'value' => self::NO];
+            $result = ['risk' => self::LOW_RISK, 'detail' => $detail, 'value' => self::NO];
             if ($flag == false){
                 $result = ['risk' => self::HIGH_RISK, 'detail' => $detail, 'value' => self::YES];
             }
