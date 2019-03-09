@@ -5542,7 +5542,7 @@ class RiskControlCheckService extends Component {
     {
         $count = 0;
         $detail = "通讯通讯录号码有联系的手机号码数量";
-        $loan_person = $data['loan_person'];
+//        $loan_person = $data['loan_person'];
         $data = $data['yys'];
         // $mobile_contact = UserMobileContacts::getContactData($loan_person->id);
         $mobile_contact = $data['user_mobile_contacts'];
