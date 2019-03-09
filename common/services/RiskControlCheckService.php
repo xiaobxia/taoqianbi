@@ -1480,12 +1480,13 @@ class RiskControlCheckService extends Component {
         $call_in_count = $params['call_in_count'];
         $call_in_time = $params['call_in_time'];
 
-        $result = ['risk' => self::MEDIUM_RISK, 'detail' => '聚信立:没有相关信息'];
+        $detail = '聚信立:没有相关信息';
+        $flag = true;
+        $result = ['risk' => self::MEDIUM_RISK, 'detail' => $detail, 'value' => self::NULL];
         if (!empty($data['behavior_check'])) {
             foreach ($data['behavior_check'] as $v) {
                 if ($v['check_point'] == 'contact_loan' || $v['check_point_cn'] == '贷款类号码联系情况') {
                     $detail = $v['evidence'];
-                    $flag = true;
                     if (preg_match_all('/主叫([1-9]\d*)次共(.*?)分钟/', $v['evidence'], $phone_call)) {
                         if (isset($phone_call[1]) && isset($phone_call[2])) {
                             if (intval($phone_call[1]) > $call_out_count || intval($phone_call[2]) > $call_out_time) {
@@ -1505,7 +1506,7 @@ class RiskControlCheckService extends Component {
                 }
             }
 
-            $result = ['risk' => self::LOW_RISK, 'detail' => $detail, 'value' => self::NO];
+            $result = ['risk' => self::LOW_RISK, 'detail' => $phone_called[1], 'value' => self::NO];
             if ($flag == false){
                 $result = ['risk' => self::HIGH_RISK, 'detail' => $detail, 'value' => self::YES];
             }
