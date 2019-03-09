@@ -1497,7 +1497,7 @@ class RiskControlCheckService extends Component {
                     }
                     if (preg_match_all('/被叫([1-9]\d*)次共.*?分钟/', $v['evidence'], $phone_called)) {
                         if (isset($phone_called[1]) && isset($phone_called[2])) {
-                            if (count($phone_called[1]) > $call_in_count || intval($phone_called[2]) > $call_in_time) {
+                            if (intval($phone_called[1]) > $call_in_count || intval($phone_called[2]) > $call_in_time) {
                                 $flag = false;
                             }
                         }
