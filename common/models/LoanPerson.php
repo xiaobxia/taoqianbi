@@ -207,18 +207,8 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
         self::PERSON_TYPE_YUANGONG => '员工',
     ];
 
-//    const PERSON_SOURCE_YGB = 5;
     const PERSON_SOURCE_MOBILE_CREDIT = 21; //极速荷包
     const DEFAUTL_VALUES = 0;//请选择
-//    const PERSON_SOURCE_KDJZ = 119; //口袋记账
-//    const PERSON_SOURCE_JBGJ = 120; //记账管家
-//    const PERSON_SOURCE_HBJB = 121; //汇邦钱包
-//    const PERSON_SOURCE_WZD_LOAN = 122; //温州贷
-//    const PERSON_SOURCE_SX_LOAN = 123; //随心贷
-//    const PERSON_SOURCE_HUAN_KA_LOAN = 124; //还卡锦囊
-//    const PERSON_SOURCE_BAIRONG = 125; //百融
-//    const PERSON_SOURCE_KXJIE = 130;//开心借
-//    const PERSON_SOURCE_XH = 88; //享花
 
     const PERSON_SOURCE_NULL = NULL;
     const PERSON_SOURCE_DEFAULT = 0;
@@ -234,51 +224,20 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
         self::PERSON_SOURCE_DEFAULT => '默认',
         self::PERSON_SOURCE_REGISTER => '前台注册',
         self::PERSON_SOURCE_STAFF =>'企业员工',
-//        self::PERSON_SOURCE_YGB =>'小钱包',
-
-//        self::PERSON_SOURCE_ASSET=>'资产合作方',
-
         self::PERSON_SOURCE_MOBILE_CREDIT => APP_NAMES,
         self::PERSON_SOURCE_MOBILE_CREDIT_M1 => APP_NAMES.'马甲1',
-
-//        self::PERSON_SOURCE_KDJZ => '口袋记账',
-//        self::PERSON_SOURCE_JBGJ => '加班管家',
-//        self::PERSON_SOURCE_HBJB => '汇邦钱包',
-//        self::PERSON_SOURCE_WZD_LOAN => '温州贷借款',
-//        self::PERSON_SOURCE_SX_LOAN => '随心贷',
-//        self::PERSON_SOURCE_HUAN_KA_LOAN => '秒还卡',
-//        self::PERSON_SOURCE_KXJIE => '开心借',
-//        self::PERSON_SOURCE_XH => '享花',
-        // self::PERSON_SOURCE_BAIRONG => '百融',
     ];
 
     //当前app放款的渠道/当前统计渠道/当前放款的渠道
     public static $app_loan_source = [
         self::PERSON_SOURCE_DEFAULT => '全部渠道',
         self::PERSON_SOURCE_MOBILE_CREDIT => APP_NAMES,
-//        self::PERSON_SOURCE_KDJZ => '口袋记账',
-//        self::PERSON_SOURCE_JBGJ => '加班管家',
-//        self::PERSON_SOURCE_HBJB => '汇邦钱包',
-//        self::PERSON_SOURCE_WZD_LOAN => '温州贷借款',
-//        self::PERSON_SOURCE_SX_LOAN => '随心贷',
-//        self::PERSON_SOURCE_KXJIE => '开心借',
-//        self::PERSON_SOURCE_XH => '享花',
-//        self::PERSON_SOURCE_HUAN_KA_LOAN => '秒还卡',
-//        self::PERSON_SOURCE_YGB => '小钱包',
     ];
 
     //当前放款的渠道
     public static $current_loan_source = [
         self::DEFAUTL_VALUES => '请选择',
         self::PERSON_SOURCE_MOBILE_CREDIT => APP_NAMES,
-//        self::PERSON_SOURCE_KDJZ => '口袋记账',
-//        self::PERSON_SOURCE_JBGJ => '加班管家',
-//        self::PERSON_SOURCE_HBJB => '汇邦钱包',
-//        self::PERSON_SOURCE_WZD_LOAN => '温州贷借款',
-//        self::PERSON_SOURCE_SX_LOAN => '随心贷',
-//        self::PERSON_SOURCE_HUAN_KA_LOAN => '秒还卡',
-//        self::PERSON_SOURCE_KXJIE => '开心借',
-//        self::PERSON_SOURCE_XH => '享花',
     ];
 
     const USER_AGENT_XYBT = 'tqb'; #极速荷包
@@ -307,14 +266,6 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
         self::USER_AGENT_XYQB => self::PERSON_SOURCE_MOBILE_CREDIT,
         self::USER_AGENT_BBY => self::PERSON_SOURCE_MOBILE_CREDIT,
         self::USER_AGENT_SDHS => self::PERSON_SOURCE_MOBILE_CREDIT,
-//        self::USER_AGENT_HBQB => self::PERSON_SOURCE_HBJB,
-//        self::USER_AGENT_KDJZ => self::PERSON_SOURCE_KDJZ,
-//        self::USER_AGENT_JBGJ => self::PERSON_SOURCE_JBGJ,
-//        self::USER_AGENT_WZD_LOAN => self::PERSON_SOURCE_WZD_LOAN,
-//        self::USER_AGENT_SX_LOAN => self::PERSON_SOURCE_SX_LOAN,
-        /*self::USER_AGENT_GJJ_LOAN => self::PERSON_SOURCE_GJJ_LOAN,*/
-//        self::USER_AGENT_KXJIE => self::PERSON_SOURCE_KXJIE,
-//        self::USER_AGENT_XH => self::PERSON_SOURCE_XH,
         self::USER_AGENT_OTHER => self::PERSON_SOURCE_MOBILE_CREDIT
     ];
 
@@ -395,22 +346,6 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
             'share_logo' => 'http://qb.wzdai.com/newh5/web/image/common/logo_120.png',
             'source_app' => self::APPMARKET_XYBTFULI,
         ],
-//        self::APPMARKET_HBQB => [ // 汇邦钱包
-//            'source_id' => self::PERSON_SOURCE_HBJB,
-//            'title' => '汇邦钱包',
-//            'keywords' => '1分钟认证，20分钟到账，无抵押，纯信用贷。时下最流行的移动贷款APP。国内首批利用大数据、人工智能实现风控审批的信贷服务平台。',
-//            'icon' => 'http://qb.wzdai.com/newh5/web/image/common/wzd_icon.png',
-//            'share_logo' => 'http://qb.wzdai.com/newh5/web/image/common/wzd_logo_120.png',
-//            'source_app' => self::APPMARKET_HBQB,
-//        ],
-//        self::APPMARKET_WZD_LOAN => [ // 温州贷借款
-//            'source_id' => self::PERSON_SOURCE_WZD_LOAN,
-//            'title' => '温州贷借款',
-//            'keywords' => '1分钟认证，20分钟到账，无抵押，纯信用贷。时下最流行的移动贷款APP。国内首批利用大数据、人工智能实现风控审批的信贷服务平台。',
-//            'icon' => 'http://qb.wzdai.com/newh5/web/image/common/wzd_icon.png',
-//            'share_logo' => 'http://qb.wzdai.com/newh5/web/image/common/wzd_logo_120.png',
-//            'source_app' => self::APPMARKET_WZD_LOAN,
-//        ],
         self::APPMARKET_XYBTFUND => [ // 极速荷包公积金版
             'source_id' => self::PERSON_SOURCE_MOBILE_CREDIT,
             'title' => APP_NAMES,
@@ -419,38 +354,6 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
             'share_logo' => 'http://qb.wzdai.com/newh5/web/image/common/fund_logo_120.png',
             'source_app' => self::APPMARKET_XYBTFUND,
         ],
-//        self::APPMARKET_SXDAI => [ // 随心贷
-//            'source_id' => self::PERSON_SOURCE_SX_LOAN,
-//            'title' => '随心贷',
-//            'keywords' => '1分钟认证，20分钟到账，无抵押，纯信用贷。时下最流行的移动贷款APP。国内首批利用大数据、人工智能实现风控审批的信贷服务平台。',
-//            'icon' => 'http://qb.wzdai.com/newh5/web/image/common/sxdai_icon.png',
-//            'share_logo' => 'http://qb.wzdai.com/newh5/web/image/common/sxdai_logo_120.png',
-//            'source_app' => self::APPMARKET_SXDAI,
-//        ],
-        /* self::APPMARKET_HBQB => [ // 现金白条
-             'source_id' => self::PERSON_SOURCE_HBJB,
-             'title' => '现金白条',
-             'keywords' => '1分钟认证，20分钟到账，无抵押，纯信用贷。时下最流行的移动贷款APP。国内首批利用大数据、人工智能实现风控审批的信贷服务平台。',
-             'icon' => 'http://qb.wzdai.com/newh5/web/image/common/ico.ico',
-             'share_logo' => 'http://qb.wzdai.com/newh5/web/image/common/logo_120.png',
-             'source_app' => self::APPMARKET_XJBT,
-         ],*/
-//        self::APPMARKET_KXJIE => [ // 开心借
-//            'source_id' => self::PERSON_SOURCE_KXJIE,
-//            'title' => '开心借',
-//            'keywords' => '1分钟认证，20分钟到账，无抵押，纯信用贷。时下最流行的移动贷款APP。国内首批利用大数据、人工智能实现风控审批的信贷服务平台。',
-//            'icon' => 'http://qb.wzdai.com/newh5/web/image/common/sxdai_icon.png',
-//            'share_logo' => 'http://qb.wzdai.com/newh5/web/image/common/sxdai_logo_120.png',
-//            'source_app' => self::APPMARKET_KXJIE,
-//        ],
-//        self::APPMARKET_XH => [ // 极速荷包
-//            'source_id' => self::PERSON_SOURCE_XH,
-//            'title' => APP_NAMES,
-//            'keywords' => '1分钟认证，20分钟到账，无抵押，纯信用贷。时下最流行的移动贷款APP。国内首批利用大数据、人工智能实现风控审批的信贷服务平台。',
-//            'icon' => 'http://xianghua.cn/newh5/web/image/common/sxdai_icon.png',
-//            'share_logo' => 'http://xianghua.cn/newh5/web/image/common/sxdai_logo_120.png',
-//            'source_app' => self::APPMARKET_XH,
-//        ],
         self::APPMARKET_JSHB => [ // 极速荷包
             'source_id' => self::PERSON_SOURCE_MOBILE_CREDIT,
             'title' => APP_NAMES,
@@ -467,13 +370,6 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
         self::USER_AGENT_XYQB,
         self::USER_AGENT_BBY,
         self::USER_AGENT_SDHS,
-//        self::USER_AGENT_HBQB,
-//        self::USER_AGENT_KDJZ,
-//        self::USER_AGENT_JBGJ,
-//        self::USER_AGENT_WZD_LOAN,
-//        self::USER_AGENT_SX_LOAN,
-//        self::USER_AGENT_KXJIE,
-//        self::USER_AGENT_XH,
         self::USER_AGENT_SDHB,
         self::USER_AGENT_OTHER,
     ];
@@ -481,13 +377,6 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
     # 全部的短息渠道
     public static $channel_msg_list = [
         self::PERSON_SOURCE_MOBILE_CREDIT => '',
-//        self::PERSON_SOURCE_HBJB => '_HBQB',
-//        self::PERSON_SOURCE_KDJZ => '_KDJZ',
-//        self::PERSON_SOURCE_JBGJ => '_JBGJ',
-//        self::PERSON_SOURCE_WZD_LOAN => '_WZD',
-//        self::PERSON_SOURCE_SX_LOAN => '_SXD',
-//        self::PERSON_SOURCE_KXJIE  =>'_KXJIE',
-        // self::PERSON_SOURCE_XH  =>'_XH',
     ];
 
     public static $app_login_source = [
