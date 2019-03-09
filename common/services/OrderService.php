@@ -639,11 +639,11 @@ class OrderService extends Component
             }
             $loan_person = LoanPerson::findOne(['id'=>$user_loan_order->user_id]);
             //口袋记账和加班管家前三天不扣滞纳金
-            if(in_array($loan_person->source_id,[LoanPerson::PERSON_SOURCE_KDJZ,LoanPerson::PERSON_SOURCE_JBGJ]) && ($user_loan_order_repayment->late_day <= 3)){
-                $total = $user_loan_order_repayment->principal;
-            }else{
+//            if(in_array($loan_person->source_id,[LoanPerson::PERSON_SOURCE_KDJZ,LoanPerson::PERSON_SOURCE_JBGJ]) && ($user_loan_order_repayment->late_day <= 3)){
+//                $total = $user_loan_order_repayment->principal;
+//            }else{
                 $total = $user_loan_order_repayment->principal + $user_loan_order_repayment->interests + $user_loan_order_repayment->late_fee;
-            }
+//            }
 //            $total = $user_loan_order_repayment->principal + $user_loan_order_repayment->interests + $user_loan_order_repayment->late_fee - $user_loan_order_repayment->coupon_money;
 
             $user_loan_order_repayment->updated_at = time();
@@ -1290,11 +1290,11 @@ class OrderService extends Component
             }
             $loan_person = LoanPerson::findOne(['id'=>$user_loan_order->user_id]);
             //口袋记账和加班管家前三天不扣滞纳金
-            if (in_array($loan_person->source_id,[LoanPerson::PERSON_SOURCE_KDJZ,LoanPerson::PERSON_SOURCE_JBGJ]) && ($user_loan_order_repayment->late_day <= 3)) {
-                $total = $user_loan_order_repayment->principal;
-            } else {
+//            if (in_array($loan_person->source_id,[LoanPerson::PERSON_SOURCE_KDJZ,LoanPerson::PERSON_SOURCE_JBGJ]) && ($user_loan_order_repayment->late_day <= 3)) {
+//                $total = $user_loan_order_repayment->principal;
+//            } else {
                 $total = $user_loan_order_repayment->principal + $user_loan_order_repayment->interests + $user_loan_order_repayment->late_fee;
-            }
+//            }
             $user_loan_order_repayment->updated_at = time();
             $user_loan_order_repayment->true_total_money =  $user_loan_order_repayment->true_total_money+$money;
             if ($boolForceFinish || $user_loan_order_repayment->true_total_money >= $total) {
@@ -2707,11 +2707,11 @@ class OrderService extends Component
             }
             $loan_person = LoanPerson::findOne(['id'=>$user_loan_order->user_id]);
             //口袋记账和加班管家前三天不扣滞纳金
-            if (in_array($loan_person->source_id,[LoanPerson::PERSON_SOURCE_KDJZ,LoanPerson::PERSON_SOURCE_JBGJ]) && ($user_loan_order_repayment->late_day <= 3)) {
-                $total = $user_loan_order_repayment->principal;
-            } else {
+//            if (in_array($loan_person->source_id,[LoanPerson::PERSON_SOURCE_KDJZ,LoanPerson::PERSON_SOURCE_JBGJ]) && ($user_loan_order_repayment->late_day <= 3)) {
+//                $total = $user_loan_order_repayment->principal;
+//            } else {
                 $total = $user_loan_order_repayment->principal + $user_loan_order_repayment->interests + $user_loan_order_repayment->late_fee;
-            }
+//            }
             $user_loan_order_repayment->updated_at = time();
             $user_loan_order_repayment->true_total_money =  $user_loan_order_repayment->true_total_money+$money;
             if ($boolForceFinish || $user_loan_order_repayment->true_total_money >= $total) {

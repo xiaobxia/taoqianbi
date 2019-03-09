@@ -772,11 +772,11 @@ class UserLoanOrder extends \common\components\ARModel {
         if ($repayment) {
             $loan_person = LoanPerson::find()->select(['source_id'])->where(['id'=>$repayment['user_id']])->one();
             //口袋记账和加班管家订单前三天逾期自动减免滞纳金
-            if(!empty($loan_person) && in_array($loan_person->source_id,[LoanPerson::PERSON_SOURCE_KDJZ, LoanPerson::PERSON_SOURCE_JBGJ]) && ($repayment['overdue_day'] <= 3)){
-                $repayment['remain_money_amount'] = $repayment['principal'] - $repayment['true_total_money'];
-            }else{
+//            if(!empty($loan_person) && in_array($loan_person->source_id,[LoanPerson::PERSON_SOURCE_KDJZ, LoanPerson::PERSON_SOURCE_JBGJ]) && ($repayment['overdue_day'] <= 3)){
+//                $repayment['remain_money_amount'] = $repayment['principal'] - $repayment['true_total_money'];
+//            }else{
                 $repayment['remain_money_amount'] = $repayment['principal'] + $repayment['interests'] + $repayment['late_fee'] - $repayment['true_total_money'];
-            }
+//            }
 
             $repayment['remain_principal'] = $repayment['principal'] - max($repayment['true_total_money'] - $repayment['interests'] - $repayment['late_fee'] - $repayment['coupon_money'], 0);
         }

@@ -210,15 +210,15 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
 //    const PERSON_SOURCE_YGB = 5;
     const PERSON_SOURCE_MOBILE_CREDIT = 21; //极速荷包
     const DEFAUTL_VALUES = 0;//请选择
-    const PERSON_SOURCE_KDJZ = 119; //口袋记账
-    const PERSON_SOURCE_JBGJ = 120; //记账管家
-    const PERSON_SOURCE_HBJB = 121; //汇邦钱包
-    const PERSON_SOURCE_WZD_LOAN = 122; //温州贷
-    const PERSON_SOURCE_SX_LOAN = 123; //随心贷
-    const PERSON_SOURCE_HUAN_KA_LOAN = 124; //还卡锦囊
-    const PERSON_SOURCE_BAIRONG = 125; //百融
-    const PERSON_SOURCE_KXJIE = 130;//开心借
-    const PERSON_SOURCE_XH = 88; //享花
+//    const PERSON_SOURCE_KDJZ = 119; //口袋记账
+//    const PERSON_SOURCE_JBGJ = 120; //记账管家
+//    const PERSON_SOURCE_HBJB = 121; //汇邦钱包
+//    const PERSON_SOURCE_WZD_LOAN = 122; //温州贷
+//    const PERSON_SOURCE_SX_LOAN = 123; //随心贷
+//    const PERSON_SOURCE_HUAN_KA_LOAN = 124; //还卡锦囊
+//    const PERSON_SOURCE_BAIRONG = 125; //百融
+//    const PERSON_SOURCE_KXJIE = 130;//开心借
+//    const PERSON_SOURCE_XH = 88; //享花
 
     const PERSON_SOURCE_NULL = NULL;
     const PERSON_SOURCE_DEFAULT = 0;

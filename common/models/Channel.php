@@ -33,10 +33,10 @@ class Channel extends \yii\db\ActiveRecord{
     const CHANNEL_RANK_TWO = 2;
 
     const PERSON_SOURCE_MOBILE_CREDIT = 21; //极速荷包
-    const PERSON_SOURCE_KDJZ = 119; //口袋记账
-    const PERSON_SOURCE_JBGJ = 120; //记账管家
-    const PERSON_SOURCE_HBJB = 121; //汇邦钱包
-    const PERSON_SOURCE_WZD_LOAN = 122; //温州贷借款
+//    const PERSON_SOURCE_KDJZ = 119; //口袋记账
+//    const PERSON_SOURCE_JBGJ = 120; //记账管家
+//    const PERSON_SOURCE_HBJB = 121; //汇邦钱包
+//    const PERSON_SOURCE_WZD_LOAN = 122; //温州贷借款
     const PERSON_SOURCE_DEFAULT = 0;//默认
 
     //“结算类型"：A、S、A+S、A+S+复借、A阶梯、S阶梯
@@ -75,10 +75,10 @@ class Channel extends \yii\db\ActiveRecord{
     public static $source = [
         self::PERSON_SOURCE_DEFAULT=>"默认来源",
         self::PERSON_SOURCE_MOBILE_CREDIT=>APP_NAMES,
-        self::PERSON_SOURCE_KDJZ=>"口袋记账",
-        self::PERSON_SOURCE_JBGJ=>"记账管家",
-        self::PERSON_SOURCE_HBJB=>"汇邦钱包",
-        self::PERSON_SOURCE_WZD_LOAN=>"温州贷借款",
+//        self::PERSON_SOURCE_KDJZ=>"口袋记账",
+//        self::PERSON_SOURCE_JBGJ=>"记账管家",
+//        self::PERSON_SOURCE_HBJB=>"汇邦钱包",
+//        self::PERSON_SOURCE_WZD_LOAN=>"温州贷借款",
     ];
 
     //结算类型

@@ -826,17 +826,7 @@ class RiskControlController extends BaseController {
 //                    $this->_fsReject($item['id'], '人工复审-公积金不存在直接拒绝');//机审 到人工复审   公积金不存在直接拒绝   18 - 4 -17
 //                    continue;
 //                }
-            }
-            elseif (in_array($loan_person->source_id, [LoanPerson::PERSON_SOURCE_HBJB, LoanPerson::PERSON_SOURCE_KDJZ, LoanPerson::PERSON_SOURCE_JBGJ])) { //第三方 不会走
-                if ($this->_reachOrderCount($_order_count_key_third, $order_total_count_third, $_order_real_count_key)) {
-//                    CommonHelper::stderr( "order-{$item['id']}-{$loan_person->phone}, order_third_count_overload.\n" );
-//                    $this->_fsReject($item['id'], '已达每日放款最大量，复审拒绝');
-                    continue;
-                }
-                $pass_type = 'third';
-                $pass_type_int = UserLoanOrder::PASS_TYPE_THIRD;
-            }
-            else {
+            }else {
                 if ($this->_reachOrderCount($_order_count_key, $order_total_count, $_order_real_count_key)) {
 //                    CommonHelper::stderr( "order-{$item['id']}-{$loan_person->phone}, order_count_overload.\n" );
 //                    $this->_fsReject($item['id'], '已达每日放款最大量，复审拒绝');

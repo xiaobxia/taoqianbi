@@ -146,16 +146,16 @@ FROM tb_statistics_loan_copy where " . $condition . "  GROUP BY date_time ORDER 
         if($this->request->get('submitcsv') == 'exportcsv'){
             return $this->_exportDailyData($info);
         }
-        $app_source = [
-            0 => '全部类型',
-            LoanPerson::PERSON_SOURCE_MOBILE_CREDIT => APP_NAMES,
+//        $app_source = [
+//            0 => '全部类型',
+//            LoanPerson::PERSON_SOURCE_MOBILE_CREDIT => APP_NAMES,
 //            LoanPerson::PERSON_SOURCE_KDJZ => '口袋记账',
 //            LoanPerson::PERSON_SOURCE_JBGJ => '记账管家',
 //            LoanPerson::PERSON_SOURCE_HBJB => '汇邦钱包',
 //            LoanPerson::PERSON_SOURCE_WZD_LOAN => '温州贷借款',
 //            LoanPerson::PERSON_SOURCE_SX_LOAN => '随心贷',
 //            LoanPerson::PERSON_SOURCE_HUAN_KA_LOAN => '还卡锦囊'
-        ];
+//        ];
         return $this->render('daily-data', array(
             'data' => $info,
 //                    'pages' => $pages,
@@ -166,7 +166,7 @@ FROM tb_statistics_loan_copy where " . $condition . "  GROUP BY date_time ORDER 
             'total_loan_money_new' => $total_loan_money_new,
             'total_loan_money_old' => $total_loan_money_old,
             'channel' => $channel,
-            'app_source' => $app_source,
+            'app_source' => LoanPerson::$person_source,
             'sub_order_type' => $sub_order_type,
             'last_update_at' => $last_update_at,
         ));

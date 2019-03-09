@@ -1208,10 +1208,6 @@ class CreditAppController extends BaseController {
                     if ($this->_reachOrderCount($_order_count_key_gjj, $order_total_count_gjj)) {
                         $amount_button = 3;
                     }
-                } elseif (in_array($loan_person->source_id, [LoanPerson::PERSON_SOURCE_HBJB, LoanPerson::PERSON_SOURCE_KDJZ, LoanPerson::PERSON_SOURCE_JBGJ])) { //第三方
-                    if ($this->_reachOrderCount($_order_count_key_third, $order_total_count_third)) {
-                        $amount_button = 3;
-                    }
                 } else {
                     if ($this->_reachOrderCount($_order_count_key, $order_total_count)) {
                         $amount_button = 3;
