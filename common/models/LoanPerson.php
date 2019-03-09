@@ -305,6 +305,7 @@ class LoanPerson extends ActiveRecord implements IdentityInterface {
     public static $user_agent_source = [
         self::USER_AGENT_XYBT => self::PERSON_SOURCE_MOBILE_CREDIT,
         self::USER_AGENT_XYQB => self::PERSON_SOURCE_MOBILE_CREDIT,
+        self::USER_AGENT_BBY => self::PERSON_SOURCE_MOBILE_CREDIT,
 //        self::USER_AGENT_HBQB => self::PERSON_SOURCE_HBJB,
 //        self::USER_AGENT_KDJZ => self::PERSON_SOURCE_KDJZ,
 //        self::USER_AGENT_JBGJ => self::PERSON_SOURCE_JBGJ,
