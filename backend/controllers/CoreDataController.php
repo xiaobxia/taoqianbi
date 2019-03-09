@@ -149,12 +149,12 @@ FROM tb_statistics_loan_copy where " . $condition . "  GROUP BY date_time ORDER 
         $app_source = [
             0 => '全部类型',
             LoanPerson::PERSON_SOURCE_MOBILE_CREDIT => APP_NAMES,
-            LoanPerson::PERSON_SOURCE_KDJZ => '口袋记账',
-            LoanPerson::PERSON_SOURCE_JBGJ => '记账管家',
-            LoanPerson::PERSON_SOURCE_HBJB => '汇邦钱包',
-            LoanPerson::PERSON_SOURCE_WZD_LOAN => '温州贷借款',
-            LoanPerson::PERSON_SOURCE_SX_LOAN => '随心贷',
-            LoanPerson::PERSON_SOURCE_HUAN_KA_LOAN => '还卡锦囊'
+//            LoanPerson::PERSON_SOURCE_KDJZ => '口袋记账',
+//            LoanPerson::PERSON_SOURCE_JBGJ => '记账管家',
+//            LoanPerson::PERSON_SOURCE_HBJB => '汇邦钱包',
+//            LoanPerson::PERSON_SOURCE_WZD_LOAN => '温州贷借款',
+//            LoanPerson::PERSON_SOURCE_SX_LOAN => '随心贷',
+//            LoanPerson::PERSON_SOURCE_HUAN_KA_LOAN => '还卡锦囊'
         ];
         return $this->render('daily-data', array(
             'data' => $info,

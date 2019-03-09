@@ -3210,33 +3210,33 @@ class RiskControlCheckService extends Component {
      * param    array            默认配置
      * return   array            ['risk'=>"0:低风险, 1:中风险, 2:高风险", 'detail' => "描述"]
      */
-    public function checkJyInstitutionsProportion($data, $params)
-    {
-        $loan_person = $data['loan_person'];
-        // $mg = CreditJy::find()->where(['user_id' => $loan_person->id])->one(Yii::$app->get('db_kdkj_rd'));
-        $mg = $data['credit_jy'];
-        if (empty($mg)) {
-            return ['risk' => self::LOW_RISK, 'detail' => '未获取对应征信信息', 'value' => self::NULL];
-        }
-        $loan_data = json_decode($mg['data'], true);
-        if (empty($loan_data)) {
-            return ['risk' => self::LOW_RISK, 'detail' => '查询到信息，但信息为空', 'value' => self::NULL];
-        }
-        $num = 0;
-
-        if (count($loan_data) < 5) {
-            return ['risk' => self::LOW_RISK, 'detail' => '拒单机构占比', 'value' => 0];
-        }
-
-        foreach ($loan_data as $v) {
-            if ($v['borrowState'] == 1) {
-                $num++;
-            }
-        }
-        $v = round($num / count($loan_data), 2);
-
-        return ['risk' => self::LOW_RISK, 'detail' => '拒单机构占比', 'value' => $v];
-    }
+//    public function checkJyInstitutionsProportion($data, $params)
+//    {
+////        $loan_person = $data['loan_person'];
+//        // $mg = CreditJy::find()->where(['user_id' => $loan_person->id])->one(Yii::$app->get('db_kdkj_rd'));
+//        $mg = $data['credit_jy'];
+//        if (empty($mg)) {
+//            return ['risk' => self::LOW_RISK, 'detail' => '未获取对应征信信息', 'value' => self::NULL];
+//        }
+//        $loan_data = json_decode($mg['data'], true);
+//        if (empty($loan_data)) {
+//            return ['risk' => self::LOW_RISK, 'detail' => '查询到信息，但信息为空', 'value' => self::NULL];
+//        }
+//        $num = 0;
+//
+//        if (count($loan_data) < 5) {
+//            return ['risk' => self::LOW_RISK, 'detail' => '拒单机构占比', 'value' => 0];
+//        }
+//
+//        foreach ($loan_data as $v) {
+//            if ($v['borrowState'] == 1) {
+//                $num++;
+//            }
+//        }
+//        $v = round($num / count($loan_data), 2);
+//
+//        return ['risk' => self::LOW_RISK, 'detail' => '拒单机构占比', 'value' => $v];
+//    }
 
     /**
 
@@ -3248,36 +3248,36 @@ class RiskControlCheckService extends Component {
      * param    array            默认配置
      * return   array            ['risk'=>"0:低风险, 1:中风险, 2:高风险", 'detail' => "描述"]
      */
-    public function checkJyPaymentStatus($data, $params)
-    {
-        $loan_person = $data['loan_person'];
-        // $mg = CreditJy::find()->where(['user_id' => $loan_person->id])->one(Yii::$app->get('db_kdkj_rd'));
-        $mg = $data['credit_jy'];
-        if (empty($mg)) {
-            return ['risk' => self::LOW_RISK, 'detail' => '未获取对应征信信息', 'value' => '无数据'];
-        }
-        $loan_data = json_decode($mg['data'], true);
-        if (empty($loan_data)) {
-            return ['risk' => self::LOW_RISK, 'detail' => '查询到信息，但信息为空', 'value' => '无数据'];
-        }
-        $num1 = 0;
-        $num2 = 0;
-        foreach ($loan_data as $v) {
-            if ($v['repayState'] == 1) {
-                $num1++;
-            }
-            if ($v['repayState'] == 9) {
-                $num2++;
-            }
-        }
-        if ($num2 > 0) {
-            return ['risk' => self::LOW_RISK, 'detail' => '还款状态', 'value' => '存在已还清'];
-        } else if ($num1 > 0) {
-            return ['risk' => self::LOW_RISK, 'detail' => '还款状态', 'value' => '存在正常还款'];
-        } else {
-            return ['risk' => self::HIGH_RISK, 'detail' => '还款状态', 'value' => '仅存在未知'];
-        }
-    }
+//    public function checkJyPaymentStatus($data, $params)
+//    {
+//        $loan_person = $data['loan_person'];
+//        // $mg = CreditJy::find()->where(['user_id' => $loan_person->id])->one(Yii::$app->get('db_kdkj_rd'));
+//        $mg = $data['credit_jy'];
+//        if (empty($mg)) {
+//            return ['risk' => self::LOW_RISK, 'detail' => '未获取对应征信信息', 'value' => '无数据'];
+//        }
+//        $loan_data = json_decode($mg['data'], true);
+//        if (empty($loan_data)) {
+//            return ['risk' => self::LOW_RISK, 'detail' => '查询到信息，但信息为空', 'value' => '无数据'];
+//        }
+//        $num1 = 0;
+//        $num2 = 0;
+//        foreach ($loan_data as $v) {
+//            if ($v['repayState'] == 1) {
+//                $num1++;
+//            }
+//            if ($v['repayState'] == 9) {
+//                $num2++;
+//            }
+//        }
+//        if ($num2 > 0) {
+//            return ['risk' => self::LOW_RISK, 'detail' => '还款状态', 'value' => '存在已还清'];
+//        } else if ($num1 > 0) {
+//            return ['risk' => self::LOW_RISK, 'detail' => '还款状态', 'value' => '存在正常还款'];
+//        } else {
+//            return ['risk' => self::HIGH_RISK, 'detail' => '还款状态', 'value' => '仅存在未知'];
+//        }
+//    }
 
 
     /* 以下为禁止项规则 */
@@ -3857,30 +3857,30 @@ class RiskControlCheckService extends Component {
      * param    array            默认配置
      * return   array            ['risk'=>"0:低风险, 1:中风险, 2:高风险", 'detail' => "描述"]
      */
-    public function checkJyOverdue($data, $params)
-    {
-        $loan_person = $data['loan_person'];
-        // $mg = CreditJy::find()->where(['user_id' => $loan_person->id])->one(Yii::$app->get('db_kdkj_rd'));
-        $mg = $data['credit_jy'];
-        if (empty($mg)) {
-            return ['risk' => self::LOW_RISK, 'detail' => '未获取对应征信信息', 'value' => self::LOW_RISK];
-        }
-        $loan_data = json_decode($mg['data'], true);
-        if (empty($loan_data)) {
-            return ['risk' => self::LOW_RISK, 'detail' => '查询到信息，但信息为空', 'value' => self::LOW_RISK];
-        }
-        $num = 0;
-        foreach ($loan_data as $v) {
-            if (in_array($v['repayState'], [2, 3, 4, 5, 6, 7, 8])) {
-                $num++;
-            }
-        }
-        if ($num > 0) {
-            return ['risk' => self::HIGH_RISK, 'detail' => '逾期' . $num . '次', 'value' => self::HIGH_RISK];
-        } else {
-            return ['risk' => self::LOW_RISK, 'detail' => '还款状态', 'value' => self::LOW_RISK];
-        }
-    }
+//    public function checkJyOverdue($data, $params)
+//    {
+//        $loan_person = $data['loan_person'];
+//        // $mg = CreditJy::find()->where(['user_id' => $loan_person->id])->one(Yii::$app->get('db_kdkj_rd'));
+//        $mg = $data['credit_jy'];
+//        if (empty($mg)) {
+//            return ['risk' => self::LOW_RISK, 'detail' => '未获取对应征信信息', 'value' => self::LOW_RISK];
+//        }
+//        $loan_data = json_decode($mg['data'], true);
+//        if (empty($loan_data)) {
+//            return ['risk' => self::LOW_RISK, 'detail' => '查询到信息，但信息为空', 'value' => self::LOW_RISK];
+//        }
+//        $num = 0;
+//        foreach ($loan_data as $v) {
+//            if (in_array($v['repayState'], [2, 3, 4, 5, 6, 7, 8])) {
+//                $num++;
+//            }
+//        }
+//        if ($num > 0) {
+//            return ['risk' => self::HIGH_RISK, 'detail' => '逾期' . $num . '次', 'value' => self::HIGH_RISK];
+//        } else {
+//            return ['risk' => self::LOW_RISK, 'detail' => '还款状态', 'value' => self::LOW_RISK];
+//        }
+//    }
 
     /**
 
