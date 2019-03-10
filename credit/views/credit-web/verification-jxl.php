@@ -307,9 +307,7 @@ use common\models\LoanPerson;
                                 eventSubmitResult("1");
                                 window.clearInterval(intval);
 <?php if (in_array($source, [
-            LoanPerson::PERSON_SOURCE_MOBILE_CREDIT,
-            LoanPerson::PERSON_SOURCE_KXJIE,
-            LoanPerson::PERSON_SOURCE_XH,
+            LoanPerson::PERSON_SOURCE_MOBILE_CREDIT
     ]) ) : ?>
                                 changeStepPage(4, false);
                             <?php if ($jump != true) : ?>
