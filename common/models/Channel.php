@@ -72,10 +72,6 @@ class Channel extends \yii\db\ActiveRecord{
     public static $source = [
         self::PERSON_SOURCE_DEFAULT=>"默认来源",
         self::PERSON_SOURCE_MOBILE_CREDIT=>APP_NAMES,
-//        self::PERSON_SOURCE_KDJZ=>"口袋记账",
-//        self::PERSON_SOURCE_JBGJ=>"记账管家",
-//        self::PERSON_SOURCE_HBJB=>"汇邦钱包",
-//        self::PERSON_SOURCE_WZD_LOAN=>"温州贷借款",
     ];
 
     //结算类型

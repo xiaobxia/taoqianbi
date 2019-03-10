@@ -16,32 +16,7 @@ use common\models\LoanPerson;
             <p class="column1">我们坚信未来社会的基石是信用，每个人的信用是他们无形的财富。因此，公司立志于建立和完善社区信用体系，帮助信用良好的用户享受更加便利和优质的生活。</p>
         </div>
     <div class="column2">
-    <?php /*if($source == LoanPerson::PERSON_SOURCE_MOBILE_CREDIT):*/?><!--
-    </div>
-        <div class="column1" style="padding-top: 6%;">
-            <span>客服 Q Q: <a id="online" style="color: #ff6462">立即咨询客服</a></span>
-        </div>
-        <div class="column1">
-            <span>客服电话：</span><span style="color: #666666"><a onclick="callPhone('400-0805356')" style="color: #ff6462">400-080-5356</a></span>
-        </div>
-        <div class="column1">
-            <span>服务时间：</span><span style="color: #666666">9:00~21:00 (周末及法定节假日9:00~18:00)</span>
-        </div>
-    </div>
-    <?php /*endif;*/?>
-    <?php /*if($source == LoanPerson::PERSON_SOURCE_WZD_LOAN):*/?>
-    </div>
-        <div class="column1" style="padding-top: 6%;">
-            <span>客服 Q Q: <a id="online1" style="color: #ff6462">立即咨询客服</a></span>
-        </div>
-        <div class="column1">
-            <span>客服电话：</span><span style="color: #666666"><a onclick="callPhone('021-80311201')" style="color: #ff6462">021-80311201</a></span>
-        </div>
-        <div class="column1">
-            <span>服务时间：</span><span style="color: #666666">9:00~18:00</span>
-        </div>
-        </div>
-    --><?php /*endif;*/?>
+
     <script>
         <?php
         if($type == 'ios'){

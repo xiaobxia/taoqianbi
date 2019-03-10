@@ -155,12 +155,6 @@ class AppPageController extends BaseController
             case LoanPerson::PERSON_SOURCE_MOBILE_CREDIT:
                 $company = '德清正恒网络科技有限公司';
                 break;
-            case LoanPerson::PERSON_SOURCE_WZD_LOAN:
-                $company = '德清正恒网络科技有限公司';
-                break;
-            case LoanPerson::PERSON_SOURCE_HBJB:
-                $company = '淮北汇邦小额贷款股份有限公司';
-                break;
         }*/
         $app_version = \Yii::$app->request->get('app_version');
         if(empty($app_version)){

@@ -86,26 +86,7 @@
 <body>
 <div id="dialog-wraper"></div>
 <div class="help-center kdlc_mobile_wraper">
-<!--    --><?php //if ($source == LoanPerson::PERSON_SOURCE_MOBILE_CREDIT && !$this->isFromWeichat()): ?>
-<!--        <div class="consultation">-->
-<!--            <a class="online-consultation" id="online" >-->
-<!--                <h4>在线咨询</h4>-->
-<!--            </a>-->
-<!--            <a class="phone-consultation" id="callphone" href="javascript:callPhoneMehtod('--><?//= $call;?><!--')">-->
-<!--               <h4 id="msg">电话咨询</h4>-->
-<!--           </a>-->
-<!--        </div>-->
-<!--    --><?php //endif; ?>
-<!--    --><?php //if ($source == LoanPerson::PERSON_SOURCE_WZD_LOAN): ?>
-<!--        <div class="consultation">-->
-<!--            <a class="online-consultation" id="online" >-->
-<!--                <h4>在线咨询</h4>-->
-<!--            </a>-->
-<!--            <a class="phone-consultation" id="callphone" href="javascript:callPhoneMehtod('--><?//= $call;?><!--')">-->
-<!--                <h4 id="msg">电话咨询</h4>-->
-<!--            </a>-->
-<!--        </div>-->
-<!--    --><?php //endif; ?>
+
     <div id="1" class="auth">
         <h3>认证相关</h3>
         <ul>

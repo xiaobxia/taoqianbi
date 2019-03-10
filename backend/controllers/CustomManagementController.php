@@ -1305,19 +1305,13 @@ class CustomManagementController extends  BaseController{
             ]);
 
         }else{
-            /*$source = LoanPerson::PERSON_SOURCE_MOBILE_CREDIT;
-            if($user_agent = $this->getUserAgent()){//判断来源是否在极速荷包
+            $source = LoanPerson::PERSON_SOURCE_MOBILE_CREDIT;
+            /*if($user_agent = $this->getUserAgent()){//判断来源是否在极速荷包
                 $source = LoanPerson::$user_agent_source[$user_agent];
             }
             switch ($source){
-                case LoanPerson::PERSON_SOURCE_HBJB:
-                    $authorization = '淮北汇邦小额贷款股份有限公司';
-                    break;
                 case LoanPerson::PERSON_SOURCE_MOBILE_CREDIT:
                     $authorization = '上海凌融网络科技有限公司';
-                    break;
-                case LoanPerson::PERSON_SOURCE_WZD_LOAN:
-                    $authorization = '德清正恒网络科技有限公司';
                     break;
                 default:
                     $authorization = '德清正恒网络科技有限公司';
