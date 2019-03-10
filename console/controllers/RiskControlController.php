@@ -62,7 +62,7 @@ class RiskControlController extends BaseController {
 
         $tag_file = '/tmp/close_auto_check_rule.tag';
         $risk_control_service = new RiskControlService();
-        $service = new RiskControlService();
+//        $service = new RiskControlService();
         $auto_service = new AutoCheckService();
         $now = time();
 
