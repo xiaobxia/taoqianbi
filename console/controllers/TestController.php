@@ -59,14 +59,14 @@ class TestController extends BaseController {
 //        var_dump($a);
 
         //
-        $source_pre = '闪电荷包';
-        $source_now = '淘钱币';
+//        $source_pre = '闪电荷包';
+//        $source_now = '淘钱币';
         $sms_channel = 'smsService_TianChang_HY';
         $source_id = 21;
         foreach ($a as $value){
             if (!empty($value[0]) && !empty($value[1])){
-                $send_message = $value[0].'，您好【'.$source_pre.'】将迁移到【'.$source_now.'】平台，作为老用户！首次还款将有50元现金红包！https://fir.im/4wfa';
-//                $send_message = $value[0].'，您好，鉴于您良好的用户资质！首次还款将有50元现金红包及每次还款都有现金红包等你哦！https://fir.im/4wfa';
+//                $send_message = $value[0].'，您好【'.$source_pre.'】将迁移到【'.$source_now.'】平台，作为老用户！首次还款将有50元现金红包！https://fir.im/4wfa';
+                $send_message = $value[0].'，您好，鉴于您良好的用户资质！首次还款将有50元现金红包及每次还款都有现金红包等你哦！https://fir.im/4wfa';
                 $ret = MessageHelper::sendSMSHY($value[1],$send_message,$sms_channel,$source_id);
                 echo $ret.$send_message."\r\n";
             }
