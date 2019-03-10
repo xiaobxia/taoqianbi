@@ -67,7 +67,7 @@
 <div id="dialog-wraper"></div>
 <div class="help-center kdlc_mobile_wraper">
 
-    <?php if ($source == LoanPerson::PERSON_SOURCE_WZD_LOAN): ?>
+    <?php if ($source == LoanPerson::PERSON_SOURCE_MOBILE_CREDIT): ?>
         <div class="consultation">
             <a class="online-consultation" id="online1" >
                 <h4>在线咨询</h4>

@@ -661,10 +661,7 @@ class CreditWebController extends BaseController {
         }
         $qq = '';//默认值
         $call = '';
-        if($source == LoanPerson::PERSON_SOURCE_WZD_LOAN){//温州贷的值
-            $qq = '2127394414';
-            $call = '021-80311201';
-        }
+
         $clientType = \yii::$app->request->getClient()->clientType;
         return $this->render($view, [
                     'title' => $title,

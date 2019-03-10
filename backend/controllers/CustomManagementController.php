@@ -1358,7 +1358,7 @@ class CustomManagementController extends  BaseController{
                 'order' => null,
                 'data' => $data,
                 'order_id' => $id,
-                'down_url' => $downloan_url,
+                'down_url' => '',
             ]);
         }
     }

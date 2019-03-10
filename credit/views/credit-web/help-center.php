@@ -56,7 +56,7 @@
         background: transparent url("../credit/img/helpCenter-icon07.png") 45% 40% no-repeat;
         background-size: 0.773333rem 0.773333rem; }
 </style>
-<?php if($source == LoanPerson::PERSON_SOURCE_WZD_LOAN):?>
+<?php if($source == LoanPerson::PERSON_SOURCE_MOBILE_CREDIT):?>
 <style>
     .help-center .consultation .online-consultation h4:before, .help-center .consultation .phone-consultation h4:before {
         content: '';

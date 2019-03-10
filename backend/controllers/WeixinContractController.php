@@ -28,8 +28,6 @@ class WeixinContractController extends BaseController
     public $enableCsrfValidation = false;
     private $source_list = [
         LoanPerson::PERSON_SOURCE_MOBILE_CREDIT ,
-        LoanPerson::PERSON_SOURCE_WZD_LOAN,
-        LoanPerson::PERSON_SOURCE_HBJB,
     ];
     /**
      * @name 显示已有的微信菜单

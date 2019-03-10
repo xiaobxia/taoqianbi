@@ -20,8 +20,6 @@ class AppBannerController extends BaseController
 {
     private $source_list = [
         LoanPerson::PERSON_SOURCE_MOBILE_CREDIT ,
-        LoanPerson::PERSON_SOURCE_WZD_LOAN,
-        LoanPerson::PERSON_SOURCE_HBJB,
     ];
 
     /**

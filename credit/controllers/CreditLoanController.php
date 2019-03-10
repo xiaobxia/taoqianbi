@@ -594,10 +594,6 @@ class CreditLoanController extends BaseController {
                 $color1 = '#FC6161';//待还款
                 $color2 = '#f41c1c';//逾期
                 break;
-            case LoanPerson::PERSON_SOURCE_WZD_LOAN;
-                $color1 = '#d74a55';//待还款
-                $color2 = '#f19149';//逾期
-                break;
         }
         if(Util::getMarket() == LoanPerson::APPMARKET_XJBT_PRO){
             $color1 = '#31b27a';//待还款

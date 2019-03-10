@@ -36,7 +36,7 @@
     }
 
 </style>
-<?php if($source == LoanPerson::PERSON_SOURCE_WZD_LOAN):?>
+<?php if($source == LoanPerson::PERSON_SOURCE_MOBILE_CREDIT):?>
 <style>
     .help-center .consultation .online-consultation h4:before, .help-center .consultation .phone-consultation h4:before {
         content: '';
@@ -76,7 +76,7 @@
            </a>
         </div>
     <?php endif; ?>
-    <?php if ($source == LoanPerson::PERSON_SOURCE_WZD_LOAN): ?>
+    <?php if ($source == LoanPerson::PERSON_SOURCE_MOBILE_CREDIT): ?>
         <div class="consultation">
             <a class="online-consultation" id="online1" >
                 <h4>在线咨询</h4>

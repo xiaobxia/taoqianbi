@@ -286,14 +286,6 @@ class MessageNoticeController extends BaseController {
                                     $sms_channel ='smsService_TianChang_HY';//暂时写天畅，不实际使用
 
                                     $ret = MessageHelper::sendSMSCS($phone,$send_message,$sms_channel,$source_id,false);
-                                }elseif ($source_id == LoanPerson::PERSON_SOURCE_SX_LOAN){
-                                    continue;
-//                                    $sms_channel = "smsService_MengWang_SXDCS";
-//                                    $ret = MessageHelper::sendSMSCS($phone,$send_message.'回复TD退订',$sms_channel,$source_id,false);
-                                }elseif ($source_id == LoanPerson::PERSON_SOURCE_WZD_LOAN){
-                                    continue;
-                                    #$sms_channel = "smsService_MengWang_WZDCS";//不知渠道短信
-                                    #$ret = MessageHelper::sendSMSCS($phone,$send_message.'回复TD退订',$sms_channel,$source_id,false);
                                 }else{
                                     continue;
                                 }
@@ -322,14 +314,7 @@ class MessageNoticeController extends BaseController {
                                 $pre_meg = '【'.APP_NAMES.'】';
                                 if($source_id == LoanPerson::PERSON_SOURCE_MOBILE_CREDIT){
                                     $pre_meg = '【'.APP_NAMES.'】';
-                                }
-                                //渠道暂未未使用
-//                                elseif ($source_id == LoanPerson::PERSON_SOURCE_SX_LOAN){
-//                                    $pre_meg .= '[随心贷]';
-//                                }elseif ($source_id == LoanPerson::PERSON_SOURCE_WZD_LOAN){
-//                                    $pre_meg .= '[温州贷借款]';
-//                                }
-                                else{
+                                }else{
                                     continue;
                                 }
                                 if($type==10){
@@ -349,9 +334,6 @@ class MessageNoticeController extends BaseController {
 //                                         case LoanPerson::PERSON_SOURCE_MOBILE_CREDIT:
 //                                             $sms_channel = "smsService_MengWang_Repayment";
 //                                             break;
-//                                         case LoanPerson::PERSON_SOURCE_WZD_LOAN:
-//                                             $sms_channel = "smsService_MengWang_WZDRepayment";
-//                                             break;
 //                                         default:
 //                                             continue;
 //                                             break;
@@ -363,18 +345,7 @@ class MessageNoticeController extends BaseController {
                                 if(in_array($source_id,LoanPerson::$source_register_list)){
                                     $sms_channel = "smsService_TianChang_HY";   // 提前一天  大汉 早8点换成亿美换成天畅
                                 }
-                                //渠道暂未使用
-//                                elseif ($source_id == LoanPerson::PERSON_SOURCE_SX_LOAN){
-//                                    $sms_channel = "smsService_TianChang_SXD";
-//                                }elseif ($source_id == LoanPerson::PERSON_SOURCE_WZD_LOAN){
-//                                    $sms_channel = "smsService_TianChang_WZD";
-//                                }elseif($source_id == LoanPerson::PERSON_SOURCE_HBJB){
-//                                    $sms_channel = "smsService_TianChang_HBQB";
-//                                }elseif($source_id == LoanPerson::PERSON_SOURCE_JBGJ){
-//                                    $sms_channel = "smsService_TianChang_JZGJ";
-//                                }elseif($source_id == LoanPerson::PERSON_SOURCE_KDJZ){
-//                                    $sms_channel = "smsService_TianChang_KDJZ";
-//                                }
+
                                 $ret = MessageHelper::sendSMSHY($phone,$send_message,$sms_channel,$source_id);
                             }
                             echo "{$send_message}\n";
@@ -444,14 +415,6 @@ class MessageNoticeController extends BaseController {
 
     public function _doSendVoiceMessage($type=0) {
         $voice_project = array(
-            LoanPerson::PERSON_SOURCE_SX_LOAN => array(
-                '0' => 'Xyu6L3',//'随心贷提醒您，明天是您的还款日，明天是您的还款日，为了避免逾期导致您信用度下降请提前准备好资金存入绑定银行卡，或今日'
-                '1'=>'16dsu1' //'随心贷提醒您，今天是您还款的最后期限，逾期将会对您今后的信用产生不良影响。请尽快还款，现在还款百分百提额！如您已经还款，请忽略该通话'
-            ),
-            LoanPerson::PERSON_SOURCE_WZD_LOAN => array(
-                '0' => 'JsgzM2',//'温州贷借款提醒您，明天是您的还款日，为了避免逾期导致您信用度下降请提前准备好资金存入绑定银行卡，或今日进入APP主动还款！'
-                '1'=>'ytbbu1' //'温州贷借款提醒您，今天是您还款的最后期限，逾期将会对您今后的信用产生不良影响。请尽快还款，现在还款百分百提额！如您已经还款，请忽略该通话'
-            ),
             LoanPerson::PERSON_SOURCE_MOBILE_CREDIT => array(
                 '0' => '20314',//'极速荷包提醒您，明天是您的还款日，为了避免逾期导致您信用度下降请提前准备好资金存入绑定银行卡，或今日进入APP主动还款！'
                 '1' => '20315', //'极速荷包提醒您，今天是您还款的最后期限，逾期将会对您今后的信用产生不良影响。请尽快还款，现在还款百分百提额哦！如您已经还款，请忽略该通话'
@@ -565,7 +528,7 @@ class MessageNoticeController extends BaseController {
                         }
 
                         foreach ( $phone_info as $s_id => $send_list){
-                            if(!in_array($s_id, [LoanPerson::PERSON_SOURCE_MOBILE_CREDIT, LoanPerson::PERSON_SOURCE_SX_LOAN, LoanPerson::PERSON_SOURCE_WZD_LOAN])){
+                            if(!in_array($s_id, [LoanPerson::PERSON_SOURCE_MOBILE_CREDIT])){
                                 continue;
                             }
                             $send_message = '';
