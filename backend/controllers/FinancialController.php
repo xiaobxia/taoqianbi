@@ -2079,9 +2079,9 @@ class FinancialController extends  BaseController
      * @return string
      * @name 支付宝交易记录
      */
-    public function actionAlipayRecord($type='list'){var_dump(5);exit;
+    public function actionAlipayRecord($type='list'){
         if($this->request->getIsPost()){
-            $post = $this->request->post();
+            $post = $this->request->post();var_dump($post);exit;
             $source = $post['source_id'] ?? 0;
             $data='';
             foreach ($post['alipayTime'] as $k=>$v){
