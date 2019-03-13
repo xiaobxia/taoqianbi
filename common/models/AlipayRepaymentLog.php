@@ -86,12 +86,12 @@ class AlipayRepaymentLog extends BaseActiveRecord
         /*if($sign != strtolower(md5($timestamp.'#abc!@#'))){
             return false;
         }*/
-        $datas = explode('@@@@@@', $str_data);var_dump($datas);exit;
+        $datas = explode('@@@@@@', $str_data);
         $values = [];
         $column_params = [];
         $i = 0;
         foreach($datas as $data){
-            $line_data = explode('******', $data);
+            $line_data = explode('******', $data);var_dump($line_data);exit;
             if(count($line_data) != 6 && count($line_data) != 7){
                 continue;
             }
