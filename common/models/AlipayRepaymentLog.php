@@ -75,7 +75,7 @@ class AlipayRepaymentLog extends BaseActiveRecord
         return Yii::$app->get('db_kdkj');
     }
     
-    public static function insertIgnore($params){var_dump($params['data']);exit;
+    public static function insertIgnore($params){
         if(!isset($params['sign']) || !$params['sign'] || !isset($params['data']) || !$params['data'] || !isset($params['timestamp'])){
             return false;
         }
