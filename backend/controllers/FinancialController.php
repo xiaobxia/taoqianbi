@@ -2081,7 +2081,7 @@ class FinancialController extends  BaseController
      */
     public function actionAlipayRecord($type='list'){
         if($this->request->getIsPost()){
-            $post = $this->request->post();var_dump($post);exit;
+            $post = $this->request->post();
             $source = $post['source_id'] ?? 0;
             $data='';
             foreach ($post['alipayTime'] as $k=>$v){
@@ -2098,7 +2098,7 @@ class FinancialController extends  BaseController
 
                 if (empty($weixinRecord)) {
                     continue;
-                }
+                }var_dump(AlipayRepaymentLog::findOne(['alipay_order_id' => $weixinRecord]));exit;
                 if (AlipayRepaymentLog::findOne(['alipay_order_id' => $weixinRecord])) {
                     continue;
                 }
