@@ -2105,7 +2105,7 @@ class FinancialController extends  BaseController
                 $data .= $weixinTime . ' ****** ' . $weixinRecord . ' ****** ' . $weixinMoney . ' ****** ' . $weixinAccount . ' ****** ' .
                     $weixinName . ' ****** ' . $weixinRemark . ' ****** '.$weixinExtend . ' @@@@@@ ';
 
-            }
+            }var_dump(1);
             if (empty($data)) {
                 return $this->redirectMessage('没有新数据，无需更新', Url::toRoute('financial/alipay-record'));
             }
@@ -2116,19 +2116,19 @@ class FinancialController extends  BaseController
                 'timestamp' => $timestamp,
                 'sign' => $sign,
                 'source' => $source
-            ];
+            ];var_dump(2);
             if (AlipayRepaymentLog::insertIgnore($params)) {
                 return $this->redirectMessage('数据插入成功', self::MSG_SUCCESS, Url::toRoute('financial/alipay-record'));
             }
             return $this->redirectMessage('数据插入失败', self::MSG_ERROR, Url::toRoute('financial/alipay-record'));
-        }
+        }var_dump(3);
 
         //还款列表部分
         $condition = '1 = 1 ';
         $pages = new Pagination();
         $info=[];
         if ($this->getRequest()->getIsGet()) {
-            $search = $this->request->get();
+            $search = $this->request->get();var_dump($search);exit;
             if((isset($search['user_id']) && !empty($search['user_id']))||(isset($search['order_id']) && !empty($search['order_id']))||(isset($search['name']) && !empty($search['name']))||(isset($search['phone']) && !empty($search['phone']))){
                 if (isset($search['user_id']) && !empty($search['user_id'])) {
                     $condition .= " AND  ".LoanPerson::tableName().".id = " . intval($search['user_id']);
