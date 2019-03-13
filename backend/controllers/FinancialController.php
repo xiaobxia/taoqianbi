@@ -2098,14 +2098,14 @@ class FinancialController extends  BaseController
 
                 if (empty($weixinRecord)) {
                     continue;
-                }var_dump(AlipayRepaymentLog::findOne(['alipay_order_id' => $weixinRecord]));exit;
+                }
                 if (AlipayRepaymentLog::findOne(['alipay_order_id' => $weixinRecord])) {
                     continue;
                 }
                 $data .= $weixinTime . ' ****** ' . $weixinRecord . ' ****** ' . $weixinMoney . ' ****** ' . $weixinAccount . ' ****** ' .
                     $weixinName . ' ****** ' . $weixinRemark . ' ****** '.$weixinExtend . ' @@@@@@ ';
 
-            }var_dump(1);
+            }
             if (empty($data)) {
                 return $this->redirectMessage('没有新数据，无需更新', Url::toRoute('financial/alipay-record'));
             }
@@ -2116,7 +2116,7 @@ class FinancialController extends  BaseController
                 'timestamp' => $timestamp,
                 'sign' => $sign,
                 'source' => $source
-            ];var_dump(2);
+            ];var_dump(AlipayRepaymentLog::insertIgnore($params));exit;
             if (AlipayRepaymentLog::insertIgnore($params)) {
                 return $this->redirectMessage('数据插入成功', self::MSG_SUCCESS, Url::toRoute('financial/alipay-record'));
             }
