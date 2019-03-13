@@ -2079,7 +2079,7 @@ class FinancialController extends  BaseController
      * @return string
      * @name 支付宝交易记录
      */
-    public function actionAlipayRecord($type='list'){
+    public function actionAlipayRecord($type='list'){var_dump(5);exit;
         if($this->request->getIsPost()){
             $post = $this->request->post();
             $source = $post['source_id'] ?? 0;
@@ -2128,7 +2128,7 @@ class FinancialController extends  BaseController
         $pages = new Pagination();
         $info=[];
         if ($this->getRequest()->getIsGet()) {
-            $search = $this->request->get();var_dump($search);exit;
+            $search = $this->request->get();var_dump($search);
             if((isset($search['user_id']) && !empty($search['user_id']))||(isset($search['order_id']) && !empty($search['order_id']))||(isset($search['name']) && !empty($search['name']))||(isset($search['phone']) && !empty($search['phone']))){
                 if (isset($search['user_id']) && !empty($search['user_id'])) {
                     $condition .= " AND  ".LoanPerson::tableName().".id = " . intval($search['user_id']);
