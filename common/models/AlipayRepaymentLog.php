@@ -75,18 +75,18 @@ class AlipayRepaymentLog extends BaseActiveRecord
         return Yii::$app->get('db_kdkj');
     }
     
-    public static function insertIgnore($params){
+    public static function insertIgnore($params){var_dump($params['data']);exit;
         if(!isset($params['sign']) || !$params['sign'] || !isset($params['data']) || !$params['data'] || !isset($params['timestamp'])){
             return false;
         }
-        $sign = strtolower($params['sign']);
+//        $sign = strtolower($params['sign']);
         $str_data = $params['data'];
-        $timestamp = $params['timestamp'];
+//        $timestamp = $params['timestamp'];
         $type = isset($params['type']) ? $params['type'] : 0;
         /*if($sign != strtolower(md5($timestamp.'#abc!@#'))){
             return false;
         }*/
-        $datas = explode('@@@@@@', $str_data);
+        $datas = explode('@@@@@@', $str_data);var_dump($datas);exit;
         $values = [];
         $column_params = [];
         $i = 0;

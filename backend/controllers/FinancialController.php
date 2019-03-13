@@ -2116,12 +2116,12 @@ class FinancialController extends  BaseController
                 'timestamp' => $timestamp,
                 'sign' => $sign,
                 'source' => $source
-            ];var_dump(AlipayRepaymentLog::insertIgnore($params));exit;
+            ];
             if (AlipayRepaymentLog::insertIgnore($params)) {
                 return $this->redirectMessage('数据插入成功', self::MSG_SUCCESS, Url::toRoute('financial/alipay-record'));
             }
             return $this->redirectMessage('数据插入失败', self::MSG_ERROR, Url::toRoute('financial/alipay-record'));
-        }var_dump(3);
+        }
 
         //还款列表部分
         $condition = '1 = 1 ';
