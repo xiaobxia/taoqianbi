@@ -2128,7 +2128,7 @@ class FinancialController extends  BaseController
         $pages = new Pagination();
         $info=[];
         if ($this->getRequest()->getIsGet()) {
-            $search = $this->request->get();var_dump($search);
+            $search = $this->request->get();
             if((isset($search['user_id']) && !empty($search['user_id']))||(isset($search['order_id']) && !empty($search['order_id']))||(isset($search['name']) && !empty($search['name']))||(isset($search['phone']) && !empty($search['phone']))){
                 if (isset($search['user_id']) && !empty($search['user_id'])) {
                     $condition .= " AND  ".LoanPerson::tableName().".id = " . intval($search['user_id']);
