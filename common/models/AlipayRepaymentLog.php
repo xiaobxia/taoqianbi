@@ -117,7 +117,7 @@ class AlipayRepaymentLog extends BaseActiveRecord
         }
         $sql = 'insert ignore into '.self::tableName().'(`alipay_order_id`,`alipay_account`,`alipay_name`,`money`,`alipay_date`,`remark`,`created_at`,`updated_at`,`type`,`source`,`is_extend`) 
                 values'.implode(',', $values);
-        var_dump($sql);exit;
+var_dump(self::getDb()->createCommand($sql,$column_params)->execute());exit;
         self::getDb()->createCommand($sql,$column_params)->execute();
         return true;
     }
