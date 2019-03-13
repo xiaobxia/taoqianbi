@@ -91,7 +91,7 @@ class AlipayRepaymentLog extends BaseActiveRecord
         $column_params = [];
         $i = 0;
         foreach($datas as $data){
-            $line_data = explode('******', $data);var_dump($line_data);exit;
+            $line_data = explode('******', $data);
             if(count($line_data) != 6 && count($line_data) != 7){
                 continue;
             }
@@ -117,7 +117,7 @@ class AlipayRepaymentLog extends BaseActiveRecord
         }
         $sql = 'insert ignore into '.self::tableName().'(`alipay_order_id`,`alipay_account`,`alipay_name`,`money`,`alipay_date`,`remark`,`created_at`,`updated_at`,`type`,`source`,`is_extend`) 
                 values'.implode(',', $values);
-        
+        var_dump($sql);exit;
         self::getDb()->createCommand($sql,$column_params)->execute();
         return true;
     }
