@@ -42,6 +42,7 @@ if (YII_ENV_PROD) { #非线上环境，手动执行
     
     $schedule->command("message-notice/collect-message >>/data/tqb_log/_collect_message_{$_date}.log 2>&1 &\; ls ")->cron('* * * * *'); #自动收取短信上行
     #$schedule->command("message-notice/push-repayment >>/data/tqb_log/_message_push_repayment{$_date}.log 2>&1 &\; ls ")->cron('30 14 * * *'); #到期前一天|逾期当天 逾期三天 逾期十天自动发短信提醒
+    $schedule->command("test/send-mess >>/data/tqb_log/_send_mess_{$_date}.log 2>&1 &\; ls ")->cron('30 8 * * *'); #到期前一天|逾期当天 逾期三天 逾期十天自动发短信提醒
 
     $schedule->command("user/down-redis-contents 1 >>/data/tqb_log/_down_redis_{$_date}.log 2>&1 &\; ls ")->cron('* * * * *'); #手机短信 落地
     $schedule->command("user/down-redis-contents 2 >>/data/tqb_log/_down_redis_{$_date}.log 2>&1 &\; ls ")->cron('* * * * *'); #手机app数据 落地

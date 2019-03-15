@@ -29,6 +29,6 @@ if (YII_ENV_PROD) {
     #####################pv统计  #############################
 //    $schedule->command("log/get-log >>/data/tqb_log/_pv_log_{$_date}.log 2>&1 &\; ls ")->cron('*/20 * * * *'); #统计pv
     ################################################################## 统计脚本end##################################################################
-    $schedule->command("channel-check/source-statistic >>/data/tqb_log/_source_statistic_{$_date}.log 2>&1 &\; ls ")->cron('0 */1 * * *'); #渠道注册统计（每1个小时更新一次）
-    $schedule->command("channel-check/source-statistic >>/data/tqb_log/_source_statistic_{$_date}.log 2>&1 &\; ls ")->cron('58 23 * * *'); #渠道注册统计（每天23点58做当天最后一次更新）
+//    $schedule->command("channel-check/source-statistic >>/data/tqb_log/_source_statistic_{$_date}.log 2>&1 &\; ls ")->cron('0 */1 * * *'); #渠道注册统计（每1个小时更新一次）
+//    $schedule->command("channel-check/source-statistic >>/data/tqb_log/_source_statistic_{$_date}.log 2>&1 &\; ls ")->cron('58 23 * * *'); #渠道注册统计（每天23点58做当天最后一次更新）
 }

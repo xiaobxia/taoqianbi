@@ -35,7 +35,7 @@ use common\models\mongo\risk\OrderReportMongo;
 
 class TestController extends BaseController {
 
-    public function actionSendMess(){
+    public function actionSendMess(){echo 'test';exit;
         $appPath = __DIR__ . DIRECTORY_SEPARATOR.'test.txt';
 
         //读取文件内容
