@@ -472,8 +472,8 @@ use mobile\components\CheckPayPwd;
                 <!--<div class="coupon-box"><span>请选择优惠券</span><span class="coupon">暂无可用</span><i></i></div>-->
             </li>
         <?php } ?>
-        <div class="space"></div>
-        <li>
+        <div class="space" style="display: none"></div>
+        <li style="display: none">
             <a href="javascript:void(0);" class="clearfix" id="alipay">
                 <div class="alipay-box clearfix">
                     <h2 class="alipay">支付宝还款</h2>
@@ -483,8 +483,8 @@ use mobile\components\CheckPayPwd;
                 <div><span class="desc">适用于支付宝还款方便的用户</span></div>
             </a>
         </li>
-        <div class="space"></div>
-        <li>
+        <div class="space" style="display: none"></div>
+        <li style="display: none">
             <a href="javascript:void(0);" class="weixin" id="weixin">
                 <div class="clearfix weixin">
                     <h2 class="weixin">微信还款</h2>
