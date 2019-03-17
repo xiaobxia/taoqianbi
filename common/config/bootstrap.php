@@ -19,13 +19,13 @@ defined('WEIXIN_SECRET') or define('WEIXIN_SECRET', '12070845213cff02fccd4f6617f
 defined('WEIXIN_Token') or define('WEIXIN_Token', 'weixin_jshh_online');//微信公众号token
 
 defined('ALIPAY_ACCOUNT') or define('ALIPAY_ACCOUNT', '13285711611');
-defined('ALIPAY_NAME') or define('ALIPAY_NAME', '长沙顺网互联网科技有限公司');//浙江省杭州市西湖区文二西路669号407室（入驻创富港商务秘书托管013号）
+defined('ALIPAY_NAME') or define('ALIPAY_NAME', '长沙黑联互联网科技有限公司');//浙江省杭州市西湖区文二西路669号407室（入驻创富港商务秘书托管013号）
 
 define('WEIXIN_GONGZHONGNHAO', '淘钱币');
 define('WEIXIN_GONGZHONGNHAO_SHORENAME', 'XHBGZH');//微信公众号英文名称
 defined('APP_NAMES') or define('APP_NAMES', '淘钱币');
 
-defined('COMPANY_NAME') or define('COMPANY_NAME', '长沙顺网互联网科技有限公司');
+defined('COMPANY_NAME') or define('COMPANY_NAME', '长沙黑联互联网科技有限公司');
 defined('COMPANY_ADDRESS') or define('COMPANY_ADDRESS', '长沙经济技术开发区板仓>南路29号新长海中心服务外包基地3栋A座501');
 defined('COMPANY_AREA') or define('COMPANY_AREA', '长沙市');
 
