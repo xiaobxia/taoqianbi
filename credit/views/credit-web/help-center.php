@@ -68,7 +68,7 @@
     }
     .help-center .consultation .online-consultation h4, .help-center .consultation .phone-consultation h4 {
         font-size: 0.4rem;
-        color: #d74a55;
+        color: #1ec8e1;
         text-align: center;
         position: relative;
         margin-top: 1.6rem;
@@ -80,7 +80,7 @@
     .help-center .repayment h3 { background: transparent url(<?= $this->staticUrl('credit/img/hbqb/content_list_btn06.png', 1)?>) 40% 35% no-repeat;background-size: 1.3333333333rem 1rem;}
     .help-center .cost h3 { background: transparent url(<?= $this->staticUrl('credit/img/hbqb/content_list_btn03.png', 1)?>) 40% 35% no-repeat;background-size: 1.3333333333rem 1rem;}
     .help-center .other h3 { background: transparent url(<?= $this->staticUrl('credit/img/hbqb/content_list_btn04.png', 1)?>) 40% 35% no-repeat;background-size: 1.3333333333rem 1rem;}
-    .help-center h3 {color: #d74a55;}
+    .help-center h3 {color: #1ec8e1;}
 </style>
 <?php endif;?>
 <body>
