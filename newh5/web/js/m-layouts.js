@@ -110,9 +110,9 @@ function androidDownload(obj, tag, phone) {
 
     var dft_apk = "";
     var tag_apk = "";
-    dft_apk = "http://www.bubuyingf.com/xhb.apk";
+    dft_apk = "https://fir.im/7l4v";
     // tag_apk = "https://sdhb-pro.oss-cn-shanghai.aliyuncs.com/sdhb/apk/sdhb0815_release.apk";
-    tag_apk = "http://www.bubuyingf.com/xhb.apk";
+    tag_apk = "https://fir.im/7l4v";
     window.location.href = dft_apk;
 }
 // 微信内下载引导到浏览器
